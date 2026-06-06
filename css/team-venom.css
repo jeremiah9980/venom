@@ -1,0 +1,44 @@
+
+/* ===== TEXAS VENOM SKIN — purple + lime over the shared design system ===== */
+body.venom-page{
+  --blue:#6D28D9;  --blue2:#5B21B6;  --blue-l:#F1EAFE;  --blue-m:#C9B7F6;
+  --yellow:#C6FF00; --yellow2:#A6D900; --yellow-l:#F5FFD9; --yellow-m:#E6FFA6;
+  --stripe: repeating-linear-gradient(90deg, rgba(198,255,0,.16) 0px, rgba(198,255,0,.16) 6px, transparent 6px, transparent 28px);
+  background:#0a0610;
+}
+.venom-page nav{ background:#0c0716; border-bottom-color:var(--yellow); }
+.venom-page .nav-brand{ color:#fff; }
+.venom-page .nav-brand span{ color:#9b87c9; }
+.venom-page .nav-brand img{ border-color:var(--yellow); }
+.venom-page .nav-links a{ color:rgba(255,255,255,.62); }
+.venom-page .nav-links a:hover,
+.venom-page .nav-links a.active{ color:var(--yellow); background:rgba(109,40,217,.35); }
+.venom-page .nav-links a[href*="fundraising"]{ color:#15061f; background:var(--yellow); border:1px solid var(--yellow2); }
+.venom-page .nav-links a[href*="fundraising"]:hover{ background:#fff; }
+
+.venom-page .hero{
+  background:
+    radial-gradient(circle at 78% 18%, rgba(198,255,0,.16), transparent 30%),
+    radial-gradient(circle at 16% 70%, rgba(109,40,217,.55), transparent 34%),
+    linear-gradient(135deg,#16071f 0%,#37105e 55%,#0c0512 100%);
+  border-bottom:3px solid var(--yellow);
+}
+.venom-page .hero h1{ color:#fff; text-shadow:0 0 30px rgba(109,40,217,.8); }
+.venom-page .hero-kicker{ color:var(--yellow); }
+.venom-page .hero-sub{ color:rgba(255,255,255,.82); }
+.venom-page .hero-logo{ width:130px;height:130px;object-fit:contain;margin:0 auto 14px;display:block;filter:drop-shadow(0 8px 26px rgba(198,255,0,.25)); }
+
+.venom-page .page{ background:#faf9fd; border-radius:20px 20px 0 0; margin-top:0; padding-top:8px; }
+.venom-page .gold-strip{ background:var(--yellow); border-bottom-color:var(--yellow2); }
+.venom-page .gold-strip p{ color:#15061f; }
+.venom-page .section-label{ color:var(--blue); }
+.venom-page .card h3{ color:var(--blue); }
+.venom-page .card-gold{ border-top-color:var(--yellow); }
+.venom-page .card-blue{ border-top-color:var(--blue); }
+.venom-page .callout{ border-left-color:var(--blue); background:var(--blue-l); }
+.venom-page .doc-item:hover{ border-color:var(--yellow); box-shadow:0 0 0 3px rgba(198,255,0,.18); }
+.venom-page .btn-outline{ border-color:var(--blue); color:var(--blue); }
+.venom-page .btn-outline:hover{ background:var(--blue); color:#fff; }
+.venom-page .vote-table th{ background:var(--blue); color:var(--yellow); border-color:var(--blue2); }
+.venom-page footer{ background:#0c0716; border-top:4px solid var(--yellow); }
+.venom-page .footer-brand{ color:var(--yellow); text-shadow:2px 2px 0 rgba(0,0,0,.35); }
