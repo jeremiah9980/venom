@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Player Profile — Texas Venom</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/team-venom.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+</head>
+<body class="venom-page">
+<script src="assets/js/nav.js"></script>
+
+<!--
+  ====================================================================
+  ATHLETE PROFILE TEMPLATE — Texas Venom 10U
+  --------------------------------------------------------------------
+  HOW TO USE:
+    1. Save a copy as firstname-lastinitial.html (e.g. aubrey-b.html)
+    2. ONLY publish a copy after the player's parent/guardian has
+       given explicit written consent to a public profile.
+    3. Fill in the [ TOKENS ] below.
+    4. Drop a photo at assets/players/firstname-lastinitial.jpg
+       (and only photos the family has cleared for public posting).
+  ====================================================================
+-->
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-kicker">Texas Venom &bull; 10U &bull; Spring 2026</div>
+    <h1>#[ NUMBER ] &nbsp; [ Player Name ]</h1>
+    <div class="hero-rule"></div>
+    <p class="hero-tagline">[ Position(s) ] &nbsp;&bull;&nbsp; Bats [R/L] &nbsp;&bull;&nbsp; Throws [R/L] &nbsp;&bull;&nbsp; Class of [YYYY]</p>
+  </div>
+</section>
+
+<div class="page">
+
+  <div class="section">
+    <div style="display:grid;grid-template-columns:300px 1fr;gap:32px;align-items:start;">
+      <!-- PHOTO SLOT -->
+      <div style="aspect-ratio:3/4;border-radius:14px;border:1px dashed rgba(109,40,217,.4);background:linear-gradient(180deg,#1a0a2b,#0c0512);display:grid;place-items:center;color:#9b87c9;font-family:var(--display);letter-spacing:2px;text-transform:uppercase;font-size:12px;text-align:center;padding:0 16px;overflow:hidden;">
+        <img src="assets/players/[ filename ].jpg" alt="" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <span style="display:none">Photo slot<br>assets/players/[ filename ].jpg<br><small style="opacity:.6">(parent-cleared photos only)</small></span>
+      </div>
+      <div>
+        <div class="section-label">About the player</div>
+        <h2 style="margin-bottom:18px;">[ Player Name ]</h2>
+        <div class="section-rule"></div>
+        <p>[ 2&ndash;4 sentences about the player: where she plays in the field, what she's working on, what her teammates know her for. Keep it age-appropriate and approved by the family. ]</p>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:14px;">
+          <span class="badge badge-gold">[ Primary position ]</span>
+          <span class="badge badge-blue">[ Secondary position ]</span>
+          <span class="badge badge-teal">[ Strength tag ]</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Season &middot; Spring 2026</div>
+    <h2>Stats</h2>
+    <div class="section-rule"></div>
+    <div class="card-grid" style="grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;">
+      <div class="card" style="text-align:center;padding:14px 10px;"><div style="font-family:var(--display);font-size:24px;font-weight:900;color:var(--blue);line-height:1;">—</div><div style="font-size:10px;color:var(--g3);margin-top:5px;font-family:var(--display);letter-spacing:1.5px;text-transform:uppercase;">GP</div></div>
+      <div class="card" style="text-align:center;padding:14px 10px;"><div style="font-family:var(--display);font-size:24px;font-weight:900;color:var(--blue);line-height:1;">—</div><div style="font-size:10px;color:var(--g3);margin-top:5px;font-family:var(--display);letter-spacing:1.5px;text-transform:uppercase;">PA</div></div>
+      <div class="card" style="text-align:center;padding:14px 10px;"><div style="font-family:var(--display);font-size:24px;font-weight:900;color:var(--blue);line-height:1;">—</div><div style="font-size:10px;color:var(--g3);margin-top:5px;font-family:var(--display);letter-spacing:1.5px;text-transform:uppercase;">AB</div></div>
+      <div class="card" style="text-align:center;padding:14px 10px;"><div style="font-family:var(--display);font-size:24px;font-weight:900;color:var(--blue);line-height:1;">—</div><div style="font-size:10px;color:var(--g3);margin-top:5px;font-family:var(--display);letter-spacing:1.5px;text-transform:uppercase;">AVG</div></div>
+      <div class="card" style="text-align:center;padding:14px 10px;"><div style="font-family:var(--display);font-size:24px;font-weight:900;color:var(--blue);line-height:1;">—</div><div style="font-size:10px;color:var(--g3);margin-top:5px;font-family:var(--display);letter-spacing:1.5px;text-transform:uppercase;">OBP</div></div>
+      <div class="card" style="text-align:center;padding:14px 10px;"><div style="font-family:var(--display);font-size:24px;font-weight:900;color:var(--blue);line-height:1;">—</div><div style="font-size:10px;color:var(--g3);margin-top:5px;font-family:var(--display);letter-spacing:1.5px;text-transform:uppercase;">SLG</div></div>
+      <div class="card" style="text-align:center;padding:14px 10px;"><div style="font-family:var(--display);font-size:24px;font-weight:900;color:var(--blue);line-height:1;">—</div><div style="font-size:10px;color:var(--g3);margin-top:5px;font-family:var(--display);letter-spacing:1.5px;text-transform:uppercase;">OPS</div></div>
+      <div class="card" style="text-align:center;padding:14px 10px;"><div style="font-family:var(--display);font-size:24px;font-weight:900;color:var(--blue);line-height:1;">—</div><div style="font-size:10px;color:var(--g3);margin-top:5px;font-family:var(--display);letter-spacing:1.5px;text-transform:uppercase;">H</div></div>
+      <div class="card" style="text-align:center;padding:14px 10px;"><div style="font-family:var(--display);font-size:24px;font-weight:900;color:var(--blue);line-height:1;">—</div><div style="font-size:10px;color:var(--g3);margin-top:5px;font-family:var(--display);letter-spacing:1.5px;text-transform:uppercase;">1B</div></div>
+      <div class="card" style="text-align:center;padding:14px 10px;"><div style="font-family:var(--display);font-size:24px;font-weight:900;color:var(--blue);line-height:1;">—</div><div style="font-size:10px;color:var(--g3);margin-top:5px;font-family:var(--display);letter-spacing:1.5px;text-transform:uppercase;">2B</div></div>
+      <div class="card" style="text-align:center;padding:14px 10px;"><div style="font-family:var(--display);font-size:24px;font-weight:900;color:var(--blue);line-height:1;">—</div><div style="font-size:10px;color:var(--g3);margin-top:5px;font-family:var(--display);letter-spacing:1.5px;text-transform:uppercase;">3B</div></div>
+      <div class="card" style="text-align:center;padding:14px 10px;"><div style="font-family:var(--display);font-size:24px;font-weight:900;color:var(--blue);line-height:1;">—</div><div style="font-size:10px;color:var(--g3);margin-top:5px;font-family:var(--display);letter-spacing:1.5px;text-transform:uppercase;">HR</div></div>
+      <div class="card" style="text-align:center;padding:14px 10px;"><div style="font-family:var(--display);font-size:24px;font-weight:900;color:var(--blue);line-height:1;">—</div><div style="font-size:10px;color:var(--g3);margin-top:5px;font-family:var(--display);letter-spacing:1.5px;text-transform:uppercase;">RBI</div></div>
+      <div class="card" style="text-align:center;padding:14px 10px;"><div style="font-family:var(--display);font-size:24px;font-weight:900;color:var(--blue);line-height:1;">—</div><div style="font-size:10px;color:var(--g3);margin-top:5px;font-family:var(--display);letter-spacing:1.5px;text-transform:uppercase;">R</div></div>
+      <div class="card" style="text-align:center;padding:14px 10px;"><div style="font-family:var(--display);font-size:24px;font-weight:900;color:var(--blue);line-height:1;">—</div><div style="font-size:10px;color:var(--g3);margin-top:5px;font-family:var(--display);letter-spacing:1.5px;text-transform:uppercase;">BB</div></div>
+      <div class="card" style="text-align:center;padding:14px 10px;"><div style="font-family:var(--display);font-size:24px;font-weight:900;color:var(--blue);line-height:1;">—</div><div style="font-size:10px;color:var(--g3);margin-top:5px;font-family:var(--display);letter-spacing:1.5px;text-transform:uppercase;">SO</div></div>
+      <div class="card" style="text-align:center;padding:14px 10px;"><div style="font-family:var(--display);font-size:24px;font-weight:900;color:var(--blue);line-height:1;">—</div><div style="font-size:10px;color:var(--g3);margin-top:5px;font-family:var(--display);letter-spacing:1.5px;text-transform:uppercase;">HBP</div></div>
+      <div class="card" style="text-align:center;padding:14px 10px;"><div style="font-family:var(--display);font-size:24px;font-weight:900;color:var(--blue);line-height:1;">—</div><div style="font-size:10px;color:var(--g3);margin-top:5px;font-family:var(--display);letter-spacing:1.5px;text-transform:uppercase;">SB</div></div>
+      <div class="card" style="text-align:center;padding:14px 10px;"><div style="font-family:var(--display);font-size:24px;font-weight:900;color:var(--blue);line-height:1;">—</div><div style="font-size:10px;color:var(--g3);margin-top:5px;font-family:var(--display);letter-spacing:1.5px;text-transform:uppercase;">SB%</div></div>
+      <div class="card" style="text-align:center;padding:14px 10px;"><div style="font-family:var(--display);font-size:24px;font-weight:900;color:var(--blue);line-height:1;">—</div><div style="font-size:10px;color:var(--g3);margin-top:5px;font-family:var(--display);letter-spacing:1.5px;text-transform:uppercase;">CS</div></div>
+    </div>
+    <p style="font-size:12px;color:var(--g3);margin-top:14px;">Source: GameChanger team stats. Update per game or per tournament.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Development</div>
+    <h2>Focus Areas</h2>
+    <div class="section-rule"></div>
+    <div class="card-grid card-grid-2">
+      <div class="card card-gold"><h3>What She Does Well</h3><p>[ Coach notes &mdash; 2&ndash;3 strengths shown this season. Examples: contact hitting, base-running IQ, defensive footwork. ]</p></div>
+      <div class="card card-gold"><h3>What We're Building</h3><p>[ Coach notes &mdash; 1&ndash;2 development priorities for the upcoming season. Examples: arm strength, pitch recognition, situational hitting. ]</p></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Highlights</div>
+    <h2>Season Moments</h2>
+    <div class="section-rule"></div>
+    <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+      <li style="background:var(--white);border:1px solid var(--g4);border-left:4px solid var(--yellow);border-radius:0 10px 10px 0;padding:14px 18px;"><strong>[ Tournament &middot; Date ]</strong> &mdash; [ Brief highlight, 1 line. e.g. 3-for-4 with a 2B in the bracket final. ]</li>
+      <li style="background:var(--white);border:1px solid var(--g4);border-left:4px solid var(--yellow);border-radius:0 10px 10px 0;padding:14px 18px;"><strong>[ Tournament &middot; Date ]</strong> &mdash; [ Brief highlight. ]</li>
+      <li style="background:var(--white);border:1px solid var(--g4);border-left:4px solid var(--yellow);border-radius:0 10px 10px 0;padding:14px 18px;"><strong>[ Tournament &middot; Date ]</strong> &mdash; [ Brief highlight. ]</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="callout">
+      <p><strong>Family-first.</strong> This profile is published with parent consent. To update, replace a photo, or remove content from this page, contact the Co-Directors at any time.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-brand">Texas Venom</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="roster.html">Roster</a>
+    <a href="about.html">About</a>
+    <a href="coaching.html">Coaching</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <p>Leander, Texas &bull; 10U Select Softball &bull; 2026</p>
+</footer>
+</body>
+</html>

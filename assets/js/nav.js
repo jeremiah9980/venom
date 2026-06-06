@@ -10,6 +10,7 @@ const NAV_HTML = `
       <a href="about.html">About</a>
       <a href="board.html">Board</a>
       <a href="coaching.html">Coaching</a>
+      <a href="roster.html">Roster</a>
       <a href="bylaws.html">Bylaws</a>
       <a href="finances.html">Finances</a>
       <a href="policies.html">Policies</a>
