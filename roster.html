@@ -7,6 +7,39 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/team-venom.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+<style>
+  /* ===== ROSTER GRID (Bananas-style cards) ===== */
+  .roster-counter{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border:1px solid var(--blue-m);background:var(--blue-l);border-radius:999px;font-family:var(--display);text-transform:uppercase;letter-spacing:1.5px;font-size:12px;color:var(--blue2);}
+  .roster-counter .rc-live{color:var(--blue);font-weight:800;}
+  .roster-counter .rc-sep{opacity:.4;}
+  .roster-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px;margin-top:24px;}
+  .roster-card{background:#fff;border:1px solid var(--g4);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:.25s;}
+  .roster-card.is-live{border-color:var(--yellow);box-shadow:0 6px 0 var(--yellow2),0 8px 30px rgba(109,40,217,.18);}
+  .rc-photo{position:relative;aspect-ratio:3/4;background:linear-gradient(165deg,#1b0a2e 0%,#2c1247 45%,#0c0410 100%);overflow:hidden;}
+  .rc-photo img{width:100%;height:100%;object-fit:cover;display:block;}
+  .rc-photo-fallback{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:rgba(255,255,255,.18);}
+  .rc-photo-fallback i{font-size:78px;}
+  .rc-photo-fallback .rc-spot-label{font-family:var(--display);font-weight:900;font-size:42px;letter-spacing:1px;color:rgba(198,255,0,.16);margin-top:6px;text-shadow:0 0 30px rgba(155,77,255,.4);}
+  .rc-photo img+.rc-photo-fallback{display:none;}
+  .roster-card .no-photo .rc-photo-fallback{display:flex;}
+  .rc-num{position:absolute;bottom:12px;left:12px;background:var(--blue);color:#fff;font-family:var(--display);font-weight:900;font-size:18px;padding:6px 14px;border-radius:8px;border:2px solid var(--yellow);letter-spacing:1px;box-shadow:0 4px 12px rgba(0,0,0,.4);}
+  .rc-body{padding:16px 16px 18px;display:flex;flex-direction:column;flex:1;}
+  .rc-name{font-family:var(--display);font-weight:900;font-size:22px;text-transform:uppercase;letter-spacing:0.5px;line-height:1;color:var(--blue);}
+  .rc-name .rc-ln{color:var(--yellow2);}
+  .is-live .rc-name .rc-ln{color:var(--yellow2);}
+  .rc-pos{font-family:var(--display);text-transform:uppercase;letter-spacing:2px;font-size:11px;color:var(--g3);margin-top:8px;}
+  .rc-stats{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:14px;}
+  .rc-stat{background:var(--blue-l);border-radius:8px;padding:10px 10px 8px;}
+  .rc-stat-val{font-family:var(--display);font-size:18px;font-weight:900;color:var(--blue);line-height:1;letter-spacing:-.5px;}
+  .rc-stat-lbl{font-family:var(--display);text-transform:uppercase;letter-spacing:1.5px;font-size:9px;color:var(--g3);margin-top:4px;}
+  .rc-tag-pill{margin-top:14px;background:transparent;border:1px solid var(--g4);border-radius:999px;text-align:center;font-family:var(--display);text-transform:uppercase;letter-spacing:2px;font-size:10px;padding:8px 10px;color:var(--g3);}
+  .is-live .rc-tag-pill{background:var(--yellow-l);border-color:var(--yellow);color:var(--blue2);}
+  .rc-cta{margin-top:12px;display:flex;align-items:center;justify-content:space-between;background:var(--g5);color:var(--g3);font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:12px;padding:14px 16px;border-radius:8px;text-decoration:none;pointer-events:none;}
+  .rc-cta::after{content:"→";opacity:.4;}
+  .is-live .rc-cta{background:var(--yellow);color:var(--blue2);pointer-events:auto;}
+  .is-live .rc-cta::after{opacity:1;}
+  .is-live .rc-cta:hover{background:var(--yellow2);color:#fff;}
+</style>
 </head>
 <body class="venom-page">
 <script src="assets/js/nav.js"></script>
@@ -17,132 +50,307 @@
     <div class="hero-kicker">Texas Venom &bull; 10U &bull; Spring 2026</div>
     <h1>Roster</h1>
     <div class="hero-rule"></div>
-    <p class="hero-tagline">Twelve players. One standard. Every name on this page earned her spot.</p>
+    <p class="hero-tagline">Twelve players. One standard. Built for the fight.</p>
   </div>
 </section>
 
 <div class="gold-strip">
-  <p>Season Record: 25-13 &nbsp;&bull;&nbsp; .658 Win % &nbsp;&bull;&nbsp; Spring 2026</p>
+  <p>Season Record: 25-13 &nbsp;&bull;&nbsp; .658 Win % &nbsp;&bull;&nbsp; Spring 2026 &nbsp;&bull;&nbsp; Leander, TX</p>
 </div>
 
 <div class="page">
 
   <div class="section">
-    <div class="section-label">By the numbers</div>
-    <h2>Team Snapshot</h2>
+    <span class="roster-counter">
+      <i class="ti ti-users"></i>
+      <span class="rc-live" id="liveCount">0 Profiles Live</span>
+      <span class="rc-sep">—</span>
+      <span>12 Total Spots</span>
+    </span>
+    <h2 style="margin-top:18px;">Players</h2>
     <div class="section-rule"></div>
+    <p style="margin-bottom:8px;">Roster shown in GameChanger format (first name + last initial + jersey). Individual profile pages activate per player once a written parent media release is on file and the photo + profile are dropped in.</p>
+    <div class="roster-grid">
+      <div class="roster-card" data-slug="penny-b">
+        <div class="rc-photo">
+          <img src="assets/players/penny-b.jpg" alt="" onerror="this.style.display='none';this.parentElement.classList.add('no-photo');">
+          <div class="rc-photo-fallback">
+            <i class="ti ti-user"></i>
+            <div class="rc-spot-label">#1</div>
+          </div>
+          <div class="rc-num">#1</div>
+        </div>
+        <div class="rc-body">
+          <div class="rc-name"><span class="rc-fn">Penny</span> <span class="rc-ln">B.</span></div>
+          <div class="rc-pos">Position TBD</div>
+          <div class="rc-stats">
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+          </div>
+          <div class="rc-tag-pill">Profile Coming Soon</div>
+          <a class="rc-cta" href="penny-b.html"><i class="ti ti-clock"></i> Coming Soon</a>
+        </div>
+      </div>
+      <div class="roster-card" data-slug="aubrey-b">
+        <div class="rc-photo">
+          <img src="assets/players/aubrey-b.jpg" alt="" onerror="this.style.display='none';this.parentElement.classList.add('no-photo');">
+          <div class="rc-photo-fallback">
+            <i class="ti ti-user"></i>
+            <div class="rc-spot-label">#2</div>
+          </div>
+          <div class="rc-num">#2</div>
+        </div>
+        <div class="rc-body">
+          <div class="rc-name"><span class="rc-fn">Aubrey</span> <span class="rc-ln">B.</span></div>
+          <div class="rc-pos">Position TBD</div>
+          <div class="rc-stats">
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+          </div>
+          <div class="rc-tag-pill">Profile Coming Soon</div>
+          <a class="rc-cta" href="aubrey-b.html"><i class="ti ti-clock"></i> Coming Soon</a>
+        </div>
+      </div>
+      <div class="roster-card" data-slug="addison-s">
+        <div class="rc-photo">
+          <img src="assets/players/addison-s.jpg" alt="" onerror="this.style.display='none';this.parentElement.classList.add('no-photo');">
+          <div class="rc-photo-fallback">
+            <i class="ti ti-user"></i>
+            <div class="rc-spot-label">#3</div>
+          </div>
+          <div class="rc-num">#3</div>
+        </div>
+        <div class="rc-body">
+          <div class="rc-name"><span class="rc-fn">Addison</span> <span class="rc-ln">S.</span></div>
+          <div class="rc-pos">Position TBD</div>
+          <div class="rc-stats">
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+          </div>
+          <div class="rc-tag-pill">Profile Coming Soon</div>
+          <a class="rc-cta" href="addison-s.html"><i class="ti ti-clock"></i> Coming Soon</a>
+        </div>
+      </div>
+      <div class="roster-card" data-slug="kynsie-e">
+        <div class="rc-photo">
+          <img src="assets/players/kynsie-e.jpg" alt="" onerror="this.style.display='none';this.parentElement.classList.add('no-photo');">
+          <div class="rc-photo-fallback">
+            <i class="ti ti-user"></i>
+            <div class="rc-spot-label">#4</div>
+          </div>
+          <div class="rc-num">#4</div>
+        </div>
+        <div class="rc-body">
+          <div class="rc-name"><span class="rc-fn">Kynsie</span> <span class="rc-ln">E.</span></div>
+          <div class="rc-pos">Position TBD</div>
+          <div class="rc-stats">
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+          </div>
+          <div class="rc-tag-pill">Profile Coming Soon</div>
+          <a class="rc-cta" href="kynsie-e.html"><i class="ti ti-clock"></i> Coming Soon</a>
+        </div>
+      </div>
+      <div class="roster-card" data-slug="gracie-w">
+        <div class="rc-photo">
+          <img src="assets/players/gracie-w.jpg" alt="" onerror="this.style.display='none';this.parentElement.classList.add('no-photo');">
+          <div class="rc-photo-fallback">
+            <i class="ti ti-user"></i>
+            <div class="rc-spot-label">#6</div>
+          </div>
+          <div class="rc-num">#6</div>
+        </div>
+        <div class="rc-body">
+          <div class="rc-name"><span class="rc-fn">Gracie</span> <span class="rc-ln">W.</span></div>
+          <div class="rc-pos">Position TBD</div>
+          <div class="rc-stats">
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+          </div>
+          <div class="rc-tag-pill">Profile Coming Soon</div>
+          <a class="rc-cta" href="gracie-w.html"><i class="ti ti-clock"></i> Coming Soon</a>
+        </div>
+      </div>
+      <div class="roster-card" data-slug="brynlie-h">
+        <div class="rc-photo">
+          <img src="assets/players/brynlie-h.jpg" alt="" onerror="this.style.display='none';this.parentElement.classList.add('no-photo');">
+          <div class="rc-photo-fallback">
+            <i class="ti ti-user"></i>
+            <div class="rc-spot-label">#8</div>
+          </div>
+          <div class="rc-num">#8</div>
+        </div>
+        <div class="rc-body">
+          <div class="rc-name"><span class="rc-fn">Brynlie</span> <span class="rc-ln">H.</span></div>
+          <div class="rc-pos">Position TBD</div>
+          <div class="rc-stats">
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+          </div>
+          <div class="rc-tag-pill">Profile Coming Soon</div>
+          <a class="rc-cta" href="brynlie-h.html"><i class="ti ti-clock"></i> Coming Soon</a>
+        </div>
+      </div>
+      <div class="roster-card" data-slug="hadley-w">
+        <div class="rc-photo">
+          <img src="assets/players/hadley-w.jpg" alt="" onerror="this.style.display='none';this.parentElement.classList.add('no-photo');">
+          <div class="rc-photo-fallback">
+            <i class="ti ti-user"></i>
+            <div class="rc-spot-label">#10</div>
+          </div>
+          <div class="rc-num">#10</div>
+        </div>
+        <div class="rc-body">
+          <div class="rc-name"><span class="rc-fn">Hadley</span> <span class="rc-ln">W.</span></div>
+          <div class="rc-pos">Position TBD</div>
+          <div class="rc-stats">
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+          </div>
+          <div class="rc-tag-pill">Profile Coming Soon</div>
+          <a class="rc-cta" href="hadley-w.html"><i class="ti ti-clock"></i> Coming Soon</a>
+        </div>
+      </div>
+      <div class="roster-card" data-slug="addison-p">
+        <div class="rc-photo">
+          <img src="assets/players/addison-p.jpg" alt="" onerror="this.style.display='none';this.parentElement.classList.add('no-photo');">
+          <div class="rc-photo-fallback">
+            <i class="ti ti-user"></i>
+            <div class="rc-spot-label">#12</div>
+          </div>
+          <div class="rc-num">#12</div>
+        </div>
+        <div class="rc-body">
+          <div class="rc-name"><span class="rc-fn">Addison</span> <span class="rc-ln">P.</span></div>
+          <div class="rc-pos">Position TBD</div>
+          <div class="rc-stats">
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+          </div>
+          <div class="rc-tag-pill">Profile Coming Soon</div>
+          <a class="rc-cta" href="addison-p.html"><i class="ti ti-clock"></i> Coming Soon</a>
+        </div>
+      </div>
+      <div class="roster-card" data-slug="saraya-p">
+        <div class="rc-photo">
+          <img src="assets/players/saraya-p.jpg" alt="" onerror="this.style.display='none';this.parentElement.classList.add('no-photo');">
+          <div class="rc-photo-fallback">
+            <i class="ti ti-user"></i>
+            <div class="rc-spot-label">#21</div>
+          </div>
+          <div class="rc-num">#21</div>
+        </div>
+        <div class="rc-body">
+          <div class="rc-name"><span class="rc-fn">Saraya</span> <span class="rc-ln">P.</span></div>
+          <div class="rc-pos">Position TBD</div>
+          <div class="rc-stats">
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+          </div>
+          <div class="rc-tag-pill">Profile Coming Soon</div>
+          <a class="rc-cta" href="saraya-p.html"><i class="ti ti-clock"></i> Coming Soon</a>
+        </div>
+      </div>
+      <div class="roster-card" data-slug="payton-r">
+        <div class="rc-photo">
+          <img src="assets/players/payton-r.jpg" alt="" onerror="this.style.display='none';this.parentElement.classList.add('no-photo');">
+          <div class="rc-photo-fallback">
+            <i class="ti ti-user"></i>
+            <div class="rc-spot-label">#22</div>
+          </div>
+          <div class="rc-num">#22</div>
+        </div>
+        <div class="rc-body">
+          <div class="rc-name"><span class="rc-fn">Payton</span> <span class="rc-ln">R.</span></div>
+          <div class="rc-pos">Position TBD</div>
+          <div class="rc-stats">
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+          </div>
+          <div class="rc-tag-pill">Profile Coming Soon</div>
+          <a class="rc-cta" href="payton-r.html"><i class="ti ti-clock"></i> Coming Soon</a>
+        </div>
+      </div>
+      <div class="roster-card" data-slug="casey-e">
+        <div class="rc-photo">
+          <img src="assets/players/casey-e.jpg" alt="" onerror="this.style.display='none';this.parentElement.classList.add('no-photo');">
+          <div class="rc-photo-fallback">
+            <i class="ti ti-user"></i>
+            <div class="rc-spot-label">#24</div>
+          </div>
+          <div class="rc-num">#24</div>
+        </div>
+        <div class="rc-body">
+          <div class="rc-name"><span class="rc-fn">Casey</span> <span class="rc-ln">E.</span></div>
+          <div class="rc-pos">Position TBD</div>
+          <div class="rc-stats">
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+          </div>
+          <div class="rc-tag-pill">Profile Coming Soon</div>
+          <a class="rc-cta" href="casey-e.html"><i class="ti ti-clock"></i> Coming Soon</a>
+        </div>
+      </div>
+      <div class="roster-card" data-slug="emily-l">
+        <div class="rc-photo">
+          <img src="assets/players/emily-l.jpg" alt="" onerror="this.style.display='none';this.parentElement.classList.add('no-photo');">
+          <div class="rc-photo-fallback">
+            <i class="ti ti-user"></i>
+            <div class="rc-spot-label">#99</div>
+          </div>
+          <div class="rc-num">#99</div>
+        </div>
+        <div class="rc-body">
+          <div class="rc-name"><span class="rc-fn">Emily</span> <span class="rc-ln">L.</span></div>
+          <div class="rc-pos">Position TBD</div>
+          <div class="rc-stats">
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+            <div class="rc-stat"><div class="rc-stat-val">—</div><div class="rc-stat-lbl">Stat</div></div>
+          </div>
+          <div class="rc-tag-pill">Profile Coming Soon</div>
+          <a class="rc-cta" href="emily-l.html"><i class="ti ti-clock"></i> Coming Soon</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
     <div class="card-grid card-grid-4">
-      <div class="card card-gold" style="text-align:center;padding:18px 14px;">
-        <div class="player-photo" style="aspect-ratio:1;background:linear-gradient(180deg,#1a0a2b 0%,#0c0512 100%);border-radius:10px;margin-bottom:12px;overflow:hidden;display:grid;place-items:center;position:relative;">
-          <img src="assets/players/penny-b.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-          <div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:absolute;inset:0;font-family:var(--display);font-size:64px;font-weight:900;color:var(--yellow);line-height:1;text-shadow:0 4px 18px rgba(0,0,0,.5);">#1</div>
-        </div>
-        <div style="font-family:var(--display);font-size:17px;font-weight:800;color:var(--ink);text-transform:uppercase;letter-spacing:0.5px;">Penny B.</div>
-        <div style="font-size:11px;color:var(--g3);margin-top:4px;font-family:var(--display);letter-spacing:2px;text-transform:uppercase;">#1 &middot; Position TBD</div>
-      </div>
-      <div class="card card-gold" style="text-align:center;padding:18px 14px;">
-        <div class="player-photo" style="aspect-ratio:1;background:linear-gradient(180deg,#1a0a2b 0%,#0c0512 100%);border-radius:10px;margin-bottom:12px;overflow:hidden;display:grid;place-items:center;position:relative;">
-          <img src="assets/players/aubrey-b.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-          <div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:absolute;inset:0;font-family:var(--display);font-size:64px;font-weight:900;color:var(--yellow);line-height:1;text-shadow:0 4px 18px rgba(0,0,0,.5);">#2</div>
-        </div>
-        <div style="font-family:var(--display);font-size:17px;font-weight:800;color:var(--ink);text-transform:uppercase;letter-spacing:0.5px;">Aubrey B.</div>
-        <div style="font-size:11px;color:var(--g3);margin-top:4px;font-family:var(--display);letter-spacing:2px;text-transform:uppercase;">#2 &middot; Position TBD</div>
-      </div>
-      <div class="card card-gold" style="text-align:center;padding:18px 14px;">
-        <div class="player-photo" style="aspect-ratio:1;background:linear-gradient(180deg,#1a0a2b 0%,#0c0512 100%);border-radius:10px;margin-bottom:12px;overflow:hidden;display:grid;place-items:center;position:relative;">
-          <img src="assets/players/addison-s.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-          <div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:absolute;inset:0;font-family:var(--display);font-size:64px;font-weight:900;color:var(--yellow);line-height:1;text-shadow:0 4px 18px rgba(0,0,0,.5);">#3</div>
-        </div>
-        <div style="font-family:var(--display);font-size:17px;font-weight:800;color:var(--ink);text-transform:uppercase;letter-spacing:0.5px;">Addison S.</div>
-        <div style="font-size:11px;color:var(--g3);margin-top:4px;font-family:var(--display);letter-spacing:2px;text-transform:uppercase;">#3 &middot; Position TBD</div>
-      </div>
-      <div class="card card-gold" style="text-align:center;padding:18px 14px;">
-        <div class="player-photo" style="aspect-ratio:1;background:linear-gradient(180deg,#1a0a2b 0%,#0c0512 100%);border-radius:10px;margin-bottom:12px;overflow:hidden;display:grid;place-items:center;position:relative;">
-          <img src="assets/players/kynsie-e.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-          <div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:absolute;inset:0;font-family:var(--display);font-size:64px;font-weight:900;color:var(--yellow);line-height:1;text-shadow:0 4px 18px rgba(0,0,0,.5);">#4</div>
-        </div>
-        <div style="font-family:var(--display);font-size:17px;font-weight:800;color:var(--ink);text-transform:uppercase;letter-spacing:0.5px;">Kynsie E.</div>
-        <div style="font-size:11px;color:var(--g3);margin-top:4px;font-family:var(--display);letter-spacing:2px;text-transform:uppercase;">#4 &middot; Position TBD</div>
-      </div>
-      <div class="card card-gold" style="text-align:center;padding:18px 14px;">
-        <div class="player-photo" style="aspect-ratio:1;background:linear-gradient(180deg,#1a0a2b 0%,#0c0512 100%);border-radius:10px;margin-bottom:12px;overflow:hidden;display:grid;place-items:center;position:relative;">
-          <img src="assets/players/gracie-w.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-          <div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:absolute;inset:0;font-family:var(--display);font-size:64px;font-weight:900;color:var(--yellow);line-height:1;text-shadow:0 4px 18px rgba(0,0,0,.5);">#6</div>
-        </div>
-        <div style="font-family:var(--display);font-size:17px;font-weight:800;color:var(--ink);text-transform:uppercase;letter-spacing:0.5px;">Gracie W.</div>
-        <div style="font-size:11px;color:var(--g3);margin-top:4px;font-family:var(--display);letter-spacing:2px;text-transform:uppercase;">#6 &middot; Position TBD</div>
-      </div>
-      <div class="card card-gold" style="text-align:center;padding:18px 14px;">
-        <div class="player-photo" style="aspect-ratio:1;background:linear-gradient(180deg,#1a0a2b 0%,#0c0512 100%);border-radius:10px;margin-bottom:12px;overflow:hidden;display:grid;place-items:center;position:relative;">
-          <img src="assets/players/brynlie-h.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-          <div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:absolute;inset:0;font-family:var(--display);font-size:64px;font-weight:900;color:var(--yellow);line-height:1;text-shadow:0 4px 18px rgba(0,0,0,.5);">#8</div>
-        </div>
-        <div style="font-family:var(--display);font-size:17px;font-weight:800;color:var(--ink);text-transform:uppercase;letter-spacing:0.5px;">Brynlie H.</div>
-        <div style="font-size:11px;color:var(--g3);margin-top:4px;font-family:var(--display);letter-spacing:2px;text-transform:uppercase;">#8 &middot; Position TBD</div>
-      </div>
-      <div class="card card-gold" style="text-align:center;padding:18px 14px;">
-        <div class="player-photo" style="aspect-ratio:1;background:linear-gradient(180deg,#1a0a2b 0%,#0c0512 100%);border-radius:10px;margin-bottom:12px;overflow:hidden;display:grid;place-items:center;position:relative;">
-          <img src="assets/players/hadley-w.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-          <div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:absolute;inset:0;font-family:var(--display);font-size:64px;font-weight:900;color:var(--yellow);line-height:1;text-shadow:0 4px 18px rgba(0,0,0,.5);">#10</div>
-        </div>
-        <div style="font-family:var(--display);font-size:17px;font-weight:800;color:var(--ink);text-transform:uppercase;letter-spacing:0.5px;">Hadley W.</div>
-        <div style="font-size:11px;color:var(--g3);margin-top:4px;font-family:var(--display);letter-spacing:2px;text-transform:uppercase;">#10 &middot; Position TBD</div>
-      </div>
-      <div class="card card-gold" style="text-align:center;padding:18px 14px;">
-        <div class="player-photo" style="aspect-ratio:1;background:linear-gradient(180deg,#1a0a2b 0%,#0c0512 100%);border-radius:10px;margin-bottom:12px;overflow:hidden;display:grid;place-items:center;position:relative;">
-          <img src="assets/players/addison-p.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-          <div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:absolute;inset:0;font-family:var(--display);font-size:64px;font-weight:900;color:var(--yellow);line-height:1;text-shadow:0 4px 18px rgba(0,0,0,.5);">#12</div>
-        </div>
-        <div style="font-family:var(--display);font-size:17px;font-weight:800;color:var(--ink);text-transform:uppercase;letter-spacing:0.5px;">Addison P.</div>
-        <div style="font-size:11px;color:var(--g3);margin-top:4px;font-family:var(--display);letter-spacing:2px;text-transform:uppercase;">#12 &middot; Position TBD</div>
-      </div>
-      <div class="card card-gold" style="text-align:center;padding:18px 14px;">
-        <div class="player-photo" style="aspect-ratio:1;background:linear-gradient(180deg,#1a0a2b 0%,#0c0512 100%);border-radius:10px;margin-bottom:12px;overflow:hidden;display:grid;place-items:center;position:relative;">
-          <img src="assets/players/saraya-p.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-          <div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:absolute;inset:0;font-family:var(--display);font-size:64px;font-weight:900;color:var(--yellow);line-height:1;text-shadow:0 4px 18px rgba(0,0,0,.5);">#21</div>
-        </div>
-        <div style="font-family:var(--display);font-size:17px;font-weight:800;color:var(--ink);text-transform:uppercase;letter-spacing:0.5px;">Saraya P.</div>
-        <div style="font-size:11px;color:var(--g3);margin-top:4px;font-family:var(--display);letter-spacing:2px;text-transform:uppercase;">#21 &middot; Position TBD</div>
-      </div>
-      <div class="card card-gold" style="text-align:center;padding:18px 14px;">
-        <div class="player-photo" style="aspect-ratio:1;background:linear-gradient(180deg,#1a0a2b 0%,#0c0512 100%);border-radius:10px;margin-bottom:12px;overflow:hidden;display:grid;place-items:center;position:relative;">
-          <img src="assets/players/payton-r.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-          <div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:absolute;inset:0;font-family:var(--display);font-size:64px;font-weight:900;color:var(--yellow);line-height:1;text-shadow:0 4px 18px rgba(0,0,0,.5);">#22</div>
-        </div>
-        <div style="font-family:var(--display);font-size:17px;font-weight:800;color:var(--ink);text-transform:uppercase;letter-spacing:0.5px;">Payton R.</div>
-        <div style="font-size:11px;color:var(--g3);margin-top:4px;font-family:var(--display);letter-spacing:2px;text-transform:uppercase;">#22 &middot; Position TBD</div>
-      </div>
-      <div class="card card-gold" style="text-align:center;padding:18px 14px;">
-        <div class="player-photo" style="aspect-ratio:1;background:linear-gradient(180deg,#1a0a2b 0%,#0c0512 100%);border-radius:10px;margin-bottom:12px;overflow:hidden;display:grid;place-items:center;position:relative;">
-          <img src="assets/players/casey-e.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-          <div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:absolute;inset:0;font-family:var(--display);font-size:64px;font-weight:900;color:var(--yellow);line-height:1;text-shadow:0 4px 18px rgba(0,0,0,.5);">#24</div>
-        </div>
-        <div style="font-family:var(--display);font-size:17px;font-weight:800;color:var(--ink);text-transform:uppercase;letter-spacing:0.5px;">Casey E.</div>
-        <div style="font-size:11px;color:var(--g3);margin-top:4px;font-family:var(--display);letter-spacing:2px;text-transform:uppercase;">#24 &middot; Position TBD</div>
-      </div>
-      <div class="card card-gold" style="text-align:center;padding:18px 14px;">
-        <div class="player-photo" style="aspect-ratio:1;background:linear-gradient(180deg,#1a0a2b 0%,#0c0512 100%);border-radius:10px;margin-bottom:12px;overflow:hidden;display:grid;place-items:center;position:relative;">
-          <img src="assets/players/emily-l.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-          <div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:absolute;inset:0;font-family:var(--display);font-size:64px;font-weight:900;color:var(--yellow);line-height:1;text-shadow:0 4px 18px rgba(0,0,0,.5);">#99</div>
-        </div>
-        <div style="font-family:var(--display);font-size:17px;font-weight:800;color:var(--ink);text-transform:uppercase;letter-spacing:0.5px;">Emily L.</div>
-        <div style="font-size:11px;color:var(--g3);margin-top:4px;font-family:var(--display);letter-spacing:2px;text-transform:uppercase;">#99 &middot; Position TBD</div>
-      </div>
+      <div class="card" style="text-align:center;"><div style="font-family:var(--display);font-size:34px;font-weight:900;color:var(--blue);">25-13</div><div style="font-size:12px;color:var(--g2);margin-top:4px;text-transform:uppercase;letter-spacing:1.5px;font-family:var(--display);">Overall record</div></div>
+      <div class="card" style="text-align:center;"><div style="font-family:var(--display);font-size:34px;font-weight:900;color:var(--blue);">.658</div><div style="font-size:12px;color:var(--g2);margin-top:4px;text-transform:uppercase;letter-spacing:1.5px;font-family:var(--display);">Win percentage</div></div>
+      <div class="card" style="text-align:center;"><div style="font-family:var(--display);font-size:34px;font-weight:900;color:var(--blue);">12</div><div style="font-size:12px;color:var(--g2);margin-top:4px;text-transform:uppercase;letter-spacing:1.5px;font-family:var(--display);">Roster size</div></div>
+      <div class="card" style="text-align:center;"><div style="font-family:var(--display);font-size:34px;font-weight:900;color:var(--blue);">10U</div><div style="font-size:12px;color:var(--g2);margin-top:4px;text-transform:uppercase;letter-spacing:1.5px;font-family:var(--display);">Age division</div></div>
     </div>
   </div>
 
   <div class="section">
     <div class="callout">
-      <p><strong>About this page.</strong> We publish player names in the same format the GameChanger app uses (first name + last initial + jersey). Player photos on this page activate automatically when a parent-cleared image is placed in <code style="background:rgba(109,40,217,.12);padding:1px 6px;border-radius:4px;">assets/players/</code>. Full-name profile pages and individual stat pages are only added with explicit parent consent. To opt your child in (or out), contact the Co-Directors.</p>
+      <p><strong>About this page.</strong> Photo slots and profile pages are family-controlled. To opt a player in: confirm written parent media release for public web display, place the photo at <code style="background:rgba(109,40,217,.12);padding:1px 6px;border-radius:4px;">assets/players/&lt;slug&gt;.jpg</code>, copy <code style="background:rgba(109,40,217,.12);padding:1px 6px;border-radius:4px;">player-profile.html</code> to <code style="background:rgba(109,40,217,.12);padding:1px 6px;border-radius:4px;">&lt;slug&gt;.html</code>, fill the tokens, and add the slug to the <code style="background:rgba(109,40,217,.12);padding:1px 6px;border-radius:4px;">LIVE_PROFILES</code> array below. Remove a profile by deleting the file — the card reverts automatically.</p>
     </div>
-  </div>
-
-  <div class="section">
-    <div class="section-label">Coverage &amp; ops</div>
-    <h2>Behind the Roster</h2>
-    <div class="section-rule"></div>
-    <p>Head Coach Chris Balcom owns lineups, development, and rotations. The Co-Directors handle scheduling, dues, travel, and communications. Players show up ready to compete; everything else is handled.</p>
-    <p>For tryouts, roster openings, or coaching inquiries, see <a href="contact.html">Contact</a>.</p>
   </div>
 
 </div>
@@ -150,20 +358,24 @@
 <footer>
   <div class="footer-brand">Texas Venom</div>
   <div class="footer-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="board.html">Board</a>
-    <a href="coaching.html">Coaching</a>
-    <a href="bylaws.html">Bylaws</a>
-    <a href="policies.html">Policies</a>
-    <a href="docs.html">Documents</a>
-    <a href="finances.html">Finances</a>
-    <a href="fundraising.html">Support Us</a>
-    <a href="rallyiq.html">RallyIQ</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="board.html">Board</a>
+    <a href="coaching.html">Coaching</a><a href="bylaws.html">Bylaws</a><a href="policies.html">Policies</a>
+    <a href="docs.html">Documents</a><a href="finances.html">Finances</a><a href="fundraising.html">Support Us</a>
+    <a href="rallyiq.html">RallyIQ</a><a href="contact.html">Contact</a>
   </div>
   <p>Leander, Texas &bull; 10U Select Softball &bull; 2026</p>
   <p style="margin-top:4px;">Head Coach: Chris Balcom &bull; Co-Directors: Cargill &middot; Balcom &middot; Welch</p>
 </footer>
+
+<script>
+  // === ADD A PLAYER SLUG HERE WHEN HER PROFILE PAGE IS READY ===
+  // Example: const LIVE_PROFILES = ['aubrey-b','addison-s'];
+  const LIVE_PROFILES = [];
+  // =============================================================
+  document.querySelectorAll('.roster-card').forEach(c=>{
+    if (LIVE_PROFILES.includes(c.dataset.slug)) c.classList.add('is-live');
+  });
+  document.getElementById('liveCount').textContent = LIVE_PROFILES.length + ' Profile' + (LIVE_PROFILES.length===1?'':'s') + ' Live';
+</script>
 </body>
 </html>
