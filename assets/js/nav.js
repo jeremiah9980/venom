@@ -7,24 +7,26 @@ const NAV_HTML = `
     </a>
     <div class="nav-links">
       <a href="index.html">Home</a>
+      <a href="teams.html">Teams</a>
+      <a href="standards.html">Standards</a>
+      <a href="coaching.html">Coaching</a>
+      <a href="team-info.html">Team Info</a>
       <a href="about.html">About</a>
       <a href="board.html">Board</a>
-      <a href="coaching.html">Coaching</a>
-      <a href="roster.html">Roster</a>
       <a href="bylaws.html">Bylaws</a>
       <a href="finances.html">Finances</a>
       <a href="policies.html">Policies</a>
       <a href="docs.html">Documents</a>
-      <a href="fundraising.html">Support Us</a>
       <a href="rallyiq.html">RallyIQ</a>
       <a href="contact.html">Contact</a>
+      <a href="fundraising.html">Support Us</a>
     </div>
   </div>
 </nav>`;
 document.addEventListener('DOMContentLoaded', () => {
   document.body.insertAdjacentHTML('afterbegin', NAV_HTML);
-  const path = window.location.pathname;
+  const path = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a').forEach(a => {
-    if (path.endsWith(a.getAttribute('href').split('/').pop())) a.classList.add('active');
+    if (a.getAttribute('href') === path) a.classList.add('active');
   });
 });

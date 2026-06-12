@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Info — Texas Venom</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/team-venom.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+<style>
+  .ti-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;margin-top:24px;}
+  .ti-card{background:linear-gradient(180deg,#150828 0%,#0d0518 100%);border:1px solid rgba(109,40,217,.32);border-radius:12px;padding:24px;position:relative;}
+  .ti-card::before{content:"";position:absolute;top:0;left:24px;width:48px;height:2px;background:var(--yellow);}
+  .ti-card-head{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
+  .ti-card-icon{width:38px;height:38px;border-radius:8px;background:rgba(198,255,0,.1);border:1px solid rgba(198,255,0,.3);display:grid;place-items:center;color:var(--yellow);font-size:18px;}
+  .ti-card h3{font-family:var(--display);font-weight:900;text-transform:uppercase;letter-spacing:1px;color:#fff;font-size:1.05rem;}
+  .ti-card p, .ti-card li{color:rgba(255,255,255,.78);font-size:14px;line-height:1.6;}
+  .ti-card ul{list-style:none;padding:0;}
+  .ti-card ul li{padding:6px 0;border-bottom:1px dashed rgba(255,255,255,.06);}
+  .ti-card ul li:last-child{border-bottom:none;}
+  .ti-card ul li::before{content:"→";color:var(--yellow);margin-right:8px;font-weight:700;}
+  .ti-card .ti-callout{margin-top:14px;padding:10px 14px;background:rgba(198,255,0,.08);border-left:2px solid var(--yellow);border-radius:0 6px 6px 0;font-size:13px;color:#fff;}
+  .ti-link{color:var(--yellow);text-decoration:none;border-bottom:1px dotted var(--yellow);}
+  .ti-link:hover{background:rgba(198,255,0,.1);}
+  .ti-dues-row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px dashed rgba(255,255,255,.08);font-size:14px;}
+  .ti-dues-row:last-child{border-bottom:none;}
+  .ti-dues-row .lbl{color:rgba(255,255,255,.6);font-family:var(--display);text-transform:uppercase;letter-spacing:1.5px;font-size:12px;}
+  .ti-dues-row .val{color:var(--yellow);font-family:var(--display);font-weight:700;}
+  .ti-cred-warn{background:linear-gradient(90deg,rgba(220,38,38,.18) 0%,transparent 100%);border-left:3px solid #dc2626;border-radius:0 8px 8px 0;padding:18px 22px;margin-top:18px;color:#fff;font-size:14px;line-height:1.6;}
+  .ti-cred-warn b{color:#fca5a5;}
+</style>
+</head>
+<body class="venom-page">
+<script src="assets/js/nav.js"></script>
+
+<section class="hero">
+  <div class="hero-inner">
+    <img src="assets/venom-logo.jpg" alt="Texas Venom" class="hero-logo">
+    <div class="hero-kicker">Texas Venom &bull; Family Hub</div>
+    <h1>Team Info</h1>
+    <div class="hero-rule"></div>
+    <p class="hero-tagline">Dues, uniforms, equipment, events, and links — everything Venom families need in one place.</p>
+  </div>
+</section>
+
+<div class="gold-strip">
+  <p>For Current Venom Families &nbsp;&middot;&nbsp; <b>10U / 12U / 14U</b> &nbsp;&middot;&nbsp; Updated for 2026 Season</p>
+</div>
+
+<div class="page page-dark">
+
+  <!-- DUES -->
+  <div class="section">
+    <div class="section-label">Program Costs</div>
+    <h2>Dues Schedule</h2>
+    <div class="section-rule"></div>
+    <div class="ti-grid">
+      <div class="ti-card">
+        <div class="ti-card-head"><div class="ti-card-icon"><i class="ti ti-calendar-dollar"></i></div><h3>Monthly Dues</h3></div>
+        <div class="ti-dues-row"><span class="lbl">Amount</span><span class="val">$150 / month</span></div>
+        <div class="ti-dues-row"><span class="lbl">Starts</span><span class="val">July 1</span></div>
+        <div class="ti-dues-row"><span class="lbl">Ends</span><span class="val">October</span></div>
+        <div class="ti-dues-row"><span class="lbl">Off Months</span><span class="val">Nov · Dec · Jan</span></div>
+        <div class="ti-callout">One additional <b>$150 deposit due by July 17</b> to lock in jersey orders.</div>
+      </div>
+      <div class="ti-card">
+        <div class="ti-card-head"><div class="ti-card-icon"><i class="ti ti-info-circle"></i></div><h3>What Dues Cover</h3></div>
+        <ul>
+          <li>Tournament entries (state &amp; regional)</li>
+          <li>Practice facility</li>
+          <li>Coaches&apos; tournament expenses</li>
+          <li>Equipment shared by the team</li>
+          <li>Insurance &amp; sanctioning fees</li>
+        </ul>
+        <div class="ti-callout">Full financial breakdown covered at the <b>Parent/Player Meeting — July 8, 6:00 PM</b>.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- UNIFORMS -->
+  <div class="section">
+    <div class="section-label">Apparel</div>
+    <h2>Uniform Package</h2>
+    <div class="section-rule"></div>
+    <div class="ti-grid">
+      <div class="ti-card">
+        <div class="ti-card-head"><div class="ti-card-icon"><i class="ti ti-shirt"></i></div><h3>Included with Dues</h3></div>
+        <ul>
+          <li>3 game jerseys (New Balance)</li>
+          <li>1 pair purple game pants (New Balance)</li>
+          <li>New Balance cleats</li>
+          <li>2 practice jerseys (dri-fit)</li>
+        </ul>
+      </div>
+      <div class="ti-card">
+        <div class="ti-card-head"><div class="ti-card-icon"><i class="ti ti-hanger"></i></div><h3>Players Provide</h3></div>
+        <ul>
+          <li>White pants, socks, and belt</li>
+          <li>Black pants, socks, and belt</li>
+          <li>Purple socks and belt</li>
+        </ul>
+        <div class="ti-callout">Sock link: <a class="ti-link" href="https://www.amazon.com/dp/B07FJZ345W" target="_blank">TCK All Sport Tube Socks on Amazon</a></div>
+      </div>
+      <div class="ti-card">
+        <div class="ti-card-head"><div class="ti-card-icon"><i class="ti ti-ruler"></i></div><h3>Sizing Sample</h3></div>
+        <p>New Balance has sent shirts and pants in for sizing — Coach Chris will bring them to the next practice / scrimmage for fittings.</p>
+        <div class="ti-callout">Need to update your sizing form answer? Text Coach Chris.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EQUIPMENT PARTNERS -->
+  <div class="section">
+    <div class="section-label">Discounts</div>
+    <h2>Equipment Program</h2>
+    <div class="section-rule"></div>
+    <p>Being part of Venom unlocks team-store discounts of <b style="color:var(--yellow);">20–30% off</b> from these partners. The program also receives a percentage back from all purchases through our team stores, which helps reduce overall program costs. Reach out to Coach Chris for connections to other brands not listed.</p>
+    <div class="ti-grid" style="margin-top:18px;">
+      <div class="ti-card">
+        <div class="ti-card-head"><div class="ti-card-icon"><i class="ti ti-shoe"></i></div><h3>New Balance</h3></div>
+        <p>Cleats, apparel, jerseys, pants.</p>
+        <p style="margin-top:10px;"><a class="ti-link" href="https://preview.chipply.com/store.html?eid=491644&action=viewall" target="_blank">Browse the team store →</a></p>
+      </div>
+      <div class="ti-card">
+        <div class="ti-card-head"><div class="ti-card-icon"><i class="ti ti-baseball-bat"></i></div><h3>Wilson · DeMarini</h3></div>
+        <p>Bats, gloves, catcher&apos;s gear, batting helmets.</p>
+        <p style="margin-top:10px;"><span style="color:rgba(255,255,255,.6);">Team store access info shared privately — see callout below.</span></p>
+      </div>
+      <div class="ti-card">
+        <div class="ti-card-head"><div class="ti-card-icon"><i class="ti ti-shield"></i></div><h3>Louisville Slugger · EvoShield</h3></div>
+        <p>Bats and protective gear.</p>
+        <p style="margin-top:10px;"><span style="color:rgba(255,255,255,.6);">Team-store access shared privately.</span></p>
+      </div>
+    </div>
+    <div class="ti-cred-warn">
+      <b>Team store logins are not posted here.</b> Wilson team-store credentials and any other shared logins live in the team&apos;s private channel (BAND / GroupMe pinned message) — never on the public website. If you don&apos;t have the team-store info, message Coach Chris directly.
+    </div>
+  </div>
+
+  <!-- EVENTS -->
+  <div class="section">
+    <div class="section-label">Calendar</div>
+    <h2>Events &amp; Fundraising</h2>
+    <div class="section-rule"></div>
+    <div class="ti-grid">
+      <div class="ti-card">
+        <div class="ti-card-head"><div class="ti-card-icon"><i class="ti ti-users"></i></div><h3>Parent / Player Meeting</h3></div>
+        <p><b style="color:var(--yellow);">July 8 &middot; 6:00 PM</b></p>
+        <p style="margin-top:8px;">Both 12U and 14U families. Full financial breakdown, season overview, expectations review. Location confirmed in BAND.</p>
+      </div>
+      <div class="ti-card">
+        <div class="ti-card-head"><div class="ti-card-icon"><i class="ti ti-music"></i></div><h3>Tejas Meat Supply Fundraiser</h3></div>
+        <p><b style="color:var(--yellow);">July 18 &middot; 5:30 PM – Close</b></p>
+        <p style="margin-top:8px;">Hosted by Tejas, sponsored by Shiner. Live music. They make a Venom cocktail — <b>50% of every Venom cocktail comes back to the team</b>. Not mandatory. <i>If you&apos;re there, it is mandatory to have fun.</i></p>
+        <div class="ti-callout">Raffle flyer attached separately. Please share with friends and family.</div>
+      </div>
+      <div class="ti-card">
+        <div class="ti-card-head"><div class="ti-card-icon"><i class="ti ti-ball-baseball"></i></div><h3>GameChanger</h3></div>
+        <p>Coach Chris is adding everyone soon. Look for the invitation email and accept to get schedules, scores, and stats.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOCIAL -->
+  <div class="section">
+    <div class="section-label">Stay Connected</div>
+    <h2>Social Media</h2>
+    <div class="section-rule"></div>
+    <p>Please follow and tag us — it helps the program grow and gets sponsors noticed.</p>
+    <div class="ti-grid" style="margin-top:18px;">
+      <div class="ti-card">
+        <div class="ti-card-head"><div class="ti-card-icon"><i class="ti ti-brand-facebook"></i></div><h3>Facebook</h3></div>
+        <p><a class="ti-link" href="https://www.facebook.com/search/top?q=Texas%20Venom%20Softball" target="_blank">Texas Venom Softball</a></p>
+      </div>
+      <div class="ti-card">
+        <div class="ti-card-head"><div class="ti-card-icon"><i class="ti ti-brand-instagram"></i></div><h3>Instagram</h3></div>
+        <p><a class="ti-link" href="https://www.instagram.com/texas_venom_softball/" target="_blank">@texas_venom_softball</a></p>
+      </div>
+      <div class="ti-card">
+        <div class="ti-card-head"><div class="ti-card-icon"><i class="ti ti-mail"></i></div><h3>Email</h3></div>
+        <p><a class="ti-link" href="mailto:texasvenom2k25@gmail.com">texasvenom2k25@gmail.com</a></p>
+        <p style="margin-top:8px;color:rgba(255,255,255,.6);">Coach Chris &middot; 512-755-6975</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTTOM CONTACT CALLOUT -->
+  <div class="section">
+    <div class="callout">
+      <p><strong>Questions, anytime.</strong> "If you have any questions, don&apos;t hesitate to reach out whenever." — Coach Chris. Excited to get the girls together and build an even stronger Venom family. Looking forward to a great season.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-brand">Texas Venom</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a><a href="teams.html">Teams</a><a href="standards.html">Standards</a>
+    <a href="coaching.html">Coaching</a><a href="team-info.html">Team Info</a><a href="contact.html">Contact</a>
+  </div>
+  <p>Leander, Texas &bull; 10U / 12U / 14U Select Softball &bull; 2026</p>
+  <p style="margin-top:4px;">Head Coach: Chris Balcom &bull; Co-Directors: Cargill &middot; Balcom &middot; Welch</p>
+</footer>
+</body>
+</html>

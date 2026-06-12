@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Standards — Texas Venom</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/team-venom.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+<style>
+  .std-hero{position:relative;padding:80px 24px 60px;text-align:center;background:linear-gradient(180deg,#10061d 0%,#1a0a2e 60%,#08040D 100%);overflow:hidden;}
+  .std-hero::before{content:"";position:absolute;inset:0;background-image:var(--grain);opacity:.45;mix-blend-mode:overlay;pointer-events:none;}
+  .std-hero::after{content:"";position:absolute;left:-10%;top:-20%;width:50%;height:140%;background:radial-gradient(ellipse,rgba(109,40,217,.4),transparent 60%);transform:rotate(-15deg);pointer-events:none;}
+  .std-hero-logo{width:120px;height:auto;margin:0 auto 14px;display:block;filter:drop-shadow(0 8px 30px rgba(109,40,217,.5));position:relative;z-index:2;}
+  .std-state{font-family:var(--display);text-transform:uppercase;letter-spacing:14px;color:var(--silver);font-size:1.05rem;position:relative;z-index:2;}
+  .std-wordmark{font-family:var(--display);font-weight:900;font-size:clamp(56px,12vw,128px);line-height:.85;color:#fff;letter-spacing:1px;text-shadow:0 0 40px rgba(109,40,217,.5);position:relative;z-index:2;margin:4px 0 6px;}
+  .std-softball{font-family:var(--display);text-transform:uppercase;letter-spacing:14px;color:var(--silver);font-size:1.5rem;position:relative;z-index:2;font-weight:700;}
+  .std-title{font-family:'Oswald',sans-serif;font-style:italic;font-weight:700;text-transform:uppercase;font-size:clamp(36px,8vw,72px);color:var(--yellow);letter-spacing:1px;line-height:1;margin:40px 0 18px;position:relative;z-index:2;text-shadow:0 4px 28px rgba(198,255,0,.25);}
+  .std-title::before,.std-title::after{content:"";display:inline-block;width:64px;height:2px;background:linear-gradient(90deg,transparent,var(--yellow));vertical-align:middle;margin:0 18px 12px;}
+  .std-title::after{background:linear-gradient(90deg,var(--yellow),transparent);}
+  .std-intro{max-width:680px;margin:0 auto;color:var(--yellow);font-family:var(--display);text-transform:uppercase;letter-spacing:3px;font-size:14px;line-height:1.7;font-weight:600;position:relative;z-index:2;}
+  .std-intro-sub{max-width:720px;margin:14px auto 0;color:rgba(255,255,255,.78);font-size:15px;line-height:1.7;position:relative;z-index:2;}
+  .std-section{padding:60px 24px;position:relative;}
+  .std-wrap{max-width:1180px;margin:0 auto;position:relative;}
+  .std-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;}
+  .std-card{background:linear-gradient(180deg,#150828 0%,#0d0518 100%);border:1px solid rgba(109,40,217,.4);border-radius:14px;padding:30px;position:relative;overflow:hidden;}
+  .std-card::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--yellow),transparent);}
+  .std-card-head{font-family:'Oswald',sans-serif;font-style:italic;font-weight:700;text-transform:uppercase;font-size:1.5rem;color:var(--yellow);letter-spacing:1px;margin-bottom:24px;padding-bottom:14px;border-bottom:1px solid rgba(198,255,0,.18);}
+  .std-row{display:flex;gap:18px;padding:16px 0;border-bottom:1px dashed rgba(255,255,255,.08);}
+  .std-row:last-child{border-bottom:none;}
+  .std-icon{flex:0 0 42px;height:42px;border-radius:50%;border:1.5px solid var(--silver);display:grid;place-items:center;color:var(--silver);font-size:18px;}
+  .std-row p{color:rgba(255,255,255,.86);font-size:15px;line-height:1.55;margin:0;}
+  .std-row p strong, .std-row p b{color:var(--yellow);font-weight:700;}
+  .std-onfield-row{display:flex;align-items:center;gap:18px;padding:12px 0;}
+  .std-onfield-row p{font-family:var(--display);text-transform:uppercase;letter-spacing:2px;font-weight:700;color:#fff;font-size:14px;line-height:1.4;margin:0;}
+  .std-onfield-row p span{color:var(--yellow);}
+  .std-warn{margin-top:20px;padding:18px;border-left:3px solid var(--yellow);background:rgba(198,255,0,.06);border-radius:0 8px 8px 0;color:rgba(255,255,255,.86);font-size:14px;line-height:1.6;}
+  .std-warn b{color:var(--yellow);}
+  .std-why{margin-top:36px;background:linear-gradient(180deg,#170930 0%,#0a0410 100%);border:1px solid rgba(109,40,217,.42);border-radius:16px;padding:40px;display:grid;grid-template-columns:240px 1fr;gap:36px;align-items:start;}
+  .std-why-logo{aspect-ratio:1;background:radial-gradient(circle,rgba(109,40,217,.35),transparent 70%);border-radius:12px;display:grid;place-items:center;}
+  .std-why-logo img{width:80%;height:auto;filter:drop-shadow(0 6px 20px rgba(198,255,0,.18));}
+  .std-why-body{color:rgba(255,255,255,.82);font-size:15px;line-height:1.7;}
+  .std-why-body h2{font-family:'Oswald',sans-serif;font-style:italic;font-weight:700;text-transform:uppercase;color:var(--yellow);font-size:2rem;margin-bottom:10px;letter-spacing:1px;}
+  .std-why-body p{margin-bottom:14px;}
+  .std-why-body p.hl{color:var(--yellow);font-weight:500;}
+  .std-tagline{padding:46px 24px;text-align:center;background:linear-gradient(90deg,#08040D 0%,#1a0a2e 50%,#08040D 100%);border-top:1px solid rgba(198,255,0,.25);border-bottom:1px solid rgba(198,255,0,.25);position:relative;overflow:hidden;}
+  .std-tagline::before{content:"";position:absolute;inset:0;background-image:var(--grain);opacity:.4;mix-blend-mode:overlay;pointer-events:none;}
+  .std-tagline-row{display:flex;justify-content:space-around;flex-wrap:wrap;gap:24px;font-family:'Oswald',sans-serif;font-style:italic;font-weight:700;text-transform:uppercase;font-size:clamp(20px,4vw,36px);color:#fff;letter-spacing:2px;position:relative;}
+  .std-tagline-row span{color:var(--yellow);}
+  @media(max-width:820px){
+    .std-grid{grid-template-columns:1fr;}
+    .std-why{grid-template-columns:1fr;}
+    .std-why-logo{max-width:200px;margin:0 auto;}
+    .std-title::before,.std-title::after{display:none;}
+  }
+</style>
+</head>
+<body class="venom-page">
+<script src="assets/js/nav.js"></script>
+
+<!-- BRAND HERO -->
+<section class="std-hero">
+  <img src="assets/venom-logo.jpg" alt="Texas Venom" class="std-hero-logo">
+  <div class="std-state">Texas</div>
+  <div class="std-wordmark">Venom</div>
+  <div class="std-softball">Softball</div>
+  <h1 class="std-title">Team Standards</h1>
+  <p class="std-intro">Our standards are set high both on and off the field.</p>
+  <p class="std-intro-sub">These expectations apply to every player and family in our organization — 10U, 12U, 14U — regardless of age group.</p>
+</section>
+
+<!-- THE STANDARDS -->
+<section class="std-section page-dark">
+  <div class="std-wrap">
+    <div class="std-grid">
+
+      <!-- OFF THE FIELD -->
+      <div class="std-card">
+        <div class="std-card-head">Off The Field</div>
+        <div class="std-row">
+          <div class="std-icon"><i class="ti ti-calendar-event"></i></div>
+          <p>Schedules will be provided as early as possible so families can communicate conflicts ahead of time.</p>
+        </div>
+        <div class="std-row">
+          <div class="std-icon"><i class="ti ti-clock"></i></div>
+          <p>Moving forward, we require at least a <b>1-week notice</b> for missed practices or games unless there is an illness, injury, or family emergency. This helps us properly plan practices, prepare for games, and make roster adjustments if needed.</p>
+        </div>
+        <div class="std-row">
+          <div class="std-icon"><i class="ti ti-run"></i></div>
+          <p>We fully support multi-sport athletes and encourage players to compete in other sports. However, missed practices, missed games, or repeated tardiness without communication or extra work outside of team activities may impact opportunities and playing time.</p>
+        </div>
+      </div>
+
+      <!-- ON THE FIELD -->
+      <div class="std-card">
+        <div class="std-card-head">On The Field</div>
+        <p style="color:rgba(255,255,255,.7);font-family:var(--display);text-transform:uppercase;letter-spacing:2px;font-size:12px;margin-bottom:18px;">Players are expected to:</p>
+        <div class="std-onfield-row"><div class="std-icon"><i class="ti ti-run"></i></div><p>Hustle on and off the field</p></div>
+        <div class="std-onfield-row"><div class="std-icon"><i class="ti ti-mood-smile"></i></div><p>Maintain a positive attitude</p></div>
+        <div class="std-onfield-row"><div class="std-icon"><i class="ti ti-users"></i></div><p>Be supportive teammates</p></div>
+        <div class="std-onfield-row"><div class="std-icon"><i class="ti ti-star"></i></div><p>Give maximum <span>focus, attitude, and effort</span></p></div>
+        <div class="std-warn">If these standards are not being met, there will be <b>one conversation</b> with both player and parent as a <b>final warning</b>. Regardless of skill level, every player will be held to the same standard. If expectations continue not to be met, we may respectfully part ways.</div>
+      </div>
+
+    </div>
+
+    <!-- OUR WHY -->
+    <div class="std-why">
+      <div class="std-why-logo"><img src="assets/venom-logo.jpg" alt="Texas Venom"></div>
+      <div class="std-why-body">
+        <p style="font-family:var(--display);text-transform:uppercase;letter-spacing:4px;font-size:11px;color:var(--yellow);font-weight:700;">Our Why</p>
+        <h2>Why we hold this line</h2>
+        <p>I've had the opportunity to play this game at one of the highest levels and experience success, and I can honestly say it wasn't talent alone that got me there. The standards, accountability, discipline, attitude, effort, and respect I was taught throughout my career played a huge role in my success.</p>
+        <p class="hl">These aren't just 10U, 12U, or 14U expectations — these standards apply at every level of the game, from youth softball all the way to college and professional athletics.</p>
+        <p>As our organization continues to grow, more families and players are reaching out wanting to join our program because of the culture and standards we are building. There are athletes and families who already meet these expectations and are eager for the opportunity to be part of what we are creating. We owe it to every committed player to protect that standard.</p>
+        <p>Our coaches dedicate countless unpaid hours to helping players grow. In return, we simply ask for <span style="color:var(--yellow);font-weight:500;">effort, accountability, respect, attention, and a willingness to be coached.</span></p>
+        <p style="margin-top:18px;font-size:13px;color:rgba(255,255,255,.55);font-family:var(--display);text-transform:uppercase;letter-spacing:2px;">— Coach Chris Balcom, Head Coach &amp; Co-Director</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TAGLINE -->
+<div class="std-tagline">
+  <div class="std-tagline-row">
+    <div>One Team.</div>
+    <div>One <span>Standard.</span></div>
+    <div>One Goal.</div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-brand">Texas Venom</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a><a href="teams.html">Teams</a><a href="standards.html">Standards</a>
+    <a href="coaching.html">Coaching</a><a href="team-info.html">Team Info</a><a href="contact.html">Contact</a>
+  </div>
+  <p>Leander, Texas &bull; 10U / 12U / 14U Select Softball &bull; 2026</p>
+  <p style="margin-top:4px;">Head Coach: Chris Balcom &bull; Co-Directors: Cargill &middot; Balcom &middot; Welch</p>
+</footer>
+</body>
+</html>
