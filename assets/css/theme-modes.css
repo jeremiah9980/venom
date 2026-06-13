@@ -1,4 +1,6 @@
 /* Shared theme toggle control */
+.venom-page .nav-inner{height:auto;min-height:58px;gap:8px;position:relative;}
+.venom-page .nav-links{flex:1;justify-content:flex-end;}
 .theme-toggle{
   flex:0 0 auto;
   display:inline-flex;
@@ -136,5 +138,5 @@ html[data-theme="dark"] .venom-page .section div[style*="background:var(--white)
 html[data-theme="dark"] .venom-page .section div[style*="background:var(--white)"] div[style*="color:var(--g3)"]{color:rgba(255,255,255,.48)!important;}
 html[data-theme="dark"] .venom-page footer{background:#050307;}
 
-@media(max-width:1100px){.theme-toggle{margin-left:auto;}}
-@media(max-width:640px){.theme-toggle{position:absolute;right:14px;top:10px;min-width:72px;padding:6px 9px}.theme-toggle-label{font-size:10px}}
+@media(max-width:1100px){.venom-page .nav-inner{align-items:flex-start;flex-wrap:wrap}.venom-page .nav-links{order:3;flex-basis:100%;justify-content:flex-start}.theme-toggle{margin-left:auto;}}
+@media(max-width:640px){.theme-toggle{position:absolute;right:14px;top:10px;min-width:72px;padding:6px 9px}.theme-toggle-label{font-size:10px}.venom-page .nav-links{flex-wrap:nowrap;overflow-x:auto;width:100%;padding-bottom:5px}}
