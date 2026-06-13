@@ -16,12 +16,20 @@
   <script>
     const frame = document.getElementById('site');
     const themeUrl = 'https://raw.githubusercontent.com/jeremiah9980/venom/venom2/assets/css/team-venom.css';
+    const modesUrl = 'https://raw.githubusercontent.com/jeremiah9980/venom/venom2/assets/css/theme-modes.css';
     let themeCss = '';
+    let modesCss = '';
 
     async function loadTheme(){
       try{
-        const response = await fetch(themeUrl, {cache:'no-store'});
-        themeCss = await response.text();
+        const [themeResponse, modesResponse] = await Promise.all([
+          fetch(themeUrl, {cache:'no-store'}),
+          fetch(modesUrl, {cache:'no-store'})
+        ]);
+        [themeCss, modesCss] = await Promise.all([
+          themeResponse.text(),
+          modesResponse.text()
+        ]);
         applyTheme();
       }catch(error){
         console.error('Unable to load UI Model 2 theme', error);
@@ -29,16 +37,22 @@
     }
 
     function applyTheme(){
-      if(!themeCss) return;
+      if(!themeCss || !modesCss) return;
       try{
         const doc = frame.contentDocument;
         if(!doc || !doc.head) return;
-        const old = doc.getElementById('venom-model-theme');
-        if(old) old.remove();
-        const style = doc.createElement('style');
-        style.id = 'venom-model-theme';
-        style.textContent = themeCss;
-        doc.head.appendChild(style);
+        ['venom-model-theme','venom-model-modes'].forEach(id => doc.getElementById(id)?.remove());
+
+        const themeStyle = doc.createElement('style');
+        themeStyle.id = 'venom-model-theme';
+        themeStyle.textContent = themeCss;
+        doc.head.appendChild(themeStyle);
+
+        const modesStyle = doc.createElement('style');
+        modesStyle.id = 'venom-model-modes';
+        modesStyle.textContent = modesCss;
+        doc.head.appendChild(modesStyle);
+
         document.title = (doc.title || 'Texas Venom') + ' — UI Model 2';
       }catch(error){
         console.error('Unable to apply UI Model 2 theme', error);
