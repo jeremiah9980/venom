@@ -1,143 +1,411 @@
 /* ============================================================
-   TEXAS VENOM SKIN — refined for editorial maturity
-   Lime is now an accent, not a co-primary.
+   TEXAS VENOM — UI MODEL 2: ROYAL EDITORIAL
+   Purple / yellow / black / white
+   Same content architecture, sharper collegiate presentation.
    ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap');
+
 body.venom-page{
-  --blue:#6D28D9;     --blue2:#4C1D95;
-  --blue-l:#F1EAFE;   --blue-m:#C9B7F6;
-  --blue-deep:#1a0a2e;
-  --yellow:#C6FF00;   --yellow2:#A6D900;
-  --yellow-l:#F5FFD9; --yellow-m:#E6FFA6;
-  --silver:#C7C2D1;   --silver-d:#8A8395;
-  --ink-dark:#08040D;
-  --grain: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.92' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background:var(--ink-dark);
+  --blue:#5B21B6;
+  --blue2:#3B0764;
+  --blue-l:#F3E8FF;
+  --blue-m:#D8B4FE;
+  --blue-deep:#19052B;
+  --yellow:#FACC15;
+  --yellow2:#EAB308;
+  --yellow-l:#FEFCE8;
+  --yellow-m:#FEF08A;
+  --white:#FFFFFF;
+  --off-white:#F7F5FA;
+  --cream:#FFFBEA;
+  --ink:#111013;
+  --ink2:#28232E;
+  --g1:#4B4652;
+  --g2:#6D6675;
+  --g3:#958E9C;
+  --g4:#D9D3DF;
+  --g5:#F0EDF3;
+  --body:'Inter',sans-serif;
+  --display:'Oswald',sans-serif;
+  background:#F7F5FA;
+  color:var(--ink);
 }
 
-/* ----- NAV ----- */
-.venom-page nav{ background:rgba(10,5,18,.92); backdrop-filter:saturate(140%) blur(10px); border-bottom:1px solid rgba(198,255,0,.18); }
-.venom-page .nav-brand{ color:#fff; letter-spacing:0.5px; }
-.venom-page .nav-brand span{ color:var(--silver); font-weight:500; letter-spacing:3px; }
-.venom-page .nav-brand img{ border:1px solid rgba(198,255,0,.25); }
-.venom-page .nav-links a{ color:rgba(255,255,255,.58); font-weight:500; letter-spacing:1.5px; transition:.2s; }
-.venom-page .nav-links a:hover{ color:#fff; background:transparent; }
-.venom-page .nav-links a.active{ color:var(--yellow); background:transparent; }
-.venom-page .nav-links a.active::after{ content:""; display:block; height:2px; background:var(--yellow); margin-top:4px; }
-.venom-page .nav-links a[href*="fundraising"]{ color:var(--ink-dark); background:var(--yellow); border:none; }
-.venom-page .nav-links a[href*="fundraising"]:hover{ background:#fff; color:var(--ink-dark); }
+/* Navigation */
+.venom-page nav{
+  background:#0D0B0F;
+  border-bottom:4px solid var(--yellow);
+  box-shadow:0 10px 30px rgba(17,16,19,.12);
+}
+.venom-page .nav-inner{
+  max-width:1240px;
+  min-height:72px;
+  height:auto;
+  padding:10px 28px;
+  gap:22px;
+}
+.venom-page .nav-brand{
+  color:#fff;
+  font-family:var(--display);
+  font-size:22px;
+  letter-spacing:1px;
+  white-space:nowrap;
+}
+.venom-page .nav-brand img{
+  width:44px;
+  height:44px;
+  border:3px solid var(--yellow);
+  border-radius:4px;
+  box-shadow:6px 6px 0 var(--blue);
+}
+.venom-page .nav-brand span{
+  color:var(--yellow);
+  font-family:var(--body);
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:2.4px;
+}
+.venom-page .nav-links{
+  justify-content:flex-end;
+  row-gap:3px;
+}
+.venom-page .nav-links a{
+  color:rgba(255,255,255,.68);
+  border-radius:0;
+  font-family:var(--display);
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:1px;
+  padding:7px 9px;
+  border-bottom:2px solid transparent;
+}
+.venom-page .nav-links a:hover,
+.venom-page .nav-links a.active{
+  color:#fff;
+  background:rgba(255,255,255,.06);
+  border-bottom-color:var(--yellow);
+}
+.venom-page .nav-links a[href*="fundraising"]{
+  color:#111;
+  background:var(--yellow);
+  border:1px solid var(--yellow);
+  padding:7px 12px;
+}
+.venom-page .nav-links a[href*="fundraising"]:hover{
+  color:#fff;
+  background:var(--blue);
+  border-color:var(--blue);
+}
 
-/* ----- HERO ----- */
+/* Hero */
 .venom-page .hero{
+  min-height:390px;
+  padding:72px 0 66px;
+  text-align:left;
   background:
-    radial-gradient(ellipse 800px 600px at 78% 18%, rgba(109,40,217,.35), transparent 50%),
-    radial-gradient(ellipse 700px 500px at 18% 82%, rgba(76,29,149,.55), transparent 55%),
-    linear-gradient(180deg,#10061d 0%,#1a0a2e 50%,#08040D 100%);
-  border-bottom:1px solid rgba(198,255,0,.22);
+    linear-gradient(112deg,rgba(91,33,182,.96) 0 58%,rgba(25,5,43,.97) 58% 100%),
+    #3B0764;
+  border-bottom:0;
   position:relative;
-  overflow:hidden;
+  isolation:isolate;
 }
 .venom-page .hero::before{
-  content:"";position:absolute;inset:0;background-image:var(--grain);opacity:.4;pointer-events:none;mix-blend-mode:overlay;
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px),
+    linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px);
+  background-size:42px 42px;
+  opacity:.55;
+  z-index:-2;
 }
 .venom-page .hero::after{
-  content:"";position:absolute;left:-5%;top:-30%;width:60%;height:160%;
-  background:radial-gradient(ellipse at center, rgba(109,40,217,.18) 0%, transparent 60%);
-  transform:rotate(-12deg);pointer-events:none;
+  content:"VENOM";
+  position:absolute;
+  right:-12px;
+  bottom:-44px;
+  color:rgba(250,204,21,.09);
+  font-family:var(--display);
+  font-size:clamp(120px,20vw,290px);
+  font-weight:700;
+  line-height:.8;
+  letter-spacing:-8px;
+  z-index:-1;
+  pointer-events:none;
 }
-.venom-page .hero h1{ color:#fff; font-weight:900; letter-spacing:-0.5px; text-shadow:0 2px 30px rgba(109,40,217,.4); }
-.venom-page .hero-kicker{ color:var(--yellow); font-weight:600; letter-spacing:6px; font-size:11px; text-transform:uppercase; }
-.venom-page .hero-sub, .venom-page .hero-tagline{ color:rgba(255,255,255,.72); font-weight:400; }
-.venom-page .hero-rule{ background:var(--yellow); width:48px; height:2px; margin:18px auto; border-radius:0; }
-.venom-page .hero-logo{ width:128px;height:128px;object-fit:contain;margin:0 auto 18px;display:block;filter:drop-shadow(0 10px 30px rgba(109,40,217,.5)); }
+.venom-page .hero-inner{
+  max-width:1160px;
+  margin:0 auto;
+  padding:0 32px;
+}
+.venom-page .hero-inner:has(.hero-logo){
+  display:grid;
+  grid-template-columns:170px minmax(0,1fr);
+  column-gap:42px;
+  align-items:center;
+}
+.venom-page .hero-inner:has(.hero-logo) .hero-logo{
+  grid-column:1;
+  grid-row:1 / span 6;
+}
+.venom-page .hero-inner:has(.hero-logo) > :not(.hero-logo){grid-column:2;}
+.venom-page .hero-logo{
+  width:156px;
+  height:156px;
+  display:block;
+  object-fit:contain;
+  background:#fff;
+  padding:12px;
+  border:4px solid var(--yellow);
+  border-radius:0;
+  box-shadow:14px 14px 0 rgba(17,16,19,.45);
+}
+.venom-page .hero-kicker{
+  color:var(--yellow);
+  font-family:var(--body);
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:4.5px;
+  margin-bottom:12px;
+}
+.venom-page .hero h1{
+  color:#fff;
+  font-family:var(--display);
+  font-size:clamp(54px,9vw,104px);
+  font-weight:700;
+  letter-spacing:-1.5px;
+  line-height:.92;
+  text-shadow:none;
+  margin-bottom:10px;
+}
+.venom-page .hero-sub{
+  color:#fff;
+  font-family:var(--display);
+  font-size:clamp(16px,2vw,23px);
+  font-weight:500;
+  letter-spacing:4px;
+}
+.venom-page .hero-rule{
+  width:110px;
+  height:6px;
+  margin:20px 0;
+  border-radius:0;
+  background:linear-gradient(90deg,var(--yellow) 0 65%,#fff 65% 100%);
+}
+.venom-page .hero-tagline{
+  color:rgba(255,255,255,.78);
+  max-width:700px;
+  margin:0;
+  font-size:16px;
+  line-height:1.75;
+}
+.venom-page .hero-inner > div[style*="justify-content:center"]{
+  justify-content:flex-start !important;
+}
 
-/* ----- PAGE BODY ----- */
-.venom-page .page{ background:#f6f4f9; border-radius:0; margin-top:0; padding-top:0; }
-
-/* ----- GOLD STRIP — restrained dark band with lime accent text ----- */
+/* Announcement strip */
 .venom-page .gold-strip{
-  background:linear-gradient(90deg,#1a0a2e 0%,#2c1247 50%,#1a0a2e 100%);
-  border-bottom:1px solid rgba(198,255,0,.3);
-  border-top:1px solid rgba(198,255,0,.18);
+  background:var(--yellow);
+  border:0;
+  padding:13px 24px;
+  box-shadow:inset 0 -1px 0 rgba(0,0,0,.15);
+}
+.venom-page .gold-strip p{
+  color:#151218;
+  font-family:var(--display);
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:2.5px;
+}
+
+/* Main canvas */
+.venom-page .page{
+  max-width:1160px;
+  background:#fff;
+  margin:0 auto;
+  padding:0 42px 86px;
+  box-shadow:0 24px 70px rgba(35,20,48,.08);
+}
+.venom-page .section{padding-top:62px;}
+.venom-page .section-label{
+  color:var(--blue);
+  font-family:var(--body);
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:4px;
+}
+.venom-page .section h2{
+  color:var(--ink);
+  font-family:var(--display);
+  font-size:clamp(30px,4vw,44px);
+  font-weight:700;
+  letter-spacing:.5px;
+  line-height:1.05;
+}
+.venom-page .section-rule{
+  width:84px;
+  height:5px;
+  background:linear-gradient(90deg,var(--blue) 0 72%,var(--yellow) 72% 100%);
+  border-radius:0;
+  margin-bottom:30px;
+}
+
+/* Cards and link panels */
+.venom-page .card{
   position:relative;
   overflow:hidden;
-}
-.venom-page .gold-strip::before{ content:"";position:absolute;inset:0;background-image:var(--grain);opacity:.35;pointer-events:none;mix-blend-mode:overlay; }
-.venom-page .gold-strip p{ color:var(--silver); font-family:var(--display); font-weight:600; letter-spacing:3px; font-size:12px; }
-.venom-page .gold-strip p strong, .venom-page .gold-strip p b{ color:var(--yellow); font-weight:800; }
-
-/* ----- SECTION LABELS ----- */
-.venom-page .section-label{ color:var(--blue); letter-spacing:4px; font-size:11px; font-weight:700; }
-.venom-page .section-rule{ background:var(--blue); height:2px; width:48px; }
-
-/* ----- CARDS ----- */
-.venom-page .card{
   background:#fff;
-  border:1px solid rgba(109,40,217,.1);
-  border-radius:10px;
-  box-shadow:0 1px 3px rgba(26,10,46,.04),0 8px 24px rgba(26,10,46,.04);
-  transition:.25s;
+  border:1px solid #E3DDE8;
+  border-radius:0;
+  padding:26px;
+  box-shadow:7px 7px 0 #EEE8F2;
+  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;
 }
-.venom-page .card:hover{ transform:translateY(-2px); box-shadow:0 4px 8px rgba(26,10,46,.06),0 16px 40px rgba(26,10,46,.08); }
-.venom-page .card h3{ color:var(--ink); }
-.venom-page .card-gold{ border-top:none; position:relative; }
-.venom-page .card-gold::before{ content:"";position:absolute;top:0;left:0;width:48px;height:3px;background:var(--yellow);border-radius:0 0 3px 0; }
-.venom-page .card-blue{ border-top:none; position:relative; }
-.venom-page .card-blue::before{ content:"";position:absolute;top:0;left:0;width:48px;height:3px;background:var(--blue);border-radius:0 0 3px 0; }
+.venom-page .card:hover{
+  transform:translate(-3px,-3px);
+  box-shadow:11px 11px 0 var(--yellow-m);
+  border-color:var(--blue-m);
+}
+.venom-page .card::after{
+  content:"";
+  position:absolute;
+  width:54px;
+  height:54px;
+  right:-28px;
+  top:-28px;
+  transform:rotate(45deg);
+  background:var(--blue);
+}
+.venom-page .card-gold,
+.venom-page .card-blue{border-top:5px solid var(--yellow);}
+.venom-page .card-blue{border-top-color:var(--blue);}
+.venom-page .card h3{color:var(--blue2);font-size:19px;letter-spacing:.7px;}
+.venom-page .card p{color:var(--g1);}
 
-/* ----- CALLOUT ----- */
+.venom-page .doc-item{
+  border:1px solid #DED7E4;
+  border-left:5px solid var(--blue);
+  border-radius:0 !important;
+  background:#fff;
+  padding:17px 18px;
+  box-shadow:0 4px 0 #F1EDF4;
+  transition:.18s ease;
+}
+.venom-page .doc-item:hover{
+  border-color:var(--yellow);
+  border-left-color:var(--yellow);
+  box-shadow:7px 7px 0 var(--yellow-m);
+  transform:translate(-2px,-2px);
+}
+.venom-page .doc-icon{
+  background:var(--blue2) !important;
+  color:var(--yellow) !important;
+  border:0 !important;
+  border-radius:0;
+}
+.venom-page .doc-icon i{color:var(--yellow) !important;}
+.venom-page .doc-info .doc-name{color:var(--ink) !important;font-weight:700;}
+.venom-page .doc-dl{color:var(--blue);}
+
+/* Callouts, badges and tables */
 .venom-page .callout{
-  border-left:3px solid var(--blue);
-  background:linear-gradient(90deg,rgba(109,40,217,.06) 0%,transparent 100%);
-  border-radius:0 8px 8px 0;
-  padding:18px 22px;
+  background:linear-gradient(90deg,var(--yellow-l),#fff);
+  border:0;
+  border-left:7px solid var(--yellow);
+  border-radius:0;
+  box-shadow:inset 0 0 0 1px #EFE4A6;
 }
-
-/* ----- BUTTONS ----- */
-.venom-page .btn-outline{ border-color:var(--blue); color:var(--blue); }
-.venom-page .btn-outline:hover{ background:var(--blue); color:#fff; }
-.venom-page .btn-primary{ background:var(--yellow); color:var(--ink-dark); border:none; font-weight:800; }
-.venom-page .btn-primary:hover{ background:#fff; }
-
-/* ----- TABLES ----- */
-.venom-page .vote-table th{ background:var(--blue-deep); color:var(--yellow); border-color:var(--blue2); letter-spacing:2px; }
-
-/* ----- DOC ITEMS ----- */
-.venom-page .doc-item{ border-color:rgba(109,40,217,.15); }
-.venom-page .doc-item:hover{ border-color:var(--yellow); box-shadow:0 0 0 3px rgba(198,255,0,.12); }
-
-/* ----- FOOTER ----- */
-.venom-page footer{
-  background:linear-gradient(180deg,#08040D 0%,#10061d 100%);
-  border-top:1px solid rgba(198,255,0,.2);
-  position:relative;
+.venom-page .badge{border-radius:0;font-family:var(--body);font-weight:800;}
+.venom-page .badge-gold,.venom-page .av-gold{background:var(--yellow);color:#111;border-color:var(--yellow2);}
+.venom-page .badge-blue,.venom-page .av-blue{background:var(--blue);color:#fff;border-color:var(--blue2);}
+.venom-page .vote-table{
+  box-shadow:8px 8px 0 #EEE9F1;
 }
-.venom-page footer::before{ content:"";position:absolute;inset:0;background-image:var(--grain);opacity:.3;pointer-events:none;mix-blend-mode:overlay; }
-.venom-page .footer-brand{ color:#fff; text-shadow:none; letter-spacing:2px; font-weight:900; }
-.venom-page .footer-brand::after{ content:"";display:block;width:36px;height:2px;background:var(--yellow);margin:10px auto 0; }
-
-/* ============================================================
-   .page-dark — special pages with the brand's energy
-   (Standards, Teams hub, Roster, Player Profile). Apply with .page.
-   ============================================================ */
-.venom-page .page-dark{ background:#08040D; color:#E4DFEC; position:relative; }
-.venom-page .page-dark::before{
-  content:"";position:absolute;inset:0;background-image:var(--grain);opacity:.5;pointer-events:none;mix-blend-mode:overlay;z-index:0;
+.venom-page .vote-table th{
+  background:#151218;
+  color:var(--yellow);
+  border-color:#2E2932;
+  font-family:var(--display);
 }
-.venom-page .page-dark > *{ position:relative; z-index:1; }
-.venom-page .page-dark .section h2, .venom-page .page-dark .section h3{ color:#fff; }
-.venom-page .page-dark .section p{ color:rgba(255,255,255,.78); }
-.venom-page .page-dark .section-label{ color:var(--yellow); }
-.venom-page .page-dark .section-rule{ background:var(--yellow); }
+.venom-page .vote-table tr:hover td{background:var(--yellow-l);}
+.venom-page .btn-primary{
+  background:var(--yellow);
+  color:#111;
+  border-radius:0;
+  padding:13px 24px;
+  box-shadow:5px 5px 0 var(--blue2);
+}
+.venom-page .btn-primary:hover{
+  background:#fff;
+  color:var(--blue2);
+  transform:translate(2px,2px);
+  box-shadow:3px 3px 0 var(--yellow);
+}
+.venom-page .btn-outline{border-radius:0;border-color:var(--blue);color:var(--blue);}
+.venom-page .btn-outline:hover{background:var(--blue);color:#fff;}
+
+/* Dark specialty pages retain the editorial system */
+.venom-page .page-dark{
+  background:#171219;
+  color:#EEE9F2;
+  box-shadow:0 24px 70px rgba(0,0,0,.28);
+}
+.venom-page .page-dark .section h2,
+.venom-page .page-dark .section h3{color:#fff;}
+.venom-page .page-dark .section p{color:rgba(255,255,255,.72);}
+.venom-page .page-dark .section-label{color:var(--yellow);}
+.venom-page .page-dark .section-rule{background:linear-gradient(90deg,var(--yellow) 0 72%,var(--blue-m) 72% 100%);}
 .venom-page .page-dark .card{
-  background:linear-gradient(180deg,#150828 0%,#0d0518 100%);
-  border:1px solid rgba(109,40,217,.32);
-  color:rgba(255,255,255,.82);
-  box-shadow:0 1px 0 rgba(255,255,255,.04) inset, 0 20px 50px rgba(0,0,0,.45);
-}
-.venom-page .page-dark .card h3{ color:#fff; }
-.venom-page .page-dark .callout{
-  background:linear-gradient(90deg,rgba(109,40,217,.18) 0%,transparent 100%);
-  border-left:3px solid var(--yellow);
+  background:#211927;
+  border-color:#3B3042;
+  box-shadow:7px 7px 0 #0D0B0F;
   color:#fff;
 }
-.venom-page .page-dark .vote-table td{ color:rgba(255,255,255,.82); border-color:rgba(255,255,255,.08); }
+.venom-page .page-dark .card h3{color:var(--yellow);}
+.venom-page .page-dark .card p{color:rgba(255,255,255,.7);}
+
+/* Footer */
+.venom-page footer{
+  background:#0D0B0F;
+  border-top:7px solid var(--yellow);
+  padding:46px 24px;
+}
+.venom-page .footer-brand{
+  color:#fff;
+  font-family:var(--display);
+  font-size:31px;
+  letter-spacing:2px;
+  text-shadow:none;
+}
+.venom-page .footer-brand::after{
+  content:"";
+  display:block;
+  width:70px;
+  height:5px;
+  background:linear-gradient(90deg,var(--yellow) 0 65%,var(--blue) 65% 100%);
+  margin:12px auto 0;
+}
+.venom-page .footer-links a{color:rgba(255,255,255,.62);}
+.venom-page .footer-links a:hover{color:var(--yellow);}
+
+@media(max-width:900px){
+  .venom-page .nav-inner{align-items:flex-start;flex-direction:column;gap:8px;}
+  .venom-page .nav-links{justify-content:flex-start;}
+  .venom-page .hero-inner:has(.hero-logo){grid-template-columns:125px minmax(0,1fr);column-gap:28px;}
+  .venom-page .hero-logo{width:118px;height:118px;box-shadow:9px 9px 0 rgba(17,16,19,.45);}
+  .venom-page .page{padding-left:28px;padding-right:28px;}
+}
+@media(max-width:640px){
+  .venom-page .nav-inner{padding:9px 16px;}
+  .venom-page .nav-links{width:100%;flex-wrap:nowrap;overflow-x:auto;padding-bottom:5px;}
+  .venom-page .nav-links a{flex:0 0 auto;}
+  .venom-page .hero{padding:48px 0 50px;text-align:center;}
+  .venom-page .hero-inner:has(.hero-logo){display:block;}
+  .venom-page .hero-logo{width:112px;height:112px;margin:0 auto 26px;}
+  .venom-page .hero-rule{margin:18px auto;}
+  .venom-page .hero-tagline{margin:0 auto;}
+  .venom-page .hero-inner > div[style*="justify-content:center"]{justify-content:center !important;}
+  .venom-page .page{padding-left:18px;padding-right:18px;box-shadow:none;}
+  .venom-page .card{box-shadow:4px 4px 0 #EEE8F2;}
+}
