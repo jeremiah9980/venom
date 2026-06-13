@@ -1,0 +1,82 @@
+/* UI Model 2 theme control */
+.theme-toggle{
+  flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;gap:7px;
+  min-width:82px;min-height:36px;padding:7px 11px;border:1px solid rgba(250,204,21,.55);
+  border-radius:0;background:#171219;color:#FACC15;font-family:var(--display);font-size:11px;
+  font-weight:700;letter-spacing:1px;text-transform:uppercase;cursor:pointer;
+  box-shadow:4px 4px 0 rgba(91,33,182,.55);transition:.18s ease;
+}
+.theme-toggle:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--yellow);border-color:var(--yellow);color:#fff;}
+.theme-toggle:focus-visible{outline:3px solid var(--yellow);outline-offset:3px;}
+.theme-toggle-icon{display:grid;place-items:center;width:18px;height:18px;font-size:17px;}
+.theme-toggle-label{line-height:1;}
+
+/* ROYAL EDITORIAL — LIGHT */
+html[data-theme="light"] body.venom-page{
+  --white:#fff;--off-white:#F7F5FA;--ink:#111013;--ink2:#28232E;
+  --g1:#4B4652;--g2:#6D6675;--g3:#958E9C;--g4:#D9D3DF;--g5:#F0EDF3;
+  background:#F7F5FA;color:var(--ink);
+}
+html[data-theme="light"] .venom-page nav{background:#0D0B0F;}
+html[data-theme="light"] .venom-page .theme-toggle{background:#fff;color:var(--blue2);border-color:var(--yellow);}
+html[data-theme="light"] .venom-page .page,
+html[data-theme="light"] .venom-page .page-dark{background:#fff;color:var(--ink);}
+html[data-theme="light"] .venom-page .page-dark .section h2,
+html[data-theme="light"] .venom-page .page-dark .section h3{color:var(--ink);}
+html[data-theme="light"] .venom-page .page-dark .section p{color:var(--g1);}
+html[data-theme="light"] .venom-page .page-dark .section-label{color:var(--blue);}
+html[data-theme="light"] .venom-page .page-dark .card{background:#fff;color:var(--ink);border-color:#E3DDE8;box-shadow:7px 7px 0 #EEE8F2;}
+html[data-theme="light"] .venom-page .page-dark .card h3{color:var(--blue2);}
+html[data-theme="light"] .venom-page .page-dark .card p{color:var(--g1);}
+html[data-theme="light"] .venom-page .doc-item{background:#fff;color:var(--ink);}
+html[data-theme="light"] .venom-page .callout,
+html[data-theme="light"] .venom-page .page-dark .callout{background:linear-gradient(90deg,var(--yellow-l),#fff);color:var(--ink);}
+html[data-theme="light"] .venom-page .callout p{color:var(--ink2)!important;}
+html[data-theme="light"] .venom-page .vote-table td,
+html[data-theme="light"] .venom-page .page-dark .vote-table td{color:var(--g1);border-color:var(--g4);background:#fff;}
+
+/* ROYAL EDITORIAL — DARK */
+html[data-theme="dark"] body.venom-page{
+  --white:#18131D;--off-white:#09070C;--ink:#F8F5FA;--ink2:#E9E2EC;
+  --g1:#D1C8D6;--g2:#B7AEBE;--g3:#8F8498;--g4:#3B3342;--g5:#17121C;
+  background:#09070C;color:var(--ink);
+}
+html[data-theme="dark"] .venom-page nav{background:#050407;border-bottom-color:var(--yellow);}
+html[data-theme="dark"] .venom-page .nav-links a{color:rgba(255,255,255,.62);}
+html[data-theme="dark"] .venom-page .theme-toggle{background:#17121C;color:var(--yellow);border-color:var(--blue-m);}
+html[data-theme="dark"] .venom-page .hero{
+  background:linear-gradient(112deg,#2E1065 0 58%,#09070C 58% 100%);
+}
+html[data-theme="dark"] .venom-page .page,
+html[data-theme="dark"] .venom-page .page-dark{background:#100C14;color:var(--ink);box-shadow:0 24px 70px rgba(0,0,0,.34);}
+html[data-theme="dark"] .venom-page .section h2,
+html[data-theme="dark"] .venom-page .section h3,
+html[data-theme="dark"] .venom-page .page-dark .section h2,
+html[data-theme="dark"] .venom-page .page-dark .section h3{color:#fff;}
+html[data-theme="dark"] .venom-page .section p,
+html[data-theme="dark"] .venom-page .page-dark .section p{color:rgba(255,255,255,.70);}
+html[data-theme="dark"] .venom-page .card,
+html[data-theme="dark"] .venom-page .page-dark .card{
+  background:#1A1420;color:#fff;border-color:#3E3148;box-shadow:7px 7px 0 #050407;
+}
+html[data-theme="dark"] .venom-page .card:hover,
+html[data-theme="dark"] .venom-page .page-dark .card:hover{box-shadow:11px 11px 0 #3B0764;border-color:var(--yellow);}
+html[data-theme="dark"] .venom-page .card h3,
+html[data-theme="dark"] .venom-page .page-dark .card h3{color:var(--yellow);}
+html[data-theme="dark"] .venom-page .card p,
+html[data-theme="dark"] .venom-page .page-dark .card p{color:rgba(255,255,255,.65);}
+html[data-theme="dark"] .venom-page .doc-item{background:#18131D;color:#fff;border-color:#43374B;box-shadow:0 4px 0 #050407;}
+html[data-theme="dark"] .venom-page .doc-info .doc-name{color:#fff!important;}
+html[data-theme="dark"] .venom-page .doc-info .doc-desc{color:rgba(255,255,255,.46);}
+html[data-theme="dark"] .venom-page .callout,
+html[data-theme="dark"] .venom-page .page-dark .callout{background:linear-gradient(90deg,rgba(91,33,182,.30),rgba(250,204,21,.04));color:#fff;border-color:#4C1D95;}
+html[data-theme="dark"] .venom-page .callout p{color:rgba(255,255,255,.82)!important;}
+html[data-theme="dark"] .venom-page .vote-table td,
+html[data-theme="dark"] .venom-page .page-dark .vote-table td{color:rgba(255,255,255,.72);border-color:#3B3342;background:#16111B!important;}
+html[data-theme="dark"] .venom-page .section div[style*="background:var(--white)"]{background:#18131D!important;border-color:#43374B!important;color:#fff!important;}
+html[data-theme="dark"] .venom-page .section div[style*="background:var(--white)"] div[style*="color:var(--ink)"]{color:#fff!important;}
+html[data-theme="dark"] .venom-page .section div[style*="background:var(--white)"] div[style*="color:var(--g3)"]{color:rgba(255,255,255,.46)!important;}
+html[data-theme="dark"] .venom-page footer{background:#050407;}
+
+@media(max-width:1100px){.theme-toggle{margin-left:auto;}}
+@media(max-width:640px){.theme-toggle{position:absolute;right:14px;top:10px;min-width:72px;padding:6px 9px}.theme-toggle-label{font-size:10px}}
