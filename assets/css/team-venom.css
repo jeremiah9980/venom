@@ -1,143 +1,445 @@
 /* ============================================================
-   TEXAS VENOM SKIN — refined for editorial maturity
-   Lime is now an accent, not a co-primary.
+   TEXAS VENOM — UI MODEL 3: NEON NIGHT
+   Purple / yellow / black / white
+   Same content architecture, immersive high-energy presentation.
    ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800;900&display=swap');
+
 body.venom-page{
-  --blue:#6D28D9;     --blue2:#4C1D95;
-  --blue-l:#F1EAFE;   --blue-m:#C9B7F6;
-  --blue-deep:#1a0a2e;
-  --yellow:#C6FF00;   --yellow2:#A6D900;
-  --yellow-l:#F5FFD9; --yellow-m:#E6FFA6;
-  --silver:#C7C2D1;   --silver-d:#8A8395;
-  --ink-dark:#08040D;
-  --grain: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.92' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background:var(--ink-dark);
+  --blue:#8B5CF6;
+  --blue2:#6D28D9;
+  --blue-l:#24143D;
+  --blue-m:#A78BFA;
+  --blue-deep:#12051F;
+  --yellow:#FDE047;
+  --yellow2:#FACC15;
+  --yellow-l:#302B12;
+  --yellow-m:#5B5010;
+  --white:#FFFFFF;
+  --off-white:#07050A;
+  --cream:#15100A;
+  --ink:#F8F7FA;
+  --ink2:#E7E1EC;
+  --g1:#C7C0CD;
+  --g2:#A79FAF;
+  --g3:#7E7587;
+  --g4:#352E3C;
+  --g5:#17121C;
+  --body:'Barlow',sans-serif;
+  --display:'Barlow Condensed',sans-serif;
+  background:
+    radial-gradient(circle at 10% 15%,rgba(109,40,217,.20),transparent 28%),
+    radial-gradient(circle at 90% 45%,rgba(253,224,71,.07),transparent 25%),
+    #07050A;
+  color:var(--ink);
 }
 
-/* ----- NAV ----- */
-.venom-page nav{ background:rgba(10,5,18,.92); backdrop-filter:saturate(140%) blur(10px); border-bottom:1px solid rgba(198,255,0,.18); }
-.venom-page .nav-brand{ color:#fff; letter-spacing:0.5px; }
-.venom-page .nav-brand span{ color:var(--silver); font-weight:500; letter-spacing:3px; }
-.venom-page .nav-brand img{ border:1px solid rgba(198,255,0,.25); }
-.venom-page .nav-links a{ color:rgba(255,255,255,.58); font-weight:500; letter-spacing:1.5px; transition:.2s; }
-.venom-page .nav-links a:hover{ color:#fff; background:transparent; }
-.venom-page .nav-links a.active{ color:var(--yellow); background:transparent; }
-.venom-page .nav-links a.active::after{ content:""; display:block; height:2px; background:var(--yellow); margin-top:4px; }
-.venom-page .nav-links a[href*="fundraising"]{ color:var(--ink-dark); background:var(--yellow); border:none; }
-.venom-page .nav-links a[href*="fundraising"]:hover{ background:#fff; color:var(--ink-dark); }
+/* Navigation */
+.venom-page nav{
+  background:rgba(7,5,10,.82);
+  border-bottom:1px solid rgba(253,224,71,.28);
+  box-shadow:0 14px 35px rgba(0,0,0,.45);
+  backdrop-filter:blur(18px) saturate(140%);
+}
+.venom-page .nav-inner{
+  max-width:1260px;
+  min-height:68px;
+  height:auto;
+  padding:9px 24px;
+  gap:18px;
+}
+.venom-page .nav-brand{
+  color:#fff;
+  font-size:23px;
+  font-weight:900;
+  letter-spacing:1.4px;
+  white-space:nowrap;
+  text-shadow:0 0 22px rgba(139,92,246,.6);
+}
+.venom-page .nav-brand img{
+  width:46px;
+  height:46px;
+  border:2px solid var(--yellow);
+  border-radius:50%;
+  box-shadow:0 0 0 4px rgba(139,92,246,.25),0 0 28px rgba(253,224,71,.20);
+}
+.venom-page .nav-brand span{
+  color:var(--yellow);
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:3px;
+}
+.venom-page .nav-links{justify-content:flex-end;row-gap:3px;}
+.venom-page .nav-links a{
+  color:rgba(255,255,255,.55);
+  border:1px solid transparent;
+  border-radius:999px;
+  font-size:11px;
+  letter-spacing:1.4px;
+  padding:6px 10px;
+}
+.venom-page .nav-links a:hover{
+  color:#fff;
+  background:rgba(139,92,246,.15);
+  border-color:rgba(139,92,246,.35);
+}
+.venom-page .nav-links a.active{
+  color:#0A0710;
+  background:var(--yellow);
+  border-color:var(--yellow);
+  box-shadow:0 0 18px rgba(253,224,71,.28);
+}
+.venom-page .nav-links a[href*="fundraising"]{
+  color:#fff;
+  background:linear-gradient(135deg,var(--blue2),var(--blue));
+  border:1px solid rgba(255,255,255,.15);
+  box-shadow:0 0 20px rgba(139,92,246,.25);
+}
+.venom-page .nav-links a[href*="fundraising"]:hover{
+  color:#111;
+  background:var(--yellow);
+  border-color:var(--yellow);
+}
 
-/* ----- HERO ----- */
+/* Hero */
 .venom-page .hero{
+  min-height:560px;
+  display:flex;
+  align-items:center;
+  padding:88px 0 82px;
+  text-align:center;
   background:
-    radial-gradient(ellipse 800px 600px at 78% 18%, rgba(109,40,217,.35), transparent 50%),
-    radial-gradient(ellipse 700px 500px at 18% 82%, rgba(76,29,149,.55), transparent 55%),
-    linear-gradient(180deg,#10061d 0%,#1a0a2e 50%,#08040D 100%);
-  border-bottom:1px solid rgba(198,255,0,.22);
-  position:relative;
-  overflow:hidden;
+    radial-gradient(circle at 50% 35%,rgba(139,92,246,.34),transparent 34%),
+    radial-gradient(circle at 20% 80%,rgba(109,40,217,.30),transparent 30%),
+    linear-gradient(180deg,#100619 0%,#09050D 72%,#07050A 100%);
+  border-bottom:1px solid rgba(253,224,71,.28);
+  isolation:isolate;
 }
 .venom-page .hero::before{
-  content:"";position:absolute;inset:0;background-image:var(--grain);opacity:.4;pointer-events:none;mix-blend-mode:overlay;
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:56px 56px;
+  mask-image:linear-gradient(to bottom,black,transparent 86%);
+  z-index:-2;
 }
 .venom-page .hero::after{
-  content:"";position:absolute;left:-5%;top:-30%;width:60%;height:160%;
-  background:radial-gradient(ellipse at center, rgba(109,40,217,.18) 0%, transparent 60%);
-  transform:rotate(-12deg);pointer-events:none;
+  content:"";
+  position:absolute;
+  width:min(78vw,850px);
+  height:min(78vw,850px);
+  left:50%;
+  top:48%;
+  transform:translate(-50%,-50%);
+  border:1px solid rgba(253,224,71,.14);
+  border-radius:50%;
+  box-shadow:
+    0 0 0 55px rgba(139,92,246,.035),
+    0 0 0 110px rgba(253,224,71,.018),
+    0 0 100px rgba(139,92,246,.22);
+  z-index:-1;
 }
-.venom-page .hero h1{ color:#fff; font-weight:900; letter-spacing:-0.5px; text-shadow:0 2px 30px rgba(109,40,217,.4); }
-.venom-page .hero-kicker{ color:var(--yellow); font-weight:600; letter-spacing:6px; font-size:11px; text-transform:uppercase; }
-.venom-page .hero-sub, .venom-page .hero-tagline{ color:rgba(255,255,255,.72); font-weight:400; }
-.venom-page .hero-rule{ background:var(--yellow); width:48px; height:2px; margin:18px auto; border-radius:0; }
-.venom-page .hero-logo{ width:128px;height:128px;object-fit:contain;margin:0 auto 18px;display:block;filter:drop-shadow(0 10px 30px rgba(109,40,217,.5)); }
+.venom-page .hero-inner{max-width:960px;padding:0 24px;}
+.venom-page .hero-logo{
+  width:152px;
+  height:152px;
+  display:block;
+  object-fit:contain;
+  margin:0 auto 25px;
+  border:2px solid var(--yellow);
+  border-radius:50%;
+  background:#0A0710;
+  padding:8px;
+  box-shadow:
+    0 0 0 8px rgba(139,92,246,.16),
+    0 0 52px rgba(139,92,246,.55),
+    0 0 28px rgba(253,224,71,.18);
+}
+.venom-page .hero-kicker{
+  color:var(--yellow);
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:6px;
+  margin-bottom:17px;
+}
+.venom-page .hero h1{
+  color:#fff;
+  font-size:clamp(64px,12vw,138px);
+  font-weight:900;
+  letter-spacing:-3px;
+  line-height:.76;
+  margin-bottom:24px;
+  text-shadow:
+    0 2px 0 #3B0764,
+    0 0 35px rgba(139,92,246,.42);
+}
+.venom-page .hero-sub{
+  display:inline-block;
+  color:#0A0710;
+  background:var(--yellow);
+  border-radius:999px;
+  padding:7px 17px;
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:3px;
+  margin-bottom:20px;
+  box-shadow:0 0 28px rgba(253,224,71,.22);
+}
+.venom-page .hero-rule{
+  width:150px;
+  height:2px;
+  margin:3px auto 20px;
+  background:linear-gradient(90deg,transparent,var(--blue-m),var(--yellow),var(--blue-m),transparent);
+  border-radius:0;
+}
+.venom-page .hero-tagline{
+  max-width:650px;
+  color:rgba(255,255,255,.68);
+  font-size:16px;
+  line-height:1.8;
+}
+.venom-page .btn-primary{
+  background:var(--yellow);
+  color:#100B14;
+  border:1px solid var(--yellow);
+  border-radius:999px;
+  padding:13px 25px;
+  box-shadow:0 0 28px rgba(253,224,71,.20);
+}
+.venom-page .btn-primary:hover{
+  background:#fff;
+  color:var(--blue2);
+  box-shadow:0 0 36px rgba(255,255,255,.22);
+}
+.venom-page .btn-outline{
+  color:#fff;
+  border-color:rgba(255,255,255,.35);
+  border-radius:999px;
+}
+.venom-page .btn-outline:hover{background:var(--blue2);border-color:var(--blue);color:#fff;}
 
-/* ----- PAGE BODY ----- */
-.venom-page .page{ background:#f6f4f9; border-radius:0; margin-top:0; padding-top:0; }
-
-/* ----- GOLD STRIP — restrained dark band with lime accent text ----- */
+/* Announcement strip */
 .venom-page .gold-strip{
-  background:linear-gradient(90deg,#1a0a2e 0%,#2c1247 50%,#1a0a2e 100%);
-  border-bottom:1px solid rgba(198,255,0,.3);
-  border-top:1px solid rgba(198,255,0,.18);
+  background:#0C0810;
+  border-top:1px solid rgba(139,92,246,.24);
+  border-bottom:1px solid rgba(253,224,71,.28);
+  padding:14px 24px;
   position:relative;
   overflow:hidden;
 }
-.venom-page .gold-strip::before{ content:"";position:absolute;inset:0;background-image:var(--grain);opacity:.35;pointer-events:none;mix-blend-mode:overlay; }
-.venom-page .gold-strip p{ color:var(--silver); font-family:var(--display); font-weight:600; letter-spacing:3px; font-size:12px; }
-.venom-page .gold-strip p strong, .venom-page .gold-strip p b{ color:var(--yellow); font-weight:800; }
-
-/* ----- SECTION LABELS ----- */
-.venom-page .section-label{ color:var(--blue); letter-spacing:4px; font-size:11px; font-weight:700; }
-.venom-page .section-rule{ background:var(--blue); height:2px; width:48px; }
-
-/* ----- CARDS ----- */
-.venom-page .card{
-  background:#fff;
-  border:1px solid rgba(109,40,217,.1);
-  border-radius:10px;
-  box-shadow:0 1px 3px rgba(26,10,46,.04),0 8px 24px rgba(26,10,46,.04);
-  transition:.25s;
+.venom-page .gold-strip::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,transparent,rgba(139,92,246,.18),transparent);
 }
-.venom-page .card:hover{ transform:translateY(-2px); box-shadow:0 4px 8px rgba(26,10,46,.06),0 16px 40px rgba(26,10,46,.08); }
-.venom-page .card h3{ color:var(--ink); }
-.venom-page .card-gold{ border-top:none; position:relative; }
-.venom-page .card-gold::before{ content:"";position:absolute;top:0;left:0;width:48px;height:3px;background:var(--yellow);border-radius:0 0 3px 0; }
-.venom-page .card-blue{ border-top:none; position:relative; }
-.venom-page .card-blue::before{ content:"";position:absolute;top:0;left:0;width:48px;height:3px;background:var(--blue);border-radius:0 0 3px 0; }
-
-/* ----- CALLOUT ----- */
-.venom-page .callout{
-  border-left:3px solid var(--blue);
-  background:linear-gradient(90deg,rgba(109,40,217,.06) 0%,transparent 100%);
-  border-radius:0 8px 8px 0;
-  padding:18px 22px;
+.venom-page .gold-strip p{
+  position:relative;
+  color:var(--yellow);
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:3.5px;
+  text-shadow:0 0 16px rgba(253,224,71,.22);
 }
 
-/* ----- BUTTONS ----- */
-.venom-page .btn-outline{ border-color:var(--blue); color:var(--blue); }
-.venom-page .btn-outline:hover{ background:var(--blue); color:#fff; }
-.venom-page .btn-primary{ background:var(--yellow); color:var(--ink-dark); border:none; font-weight:800; }
-.venom-page .btn-primary:hover{ background:#fff; }
-
-/* ----- TABLES ----- */
-.venom-page .vote-table th{ background:var(--blue-deep); color:var(--yellow); border-color:var(--blue2); letter-spacing:2px; }
-
-/* ----- DOC ITEMS ----- */
-.venom-page .doc-item{ border-color:rgba(109,40,217,.15); }
-.venom-page .doc-item:hover{ border-color:var(--yellow); box-shadow:0 0 0 3px rgba(198,255,0,.12); }
-
-/* ----- FOOTER ----- */
-.venom-page footer{
-  background:linear-gradient(180deg,#08040D 0%,#10061d 100%);
-  border-top:1px solid rgba(198,255,0,.2);
+/* Main canvas */
+.venom-page .page,
+.venom-page .page-dark{
+  max-width:1180px;
+  background:rgba(13,9,17,.92);
+  color:var(--ink);
+  margin:0 auto;
+  padding:0 34px 90px;
+  border-left:1px solid rgba(139,92,246,.12);
+  border-right:1px solid rgba(139,92,246,.12);
+  box-shadow:0 40px 90px rgba(0,0,0,.38);
   position:relative;
 }
-.venom-page footer::before{ content:"";position:absolute;inset:0;background-image:var(--grain);opacity:.3;pointer-events:none;mix-blend-mode:overlay; }
-.venom-page .footer-brand{ color:#fff; text-shadow:none; letter-spacing:2px; font-weight:900; }
-.venom-page .footer-brand::after{ content:"";display:block;width:36px;height:2px;background:var(--yellow);margin:10px auto 0; }
-
-/* ============================================================
-   .page-dark — special pages with the brand's energy
-   (Standards, Teams hub, Roster, Player Profile). Apply with .page.
-   ============================================================ */
-.venom-page .page-dark{ background:#08040D; color:#E4DFEC; position:relative; }
+.venom-page .page::before,
 .venom-page .page-dark::before{
-  content:"";position:absolute;inset:0;background-image:var(--grain);opacity:.5;pointer-events:none;mix-blend-mode:overlay;z-index:0;
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:radial-gradient(circle at 50% 0,rgba(139,92,246,.09),transparent 36%);
 }
-.venom-page .page-dark > *{ position:relative; z-index:1; }
-.venom-page .page-dark .section h2, .venom-page .page-dark .section h3{ color:#fff; }
-.venom-page .page-dark .section p{ color:rgba(255,255,255,.78); }
-.venom-page .page-dark .section-label{ color:var(--yellow); }
-.venom-page .page-dark .section-rule{ background:var(--yellow); }
-.venom-page .page-dark .card{
-  background:linear-gradient(180deg,#150828 0%,#0d0518 100%);
-  border:1px solid rgba(109,40,217,.32);
-  color:rgba(255,255,255,.82);
-  box-shadow:0 1px 0 rgba(255,255,255,.04) inset, 0 20px 50px rgba(0,0,0,.45);
+.venom-page .page > *,
+.venom-page .page-dark > *{position:relative;z-index:1;}
+.venom-page .section{padding-top:64px;}
+.venom-page .section-label{
+  color:var(--yellow);
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:4.5px;
 }
-.venom-page .page-dark .card h3{ color:#fff; }
-.venom-page .page-dark .callout{
-  background:linear-gradient(90deg,rgba(109,40,217,.18) 0%,transparent 100%);
-  border-left:3px solid var(--yellow);
+.venom-page .section h2,
+.venom-page .section h3,
+.venom-page .page-dark .section h2,
+.venom-page .page-dark .section h3{
   color:#fff;
+  text-shadow:0 0 22px rgba(139,92,246,.16);
 }
-.venom-page .page-dark .vote-table td{ color:rgba(255,255,255,.82); border-color:rgba(255,255,255,.08); }
+.venom-page .section h2{font-size:clamp(31px,4vw,46px);}
+.venom-page .section-rule{
+  width:72px;
+  height:3px;
+  background:linear-gradient(90deg,var(--yellow),var(--blue));
+  box-shadow:0 0 16px rgba(139,92,246,.35);
+}
+.venom-page .section p,
+.venom-page .page-dark .section p{color:rgba(255,255,255,.67);}
+.venom-page .section p strong{color:#fff;}
+
+/* Cards */
+.venom-page .card,
+.venom-page .page-dark .card{
+  background:linear-gradient(145deg,rgba(38,23,53,.86),rgba(15,10,20,.94));
+  border:1px solid rgba(167,139,250,.22);
+  border-radius:18px;
+  padding:24px;
+  color:#fff;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.06),
+    0 18px 38px rgba(0,0,0,.30);
+  transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease;
+}
+.venom-page .card:hover{
+  transform:translateY(-5px);
+  border-color:rgba(253,224,71,.55);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.08),
+    0 22px 50px rgba(0,0,0,.40),
+    0 0 28px rgba(139,92,246,.16);
+}
+.venom-page .card-gold{border-top:1px solid rgba(253,224,71,.48);}
+.venom-page .card-blue{border-top:1px solid rgba(139,92,246,.55);}
+.venom-page .card h3,
+.venom-page .page-dark .card h3{color:#fff;}
+.venom-page .card p,
+.venom-page .page-dark .card p{color:rgba(255,255,255,.64);}
+.venom-page .card > div[style*="font-size:26px"]{
+  display:flex;
+  width:48px;
+  height:48px;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:rgba(253,224,71,.10);
+  border:1px solid rgba(253,224,71,.25);
+}
+
+/* Document and navigation cards */
+.venom-page .doc-item{
+  background:rgba(24,16,31,.88) !important;
+  border:1px solid rgba(139,92,246,.22) !important;
+  border-radius:14px !important;
+  color:#fff;
+  padding:17px 18px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.04);
+}
+.venom-page .doc-item:hover{
+  border-color:rgba(253,224,71,.55) !important;
+  box-shadow:0 0 0 3px rgba(253,224,71,.07),0 15px 35px rgba(0,0,0,.25);
+  transform:translateY(-2px);
+}
+.venom-page .doc-icon{
+  background:linear-gradient(145deg,var(--blue2),#3B0764) !important;
+  border:1px solid rgba(167,139,250,.45) !important;
+  border-radius:12px;
+  color:var(--yellow) !important;
+  box-shadow:0 0 18px rgba(139,92,246,.18);
+}
+.venom-page .doc-icon i{color:var(--yellow) !important;}
+.venom-page .doc-info .doc-name{color:#fff !important;}
+.venom-page .doc-info .doc-desc{color:rgba(255,255,255,.48);}
+.venom-page .doc-dl{color:var(--yellow);}
+
+/* Inline organization blocks on the home page */
+.venom-page .section div[style*="background:var(--white)"]{
+  background:rgba(24,16,31,.88) !important;
+  border-color:rgba(139,92,246,.22) !important;
+  color:#fff !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.04);
+}
+.venom-page .section div[style*="background:var(--white)"] div[style*="color:var(--ink)"]{color:#fff !important;}
+.venom-page .section div[style*="background:var(--white)"] div[style*="color:var(--g3)"]{color:rgba(255,255,255,.48) !important;}
+
+/* Callouts, badges and tables */
+.venom-page .callout,
+.venom-page .page-dark .callout{
+  background:linear-gradient(90deg,rgba(109,40,217,.24),rgba(253,224,71,.04));
+  border:1px solid rgba(139,92,246,.28);
+  border-left:4px solid var(--yellow);
+  border-radius:12px;
+  box-shadow:0 0 30px rgba(109,40,217,.08);
+}
+.venom-page .callout p{color:rgba(255,255,255,.80) !important;}
+.venom-page .callout strong{color:#fff;}
+.venom-page .badge{border-radius:999px;}
+.venom-page .badge-gold,.venom-page .av-gold{background:var(--yellow);color:#130D17;border-color:var(--yellow);}
+.venom-page .badge-blue,.venom-page .av-blue{background:var(--blue2);color:#fff;border-color:var(--blue);}
+.venom-page .vote-table{
+  border-collapse:separate;
+  border-spacing:0;
+  overflow:hidden;
+  border:1px solid rgba(139,92,246,.24);
+  border-radius:14px;
+  background:#0F0A14;
+}
+.venom-page .vote-table th{
+  background:linear-gradient(90deg,#3B0764,#5B21B6);
+  color:var(--yellow);
+  border-color:rgba(255,255,255,.08);
+}
+.venom-page .vote-table td,
+.venom-page .page-dark .vote-table td{
+  color:rgba(255,255,255,.70);
+  border-color:rgba(255,255,255,.07);
+  background:#120D17 !important;
+}
+.venom-page .vote-table tr:hover td{background:#21132D !important;}
+
+/* Footer */
+.venom-page footer{
+  background:
+    radial-gradient(circle at 50% 0,rgba(139,92,246,.20),transparent 35%),
+    #050307;
+  border-top:1px solid rgba(253,224,71,.30);
+  padding:52px 24px;
+}
+.venom-page .footer-brand{
+  color:#fff;
+  font-size:34px;
+  letter-spacing:3px;
+  text-shadow:0 0 28px rgba(139,92,246,.48);
+}
+.venom-page .footer-brand::after{
+  content:"";
+  display:block;
+  width:90px;
+  height:2px;
+  margin:13px auto 0;
+  background:linear-gradient(90deg,transparent,var(--yellow),transparent);
+  box-shadow:0 0 14px rgba(253,224,71,.35);
+}
+.venom-page .footer-links a{color:rgba(255,255,255,.50);}
+.venom-page .footer-links a:hover{color:var(--yellow);}
+
+@media(max-width:960px){
+  .venom-page .nav-inner{flex-direction:column;align-items:flex-start;gap:8px;}
+  .venom-page .nav-links{justify-content:flex-start;}
+  .venom-page .hero{min-height:510px;}
+}
+@media(max-width:640px){
+  .venom-page .nav-inner{padding:9px 15px;}
+  .venom-page .nav-links{width:100%;flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;}
+  .venom-page .nav-links a{flex:0 0 auto;}
+  .venom-page .hero{min-height:500px;padding:64px 0 62px;}
+  .venom-page .hero-logo{width:122px;height:122px;}
+  .venom-page .hero h1{font-size:68px;letter-spacing:-1px;}
+  .venom-page .page,.venom-page .page-dark{padding-left:17px;padding-right:17px;border:0;}
+  .venom-page .card{border-radius:14px;}
+}
