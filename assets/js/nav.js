@@ -62,6 +62,21 @@ function toggleTheme() {
   setTheme(currentTheme() === 'dark' ? 'light' : 'dark');
 }
 
+function loadRosterArtwork() {
+  const swaps = [
+    ['img[src$="kassidy-c.jpg"]', 'assets/players/kassidy-c.svg?v=2'],
+    ['img[src$="johnny-r.jpg"]', 'assets/players/johnny-r.svg?v=2']
+  ];
+  swaps.forEach(([selector, source]) => {
+    const image = document.querySelector(selector);
+    if (!image) return;
+    image.removeAttribute('onerror');
+    image.style.removeProperty('display');
+    image.parentElement?.classList.remove('no-photo');
+    image.src = source;
+  });
+}
+
 setTheme(currentTheme(), false);
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -73,6 +88,8 @@ document.addEventListener('DOMContentLoaded', () => {
       a.classList.add('active');
     }
   });
+
+  loadRosterArtwork();
 
   const btn = document.querySelector('.theme-toggle');
   setTheme(currentTheme(), false);
