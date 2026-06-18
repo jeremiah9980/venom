@@ -9,11 +9,11 @@ Drop a parent-cleared photo here named after the player slug, and it will automa
 |-------:|-------------|-----------------------|
 | 1      | Penny B.    | penny-b.jpg           |
 | 2      | Aubrey B.   | aubrey-b.jpg          |
-| 3      | Addison S.  | addison-s.jpg         |
 | 4      | Kynsie E.   | kynsie-e.jpg          |
 | 6      | Gracie W.   | gracie-w.jpg          |
 | 8      | Brynlie H.  | brynlie-h.jpg         |
 | 10     | Hadley W.   | hadley-w.jpg          |
+| 11     | Kassidy C.  | kassidy-c.svg         |
 | 12     | Addison P.  | addison-p.jpg         |
 | 21     | Saraya P.   | saraya-p.jpg          |
 | 22     | Payton R.   | payton-r.jpg          |
