@@ -3,26 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>12U Roster — Texas Venom</title>
+  <meta name="theme-color" content="#EDE7F0">
+  <title>12U Active Roster — Texas Venom</title>
   <script>
-    /* Theme init — runs synchronously before CSS to prevent FOUC. */
     (function(){
       try {
-        var saved = localStorage.getItem('venom-theme');
+        var saved = localStorage.getItem('venom-theme') || localStorage.getItem('texas-venom-theme');
         var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
         document.documentElement.classList.add('theme-' + theme);
+        document.documentElement.dataset.theme = theme;
       } catch (e) {
         document.documentElement.classList.add('theme-light');
+        document.documentElement.dataset.theme = 'light';
       }
     })();
   </script>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/team-venom.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=varsity-luxe">
+  <link rel="stylesheet" href="assets/css/team-venom.css?v=varsity-luxe">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
-
+  <style>
+    .roster-summary{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+    .roster-count{display:inline-flex;align-items:center;gap:9px;padding:9px 15px;background:var(--blue-l);border:1px solid var(--blue-m);border-radius:999px;color:var(--blue2);font-family:var(--body);font-size:11px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase}
+    .roster-count strong{color:var(--blue);font-size:14px}
+    .active-dot{width:9px;height:9px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.13)}
+    .roster-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:20px}
+    .player-card{background:var(--white);border:1px solid var(--g4);border-radius:5px;overflow:hidden;box-shadow:0 14px 34px rgba(64,39,78,.06);transition:.22s ease;position:relative}
+    .player-card::before{content:"";position:absolute;left:0;top:0;width:64px;height:3px;background:linear-gradient(90deg,var(--blue),var(--yellow));z-index:2}
+    .player-card:hover{transform:translateY(-4px);border-color:var(--blue-m);box-shadow:0 22px 48px rgba(64,39,78,.11)}
+    .player-photo{position:relative;aspect-ratio:4/3;background:linear-gradient(135deg,#f3edff,#fbf9f3);overflow:hidden}
+    .player-photo img{width:100%;height:100%;object-fit:cover;display:block}
+    .player-photo.no-photo img{display:none}
+    .photo-fallback{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--blue-m)}
+    .photo-fallback i{font-size:58px}
+    .photo-fallback span{font-family:var(--display);font-size:30px;color:var(--blue);margin-top:4px}
+    .player-photo img:not([style*="display: none"]) + .photo-fallback{display:none}
+    .jersey{position:absolute;left:13px;bottom:12px;z-index:2;min-width:48px;padding:7px 11px;border-radius:999px;background:var(--blue2);border:2px solid var(--yellow);color:#fff;text-align:center;font-family:var(--body);font-size:15px;font-weight:800;box-shadow:0 8px 20px rgba(33,28,38,.25)}
+    .player-body{padding:17px 18px 19px}
+    .player-name{font-family:var(--display);font-size:24px;line-height:1.05;color:var(--ink)}
+    .player-status{display:inline-flex;align-items:center;gap:7px;margin-top:11px;padding:6px 10px;border-radius:999px;background:var(--yellow-l);border:1px solid var(--yellow-m);color:var(--blue2);font-family:var(--body);font-size:9px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase}
+    .player-status::before{content:"";width:7px;height:7px;border-radius:50%;background:#22c55e}
+    html.theme-dark .player-card,html[data-theme="dark"] .player-card{background:#1b1420;border-color:#43364a}
+    html.theme-dark .player-photo,html[data-theme="dark"] .player-photo{background:linear-gradient(135deg,#24162d,#110c14)}
+    html.theme-dark .player-name,html[data-theme="dark"] .player-name{color:#fff}
+    html.theme-dark .player-status,html[data-theme="dark"] .player-status{background:rgba(216,255,34,.08);border-color:rgba(216,255,34,.28);color:var(--yellow)}
+    @media(max-width:640px){.roster-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.player-name{font-size:19px}.player-body{padding:14px}.jersey{font-size:13px;padding:6px 9px}.photo-fallback i{font-size:44px}.photo-fallback span{font-size:24px}}
+    @media(max-width:420px){.roster-grid{grid-template-columns:1fr}}
+  </style>
 </head>
 <body class="venom-page">
-<script src="assets/js/nav.js"></script>
+<script src="assets/js/nav.js?v=varsity-luxe"></script>
 
 <section class="hero">
   <div class="hero-inner">
@@ -30,40 +59,77 @@
     <div class="hero-kicker">Texas Venom &bull; 12U &bull; Fall 2026</div>
     <h1>12U Roster</h1>
     <div class="hero-rule"></div>
-    <p class="hero-tagline">Roster forming for Fall 2026. Tryout and recruiting inquiries welcome.</p>
+    <p class="hero-tagline">Eleven active players. One standard. Built to develop, compete, and represent Texas Venom.</p>
   </div>
 </section>
 
 <div class="gold-strip">
-  <p>12U &nbsp;&bull;&nbsp; Fall 2026 &nbsp;&bull;&nbsp; <b>Building Roster</b> &nbsp;&middot;&nbsp; Coach Chris Balcom</p>
+  <p>12U &nbsp;&bull;&nbsp; Fall 2026 &nbsp;&bull;&nbsp; <b>11 Active Players</b> &nbsp;&bull;&nbsp; Coach Chris Balcom</p>
 </div>
 
-<div class="page page-dark">
-
-  <div class="section">
-    <div class="section-label">Roster Status</div>
-    <h2>12U — Fall 2026</h2>
+<div class="page">
+  <section class="section">
+    <div class="section-label">Official Team Roster</div>
+    <h2>Active Players</h2>
     <div class="section-rule"></div>
-    <p>The 12U team is actively recruiting and finalizing the Fall 2026 roster. Once the roster is set, this page will display players in GameChanger format (first name + last initial + jersey number), with profile pages activated per-player on signed parent media-release — same consent posture as the 10U team.</p>
-  </div>
+    <div class="roster-summary">
+      <div class="roster-count"><span class="active-dot"></span><strong>11</strong> Active Players</div>
+      <div class="roster-count"><i class="ti ti-shirt-sport"></i> Jersey Numbers Confirmed</div>
+    </div>
 
-  <div class="section">
+    <div class="roster-grid">
+      <article class="player-card">
+        <div class="player-photo"><img src="assets/players/penny-b.jpg" alt="Penny Bridgewaters" onerror="this.style.display='none';this.parentElement.classList.add('no-photo');"><div class="photo-fallback"><i class="ti ti-user"></i><span>#1</span></div><div class="jersey">#1</div></div>
+        <div class="player-body"><div class="player-name">Penny Bridgewaters</div><div class="player-status">Active Roster</div></div>
+      </article>
+      <article class="player-card">
+        <div class="player-photo"><img src="assets/players/aubrey-b.jpg" alt="Aubrey Balcom" onerror="this.style.display='none';this.parentElement.classList.add('no-photo');"><div class="photo-fallback"><i class="ti ti-user"></i><span>#2</span></div><div class="jersey">#2</div></div>
+        <div class="player-body"><div class="player-name">Aubrey Balcom</div><div class="player-status">Active Roster</div></div>
+      </article>
+      <article class="player-card">
+        <div class="player-photo"><img src="assets/players/kynsie-e.jpg" alt="Kynsington Elliott" onerror="this.style.display='none';this.parentElement.classList.add('no-photo');"><div class="photo-fallback"><i class="ti ti-user"></i><span>#4</span></div><div class="jersey">#4</div></div>
+        <div class="player-body"><div class="player-name">Kynsington Elliott</div><div class="player-status">Active Roster</div></div>
+      </article>
+      <article class="player-card">
+        <div class="player-photo"><img src="assets/players/gracie-w.jpg" alt="Gracelyn Welch" onerror="this.style.display='none';this.parentElement.classList.add('no-photo');"><div class="photo-fallback"><i class="ti ti-user"></i><span>#6</span></div><div class="jersey">#6</div></div>
+        <div class="player-body"><div class="player-name">Gracelyn Welch</div><div class="player-status">Active Roster</div></div>
+      </article>
+      <article class="player-card">
+        <div class="player-photo"><img src="assets/players/hadley-w.jpg" alt="Hadley Wiegers" onerror="this.style.display='none';this.parentElement.classList.add('no-photo');"><div class="photo-fallback"><i class="ti ti-user"></i><span>#10</span></div><div class="jersey">#10</div></div>
+        <div class="player-body"><div class="player-name">Hadley Wiegers</div><div class="player-status">Active Roster</div></div>
+      </article>
+      <article class="player-card">
+        <div class="player-photo"><img src="assets/players/kassidy-c.jpg" alt="Kassidy Cargill" onerror="this.style.display='none';this.parentElement.classList.add('no-photo');"><div class="photo-fallback"><i class="ti ti-user"></i><span>#11</span></div><div class="jersey">#11</div></div>
+        <div class="player-body"><div class="player-name">Kassidy Cargill</div><div class="player-status">Active Roster</div></div>
+      </article>
+      <article class="player-card">
+        <div class="player-photo"><img src="assets/players/addison-p.jpg" alt="Addison Popkoff" onerror="this.style.display='none';this.parentElement.classList.add('no-photo');"><div class="photo-fallback"><i class="ti ti-user"></i><span>#12</span></div><div class="jersey">#12</div></div>
+        <div class="player-body"><div class="player-name">Addison Popkoff</div><div class="player-status">Active Roster</div></div>
+      </article>
+      <article class="player-card">
+        <div class="player-photo"><img src="assets/players/saraya-p.jpg" alt="Saraya Palmer" onerror="this.style.display='none';this.parentElement.classList.add('no-photo');"><div class="photo-fallback"><i class="ti ti-user"></i><span>#21</span></div><div class="jersey">#21</div></div>
+        <div class="player-body"><div class="player-name">Saraya Palmer</div><div class="player-status">Active Roster</div></div>
+      </article>
+      <article class="player-card">
+        <div class="player-photo"><img src="assets/players/payton-r.jpg" alt="Payton Riser" onerror="this.style.display='none';this.parentElement.classList.add('no-photo');"><div class="photo-fallback"><i class="ti ti-user"></i><span>#22</span></div><div class="jersey">#22</div></div>
+        <div class="player-body"><div class="player-name">Payton Riser</div><div class="player-status">Active Roster</div></div>
+      </article>
+      <article class="player-card">
+        <div class="player-photo"><img src="assets/players/johnny-r.jpg" alt="Johnny Rogers" onerror="this.style.display='none';this.parentElement.classList.add('no-photo');"><div class="photo-fallback"><i class="ti ti-user"></i><span>#74</span></div><div class="jersey">#74</div></div>
+        <div class="player-body"><div class="player-name">Johnny Rogers</div><div class="player-status">Active Roster</div></div>
+      </article>
+      <article class="player-card">
+        <div class="player-photo"><img src="assets/players/emily-l.jpg" alt="Emily Lambdin" onerror="this.style.display='none';this.parentElement.classList.add('no-photo');"><div class="photo-fallback"><i class="ti ti-user"></i><span>#99</span></div><div class="jersey">#99</div></div>
+        <div class="player-body"><div class="player-name">Emily Lambdin</div><div class="player-status">Active Roster</div></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
     <div class="callout">
-      <p><strong>Interested in trying out?</strong> Reach out to <a href="contact.html" style="color:var(--yellow);">the Co-Directors</a> for tryout and open-practice dates. See <a href="standards.html" style="color:var(--yellow);">Team Standards</a> for the expectations every Venom player and family signs onto, and <a href="team-info.html" style="color:var(--yellow);">Team Info</a> for dues, uniforms, and program details.</p>
+      <p><strong>12U Active Roster:</strong> Player names and jersey numbers shown above are the confirmed active Texas Venom 12U roster for Fall 2026.</p>
     </div>
-  </div>
-
-  <div class="section">
-    <div class="section-label">What To Expect</div>
-    <h2>The Program</h2>
-    <div class="section-rule"></div>
-    <div class="card-grid card-grid-3">
-      <div class="card card-gold"><h3>Standards-First</h3><p>Players are held to one organizational standard regardless of age division. See the Team Standards page.</p></div>
-      <div class="card card-gold"><h3>Development Focus</h3><p>12U is a development year. Practices emphasize fundamentals, position depth, and game IQ.</p></div>
-      <div class="card card-gold"><h3>Tournament Calendar</h3><p>Schedule includes Central Texas tournaments plus selected state-level events. Travel light enough for 12U families.</p></div>
-    </div>
-  </div>
-
+  </section>
 </div>
 
 <footer>
