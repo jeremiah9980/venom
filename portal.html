@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Portal — Texas Venom</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/team-venom.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+<style>
+  /* sync banner */
+  .sync-bar{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding:14px 20px;background:linear-gradient(90deg,rgba(109,40,217,.18) 0%,rgba(198,255,0,.04) 100%);border:1px solid rgba(198,255,0,.25);border-radius:10px;margin-bottom:24px;}
+  .sync-bar .sync-dot{width:10px;height:10px;border-radius:50%;background:var(--yellow);box-shadow:0 0 12px var(--yellow);}
+  .sync-bar .sync-text{font-family:var(--display);text-transform:uppercase;letter-spacing:2px;font-size:12px;color:#fff;}
+  .sync-bar .sync-text b{color:var(--yellow);}
+  .sync-bar .sync-sep{color:rgba(255,255,255,.3);}
+  #sync-errors{display:none;margin-top:8px;padding:8px 12px;background:rgba(220,38,38,.18);border-left:3px solid #dc2626;border-radius:0 6px 6px 0;color:#fca5a5;font-size:13px;}
+
+  /* team tabs */
+  .tabs{display:flex;gap:8px;margin-bottom:24px;flex-wrap:wrap;}
+  .tabs button{background:linear-gradient(180deg,#150828 0%,#0d0518 100%);border:1px solid rgba(109,40,217,.32);color:rgba(255,255,255,.65);padding:10px 16px;border-radius:8px;font-family:var(--display);text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:700;cursor:pointer;transition:.2s;display:inline-flex;align-items:center;gap:8px;}
+  .tabs button:hover{border-color:var(--yellow);color:#fff;}
+  .tabs button.active{background:var(--yellow);color:var(--ink-dark);border-color:var(--yellow);}
+  .tabs button span{display:inline-block;min-width:22px;padding:2px 6px;background:rgba(0,0,0,.18);border-radius:10px;font-size:10px;}
+  .tabs button.active span{background:rgba(0,0,0,.22);}
+
+  /* counts row */
+  .counts-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-bottom:30px;}
+  .count-card{background:linear-gradient(180deg,#150828 0%,#0d0518 100%);border:1px solid rgba(109,40,217,.32);border-radius:10px;padding:18px 20px;position:relative;}
+  .count-card::before{content:"";position:absolute;top:0;left:18px;width:36px;height:2px;background:var(--yellow);}
+  .count-card .v{font-family:var(--display);font-size:32px;font-weight:900;color:var(--yellow);line-height:1;}
+  .count-card .l{font-family:var(--display);text-transform:uppercase;letter-spacing:2px;font-size:11px;color:rgba(255,255,255,.65);margin-top:6px;}
+
+  /* event card */
+  .ev-list{display:flex;flex-direction:column;gap:14px;}
+  .ev{display:grid;grid-template-columns:88px 1fr;gap:18px;background:linear-gradient(180deg,#150828 0%,#0d0518 100%);border:1px solid rgba(109,40,217,.32);border-radius:12px;padding:18px;transition:.2s;}
+  .ev:hover{border-color:var(--yellow);transform:translateX(2px);}
+  .ev-past{opacity:.68;}
+  .ev-past:hover{opacity:1;}
+  .ev-date{text-align:center;border-right:1px solid rgba(109,40,217,.25);padding-right:14px;display:flex;flex-direction:column;justify-content:center;}
+  .ev-day{font-family:var(--display);font-weight:900;font-size:42px;color:var(--yellow);line-height:1;}
+  .ev-month{font-family:var(--display);text-transform:uppercase;letter-spacing:3px;font-size:11px;color:rgba(255,255,255,.55);margin-top:4px;}
+  .ev-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px;}
+  .ev-type{font-family:var(--display);text-transform:uppercase;letter-spacing:1.5px;font-size:10px;padding:3px 10px;border-radius:4px;font-weight:700;}
+  .ev-type.tg{background:rgba(198,255,0,.18);border:1px solid rgba(198,255,0,.4);color:var(--yellow);}
+  .ev-type.tp{background:rgba(109,40,217,.22);border:1px solid rgba(109,40,217,.4);color:#c4b5fd;}
+  .ev-type.tt{background:rgba(220,38,38,.18);border:1px solid rgba(220,38,38,.4);color:#fca5a5;}
+  .ev-type.ts{background:rgba(96,165,250,.18);border:1px solid rgba(96,165,250,.4);color:#bfdbfe;}
+  .ev-type.tm{background:rgba(245,158,11,.18);border:1px solid rgba(245,158,11,.4);color:#fcd34d;}
+  .ev-type.te{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.85);}
+  .ev-team{font-family:var(--display);text-transform:uppercase;letter-spacing:1.5px;font-size:10px;padding:3px 9px;background:transparent;border:1px solid rgba(255,255,255,.22);border-radius:4px;color:rgba(255,255,255,.75);}
+  .ev-when{font-family:var(--display);text-transform:uppercase;letter-spacing:1.5px;font-size:11px;color:rgba(255,255,255,.55);}
+  .ev-title{font-family:var(--display);font-weight:900;font-size:18px;text-transform:uppercase;letter-spacing:0.3px;color:#fff;margin:0 0 4px;line-height:1.15;}
+  .ev-opp{font-size:14px;color:rgba(255,255,255,.78);margin-bottom:6px;}
+  .ev-opp b{color:var(--yellow);font-weight:700;}
+  .ev-loc{display:inline-flex;align-items:center;gap:5px;font-size:13px;color:rgba(255,255,255,.72);text-decoration:none;margin-top:2px;}
+  .ev-loc:hover{color:var(--yellow);}
+  .ev-loc i{color:rgba(198,255,0,.7);}
+  .ev-desc{margin-top:8px;font-size:13px;color:rgba(255,255,255,.65);line-height:1.55;padding-top:8px;border-top:1px dashed rgba(255,255,255,.08);}
+  .ev-actions{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;}
+  .ev-cta{display:inline-flex;align-items:center;gap:6px;font-family:var(--display);text-transform:uppercase;letter-spacing:1.5px;font-size:11px;padding:7px 12px;background:var(--yellow);color:var(--ink-dark);text-decoration:none;border-radius:6px;font-weight:700;transition:.2s;}
+  .ev-cta:hover{background:#fff;}
+  .ev-cta-ghost{background:transparent;color:rgba(255,255,255,.75);border:1px solid rgba(109,40,217,.4);}
+  .ev-cta-ghost:hover{background:rgba(109,40,217,.2);color:#fff;}
+
+  /* empty state */
+  .ev-empty{background:linear-gradient(180deg,#150828 0%,#0d0518 100%);border:1px dashed rgba(109,40,217,.35);border-radius:12px;padding:36px;text-align:center;}
+  .ev-empty i{font-size:42px;color:rgba(198,255,0,.45);margin-bottom:14px;}
+  .ev-empty h3{font-family:var(--display);text-transform:uppercase;letter-spacing:1px;color:#fff;margin-bottom:8px;}
+  .ev-empty p{color:rgba(255,255,255,.68);max-width:480px;margin:0 auto;font-size:14px;line-height:1.55;}
+  .ev-empty-sm{padding:18px;text-align:center;color:rgba(255,255,255,.55);font-size:13px;}
+
+  /* chat tile */
+  .chat-tile{display:grid;grid-template-columns:88px 1fr auto;gap:18px;align-items:center;background:linear-gradient(135deg,rgba(109,40,217,.4) 0%,rgba(20,8,40,.95) 60%);border:1px solid rgba(198,255,0,.4);border-radius:14px;padding:22px;text-decoration:none;color:inherit;transition:.2s;}
+  .chat-tile:hover{transform:translateY(-2px);box-shadow:0 18px 40px rgba(109,40,217,.35);}
+  .chat-tile-icon{width:64px;height:64px;border-radius:14px;background:rgba(198,255,0,.18);border:1px solid var(--yellow);display:grid;place-items:center;color:var(--yellow);font-size:30px;margin:0 auto;}
+  .chat-tile h3{font-family:var(--display);font-weight:900;text-transform:uppercase;letter-spacing:1px;color:#fff;margin-bottom:4px;}
+  .chat-tile p{color:rgba(255,255,255,.72);font-size:13px;margin:0;}
+  .chat-tile .arrow{color:var(--yellow);font-size:22px;}
+
+  @media(max-width:680px){
+    .ev{grid-template-columns:1fr;}
+    .ev-date{border-right:none;border-bottom:1px solid rgba(109,40,217,.25);padding-right:0;padding-bottom:10px;flex-direction:row;justify-content:flex-start;gap:14px;align-items:baseline;}
+    .ev-month{margin-top:0;}
+    .chat-tile{grid-template-columns:64px 1fr;}
+    .chat-tile .arrow{display:none;}
+  }
+</style>
+</head>
+<body class="venom-page">
+<script src="assets/js/nav.js"></script>
+
+<section class="hero">
+  <div class="hero-inner">
+    <img src="assets/venom-logo.jpg" alt="Texas Venom" class="hero-logo">
+    <div class="hero-kicker">Texas Venom &bull; Family Portal</div>
+    <h1>Schedule</h1>
+    <div class="hero-rule"></div>
+    <p class="hero-tagline">All games, practices, tournaments, and team events — synced live from GameChanger.</p>
+  </div>
+</section>
+
+<div class="gold-strip">
+  <p>10U &middot; 12U &middot; 14U &nbsp;&bull;&nbsp; <b>Auto-Synced</b> &nbsp;&middot;&nbsp; Tap any event for directions or to open it in GameChanger</p>
+</div>
+
+<div class="page page-dark">
+
+  <div class="section">
+    <!-- sync status banner -->
+    <div class="sync-bar">
+      <div class="sync-dot"></div>
+      <div class="sync-text"><b id="sync-status">Loading…</b></div>
+      <div class="sync-sep">·</div>
+      <div class="sync-text"><span id="sync-count">— events</span></div>
+      <div class="sync-sep">·</div>
+      <div class="sync-text">Teams: <span id="sync-teams" style="color:var(--yellow);">—</span></div>
+    </div>
+    <div id="sync-errors"></div>
+
+    <!-- team filter -->
+    <div class="tabs" id="team-tabs">
+      <button data-team="ALL" class="active">All<span>0</span></button>
+    </div>
+
+    <!-- counts strip -->
+    <div class="counts-row">
+      <div class="count-card"><div class="v" id="count-upcoming">0</div><div class="l">Upcoming Events</div></div>
+      <div class="count-card"><div class="v" id="count-past">0</div><div class="l">Recent Events</div></div>
+      <div class="count-card"><div class="v"><i class="ti ti-refresh"></i></div><div class="l">Syncs every 30 min</div></div>
+      <div class="count-card"><div class="v" id="filter-count">0</div><div class="l">Showing (filter)</div></div>
+    </div>
+  </div>
+
+  <!-- chat / GC team app deep-link -->
+  <div class="section" style="padding-top:0;">
+    <a class="chat-tile" href="https://web.gc.com/teams" target="_blank" rel="noopener" id="chat-tile">
+      <div class="chat-tile-icon"><i class="ti ti-message-circle-2"></i></div>
+      <div>
+        <h3>Team Chat in GameChanger</h3>
+        <p>Open the GameChanger app to read and post team messages. Chat lives inside GC and stays there — message history, attachments, and notifications all work through their app.</p>
+      </div>
+      <div class="arrow"><i class="ti ti-arrow-right"></i></div>
+    </a>
+  </div>
+
+  <!-- UPCOMING -->
+  <div class="section" style="padding-top:0;">
+    <div class="section-label">Schedule</div>
+    <h2>Upcoming Events</h2>
+    <div class="section-rule"></div>
+    <div class="ev-list" id="upcoming-list">
+      <div class="ev-empty">
+        <i class="ti ti-loader"></i>
+        <h3>Loading…</h3>
+        <p>Fetching the synced events file.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- RECENT -->
+  <div class="section" style="padding-top:0;">
+    <div class="section-label">Last week</div>
+    <h2>Recent Events</h2>
+    <div class="section-rule"></div>
+    <div class="ev-list" id="past-list"></div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <div class="section">
+    <div class="callout">
+      <p><strong>How this page works.</strong> A background workflow pulls the team&apos;s GameChanger calendar feed every 30 minutes and writes a sanitized events file to the site. The sync token is stored as a private repository secret and never appears in the public source. If you spot a missing game, the GameChanger app is the source of truth — fix it there and it&apos;ll appear here within 30 minutes (or trigger the sync manually from the repo Actions tab). See <code>GC_INTEGRATION.md</code> for setup details.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-brand">Texas Venom</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a><a href="teams.html">Teams</a><a href="standards.html">Standards</a>
+    <a href="portal.html">Portal</a><a href="team-info.html">Team Info</a><a href="contact.html">Contact</a>
+  </div>
+  <p>Leander, Texas &bull; 10U / 12U / 14U Select Softball &bull; 2026</p>
+  <p style="margin-top:4px;">Head Coach: Chris Balcom &bull; Co-Directors: Cargill &middot; Balcom &middot; Welch</p>
+</footer>
+
+<script src="assets/js/portal.js"></script>
+</body>
+</html>
