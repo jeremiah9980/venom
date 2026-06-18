@@ -13,7 +13,7 @@
     const link = document.createElement('link');
     link.id = 'venom-theme-modes';
     link.rel = 'stylesheet';
-    link.href = 'assets/css/theme-modes.css?v=20260618';
+    link.href = 'assets/css/theme-modes.css?v=20260618-2';
     document.head.appendChild(link);
   }
 
@@ -57,6 +57,10 @@
         <img src="assets/venom-logo.jpg" alt="Texas Venom logo">
         Texas Venom <span>SELECT SOFTBALL</span>
       </a>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme" aria-pressed="false">
+        <span class="theme-toggle-icon" aria-hidden="true">☀</span>
+        <span class="theme-toggle-label">Light</span>
+      </button>
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="teams.html">Teams</a>
@@ -74,10 +78,6 @@
         <a href="contact.html">Contact</a>
         <a href="fundraising.html">Support Us</a>
       </div>
-      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme" aria-pressed="false">
-        <span class="theme-toggle-icon" aria-hidden="true">☀</span>
-        <span class="theme-toggle-label">Light</span>
-      </button>
     </div>
   </nav>`;
 
@@ -86,7 +86,9 @@
 
     const path = window.location.pathname.split('/').pop() || 'index.html';
     document.querySelectorAll('.nav-links a').forEach(link => {
-      if (link.getAttribute('href') === path) link.classList.add('active');
+      if (link.getAttribute('href') === path || (path === 'portal' && link.getAttribute('href') === 'portal.html')) {
+        link.classList.add('active');
+      }
     });
 
     const button = document.getElementById('theme-toggle');
