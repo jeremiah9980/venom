@@ -70,6 +70,30 @@ def classify(summary: str) -> str:
     return "other"
 
 
+def unescape_ical(v: str) -> str:
+    """RFC 5545 text-value unescape. Order matters: \\\\ first, then \\N and \\n."""
+    if not v: return ""
+    return (v.replace("\\\\", "\x00")   # preserve literal backslashes via sentinel
+             .replace("\\N", "\n")
+             .replace("\\n", "\n")
+             .replace("\\,", ",")
+             .replace("\\;", ";")
+             .replace("\x00", "\\"))
+
+
+def extract_notes(props: dict) -> str:
+    """
+    GameChanger puts event notes in iCal DESCRIPTION. Some GC versions also use
+    COMMENT or X-prefixed properties. Check known candidates in priority order
+    and return the first non-empty value, unescaped.
+    """
+    for key in ("X-GC-NOTES", "X-NOTES", "X-DESCRIPTION", "COMMENT", "DESCRIPTION"):
+        v = props.get(key, "").strip()
+        if v:
+            return unescape_ical(v)
+    return ""
+
+
 def extract_opponent(summary: str) -> str | None:
     for sep in [" vs ", " VS ", " @ ", " at "]:
         if sep in summary:
@@ -92,14 +116,16 @@ def parse_events(ics_text: str, team: str) -> list[dict]:
         if "SUMMARY" not in props:
             continue
         summary = props.get("SUMMARY", "")
+        notes = extract_notes(props)
         ev = {
             "id":          props.get("UID", "")[:64],
             "team":        team,
-            "title":       summary,
+            "title":       unescape_ical(summary),
             "start":       parse_dt(props.get("DTSTART", "")),
             "end":         parse_dt(props.get("DTEND", "")) if "DTEND" in props else None,
-            "location":    props.get("LOCATION", "").replace("\\,", ",").replace("\\n", " "),
-            "description": props.get("DESCRIPTION", "").replace("\\,", ",").replace("\\n", "\n"),
+            "location":    unescape_ical(props.get("LOCATION", "")),
+            "notes":       notes,
+            "description": notes,  # legacy field for any older portal version reading it
             "type":        classify(summary),
             "opponent":    extract_opponent(summary),
             "url":         props.get("URL", ""),

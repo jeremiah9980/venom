@@ -62,7 +62,12 @@ function locationLink(loc) {
 function eventCard(e, { past = false } = {}) {
   const d = fmtDate(e.start);
   const opp = e.opponent ? `<div class="ev-opp">vs <b>${e.opponent}</b></div>` : "";
-  const desc = e.description ? `<div class="ev-desc">${e.description.replace(/\n/g, "<br>")}</div>` : "";
+  const notes = (e.notes || e.description || "").trim();
+  const notesBlock = notes ? `
+    <div class="ev-notes">
+      <div class="ev-notes-label"><i class="ti ti-notes"></i> Notes</div>
+      <div class="ev-notes-body">${notes.replace(/\n/g, "<br>")}</div>
+    </div>` : "";
   const teamPill = e.team ? `<span class="ev-team">${e.team}</span>` : "";
   const gcLink = `${GC_TEAM_URL}`;
   return `
@@ -80,7 +85,7 @@ function eventCard(e, { past = false } = {}) {
         <h3 class="ev-title">${e.title || "Untitled event"}</h3>
         ${opp}
         ${locationLink(e.location)}
-        ${desc}
+        ${notesBlock}
         <div class="ev-actions">
           <a href="${gcLink}" target="_blank" rel="noopener" class="ev-cta">
             <i class="ti ti-external-link"></i> Open in GameChanger
