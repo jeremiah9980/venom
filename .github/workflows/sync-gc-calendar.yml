@@ -1,0 +1,43 @@
+name: Sync GameChanger Calendar
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # every 30 minutes
+  workflow_dispatch:           # run manually from Actions tab
+  push:
+    paths:
+      - "scripts/sync-gc-calendar.py"
+      - ".github/workflows/sync-gc-calendar.yml"
+
+permissions:
+  contents: write              # so the workflow can commit events.json
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Sync calendars
+        env:
+          GC_ICAL_10U: ${{ secrets.GC_ICAL_10U }}
+          GC_ICAL_12U: ${{ secrets.GC_ICAL_12U }}
+          GC_ICAL_14U: ${{ secrets.GC_ICAL_14U }}
+        run: python3 scripts/sync-gc-calendar.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "venom-portal-bot"
+          git config user.email "venom-portal-bot@users.noreply.github.com"
+          if [ -n "$(git status --porcelain assets/data/events.json)" ]; then
+            git add assets/data/events.json
+            git commit -m "chore(portal): sync GameChanger events [$(date -u +%FT%TZ)]"
+            git push
+          else
+            echo "No changes to events.json"
+          fi
