@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-06-18T00:00:00Z",
+  "sync_status": "waiting_for_schedule",
+  "sync_message": "The dashboard is ready and waiting for NCS to publish the 12U OPEN schedule.",
+  "event": {
+    "id": 12287,
+    "name": "3P Sports Dingers for Dads 6GG",
+    "start_date": "2026-06-20",
+    "end_date": "2026-06-21",
+    "location": "Taylor / Lorena, TX",
+    "division": "12U OPEN",
+    "registered_teams": 58,
+    "source_url": "https://www.playncs.com/fastpitch/Events/Schedule/12287/3p-sports-dingers-for-dads-6gg?division=12U%20OPEN"
+  },
+  "team": {
+    "id": "26-73839",
+    "name": "Texas Venom",
+    "source_url": "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom"
+  },
+  "upcoming_tournaments": [
+    {
+      "id": 12287,
+      "name": "3P Sports Dingers for Dads 6GG",
+      "dates": "Jun 20–21",
+      "location": "Taylor / Lorena, TX",
+      "division": "12U OPEN",
+      "registered_teams": 58,
+      "url": "https://www.playncs.com/fastpitch/Events/Schedule/12287/3p-sports-dingers-for-dads-6gg?division=12U%20OPEN"
+    },
+    {
+      "id": 12328,
+      "name": "3P Sports 2nd Annual Double Play Derby",
+      "dates": "Jun 27–28",
+      "location": "Taylor, TX",
+      "division": "10U / 12U / 14U",
+      "registered_teams": 32,
+      "url": "https://www.playncs.com/fastpitch/Events/Details/12328/3p-sports-2nd-annual-double-play-derby-open-c-class"
+    }
+  ],
+  "games": [],
+  "team_games": [],
+  "bracket": {
+    "published": false,
+    "rounds": []
+  },
+  "source": {
+    "schedule_url": "https://www.playncs.com/fastpitch/Events/Schedule/12287/3p-sports-dingers-for-dads-6gg?division=12U%20OPEN",
+    "team_url": "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom",
+    "last_http_status": null,
+    "last_error": null
+  }
+}
