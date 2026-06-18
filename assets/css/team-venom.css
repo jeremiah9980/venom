@@ -141,3 +141,76 @@ body.venom-page{
   color:#fff;
 }
 .venom-page .page-dark .vote-table td{ color:rgba(255,255,255,.82); border-color:rgba(255,255,255,.08); }
+
+/* ============================================================
+   THEME TOGGLE
+   --------------------------------------------------------------
+   Default behavior (no class on <html>): hero+nav+footer are dark,
+   .page content is light, .page-dark stays dark.
+
+   html.theme-dark  → .page content also goes dark
+   html.theme-light → .page-dark content reverts to light
+
+   Hero / nav / footer never change — they're brand elements.
+   ============================================================ */
+
+/* DARK theme: make any .page render with the dark treatment */
+html.theme-dark .venom-page .page{ background:#08040D; color:#E4DFEC; position:relative; }
+html.theme-dark .venom-page .page::before{
+  content:"";position:absolute;inset:0;background-image:var(--grain);opacity:.5;pointer-events:none;mix-blend-mode:overlay;z-index:0;
+}
+html.theme-dark .venom-page .page > *{ position:relative; z-index:1; }
+html.theme-dark .venom-page .page .section h2,
+html.theme-dark .venom-page .page .section h3{ color:#fff; }
+html.theme-dark .venom-page .page .section p{ color:rgba(255,255,255,.78); }
+html.theme-dark .venom-page .page .section-label{ color:var(--yellow); }
+html.theme-dark .venom-page .page .section-rule{ background:var(--yellow); }
+html.theme-dark .venom-page .page .card{
+  background:linear-gradient(180deg,#150828 0%,#0d0518 100%);
+  border:1px solid rgba(109,40,217,.32);
+  color:rgba(255,255,255,.82);
+  box-shadow:0 1px 0 rgba(255,255,255,.04) inset, 0 20px 50px rgba(0,0,0,.45);
+}
+html.theme-dark .venom-page .page .card h3{ color:#fff; }
+html.theme-dark .venom-page .page .callout{
+  background:linear-gradient(90deg,rgba(109,40,217,.18) 0%,transparent 100%);
+  border-left:3px solid var(--yellow);
+  color:#fff;
+}
+html.theme-dark .venom-page .page .vote-table td{ color:rgba(255,255,255,.82); border-color:rgba(255,255,255,.08); }
+html.theme-dark .venom-page .page code{ background:rgba(198,255,0,.14); color:var(--yellow); }
+
+/* LIGHT theme: override any .page-dark back to the light treatment */
+html.theme-light .venom-page .page-dark{ background:#f6f4f9; color:var(--ink); }
+html.theme-light .venom-page .page-dark::before{ display:none; }
+html.theme-light .venom-page .page-dark .section h2,
+html.theme-light .venom-page .page-dark .section h3{ color:var(--ink); }
+html.theme-light .venom-page .page-dark .section p{ color:var(--g2); }
+html.theme-light .venom-page .page-dark .section-label{ color:var(--blue); }
+html.theme-light .venom-page .page-dark .section-rule{ background:var(--blue); }
+html.theme-light .venom-page .page-dark .card{
+  background:#fff;
+  border:1px solid rgba(109,40,217,.1);
+  color:var(--ink);
+  box-shadow:0 1px 3px rgba(26,10,46,.04),0 8px 24px rgba(26,10,46,.04);
+}
+html.theme-light .venom-page .page-dark .card h3{ color:var(--ink); }
+html.theme-light .venom-page .page-dark .callout{
+  background:linear-gradient(90deg,rgba(109,40,217,.06) 0%,transparent 100%);
+  border-left:3px solid var(--blue);
+  color:var(--ink);
+}
+
+/* THEME TOGGLE BUTTON in the nav */
+.venom-page .theme-toggle{
+  appearance:none;background:transparent;border:1px solid rgba(198,255,0,.32);
+  width:36px;height:36px;border-radius:50%;
+  display:grid;place-items:center;cursor:pointer;color:var(--yellow);
+  transition:.2s;margin-left:8px;flex-shrink:0;
+}
+.venom-page .theme-toggle:hover{ background:rgba(198,255,0,.1); border-color:var(--yellow); transform:rotate(15deg); }
+.venom-page .theme-toggle i{ font-size:18px; line-height:1; }
+.venom-page .theme-toggle .theme-icon-sun{ display:none; }
+.venom-page .theme-toggle .theme-icon-moon{ display:inline-block; }
+html.theme-dark .venom-page .theme-toggle .theme-icon-sun{ display:inline-block; }
+html.theme-dark .venom-page .theme-toggle .theme-icon-moon{ display:none; }

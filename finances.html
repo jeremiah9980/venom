@@ -4,6 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Financial Transparency — Texas Venom</title>
+  <script>
+    /* Theme init — runs synchronously before CSS to prevent FOUC. */
+    (function(){
+      try {
+        var saved = localStorage.getItem('venom-theme');
+        var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.classList.add('theme-' + theme);
+      } catch (e) {
+        document.documentElement.classList.add('theme-light');
+      }
+    })();
+  </script>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/team-venom.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
@@ -823,10 +835,8 @@
   <div class="footer-links">
     <a href="index.html">Home</a><a href="teams.html">Teams</a><a href="standards.html">Standards</a>
     <a href="about.html">About</a>
-    <a href="board.html">Board</a>
     <a href="coaching.html">Coaching</a>
-    <a href="bylaws.html">Bylaws</a>
-    <a href="policies.html">Policies</a><a href="docs.html">Documents</a>
+    <a href="docs.html">Documents</a>
     <a href="fundraising.html">Support Us</a>
     <a href="rallyiq.html">RallyIQ</a><a href="contact.html">Contact</a>
   </div>
