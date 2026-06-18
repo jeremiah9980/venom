@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-18T20:41:39.676617+00:00",
+  "generated_at": "2026-06-18T20:45:52.345841+00:00",
   "sync_status": "live",
-  "sync_message": "Loaded 22 division game(s) from NCS.",
+  "sync_message": "Loaded 22 division game(s), including 4 Texas Venom game(s), from NCS.",
   "event": {
     "id": 12287,
     "name": "3P Sports Dingers for Dads 6GG",
@@ -19,366 +19,32 @@
   },
   "upcoming_tournaments": [
     {
-      "id": 11721,
-      "name": "SPRING BREAK FRENZY",
-      "dates": "Aug 23",
-      "location": "",
-      "division": "9U",
-      "registered_teams": null,
-      "url": "https://www.playncs.com/fastpitch/Events/Details/11721/spring-break-frenzy"
-    },
-    {
-      "id": 11622,
-      "name": "3P Sports 2nd Annual Sliding Into Spring C-CLASS ONLY",
-      "dates": "Aug 23",
-      "location": "",
-      "division": "9U",
-      "registered_teams": null,
-      "url": "https://www.playncs.com/fastpitch/Events/Details/11622/3p-sports-2nd-annual-sliding-into-spring-c-class-only"
-    },
-    {
-      "id": 11871,
-      "name": "GATESVILLE CLASSIC 6GG",
-      "dates": "Aug 23",
-      "location": "",
-      "division": "9U",
-      "registered_teams": null,
-      "url": "https://www.playncs.com/fastpitch/Events/Details/11871/gatesville-classic-6gg"
-    },
-    {
-      "id": 11873,
-      "name": "BASES LOADED 4GG 70 MIN POOLS 10u,12u,14u",
-      "dates": "Aug 23",
-      "location": "",
-      "division": "9U",
-      "registered_teams": null,
-      "url": "https://www.playncs.com/fastpitch/Events/Details/11873/bases-loaded-4gg-70-min-pools-10u-12u-14u"
-    },
-    {
-      "id": 11875,
-      "name": "MOTHER'S DAY MADNESS 6GG 65 MIN POOLS",
-      "dates": "Aug 23",
-      "location": "",
-      "division": "9U",
-      "registered_teams": null,
-      "url": "https://www.playncs.com/fastpitch/Events/Details/11875/mothers-day-madness-6gg-65-min-pools"
-    },
-    {
-      "id": 12646,
-      "name": "The Round Rock Diamond Champs (\"C\" Teams)",
-      "dates": "Aug 23",
-      "location": "",
-      "division": "9U",
-      "registered_teams": null,
-      "url": "https://www.playncs.com/fastpitch/Events/Details/12646/the-round-rock-diamond-champs-c-teams"
-    },
-    {
-      "id": 12677,
-      "name": "NCS TEXAS STATE CHAMPIONSHIPS",
-      "dates": "Aug 23",
-      "location": "",
-      "division": "9U",
-      "registered_teams": null,
-      "url": "https://www.playncs.com/fastpitch/Events/Details/12677/ncs-texas-state-championships"
-    },
-    {
       "id": 12287,
       "name": "3P Sports Dingers for Dads *6GG*",
-      "dates": "Jun 20-21",
+      "dates": "Jun 20–21",
       "location": "Lorena, TX",
-      "division": "10U · 12U · 14U · 18U",
-      "registered_teams": null,
-      "url": "https://www.playncs.com/fastpitch/Events/Details/12287/3p-sports-dingers-for-dads-6gg"
+      "division": "12U OPEN",
+      "registered_teams": 58,
+      "url": "https://www.playncs.com/fastpitch/Events/Schedule/12287/3p-sports-dingers-for-dads-6gg?division=12U%20OPEN"
+    },
+    {
+      "id": null,
+      "name": "3P Sports 2nd Annual Double Play Derby — OPEN & C-CLASS",
+      "dates": "Jun 27–28",
+      "location": "Taylor, TX",
+      "division": "10U / 12U / 14U",
+      "registered_teams": 32,
+      "url": "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom"
     }
   ],
   "games": [
     {
-      "id": "4ff14d0597c0",
-      "stage": "pool",
-      "round": "Pool Play",
-      "date": "",
-      "time": "10:20 AM",
-      "field": "",
-      "status": "scheduled",
-      "home": {
-        "name": "Texas Venom",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom"
-      },
-      "away": {
-        "name": "Texas Bombers CTX Tamez",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/70192/texas-bombers-ctx-tamez"
-      },
-      "source_text": "9 | Game 9 | Sat 10:20 AM | Sat 10:20 AM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | Texas Venom | Texas Bombers CTX Tamez"
-    },
-    {
-      "id": "882470297ca5",
-      "stage": "pool",
-      "round": "Pool Play",
-      "date": "",
-      "time": "10:20 AM",
-      "field": "",
-      "status": "scheduled",
-      "home": {
-        "name": "BYBC Starfire-Ochoa",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/70872/bybc-starfire-ochoa"
-      },
-      "away": {
-        "name": "Clubhouse Stix 12u Faglie",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/71586/clubhouse-stix-12u-faglie"
-      },
-      "source_text": "10 | Game 10 | Sat 10:20 AM | Sat 10:20 AM | Taylor Athletic Complex 7 | Taylor Athletic Complex 7 | BYBC Starfire-Ochoa | Clubhouse Stix 12u Faglie"
-    },
-    {
-      "id": "f0c8316821e2",
-      "stage": "pool",
-      "round": "Pool Play",
-      "date": "",
-      "time": "11:30 AM",
-      "field": "",
-      "status": "scheduled",
-      "home": {
-        "name": "CPYL Queen Bees",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/70136/cpyl-queen-bees"
-      },
-      "away": {
-        "name": "Lady Crush",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/72850/lady-crush"
-      },
-      "source_text": "11 | Game 11 | Sat 11:30 AM | Sat 11:30 AM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | CPYL Queen Bees | Lady Crush"
-    },
-    {
-      "id": "3d76bedaff38",
-      "stage": "pool",
-      "round": "Pool Play",
-      "date": "",
-      "time": "11:30 AM",
-      "field": "",
-      "status": "scheduled",
-      "home": {
-        "name": "CTX Bombers Meza",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/79552/ctx-bombers-meza"
-      },
-      "away": {
-        "name": "Texas Premier 12u",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/74241/texas-premier-12u"
-      },
-      "source_text": "12 | Game 12 | Sat 11:30 AM | Sat 11:30 AM | Taylor Athletic Complex 7 | Taylor Athletic Complex 7 | CTX Bombers Meza | Texas Premier 12u"
-    },
-    {
-      "id": "8a3dc364f217",
-      "stage": "pool",
-      "round": "Pool Play",
-      "date": "",
-      "time": "12:40 PM",
-      "field": "",
-      "status": "scheduled",
-      "home": {
-        "name": "Texas Bombers CTX Tamez",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/70192/texas-bombers-ctx-tamez"
-      },
-      "away": {
-        "name": "BYBC Starfire-Ochoa",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/70872/bybc-starfire-ochoa"
-      },
-      "source_text": "13 | Game 13 | Sat 12:40 PM | Sat 12:40 PM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | Texas Bombers CTX Tamez | BYBC Starfire-Ochoa"
-    },
-    {
-      "id": "6e431f936864",
-      "stage": "pool",
-      "round": "Pool Play",
-      "date": "",
-      "time": "12:40 PM",
-      "field": "",
-      "status": "scheduled",
-      "home": {
-        "name": "Texas Venom",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom"
-      },
-      "away": {
-        "name": "TX BOMBERS CTX 2K14 VALENZUELA",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/74665/tx-bombers-ctx-2k14-valenzuela"
-      },
-      "source_text": "14 | Game 14 | Sat 12:40 PM | Sat 12:40 PM | Taylor Athletic Complex 7 | Taylor Athletic Complex 7 | Texas Venom | TX BOMBERS CTX 2K14 VALENZUELA"
-    },
-    {
-      "id": "4c8de7ea7c97",
-      "stage": "pool",
-      "round": "Pool Play",
-      "date": "",
-      "time": "1:50 PM",
-      "field": "",
-      "status": "scheduled",
-      "home": {
-        "name": "Clubhouse Stix 12u Faglie",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/71586/clubhouse-stix-12u-faglie"
-      },
-      "away": {
-        "name": "Texas Dubs 12u",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/72564/texas-dubs-12u"
-      },
-      "source_text": "15 | Game 15 | Sat 1:50 PM | Sat 1:50 PM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | Clubhouse Stix 12u Faglie | Texas Dubs 12u"
-    },
-    {
-      "id": "bc84068e60c2",
-      "stage": "pool",
-      "round": "Pool Play",
-      "date": "",
-      "time": "1:50 PM",
-      "field": "",
-      "status": "scheduled",
-      "home": {
-        "name": "Lady Crush",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/72850/lady-crush"
-      },
-      "away": {
-        "name": "Outlawz",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/80543/outlawz"
-      },
-      "source_text": "16 | Game 16 | Sat 1:50 PM | Sat 1:50 PM | Taylor Athletic Complex 7 | Taylor Athletic Complex 7 | Lady Crush | Outlawz"
-    },
-    {
-      "id": "fe3e31e2ad4f",
-      "stage": "pool",
-      "round": "Pool Play",
-      "date": "",
-      "time": "3:00 PM",
-      "field": "",
-      "status": "scheduled",
-      "home": {
-        "name": "CPYL Queen Bees",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/70136/cpyl-queen-bees"
-      },
-      "away": {
-        "name": "Texas Venom",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom"
-      },
-      "source_text": "17 | Game 17 | Sat 3:00 PM | Sat 3:00 PM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | CPYL Queen Bees | Texas Venom"
-    },
-    {
-      "id": "59dcd49e7b47",
-      "stage": "pool",
-      "round": "Pool Play",
-      "date": "",
-      "time": "3:00 PM",
-      "field": "",
-      "status": "scheduled",
-      "home": {
-        "name": "BYBC Starfire-Ochoa",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/70872/bybc-starfire-ochoa"
-      },
-      "away": {
-        "name": "Outlawz",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/80543/outlawz"
-      },
-      "source_text": "18 | Game 18 | Sat 3:00 PM | Sat 3:00 PM | Taylor Athletic Complex 7 | Taylor Athletic Complex 7 | BYBC Starfire-Ochoa | Outlawz"
-    },
-    {
-      "id": "f1dfb7542460",
-      "stage": "pool",
-      "round": "Pool Play",
-      "date": "",
-      "time": "4:10 PM",
-      "field": "",
-      "status": "scheduled",
-      "home": {
-        "name": "Lady Crush",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/72850/lady-crush"
-      },
-      "away": {
-        "name": "CTX Bombers Meza",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/79552/ctx-bombers-meza"
-      },
-      "source_text": "19 | Game 19 | Sat 4:10 PM | Sat 4:10 PM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | Lady Crush | CTX Bombers Meza"
-    },
-    {
-      "id": "8a81d3c9a594",
-      "stage": "pool",
-      "round": "Pool Play",
-      "date": "",
-      "time": "4:10 PM",
-      "field": "",
-      "status": "scheduled",
-      "home": {
-        "name": "Texas Bombers CTX Tamez",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/70192/texas-bombers-ctx-tamez"
-      },
-      "away": {
-        "name": "TX BOMBERS CTX 2K14 VALENZUELA",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/74665/tx-bombers-ctx-2k14-valenzuela"
-      },
-      "source_text": "20 | Game 20 | Sat 4:10 PM | Sat 4:10 PM | Taylor Athletic Complex 7 | Taylor Athletic Complex 7 | Texas Bombers CTX Tamez | TX BOMBERS CTX 2K14 VALENZUELA"
-    },
-    {
-      "id": "a7407a797ccd",
-      "stage": "pool",
-      "round": "Pool Play",
-      "date": "",
-      "time": "5:20 PM",
-      "field": "",
-      "status": "scheduled",
-      "home": {
-        "name": "CTX Bombers Meza",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/79552/ctx-bombers-meza"
-      },
-      "away": {
-        "name": "Clubhouse Stix 12u Faglie",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/71586/clubhouse-stix-12u-faglie"
-      },
-      "source_text": "21 | Game 21 | Sat 5:20 PM | Sat 5:20 PM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | CTX Bombers Meza | Clubhouse Stix 12u Faglie"
-    },
-    {
-      "id": "41305d9eea21",
-      "stage": "pool",
-      "round": "Pool Play",
-      "date": "",
-      "time": "5:20 PM",
-      "field": "",
-      "status": "scheduled",
-      "home": {
-        "name": "Texas Premier 12u",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/74241/texas-premier-12u"
-      },
-      "away": {
-        "name": "Texas Dubs 12u",
-        "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/72564/texas-dubs-12u"
-      },
-      "source_text": "22 | Game 22 | Sat 5:20 PM | Sat 5:20 PM | Taylor Athletic Complex 7 | Taylor Athletic Complex 7 | Texas Premier 12u | Texas Dubs 12u"
-    },
-    {
       "id": "7eff47d873e1",
       "stage": "pool",
       "round": "Pool Play",
-      "date": "",
+      "date": "Sat",
       "time": "8:00 AM",
-      "field": "",
+      "field": "Taylor Athletic Complex 6",
       "status": "scheduled",
       "home": {
         "name": "BYBC Starfire-Ochoa",
@@ -390,15 +56,16 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/72564/texas-dubs-12u"
       },
-      "source_text": "1 | Game 1 | Sat 8:00 AM | Sat 8:00 AM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | BYBC Starfire-Ochoa | Texas Dubs 12u"
+      "source_text": "1 | Game 1 | Sat 8:00 AM | Sat 8:00 AM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | BYBC Starfire-Ochoa | Texas Dubs 12u",
+      "game_number": 1
     },
     {
       "id": "c7697056abc8",
       "stage": "pool",
       "round": "Pool Play",
-      "date": "",
+      "date": "Sat",
       "time": "8:00 AM",
-      "field": "",
+      "field": "Taylor Athletic Complex 7",
       "status": "scheduled",
       "home": {
         "name": "CPYL Queen Bees",
@@ -410,15 +77,16 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/74241/texas-premier-12u"
       },
-      "source_text": "2 | Game 2 | Sat 8:00 AM | Sat 8:00 AM | Taylor Athletic Complex 7 | Taylor Athletic Complex 7 | CPYL Queen Bees | Texas Premier 12u"
+      "source_text": "2 | Game 2 | Sat 8:00 AM | Sat 8:00 AM | Taylor Athletic Complex 7 | Taylor Athletic Complex 7 | CPYL Queen Bees | Texas Premier 12u",
+      "game_number": 2
     },
     {
       "id": "58eca4381dd4",
       "stage": "pool",
       "round": "Pool Play",
-      "date": "",
+      "date": "Sat",
       "time": "8:00 AM",
-      "field": "",
+      "field": "Taylor Athletic Complex 8",
       "status": "scheduled",
       "home": {
         "name": "Texas Bombers CTX Tamez",
@@ -430,15 +98,16 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/71586/clubhouse-stix-12u-faglie"
       },
-      "source_text": "3 | Game 3 | Sat 8:00 AM | Sat 8:00 AM | Taylor Athletic Complex 8 | Taylor Athletic Complex 8 | Texas Bombers CTX Tamez | Clubhouse Stix 12u Faglie"
+      "source_text": "3 | Game 3 | Sat 8:00 AM | Sat 8:00 AM | Taylor Athletic Complex 8 | Taylor Athletic Complex 8 | Texas Bombers CTX Tamez | Clubhouse Stix 12u Faglie",
+      "game_number": 3
     },
     {
       "id": "e845e42cd562",
       "stage": "pool",
       "round": "Pool Play",
-      "date": "",
+      "date": "Sat",
       "time": "8:00 AM",
-      "field": "",
+      "field": "Taylor Athletic Complex 9",
       "status": "scheduled",
       "home": {
         "name": "TX BOMBERS CTX 2K14 VALENZUELA",
@@ -450,15 +119,16 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/80543/outlawz"
       },
-      "source_text": "4 | Game 4 | Sat 8:00 AM | Sat 8:00 AM | Taylor Athletic Complex 9 | Taylor Athletic Complex 9 | TX BOMBERS CTX 2K14 VALENZUELA | Outlawz"
+      "source_text": "4 | Game 4 | Sat 8:00 AM | Sat 8:00 AM | Taylor Athletic Complex 9 | Taylor Athletic Complex 9 | TX BOMBERS CTX 2K14 VALENZUELA | Outlawz",
+      "game_number": 4
     },
     {
       "id": "13b3fad66276",
       "stage": "pool",
       "round": "Pool Play",
-      "date": "",
+      "date": "Sat",
       "time": "9:10 AM",
-      "field": "",
+      "field": "Taylor Athletic Complex 6",
       "status": "scheduled",
       "home": {
         "name": "CTX Bombers Meza",
@@ -470,15 +140,16 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom"
       },
-      "source_text": "5 | Game 5 | Sat 9:10 AM | Sat 9:10 AM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | CTX Bombers Meza | Texas Venom"
+      "source_text": "5 | Game 5 | Sat 9:10 AM | Sat 9:10 AM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | CTX Bombers Meza | Texas Venom",
+      "game_number": 5
     },
     {
       "id": "87e255112db6",
       "stage": "pool",
       "round": "Pool Play",
-      "date": "",
+      "date": "Sat",
       "time": "9:10 AM",
-      "field": "",
+      "field": "Taylor Athletic Complex 7",
       "status": "scheduled",
       "home": {
         "name": "TX BOMBERS CTX 2K14 VALENZUELA",
@@ -490,15 +161,16 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/70136/cpyl-queen-bees"
       },
-      "source_text": "6 | Game 6 | Sat 9:10 AM | Sat 9:10 AM | Taylor Athletic Complex 7 | Taylor Athletic Complex 7 | TX BOMBERS CTX 2K14 VALENZUELA | CPYL Queen Bees"
+      "source_text": "6 | Game 6 | Sat 9:10 AM | Sat 9:10 AM | Taylor Athletic Complex 7 | Taylor Athletic Complex 7 | TX BOMBERS CTX 2K14 VALENZUELA | CPYL Queen Bees",
+      "game_number": 6
     },
     {
       "id": "1553c8e8cdb4",
       "stage": "pool",
       "round": "Pool Play",
-      "date": "",
+      "date": "Sat",
       "time": "9:10 AM",
-      "field": "",
+      "field": "Taylor Athletic Complex 8",
       "status": "scheduled",
       "home": {
         "name": "Lady Crush",
@@ -510,15 +182,16 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/74241/texas-premier-12u"
       },
-      "source_text": "7 | Game 7 | Sat 9:10 AM | Sat 9:10 AM | Taylor Athletic Complex 8 | Taylor Athletic Complex 8 | Lady Crush | Texas Premier 12u"
+      "source_text": "7 | Game 7 | Sat 9:10 AM | Sat 9:10 AM | Taylor Athletic Complex 8 | Taylor Athletic Complex 8 | Lady Crush | Texas Premier 12u",
+      "game_number": 7
     },
     {
       "id": "280720da36eb",
       "stage": "pool",
       "round": "Pool Play",
-      "date": "",
+      "date": "Sat",
       "time": "9:10 AM",
-      "field": "",
+      "field": "Taylor Athletic Complex 9",
       "status": "scheduled",
       "home": {
         "name": "Outlawz",
@@ -530,17 +203,16 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/72564/texas-dubs-12u"
       },
-      "source_text": "8 | Game 8 | Sat 9:10 AM | Sat 9:10 AM | Taylor Athletic Complex 9 | Taylor Athletic Complex 9 | Outlawz | Texas Dubs 12u"
-    }
-  ],
-  "team_games": [
+      "source_text": "8 | Game 8 | Sat 9:10 AM | Sat 9:10 AM | Taylor Athletic Complex 9 | Taylor Athletic Complex 9 | Outlawz | Texas Dubs 12u",
+      "game_number": 8
+    },
     {
       "id": "4ff14d0597c0",
       "stage": "pool",
       "round": "Pool Play",
-      "date": "",
+      "date": "Sat",
       "time": "10:20 AM",
-      "field": "",
+      "field": "Taylor Athletic Complex 6",
       "status": "scheduled",
       "home": {
         "name": "Texas Venom",
@@ -552,15 +224,100 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/70192/texas-bombers-ctx-tamez"
       },
-      "source_text": "9 | Game 9 | Sat 10:20 AM | Sat 10:20 AM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | Texas Venom | Texas Bombers CTX Tamez"
+      "source_text": "9 | Game 9 | Sat 10:20 AM | Sat 10:20 AM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | Texas Venom | Texas Bombers CTX Tamez",
+      "game_number": 9
+    },
+    {
+      "id": "882470297ca5",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "10:20 AM",
+      "field": "Taylor Athletic Complex 7",
+      "status": "scheduled",
+      "home": {
+        "name": "BYBC Starfire-Ochoa",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/70872/bybc-starfire-ochoa"
+      },
+      "away": {
+        "name": "Clubhouse Stix 12u Faglie",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/71586/clubhouse-stix-12u-faglie"
+      },
+      "source_text": "10 | Game 10 | Sat 10:20 AM | Sat 10:20 AM | Taylor Athletic Complex 7 | Taylor Athletic Complex 7 | BYBC Starfire-Ochoa | Clubhouse Stix 12u Faglie",
+      "game_number": 10
+    },
+    {
+      "id": "f0c8316821e2",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "11:30 AM",
+      "field": "Taylor Athletic Complex 6",
+      "status": "scheduled",
+      "home": {
+        "name": "CPYL Queen Bees",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/70136/cpyl-queen-bees"
+      },
+      "away": {
+        "name": "Lady Crush",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/72850/lady-crush"
+      },
+      "source_text": "11 | Game 11 | Sat 11:30 AM | Sat 11:30 AM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | CPYL Queen Bees | Lady Crush",
+      "game_number": 11
+    },
+    {
+      "id": "3d76bedaff38",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "11:30 AM",
+      "field": "Taylor Athletic Complex 7",
+      "status": "scheduled",
+      "home": {
+        "name": "CTX Bombers Meza",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/79552/ctx-bombers-meza"
+      },
+      "away": {
+        "name": "Texas Premier 12u",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/74241/texas-premier-12u"
+      },
+      "source_text": "12 | Game 12 | Sat 11:30 AM | Sat 11:30 AM | Taylor Athletic Complex 7 | Taylor Athletic Complex 7 | CTX Bombers Meza | Texas Premier 12u",
+      "game_number": 12
+    },
+    {
+      "id": "8a3dc364f217",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "12:40 PM",
+      "field": "Taylor Athletic Complex 6",
+      "status": "scheduled",
+      "home": {
+        "name": "Texas Bombers CTX Tamez",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/70192/texas-bombers-ctx-tamez"
+      },
+      "away": {
+        "name": "BYBC Starfire-Ochoa",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/70872/bybc-starfire-ochoa"
+      },
+      "source_text": "13 | Game 13 | Sat 12:40 PM | Sat 12:40 PM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | Texas Bombers CTX Tamez | BYBC Starfire-Ochoa",
+      "game_number": 13
     },
     {
       "id": "6e431f936864",
       "stage": "pool",
       "round": "Pool Play",
-      "date": "",
+      "date": "Sat",
       "time": "12:40 PM",
-      "field": "",
+      "field": "Taylor Athletic Complex 7",
       "status": "scheduled",
       "home": {
         "name": "Texas Venom",
@@ -572,15 +329,58 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/74665/tx-bombers-ctx-2k14-valenzuela"
       },
-      "source_text": "14 | Game 14 | Sat 12:40 PM | Sat 12:40 PM | Taylor Athletic Complex 7 | Taylor Athletic Complex 7 | Texas Venom | TX BOMBERS CTX 2K14 VALENZUELA"
+      "source_text": "14 | Game 14 | Sat 12:40 PM | Sat 12:40 PM | Taylor Athletic Complex 7 | Taylor Athletic Complex 7 | Texas Venom | TX BOMBERS CTX 2K14 VALENZUELA",
+      "game_number": 14
+    },
+    {
+      "id": "4c8de7ea7c97",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "1:50 PM",
+      "field": "Taylor Athletic Complex 6",
+      "status": "scheduled",
+      "home": {
+        "name": "Clubhouse Stix 12u Faglie",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/71586/clubhouse-stix-12u-faglie"
+      },
+      "away": {
+        "name": "Texas Dubs 12u",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/72564/texas-dubs-12u"
+      },
+      "source_text": "15 | Game 15 | Sat 1:50 PM | Sat 1:50 PM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | Clubhouse Stix 12u Faglie | Texas Dubs 12u",
+      "game_number": 15
+    },
+    {
+      "id": "bc84068e60c2",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "1:50 PM",
+      "field": "Taylor Athletic Complex 7",
+      "status": "scheduled",
+      "home": {
+        "name": "Lady Crush",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/72850/lady-crush"
+      },
+      "away": {
+        "name": "Outlawz",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/80543/outlawz"
+      },
+      "source_text": "16 | Game 16 | Sat 1:50 PM | Sat 1:50 PM | Taylor Athletic Complex 7 | Taylor Athletic Complex 7 | Lady Crush | Outlawz",
+      "game_number": 16
     },
     {
       "id": "fe3e31e2ad4f",
       "stage": "pool",
       "round": "Pool Play",
-      "date": "",
+      "date": "Sat",
       "time": "3:00 PM",
-      "field": "",
+      "field": "Taylor Athletic Complex 6",
       "status": "scheduled",
       "home": {
         "name": "CPYL Queen Bees",
@@ -592,15 +392,123 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom"
       },
-      "source_text": "17 | Game 17 | Sat 3:00 PM | Sat 3:00 PM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | CPYL Queen Bees | Texas Venom"
+      "source_text": "17 | Game 17 | Sat 3:00 PM | Sat 3:00 PM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | CPYL Queen Bees | Texas Venom",
+      "game_number": 17
     },
+    {
+      "id": "59dcd49e7b47",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "3:00 PM",
+      "field": "Taylor Athletic Complex 7",
+      "status": "scheduled",
+      "home": {
+        "name": "BYBC Starfire-Ochoa",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/70872/bybc-starfire-ochoa"
+      },
+      "away": {
+        "name": "Outlawz",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/80543/outlawz"
+      },
+      "source_text": "18 | Game 18 | Sat 3:00 PM | Sat 3:00 PM | Taylor Athletic Complex 7 | Taylor Athletic Complex 7 | BYBC Starfire-Ochoa | Outlawz",
+      "game_number": 18
+    },
+    {
+      "id": "f1dfb7542460",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "4:10 PM",
+      "field": "Taylor Athletic Complex 6",
+      "status": "scheduled",
+      "home": {
+        "name": "Lady Crush",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/72850/lady-crush"
+      },
+      "away": {
+        "name": "CTX Bombers Meza",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/79552/ctx-bombers-meza"
+      },
+      "source_text": "19 | Game 19 | Sat 4:10 PM | Sat 4:10 PM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | Lady Crush | CTX Bombers Meza",
+      "game_number": 19
+    },
+    {
+      "id": "8a81d3c9a594",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "4:10 PM",
+      "field": "Taylor Athletic Complex 7",
+      "status": "scheduled",
+      "home": {
+        "name": "Texas Bombers CTX Tamez",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/70192/texas-bombers-ctx-tamez"
+      },
+      "away": {
+        "name": "TX BOMBERS CTX 2K14 VALENZUELA",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/74665/tx-bombers-ctx-2k14-valenzuela"
+      },
+      "source_text": "20 | Game 20 | Sat 4:10 PM | Sat 4:10 PM | Taylor Athletic Complex 7 | Taylor Athletic Complex 7 | Texas Bombers CTX Tamez | TX BOMBERS CTX 2K14 VALENZUELA",
+      "game_number": 20
+    },
+    {
+      "id": "a7407a797ccd",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "5:20 PM",
+      "field": "Taylor Athletic Complex 6",
+      "status": "scheduled",
+      "home": {
+        "name": "CTX Bombers Meza",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/79552/ctx-bombers-meza"
+      },
+      "away": {
+        "name": "Clubhouse Stix 12u Faglie",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/71586/clubhouse-stix-12u-faglie"
+      },
+      "source_text": "21 | Game 21 | Sat 5:20 PM | Sat 5:20 PM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | CTX Bombers Meza | Clubhouse Stix 12u Faglie",
+      "game_number": 21
+    },
+    {
+      "id": "41305d9eea21",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "5:20 PM",
+      "field": "Taylor Athletic Complex 7",
+      "status": "scheduled",
+      "home": {
+        "name": "Texas Premier 12u",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/74241/texas-premier-12u"
+      },
+      "away": {
+        "name": "Texas Dubs 12u",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/72564/texas-dubs-12u"
+      },
+      "source_text": "22 | Game 22 | Sat 5:20 PM | Sat 5:20 PM | Taylor Athletic Complex 7 | Taylor Athletic Complex 7 | Texas Premier 12u | Texas Dubs 12u",
+      "game_number": 22
+    }
+  ],
+  "team_games": [
     {
       "id": "13b3fad66276",
       "stage": "pool",
       "round": "Pool Play",
-      "date": "",
+      "date": "Sat",
       "time": "9:10 AM",
-      "field": "",
+      "field": "Taylor Athletic Complex 6",
       "status": "scheduled",
       "home": {
         "name": "CTX Bombers Meza",
@@ -612,7 +520,71 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom"
       },
-      "source_text": "5 | Game 5 | Sat 9:10 AM | Sat 9:10 AM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | CTX Bombers Meza | Texas Venom"
+      "source_text": "5 | Game 5 | Sat 9:10 AM | Sat 9:10 AM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | CTX Bombers Meza | Texas Venom",
+      "game_number": 5
+    },
+    {
+      "id": "4ff14d0597c0",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "10:20 AM",
+      "field": "Taylor Athletic Complex 6",
+      "status": "scheduled",
+      "home": {
+        "name": "Texas Venom",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom"
+      },
+      "away": {
+        "name": "Texas Bombers CTX Tamez",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/70192/texas-bombers-ctx-tamez"
+      },
+      "source_text": "9 | Game 9 | Sat 10:20 AM | Sat 10:20 AM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | Texas Venom | Texas Bombers CTX Tamez",
+      "game_number": 9
+    },
+    {
+      "id": "6e431f936864",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "12:40 PM",
+      "field": "Taylor Athletic Complex 7",
+      "status": "scheduled",
+      "home": {
+        "name": "Texas Venom",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom"
+      },
+      "away": {
+        "name": "TX BOMBERS CTX 2K14 VALENZUELA",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/74665/tx-bombers-ctx-2k14-valenzuela"
+      },
+      "source_text": "14 | Game 14 | Sat 12:40 PM | Sat 12:40 PM | Taylor Athletic Complex 7 | Taylor Athletic Complex 7 | Texas Venom | TX BOMBERS CTX 2K14 VALENZUELA",
+      "game_number": 14
+    },
+    {
+      "id": "fe3e31e2ad4f",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "3:00 PM",
+      "field": "Taylor Athletic Complex 6",
+      "status": "scheduled",
+      "home": {
+        "name": "CPYL Queen Bees",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/70136/cpyl-queen-bees"
+      },
+      "away": {
+        "name": "Texas Venom",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom"
+      },
+      "source_text": "17 | Game 17 | Sat 3:00 PM | Sat 3:00 PM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | CPYL Queen Bees | Texas Venom",
+      "game_number": 17
     }
   ],
   "bracket": {
