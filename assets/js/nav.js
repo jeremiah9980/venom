@@ -1,7 +1,5 @@
 /* ============================================================
-   nav.js — injects the site nav and wires the theme toggle.
-   Theme INIT is handled by an inline <script> in <head> of each
-   page (prevents FOUC). This file only handles the toggle UI.
+   nav.js — shared Venom navigation and persistent Light/Dark toggle
    ============================================================ */
 
 const NAV_HTML = `
@@ -24,47 +22,68 @@ const NAV_HTML = `
       <a href="contact.html">Contact</a>
       <a href="fundraising.html">Support Us</a>
     </div>
-    <button class="theme-toggle" type="button" aria-label="Toggle light/dark theme" title="Toggle theme">
-      <i class="ti ti-sun-filled theme-icon-sun"></i>
-      <i class="ti ti-moon-filled theme-icon-moon"></i>
+    <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme" aria-pressed="false">
+      <i class="ti ti-sun-filled theme-icon-sun" aria-hidden="true"></i>
+      <i class="ti ti-moon-filled theme-icon-moon" aria-hidden="true"></i>
     </button>
   </div>
 </nav>`;
 
-function setTheme(theme) {
+function currentTheme() {
+  if (document.documentElement.classList.contains('theme-dark')) return 'dark';
+  if (document.documentElement.classList.contains('theme-light')) return 'light';
+  const dataTheme = document.documentElement.dataset.theme;
+  if (dataTheme === 'dark' || dataTheme === 'light') return dataTheme;
+  return window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
+function setTheme(theme, persist = true) {
+  const next = theme === 'dark' ? 'dark' : 'light';
   const html = document.documentElement;
   html.classList.remove('theme-light', 'theme-dark');
-  html.classList.add('theme-' + theme);
-  try { localStorage.setItem('venom-theme', theme); } catch (e) { /* private mode */ }
+  html.classList.add('theme-' + next);
+  html.dataset.theme = next;
+  html.style.colorScheme = next;
+  if (persist) {
+    try {
+      localStorage.setItem('venom-theme', next);
+      localStorage.setItem('texas-venom-theme', next);
+    } catch (_) {}
+  }
+  const btn = document.querySelector('.theme-toggle');
+  if (btn) {
+    btn.setAttribute('aria-pressed', String(next === 'dark'));
+    btn.setAttribute('aria-label', `Switch to ${next === 'dark' ? 'light' : 'dark'} mode`);
+    btn.setAttribute('title', `Switch to ${next === 'dark' ? 'light' : 'dark'} mode`);
+  }
 }
 
 function toggleTheme() {
-  const current = document.documentElement.classList.contains('theme-dark') ? 'dark' : 'light';
-  setTheme(current === 'dark' ? 'light' : 'dark');
+  setTheme(currentTheme() === 'dark' ? 'light' : 'dark');
 }
+
+setTheme(currentTheme(), false);
 
 document.addEventListener('DOMContentLoaded', () => {
   document.body.insertAdjacentHTML('afterbegin', NAV_HTML);
 
-  // Highlight active nav link
   const path = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a').forEach(a => {
-    if (a.getAttribute('href') === path) a.classList.add('active');
+    if (a.getAttribute('href') === path || (path === 'portal' && a.getAttribute('href') === 'portal.html')) {
+      a.classList.add('active');
+    }
   });
 
-  // Wire the theme toggle
   const btn = document.querySelector('.theme-toggle');
-  if (btn) btn.addEventListener('click', toggleTheme);
+  setTheme(currentTheme(), false);
+  btn?.addEventListener('click', toggleTheme);
 
-  // Follow OS preference changes if user hasn't explicitly chosen
   if (window.matchMedia) {
     const mq = window.matchMedia('(prefers-color-scheme: dark)');
-    mq.addEventListener('change', (e) => {
+    mq.addEventListener('change', event => {
       try {
-        if (!localStorage.getItem('venom-theme')) {
-          setTheme(e.matches ? 'dark' : 'light');
-          // Remove the auto-set so the system can keep tracking
-          localStorage.removeItem('venom-theme');
+        if (!localStorage.getItem('venom-theme') && !localStorage.getItem('texas-venom-theme')) {
+          setTheme(event.matches ? 'dark' : 'light', false);
         }
       } catch (_) {}
     });
