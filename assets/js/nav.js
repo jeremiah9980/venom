@@ -64,7 +64,7 @@ function toggleTheme() {
 
 function loadRosterArtwork() {
   const swaps = [
-    ['img[src$="kassidy-c.jpg"]', 'assets/players/kassidy-c.svg?v=2'],
+    ['img[src$="kassidy-c.jpg"]', 'assets/players/kassidy-c.svg?v=3'],
     ['img[src$="johnny-r.jpg"]', 'assets/players/johnny-r.svg?v=2']
   ];
   swaps.forEach(([selector, source]) => {
