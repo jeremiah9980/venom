@@ -20,6 +20,7 @@ const NAV_HTML = `
       <a href="docs.html">Documents</a>
       <a href="rallyiq.html">RallyIQ</a>
       <a href="contact.html">Contact</a>
+      <a href="https://jeremiah9980.github.io/ncs-monitor/ncs-dashboard.html" target="_blank" rel="noopener noreferrer">NCS Dashboard</a>
       <a href="fundraising.html">Support Us</a>
     </div>
     <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme" aria-pressed="false">
