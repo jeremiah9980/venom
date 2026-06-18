@@ -3,10 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08040D">
   <title>Family Portal — Texas Venom</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/team-venom.css">
+  <link rel="stylesheet" href="assets/css/theme-modes.css?v=20260618-2">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+  <script>
+    (() => {
+      const saved = localStorage.getItem('texas-venom-theme');
+      document.documentElement.dataset.theme = saved === 'dark' || saved === 'light'
+        ? saved
+        : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    })();
+  </script>
 <style>
   /* sync banner */
   .sync-bar{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding:14px 20px;background:linear-gradient(90deg,rgba(109,40,217,.18) 0%,rgba(198,255,0,.04) 100%);border:1px solid rgba(198,255,0,.25);border-radius:10px;margin-bottom:24px;}
@@ -90,9 +100,10 @@
     .chat-tile .arrow{display:none;}
   }
 </style>
+<link rel="stylesheet" href="assets/css/portal-theme.css?v=20260618-2">
 </head>
 <body class="venom-page">
-<script src="assets/js/nav.js"></script>
+<script src="assets/js/nav.js?v=20260618-2"></script>
 
 <section class="hero">
   <div class="hero-inner">
