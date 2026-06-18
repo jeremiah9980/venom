@@ -7,6 +7,7 @@ on:
   push:
     paths:
       - "scripts/sync-ncs-tournament.py"
+      - "scripts/refine-ncs-tournament.py"
       - ".github/workflows/sync-ncs-tournament.yml"
 
 permissions:
@@ -31,7 +32,9 @@ jobs:
         run: pip install requests beautifulsoup4
 
       - name: Sync NCS schedule, scores, and bracket
-        run: python3 scripts/sync-ncs-tournament.py
+        run: |
+          python3 scripts/sync-ncs-tournament.py
+          python3 scripts/refine-ncs-tournament.py
 
       - name: Commit dashboard data when changed
         run: |
