@@ -26,25 +26,10 @@ async function fixRosterPhotos(path){
     aubrey.style.background='#f3edff';
   }
 
-  showRosterImage(
-    document.querySelector('img[alt="Kynsington Elliott"]'),
-    'kynsi-e.jpg?v=20260618-5'
-  );
-
-  showRosterImage(
-    document.querySelector('img[alt="Hadley Wiegers"]'),
-    'hadley-w.jpg?v=20260618-5'
-  );
-
-  showRosterImage(
-    document.querySelector('img[alt="Saraya Palmer"]'),
-    'saraya-p.jpg?v=20260618-5'
-  );
-
-  showRosterImage(
-    document.querySelector('img[alt="Johnny Rogers"]'),
-    'assets/players/johnny-r.svg?v=3'
-  );
+  showRosterImage(document.querySelector('img[alt="Kynsington Elliott"]'),'kynsi-e.jpg?v=20260618-5');
+  showRosterImage(document.querySelector('img[alt="Hadley Wiegers"]'),'hadley-w.jpg?v=20260618-5');
+  showRosterImage(document.querySelector('img[alt="Saraya Palmer"]'),'saraya-p.jpg?v=20260618-5');
+  showRosterImage(document.querySelector('img[alt="Johnny Rogers"]'),'assets/players/johnny-r.svg?v=3');
 
   const kassidy=document.querySelector('img[alt="Kassidy Cargill"]');
   try{
@@ -52,11 +37,7 @@ async function fixRosterPhotos(path){
     await loadScript('assets/js/kassidy-image-2.js?v=2');
     await loadScript('assets/js/kassidy-image-3.js?v=2');
     if(kassidy&&window.KASSIDY_IMAGE_PARTS?.length===3){
-      showRosterImage(
-        kassidy,
-        'data:image/jpeg;base64,'+window.KASSIDY_IMAGE_PARTS.join(''),
-        {objectPosition:'center 24%'}
-      );
+      showRosterImage(kassidy,'data:image/jpeg;base64,'+window.KASSIDY_IMAGE_PARTS.join(''),{objectPosition:'center 24%'});
     }else{
       showRosterImage(kassidy,'assets/players/kassidy-c.svg?v=3');
     }
@@ -64,6 +45,42 @@ async function fixRosterPhotos(path){
     showRosterImage(kassidy,'assets/players/kassidy-c.svg?v=3');
     console.warn('Unable to load Kassidy roster image parts; using SVG fallback',error);
   }
+}
+
+function linkRosterProfiles(path){
+  if(path!=='roster-12u.html'&&path!=='roster-12u')return;
+  const profiles={
+    'Penny Bridgewaters':'penny-b.html',
+    'Aubrey Balcom':'aubrey-b.html',
+    'Kynsington Elliott':'kynsi-e.html',
+    'Gracelyn Welch':'gracie-w.html',
+    'Hadley Wiegers':'hadley-w.html',
+    'Kassidy Cargill':'kassidy-c.html',
+    'Addison Popkoff':'addison-p.html',
+    'Saraya Palmer':'saraya-p.html',
+    'Payton Riser':'payton-r.html',
+    'Johnny Rogers':'johnny-r.html',
+    'Emily Lambdin':'emily-l.html'
+  };
+
+  if(!document.getElementById('player-profile-link-styles')){
+    const style=document.createElement('style');
+    style.id='player-profile-link-styles';
+    style.textContent='.player-profile-link{display:inline-flex;align-items:center;gap:7px;margin-top:13px;font-family:var(--display);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1.35px;color:var(--blue);text-decoration:none}.player-profile-link:hover{text-decoration:underline}html.theme-dark .player-profile-link{color:var(--yellow)}';
+    document.head.appendChild(style);
+  }
+
+  document.querySelectorAll('.player-card').forEach(card=>{
+    const image=card.querySelector('.player-photo img');
+    const href=profiles[image?.alt];
+    const body=card.querySelector('.player-body');
+    if(!href||!body||body.querySelector('.player-profile-link'))return;
+    const link=document.createElement('a');
+    link.className='player-profile-link';
+    link.href=href;
+    link.innerHTML='<i class="ti ti-id"></i> View Player Profile';
+    body.appendChild(link);
+  });
 }
 
 setTheme(currentTheme(),false);
@@ -74,6 +91,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   const path=location.pathname.split('/').pop()||'index.html';
   document.querySelectorAll('.nav-links a').forEach(a=>{if(a.getAttribute('href')===path||(path==='portal'&&a.getAttribute('href')==='portal.html'))a.classList.add('active')});
   fixRosterPhotos(path);
+  linkRosterProfiles(path);
   setTheme(currentTheme(),false);
   document.querySelector('.theme-toggle')?.addEventListener('click',()=>setTheme(currentTheme()==='dark'?'light':'dark'));
 });
