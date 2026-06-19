@@ -1,8 +1,29 @@
-const NAV_HTML=`<nav><div class="nav-inner"><a class="nav-brand" href="index.html"><img src="assets/venom-logo.jpg" alt="Texas Venom logo">Texas Venom <span>SELECT SOFTBALL</span></a><div class="nav-links"><a href="index.html">Home</a><a href="teams.html">Teams</a><a href="portal.html">Portal</a><a href="tournament-dashboard.html">Tournament</a><a href="standards.html">Standards</a><a href="team-info.html">Team Info</a><a href="rallyiq.html">RallyIQ</a><a href="https://jeremiah9980.github.io/ncs-monitor/ncs-dashboard.html" target="_blank" rel="noopener noreferrer">NCS Dashboard</a><a href="fundraising.html">Support Us</a></div><button class="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false"><i class="ti ti-sun-filled theme-icon-sun"></i><i class="ti ti-moon-filled theme-icon-moon"></i></button></div></nav>`;
+const NAV_HTML=`<nav><div class="nav-inner"><a class="nav-brand" href="index.html"><img src="assets/venom-logo.jpg" alt="Texas Venom logo">Texas Venom <span>SELECT SOFTBALL</span></a><div class="nav-links"><a href="index.html">Home</a><a href="teams.html">Teams</a><a href="portal.html">Portal</a><a href="tournament-dashboard.html">Tournament</a><a href="standards.html">Standards</a><a href="team-info.html">Team Info</a><a href="rallyiq.html">RallyIQ</a><a href="https://jeremiah9980.github.io/ncs-monitor/ncs-dashboard.html" target="_blank" rel="noopener noreferrer">NCS Dashboard</a><a href="fundraising.html">Support Us</a></div><div class="theme-switcher" role="group" aria-label="Color theme"><button type="button" class="theme-option" data-theme-value="light">Light</button><button type="button" class="theme-option" data-theme-value="mid">Mid</button><button type="button" class="theme-option" data-theme-value="dark">Dark</button></div></div></nav>`;
 
-function currentTheme(){const h=document.documentElement;if(h.classList.contains('theme-dark')||h.dataset.theme==='dark')return'dark';if(h.classList.contains('theme-light')||h.dataset.theme==='light')return'light';return matchMedia?.('(prefers-color-scheme: dark)').matches?'dark':'light'}
+function currentTheme(){
+  const saved=localStorage.getItem('venom-theme');
+  return ['light','mid','dark'].includes(saved)?saved:'mid';
+}
 
-function setTheme(theme,persist=true){const next=theme==='dark'?'dark':'light',h=document.documentElement;h.classList.remove('theme-light','theme-dark');h.classList.add(`theme-${next}`);h.dataset.theme=next;h.style.colorScheme=next;if(persist)try{localStorage.setItem('venom-theme',next);localStorage.setItem('texas-venom-theme',next)}catch{}const b=document.querySelector('.theme-toggle');if(b){b.setAttribute('aria-pressed',String(next==='dark'));b.setAttribute('aria-label',`Switch to ${next==='dark'?'light':'dark'} mode`)}}
+function setTheme(theme,persist=true){
+  const next=['light','mid','dark'].includes(theme)?theme:'mid';
+  const h=document.documentElement;
+  h.classList.remove('theme-light','theme-mid','theme-dark');
+  h.classList.add(`theme-${next}`);
+  h.dataset.theme=next;
+  h.style.colorScheme=next==='dark'?'dark':'light';
+  if(persist){
+    try{
+      localStorage.setItem('venom-theme',next);
+      localStorage.setItem('texas-venom-theme',next);
+    }catch{}
+  }
+  document.querySelectorAll('.theme-option').forEach(btn=>{
+    const active=btn.dataset.themeValue===next;
+    btn.classList.toggle('active',active);
+    btn.setAttribute('aria-pressed',String(active));
+  });
+}
 
 function loadScript(src){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=src;s.onload=resolve;s.onerror=reject;document.head.appendChild(s)})}
 
@@ -68,7 +89,7 @@ function linkRosterProfiles(path){
   if(!document.getElementById('player-profile-link-styles')){
     const style=document.createElement('style');
     style.id='player-profile-link-styles';
-    style.textContent='.player-profile-link{display:inline-flex;align-items:center;gap:7px;margin-top:13px;font-family:var(--display);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1.35px;color:var(--blue);text-decoration:none}.player-profile-link:hover{text-decoration:underline}html.theme-dark .player-profile-link{color:var(--yellow)}';
+    style.textContent='.player-profile-link{display:inline-flex;align-items:center;gap:7px;margin-top:13px;font-family:var(--display);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1.35px;color:var(--primary);text-decoration:none}.player-profile-link:hover{text-decoration:underline}html[data-theme="dark"] .player-profile-link{color:var(--accent)}';
     document.head.appendChild(style);
   }
 
@@ -85,6 +106,8 @@ function linkRosterProfiles(path){
   });
 }
 
+loadStylesheet('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap');
+loadStylesheet('assets/css/ncs-mid-theme.css?v=20260619-2');
 setTheme(currentTheme(),false);
 
 document.addEventListener('DOMContentLoaded',()=>{
@@ -94,10 +117,6 @@ document.addEventListener('DOMContentLoaded',()=>{
   document.querySelectorAll('.nav-links a').forEach(a=>{if(a.getAttribute('href')===path||(path==='portal'&&a.getAttribute('href')==='portal.html'))a.classList.add('active')});
   fixRosterPhotos(path);
   linkRosterProfiles(path);
-  if(path==='portal.html'||path==='portal'){
-    loadStylesheet('assets/css/portal-palettes.css?v=20260619');
-    loadScript('assets/js/portal-palettes.js?v=20260619');
-  }
   setTheme(currentTheme(),false);
-  document.querySelector('.theme-toggle')?.addEventListener('click',()=>setTheme(currentTheme()==='dark'?'light':'dark'));
+  document.querySelectorAll('.theme-option').forEach(btn=>btn.addEventListener('click',()=>setTheme(btn.dataset.themeValue)));
 });
