@@ -106,6 +106,27 @@ function linkRosterProfiles(path){
   });
 }
 
+function updateFooterStaff(){
+  const footer=document.querySelector('footer');
+  if(!footer)return;
+
+  let staff=footer.querySelector('.footer-coaching-staff');
+  if(!staff){
+    staff=document.createElement('div');
+    staff.className='footer-coaching-staff';
+    footer.appendChild(staff);
+  }
+
+  staff.textContent='Head Coach: Chris Balcom • Ast Coach: Jameson Riser · Welch';
+
+  if(!document.getElementById('footer-coaching-staff-styles')){
+    const style=document.createElement('style');
+    style.id='footer-coaching-staff-styles';
+    style.textContent='.footer-coaching-staff{width:100%;margin-top:14px;padding-top:14px;border-top:1px solid rgba(198,255,0,.18);text-align:center;font-family:var(--display);font-size:12px;font-weight:700;letter-spacing:1.1px;text-transform:uppercase;color:var(--venom-silver)}';
+    document.head.appendChild(style);
+  }
+}
+
 loadStylesheet('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap');
 loadStylesheet('assets/css/ncs-mid-theme.css?v=20260619-2');
 setTheme(currentTheme(),false);
@@ -117,6 +138,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   document.querySelectorAll('.nav-links a').forEach(a=>{if(a.getAttribute('href')===path||(path==='portal'&&a.getAttribute('href')==='portal.html'))a.classList.add('active')});
   fixRosterPhotos(path);
   linkRosterProfiles(path);
+  updateFooterStaff();
   setTheme(currentTheme(),false);
   document.querySelectorAll('.theme-option').forEach(btn=>btn.addEventListener('click',()=>setTheme(btn.dataset.themeValue)));
 });
