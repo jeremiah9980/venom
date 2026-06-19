@@ -6,6 +6,8 @@ function setTheme(theme,persist=true){const next=theme==='dark'?'dark':'light',h
 
 function loadScript(src){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=src;s.onload=resolve;s.onerror=reject;document.head.appendChild(s)})}
 
+function loadStylesheet(href){if(document.querySelector(`link[href="${href}"]`))return;const l=document.createElement('link');l.rel='stylesheet';l.href=href;document.head.appendChild(l)}
+
 function showRosterImage(image,source,options={}){
   if(!image)return;
   image.removeAttribute('onerror');
@@ -92,6 +94,10 @@ document.addEventListener('DOMContentLoaded',()=>{
   document.querySelectorAll('.nav-links a').forEach(a=>{if(a.getAttribute('href')===path||(path==='portal'&&a.getAttribute('href')==='portal.html'))a.classList.add('active')});
   fixRosterPhotos(path);
   linkRosterProfiles(path);
+  if(path==='portal.html'||path==='portal'){
+    loadStylesheet('assets/css/portal-palettes.css?v=20260619');
+    loadScript('assets/js/portal-palettes.js?v=20260619');
+  }
   setTheme(currentTheme(),false);
   document.querySelector('.theme-toggle')?.addEventListener('click',()=>setTheme(currentTheme()==='dark'?'light':'dark'));
 });
