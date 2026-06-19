@@ -7,8 +7,6 @@ const NAV_HTML = `
     </a>
     <div class="nav-links">
       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="coaching.html">Coaching</a>
       <a href="roster.html">Roster</a>
       <a href="docs.html">Documents</a>
       <a href="fundraising.html">Support Us</a>
@@ -19,6 +17,7 @@ const NAV_HTML = `
 </nav>`;
 document.addEventListener('DOMContentLoaded', () => {
   document.body.insertAdjacentHTML('afterbegin', NAV_HTML);
+  document.querySelectorAll('a[href="coaching.html"], a[href="about.html"]').forEach(a => a.remove());
   const path = window.location.pathname;
   document.querySelectorAll('.nav-links a').forEach(a => {
     if (path.endsWith(a.getAttribute('href').split('/').pop())) a.classList.add('active');
