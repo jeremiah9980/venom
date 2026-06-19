@@ -28,7 +28,17 @@ async function fixRosterPhotos(path){
 
   showRosterImage(
     document.querySelector('img[alt="Kynsington Elliott"]'),
-    'assets/players/kynsie-e.svg?v=3'
+    'kynsi-e.jpg?v=20260618-5'
+  );
+
+  showRosterImage(
+    document.querySelector('img[alt="Hadley Wiegers"]'),
+    'hadley-w.jpg?v=20260618-5'
+  );
+
+  showRosterImage(
+    document.querySelector('img[alt="Saraya Palmer"]'),
+    'saraya-p.jpg?v=20260618-5'
   );
 
   showRosterImage(
