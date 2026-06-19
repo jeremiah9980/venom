@@ -3,6 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3K836ZGQPE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3K836ZGQPE');
+  </script>
   <title>Texas Venom — UI Model 3 Preview</title>
   <style>
     html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#07050a}
@@ -19,48 +27,9 @@
     const modesUrl = 'https://raw.githubusercontent.com/jeremiah9980/venom/venom3/assets/css/theme-modes.css';
     let themeCss = '';
     let modesCss = '';
-
-    async function loadTheme(){
-      try{
-        const [themeResponse, modesResponse] = await Promise.all([
-          fetch(themeUrl, {cache:'no-store'}),
-          fetch(modesUrl, {cache:'no-store'})
-        ]);
-        [themeCss, modesCss] = await Promise.all([
-          themeResponse.text(),
-          modesResponse.text()
-        ]);
-        applyTheme();
-      }catch(error){
-        console.error('Unable to load UI Model 3 theme', error);
-      }
-    }
-
-    function applyTheme(){
-      if(!themeCss || !modesCss) return;
-      try{
-        const doc = frame.contentDocument;
-        if(!doc || !doc.head) return;
-        ['venom-model-theme','venom-model-modes'].forEach(id => doc.getElementById(id)?.remove());
-
-        const themeStyle = doc.createElement('style');
-        themeStyle.id = 'venom-model-theme';
-        themeStyle.textContent = themeCss;
-        doc.head.appendChild(themeStyle);
-
-        const modesStyle = doc.createElement('style');
-        modesStyle.id = 'venom-model-modes';
-        modesStyle.textContent = modesCss;
-        doc.head.appendChild(modesStyle);
-
-        document.title = (doc.title || 'Texas Venom') + ' — UI Model 3';
-      }catch(error){
-        console.error('Unable to apply UI Model 3 theme', error);
-      }
-    }
-
-    frame.addEventListener('load', applyTheme);
-    loadTheme();
+    async function loadTheme(){try{const [themeResponse,modesResponse]=await Promise.all([fetch(themeUrl,{cache:'no-store'}),fetch(modesUrl,{cache:'no-store'})]);[themeCss,modesCss]=await Promise.all([themeResponse.text(),modesResponse.text()]);applyTheme()}catch(error){console.error('Unable to load UI Model 3 theme',error)}}
+    function applyTheme(){if(!themeCss||!modesCss)return;try{const doc=frame.contentDocument;if(!doc||!doc.head)return;['venom-model-theme','venom-model-modes'].forEach(id=>doc.getElementById(id)?.remove());const themeStyle=doc.createElement('style');themeStyle.id='venom-model-theme';themeStyle.textContent=themeCss;doc.head.appendChild(themeStyle);const modesStyle=doc.createElement('style');modesStyle.id='venom-model-modes';modesStyle.textContent=modesCss;doc.head.appendChild(modesStyle);document.title=(doc.title||'Texas Venom')+' — UI Model 3'}catch(error){console.error('Unable to apply UI Model 3 theme',error)}}
+    frame.addEventListener('load',applyTheme);loadTheme();
   </script>
 </body>
 </html>
