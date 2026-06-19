@@ -1,4 +1,78 @@
+/* Venom bright-yellow contrast fix */
+:root {
+  --venom-highlight: #d7f542;
+  --venom-highlight-text: #34134d;
+  --venom-highlight-text-soft: #5a3b7a;
+}
 
+/* Solid yellow buttons, links, badges and callouts */
+.btn-primary,
+.primary-btn,
+.cta-primary,
+.ev-cta,
+.team-card .btn,
+.player-card .btn,
+.highlight,
+.badge-highlight,
+.tag-highlight,
+.status-highlight,
+button[style*="background"],
+a[style*="background"] {
+  color: var(--venom-highlight-text) !important;
+}
+
+/* Force nested icons and spans to match */
+.btn-primary *,
+.primary-btn *,
+.cta-primary *,
+.ev-cta *,
+.team-card .btn *,
+.player-card .btn *,
+.highlight *,
+.badge-highlight *,
+.tag-highlight *,
+.status-highlight * {
+  color: var(--venom-highlight-text) !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+/* Venom lime/yellow action buttons */
+.btn-primary,
+.primary-btn,
+.cta-primary,
+.ev-cta,
+.team-card .btn,
+.player-card .btn {
+  background: var(--venom-highlight) !important;
+  border-color: var(--venom-highlight) !important;
+  text-shadow: none !important;
+}
+
+/* Hover and focus */
+.btn-primary:hover,
+.primary-btn:hover,
+.cta-primary:hover,
+.ev-cta:hover,
+.team-card .btn:hover,
+.player-card .btn:hover,
+.btn-primary:focus-visible,
+.primary-btn:focus-visible,
+.cta-primary:focus-visible,
+.ev-cta:focus-visible {
+  color: var(--venom-highlight-text) !important;
+  filter: brightness(0.94);
+  box-shadow: 0 0 0 3px rgba(90, 59, 122, 0.28);
+}
+
+/* Yellow-highlighted text that is not a button */
+.highlight-text,
+.accent-text,
+.stat-value,
+.team-card strong,
+.ev-opp b {
+  color: var(--venom-highlight-text-soft) !important;
+}
 /* ===== TEXAS VENOM SKIN — purple + lime over the shared design system ===== */
 body.venom-page{
   --blue:#6D28D9;  --blue2:#5B21B6;  --blue-l:#F1EAFE;  --blue-m:#C9B7F6;
