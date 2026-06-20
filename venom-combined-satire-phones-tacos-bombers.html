@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Venom News Network — Phones, Tacos & the Transfer Portal</title>
+<style>
+:root{
+  --purple:#5b2aa8;
+  --purple-dark:#25103f;
+  --lav:#f2ebff;
+  --yellow:#f7ea3a;
+  --hot:#ff5a36;
+  --ink:#16121c;
+  --paper:#fffdf8;
+  --muted:#6a6273;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:
+    radial-gradient(circle at 10% 6%,rgba(247,234,58,.25),transparent 18%),
+    linear-gradient(180deg,#f4edff 0,#fffdf8 38%,#fff 100%);
+  color:var(--ink);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+.topbar{
+  background:var(--purple-dark);
+  color:#fff;
+  padding:14px 22px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  border-bottom:5px solid var(--yellow);
+}
+.brand{font-weight:950;letter-spacing:.08em;text-transform:uppercase}
+.brand span{color:var(--yellow)}
+.nav a{color:#fff;text-decoration:none;font-weight:800;margin-left:18px;font-size:.92rem}
+.breaking{
+  background:linear-gradient(90deg,var(--hot),var(--yellow));
+  color:#18110a;
+  padding:11px 22px;
+  font-weight:950;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+}
+.page{max-width:1180px;margin:auto;padding:34px 22px 60px}
+.satire-label{
+  display:inline-flex;
+  background:#18121f;
+  color:#fff;
+  border-radius:999px;
+  padding:8px 13px;
+  font-weight:950;
+  font-size:.78rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.kicker{color:var(--purple);font-weight:950;text-transform:uppercase;letter-spacing:.12em;font-size:.82rem;margin-top:22px}
+h1{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(2.7rem,7vw,6rem);
+  line-height:.9;
+  margin:12px 0 18px;
+  max-width:1100px;
+}
+.deck{
+  font-size:clamp(1.1rem,2vw,1.42rem);
+  line-height:1.55;
+  max-width:930px;
+  color:#41394a;
+  font-weight:680;
+}
+.meta{margin:20px 0 30px;color:var(--muted);font-weight:700}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:28px;align-items:stretch}
+.art{
+  background:
+    radial-gradient(circle at 76% 18%,rgba(247,234,58,.8),transparent 20%),
+    linear-gradient(145deg,#7b45cc,#2d1548);
+  border:4px solid #18121f;
+  min-height:520px;
+  position:relative;
+  overflow:hidden;
+  border-radius:6px;
+  box-shadow:14px 14px 0 var(--yellow);
+}
+.art svg{width:100%;height:100%;position:absolute;inset:0}
+.caption{font-size:.84rem;color:var(--muted);margin-top:12px;font-style:italic}
+.side-card{
+  background:var(--paper);
+  border:3px solid #18121f;
+  padding:28px;
+  box-shadow:10px 10px 0 var(--purple);
+}
+.side-card h2{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:2rem;
+  margin:0 0 12px;
+}
+.score{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:8px 18px;
+  border-top:1px solid #d7d0df;
+  padding:13px 0;
+  font-weight:850;
+}
+.score strong{font-size:1.15rem;text-align:right}
+.tax{
+  margin-top:20px;
+  background:#18121f;
+  color:#fff;
+  padding:18px;
+  border-left:9px solid var(--hot);
+}
+.tax strong{display:block;color:var(--yellow);font-size:1.25rem;margin-bottom:6px}
+.article{
+  display:grid;
+  grid-template-columns:minmax(0,760px) 280px;
+  gap:44px;
+  margin-top:52px;
+}
+.copy{font-family:Georgia,"Times New Roman",serif;font-size:1.22rem;line-height:1.8}
+.copy p:first-child::first-letter{
+  float:left;
+  font-size:5.3rem;
+  line-height:.78;
+  padding:10px 10px 0 0;
+  color:var(--purple);
+  font-weight:900;
+}
+.copy h2{font-size:2.25rem;line-height:1.05;margin-top:44px}
+.quote{
+  border-left:8px solid var(--hot);
+  background:var(--lav);
+  padding:22px 24px;
+  margin:34px 0;
+  font-size:1.5rem;
+  line-height:1.35;
+  font-weight:800;
+}
+.callout{
+  border:3px solid #18121f;
+  box-shadow:8px 8px 0 var(--yellow);
+  padding:22px;
+  margin:34px 0;
+  background:#fff;
+}
+.callout h3{font-family:Arial Black,sans-serif;text-transform:uppercase;margin-top:0}
+.sidebar-note{
+  align-self:start;
+  position:sticky;
+  top:20px;
+  border-top:8px solid var(--purple);
+  background:#18121f;
+  color:#fff;
+  padding:22px;
+}
+.sidebar-note h3{color:var(--yellow);margin-top:0;text-transform:uppercase;letter-spacing:.07em}
+.sidebar-note li{margin:12px 0;line-height:1.35}
+.disclaimer{
+  margin-top:50px;
+  border:2px dashed var(--purple);
+  background:#faf6ff;
+  padding:20px;
+  font-weight:800;
+  line-height:1.5;
+}
+.footer{
+  background:var(--purple-dark);
+  color:#fff;
+  padding:28px 22px;
+  text-align:center;
+  font-weight:800;
+}
+@media(max-width:850px){
+  .hero-grid,.article{grid-template-columns:1fr}
+  .art{min-height:440px}
+  .sidebar-note{position:static}
+  .nav{display:none}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">Texas <span>Venom</span> News Network</div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="roster-12u.html">12U Roster</a>
+    <a href="tournament-dashboard.html">Tournament</a>
+    <a href="family-portal.html">Family Portal</a>
+  </nav>
+</header>
+
+<div class="breaking">Satirical breaking news: Coach Chris’s phone declared a full-time roster employee</div>
+
+<main class="page">
+  <div class="satire-label">Parody • Family lore • Transfer portal chaos</div>
+  <div class="kicker">Venom Front Office Desk</div>
+  <h1>Phones, Tacos & the Brian Tax</h1>
+  <p class="deck">Since word spread that the Rogers and Cargill families were joining Venom, Coach Chris’s phone has reportedly rung nonstop—while Venom’s first opponent, Bombers Meza, quietly prepares for a matchup with the player they once believed might be part of their future.</p>
+  <div class="meta">By The Venom News Desk • June 20, 2026 • Leander, Texas</div>
+
+  <section class="hero-grid">
+    <div>
+      <div class="art" role="img" aria-label="Satirical illustrated image of Coach Chris in an apron cooking tacos while juggling phone calls, onboarding papers and a Bombers scouting report">
+        <svg viewBox="0 0 760 520" aria-hidden="true">
+          <rect width="760" height="520" fill="transparent"/>
+          <circle cx="618" cy="88" r="84" fill="#f7ea3a" opacity=".92"/>
+          <rect x="0" y="404" width="760" height="116" fill="#17101f"/>
+          <rect x="35" y="360" width="690" height="54" rx="8" fill="#ddd6e7"/>
+
+          <circle cx="360" cy="145" r="75" fill="#d8a479"/>
+          <path d="M290 130 Q360 45 430 130 L415 76 Q360 24 305 78 Z" fill="#20172b"/>
+          <circle cx="336" cy="145" r="6" fill="#111"/>
+          <circle cx="388" cy="145" r="6" fill="#111"/>
+          <path d="M342 181 Q362 198 388 180" fill="none" stroke="#111" stroke-width="7" stroke-linecap="round"/>
+
+          <rect x="277" y="210" width="168" height="205" rx="42" fill="#5b2aa8"/>
+          <path d="M305 215 Q360 260 418 215 L443 413 H281 Z" fill="#f7ea3a" stroke="#18121f" stroke-width="7"/>
+          <text x="362" y="298" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="28" fill="#25103f">VENOM</text>
+          <text x="362" y="333" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="19" fill="#25103f">PORTAL KITCHEN</text>
+
+          <path d="M277 248 Q205 280 170 345" fill="none" stroke="#d8a479" stroke-width="30" stroke-linecap="round"/>
+          <path d="M445 248 Q522 276 568 338" fill="none" stroke="#d8a479" stroke-width="30" stroke-linecap="round"/>
+
+          <ellipse cx="169" cy="365" rx="78" ry="26" fill="#1a111f" stroke="#f7ea3a" stroke-width="7"/>
+          <path d="M120 351 Q169 306 220 351" fill="#e9b85d"/>
+          <path d="M132 347 Q149 328 164 347 M174 346 Q191 320 207 346" fill="none" stroke="#5c9d45" stroke-width="9"/>
+
+          <g transform="rotate(-6 585 357)">
+            <rect x="505" y="312" width="160" height="94" rx="5" fill="#fffdf8" stroke="#18121f" stroke-width="5"/>
+            <text x="585" y="339" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="16" fill="#25103f">BOMBERS MEZA</text>
+            <line x1="521" y1="351" x2="649" y2="351" stroke="#25103f" stroke-width="3"/>
+            <text x="585" y="377" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="18" fill="#ff5a36">GAME 1</text>
+            <text x="585" y="397" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="12" fill="#25103f">SCOUTING: AWKWARD</text>
+          </g>
+
+          <g fill="#fff">
+            <rect x="51" y="55" width="220" height="66" rx="33"/>
+            <rect x="470" y="176" width="238" height="72" rx="36"/>
+          </g>
+          <text x="161" y="92" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="17" fill="#25103f">ROGERS/CARGILL CALL #?</text>
+          <text x="589" y="217" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="16" fill="#25103f">WHO LEAKED THE NEWS?</text>
+
+          <g transform="translate(34 198)">
+            <rect width="70" height="118" rx="13" fill="#18121f" stroke="#f7ea3a" stroke-width="5"/>
+            <circle cx="35" cy="96" r="5" fill="#f7ea3a"/>
+            <text x="35" y="35" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="13" fill="#fff">RING</text>
+            <text x="35" y="57" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="13" fill="#fff">RING</text>
+            <text x="35" y="79" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="13" fill="#fff">RING</text>
+          </g>
+
+          <g fill="#f7ea3a" stroke="#18121f" stroke-width="4">
+            <path d="M650 276 C689 258 711 291 683 318 C659 341 628 324 637 299 C644 280 667 285 667 301 C667 314 652 319 646 307"/>
+          </g>
+          <text x="682" y="352" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="15" fill="#fff">BRIAN TAX</text>
+        </svg>
+      </div>
+      <div class="caption">Satirical illustration. Calls, taxes, ghosting, scouting reports and taco production are exaggerated for comedy.</div>
+    </div>
+
+    <aside class="side-card">
+      <h2>Unofficial Crisis Dashboard</h2>
+      <div class="score"><span>Calls since news broke</span><strong>Uncountable</strong></div>
+      <div class="score"><span>Rogers/Cargill onboarding calls</span><strong>Most of them</strong></div>
+      <div class="score"><span>Breakfast tacos produced</span><strong>12U+</strong></div>
+      <div class="score"><span>Brian Tax applied</span><strong>Family estimate</strong></div>
+      <div class="score"><span>Bombers Meza opening-game tension</span><strong>Spicy</strong></div>
+      <div class="score"><span>Kassidy tryout attendance</span><strong>0-for-1</strong></div>
+      <div class="tax">
+        <strong>Brian Tax Formula</strong>
+        Rogers/Cargill news + Central Texas softball history + one group text = three new calls, two rumors and a breakfast taco order.
+      </div>
+    </aside>
+  </section>
+
+  <section class="article">
+    <article class="copy">
+      <p>LEANDER — Coach Chris’s phone has reportedly not stopped ringing since word spread that the Rogers and Cargill families were joining Venom.</p>
+
+      <p>What began as a normal onboarding process quickly became a full-scale communications event involving roster questions, old softball stories, new family expectations, uniform details, scheduling, and several calls that apparently started with, “So I heard…”</p>
+
+      <div class="quote">“The phone is no longer a device. It is now an assistant coach,” one completely fictional front-office source said.</div>
+
+      <h2>Most Calls Lead Back to Rogers and Cargill</h2>
+      <p>According to the parody call log, a majority of the week’s activity involved onboarding the Rogers and Cargill families. The rest involved people calling to ask why so many people were calling about the Rogers and Cargill families.</p>
+
+      <p>The situation was further complicated by the Cargills’ running “Brian Tax” joke—the family’s name for the extra explanation, curiosity and occasional side-eye they feel can follow any mention of Brian Rogers or their early select-softball days with the Bananas.</p>
+
+      <p>Whether that reaction is real, exaggerated, outdated or simply a byproduct of competitive youth softball remains outside the investigative jurisdiction of this fake newsroom.</p>
+
+      <div class="callout">
+        <h3>Updated Brian Tax Schedule</h3>
+        <p><strong>News that Rogers and Cargill joined Venom:</strong> +4 incoming calls</p>
+        <p><strong>Mentioning Bananas history:</strong> +2 old stories</p>
+        <p><strong>Entering a Central Texas complex together:</strong> +12% perceived awkwardness</p>
+        <p><strong>Actually meeting the families:</strong> fee usually waived</p>
+      </div>
+
+      <h2>Venom’s First Opponent: Bombers Meza</h2>
+      <p>As if the opening matchup needed more plot, Venom’s first opponent is Bombers Meza.</p>
+
+      <p>The family’s version of events is that Kassidy Cargill had drawn serious interest from people around the Bombers organization and was viewed by some as a strong possible fit for their future. She then did not attend the scheduled tryout—an episode the parody desk is dramatically labeling “The Ghosting of Meza.”</p>
+
+      <p>There was no cinematic betrayal, no secret flight out of town and no transfer-portal limousine. There was simply a no-show, a different team decision, and enough softball gossip to power three tournament weekends.</p>
+
+      <div class="quote">“She did not ghost an entire organization. She missed a tryout. But that headline gets fewer clicks,” the Venom satire editor admitted.</div>
+
+      <h2>From Possible Bomber to Opening Opponent</h2>
+      <p>The result is a made-for-softball opening storyline: a player once discussed as a possible Bombers fit now lining up across the field in Venom colors.</p>
+
+      <p>Any suggestion that Kassidy was guaranteed a Bombers spot, or that the entire organization expected her arrival, would be impossible for this parody page to verify. The safer—and funnier—version is that enough people believed the match made sense that her no-show became part of the family lore.</p>
+
+      <p>Kassidy herself is reportedly far less interested in the narrative than the adults. Her official position remains: throw the ball, hit the ball, catch the ball, and let everyone else build a documentary around the parking lot.</p>
+
+      <h2>Coach Chris Returns to the Griddle</h2>
+      <p>Coach Chris was last seen wearing an apron, cooking breakfast tacos, onboarding two families, answering a fifth consecutive call about the same rumor, and reviewing a Bombers scouting report that simply read: “Expect awkward handshakes.”</p>
+
+      <p>He then attempted to silence his phone. The phone declined.</p>
+
+      <p>As of publication, the Rogers and Cargill onboarding process was nearly complete, the Brian Tax remained fictional, Bombers Meza remained Venom’s first opponent, and Kassidy had still not issued a formal apology for failing to appear in a tryout storyline she never agreed to star in.</p>
+
+      <div class="disclaimer"><strong>Editorial notice:</strong> This is a friendly satire page. The call totals, quotes, “Brian Tax,” reputation references, “ghosting” language, and claims about Bombers expectations are exaggerated family humor and personal perspective—not verified factual claims about Brian Rogers, Coach Chris, Coach Meza, Bombers, Venom, Kassidy Cargill or the Central Texas softball community.</div>
+    </article>
+
+    <aside class="sidebar-note">
+      <h3>Developing Story</h3>
+      <ul>
+        <li>Coach Chris’s voicemail reportedly requests a roster spot.</li>
+        <li>Bombers scouting department monitors taco activity.</li>
+        <li>Portal adds “family lore” as a required field.</li>
+        <li>Brian Tax remains non-deductible.</li>
+        <li>Kassidy declines to comment, takes batting practice.</li>
+      </ul>
+    </aside>
+  </section>
+</main>
+
+<footer class="footer">
+  Texas Venom • Satire Desk • Softball drama served with extra salsa
+</footer>
+</body>
+</html>
