@@ -1,10 +1,10 @@
 {
-  "synced_at": "2026-06-20T13:33:53.996810+00:00",
+  "synced_at": "2026-06-20T14:46:08.209203+00:00",
   "teams_synced": [
     "12U"
   ],
   "errors": [],
-  "count": 6,
+  "count": 2,
   "events": [
     {
       "id": "4e8f4533-f89a-4dd6-81f1-27f434490597",
@@ -30,58 +30,6 @@
       "description": "Black bottoms grey tops",
       "type": "game",
       "opponent": "Texas Venom 14U",
-      "url": ""
-    },
-    {
-      "id": "b6628495-6fcd-4d8d-9263-56e36048738d",
-      "team": "12U",
-      "title": "Texas Venom 12U @ CTX Bombers - Meza",
-      "start": "2026-06-20T17:10:00+00:00",
-      "end": "2026-06-20T19:05:00+00:00",
-      "location": "210 Carlos G Parker Blvd NW\nTaylor TX",
-      "notes": "All blacks! Cages at 8am",
-      "description": "All blacks! Cages at 8am",
-      "type": "game",
-      "opponent": "CTX Bombers - Meza",
-      "url": ""
-    },
-    {
-      "id": "d680ec98-e442-4a74-b27f-11d9cbef527d",
-      "team": "12U",
-      "title": "Texas Venom 12U @ Tx Bombers CTX 2K14 12U",
-      "start": "2026-06-20T17:40:00+00:00",
-      "end": "2026-06-20T18:40:00+00:00",
-      "location": "",
-      "notes": "",
-      "description": "",
-      "type": "game",
-      "opponent": "Tx Bombers CTX 2K14 12U",
-      "url": ""
-    },
-    {
-      "id": "64e6517e-aa32-41ee-a7ed-8f4a8db09df7",
-      "team": "12U",
-      "title": "Texas Venom 12U @ Texas Bombers CTX 12U",
-      "start": "2026-06-20T18:40:00+00:00",
-      "end": "2026-06-20T19:35:00+00:00",
-      "location": "210 Carlos G Parker Blvd NW\nTaylor TX",
-      "notes": "",
-      "description": "",
-      "type": "game",
-      "opponent": "Texas Bombers CTX 12U",
-      "url": ""
-    },
-    {
-      "id": "9c6f6869-0069-4399-bc4f-15531a14135f",
-      "team": "12U",
-      "title": "Texas Venom 12U @ Queen Bees 12U",
-      "start": "2026-06-20T20:00:00+00:00",
-      "end": "2026-06-20T20:55:00+00:00",
-      "location": "",
-      "notes": "",
-      "description": "",
-      "type": "game",
-      "opponent": "Queen Bees 12U",
       "url": ""
     }
   ]
