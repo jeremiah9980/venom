@@ -120,6 +120,47 @@ function linkRosterProfiles(path){
   });
 }
 
+function injectRosterStats(path){
+  if(path!=='roster-12u.html'&&path!=='roster-12u')return;
+  const stats={
+    'Penny Bridgewaters':{avg:'.441',obp:'.542',ops:'1.254',sb:'12',note:'36 GP • 26 H • 28 RBI • 33 R'},
+    'Aubrey Balcom':{avg:'.522',obp:'.645',ops:'1.341',sb:'13',note:'37 GP • 24 H • 18 RBI • 23 R'},
+    'Kynsington Elliott':{avg:'.431',obp:'.663',ops:'1.114',sb:'40',note:'38 GP • 22 H • 7 RBI • 47 R'},
+    'Gracelyn Welch':{avg:'.407',obp:'.548',ops:'1.159',sb:'9',note:'38 GP • 22 H • 26 RBI • 29 R'},
+    'Hadley Wiegers':{avg:'.295',obp:'.449',ops:'.777',sb:'11',note:'38 GP • 18 H • 22 RBI • 27 R'},
+    'Addison Popkoff':{avg:'.485',obp:'.595',ops:'1.232',sb:'11',note:'38 GP • 32 H • 32 RBI • 34 R'},
+    'Saraya Palmer':{avg:'.407',obp:'.508',ops:'1.045',sb:'5',note:'38 GP • 22 H • 18 RBI • 21 R'},
+    'Payton Riser':{avg:'.222',obp:'32',ops:'46',sb:'36',labels:['AVG','GP','PA','AB'],note:'Partial line shown from collected screenshots.'},
+    'Emily Lambdin':{avg:'.300',obp:'.553',ops:'.987',sb:'10',note:'31 GP • 9 H • 11 RBI • 11 R'}
+  };
+
+  if(!document.getElementById('roster-stats-styles')){
+    const style=document.createElement('style');
+    style.id='roster-stats-styles';
+    style.textContent='.player-stats{margin-top:14px;padding-top:14px;border-top:1px solid var(--g4)}.stats-label{margin-bottom:9px;color:var(--blue2);font-family:var(--body);font-size:9px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase}.stat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.stat{padding:8px 7px;border:1px solid var(--g4);border-radius:6px;background:linear-gradient(180deg,#fff,#fbf9f3);text-align:center}.stat strong{display:block;color:var(--blue);font-family:var(--display);font-size:17px;line-height:1}.stat span{display:block;margin-top:4px;color:var(--muted);font-family:var(--body);font-size:8px;font-weight:900;letter-spacing:1px;text-transform:uppercase}.stat-note{margin-top:10px;color:var(--muted);font-family:var(--body);font-size:10px;font-weight:700;line-height:1.35}html.theme-dark .player-stats,html[data-theme="dark"] .player-stats{border-color:#43364a}html.theme-dark .stat,html[data-theme="dark"] .stat{background:#120d16;border-color:#43364a}html.theme-dark .stat span,html[data-theme="dark"] .stat span,html.theme-dark .stat-note,html[data-theme="dark"] .stat-note{color:#cfc6d8}@media(max-width:640px){.stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}';
+    document.head.appendChild(style);
+  }
+
+  document.querySelectorAll('.player-card').forEach(card=>{
+    const name=card.querySelector('.player-name')?.textContent?.trim();
+    const body=card.querySelector('.player-body');
+    if(!name||!body||body.querySelector('.player-stats'))return;
+    const s=stats[name];
+    const wrap=document.createElement('div');
+    wrap.className='player-stats';
+    if(s){
+      const labels=s.labels||['AVG','OBP','OPS','SB'];
+      wrap.innerHTML=`<div class="stats-label">Spring 2026 Batting</div><div class="stat-grid"><div class="stat"><strong>${s.avg}</strong><span>${labels[0]}</span></div><div class="stat"><strong>${s.obp}</strong><span>${labels[1]}</span></div><div class="stat"><strong>${s.ops}</strong><span>${labels[2]}</span></div><div class="stat"><strong>${s.sb}</strong><span>${labels[3]}</span></div></div><div class="stat-note">${s.note}</div>`;
+    }else if(name==='Kassidy Cargill'||name==='Johnny Rogers'){
+      wrap.innerHTML='<div class="stats-label">Stats Pending</div><div class="stat-note">No matching Spring 2026 Venom stat line was included in the collected screenshots.</div>';
+    }else{
+      return;
+    }
+    const profileLink=body.querySelector('.player-profile-link');
+    if(profileLink)body.insertBefore(wrap,profileLink);else body.appendChild(wrap);
+  });
+}
+
 function updateFooterStaff(){
   const footer=document.querySelector('footer');
   if(!footer)return;
@@ -153,6 +194,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   document.querySelectorAll('.nav-links a').forEach(a=>{if(a.getAttribute('href')===path||(path==='portal'&&a.getAttribute('href')==='portal.html'))a.classList.add('active')});
   fixRosterPhotos(path);
   linkRosterProfiles(path);
+  injectRosterStats(path);
   updateFooterStaff();
   setTheme(currentTheme(),false);
   document.querySelectorAll('.theme-option').forEach(btn=>btn.addEventListener('click',()=>setTheme(btn.dataset.themeValue)));
