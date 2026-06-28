@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_FILE = ROOT / "assets" / "data" / "ncs-tournament.json"
-TEAM_URL = "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom"
+TEAM_URL = "https://www.playncs.com/Fastpitch/Teams/Details/87660/texas-venom-12u"
 SCHEDULE_URL = "https://www.playncs.com/fastpitch/Events/Schedule/12287/3p-sports-dingers-for-dads-6gg?division=12U%20OPEN"
 
 GAME_RE = re.compile(r"\bGame\s+(\d+)\b", re.I)

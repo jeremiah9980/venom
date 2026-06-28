@@ -13,9 +13,9 @@
     "source_url": "https://www.playncs.com/fastpitch/Events/Schedule/12287/3p-sports-dingers-for-dads-6gg?division=12U%20OPEN"
   },
   "team": {
-    "id": "26-73839",
+    "id": "26-87660",
     "name": "Texas Venom",
-    "source_url": "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom"
+    "source_url": "https://www.playncs.com/Fastpitch/Teams/Details/87660/texas-venom-12u"
   },
   "upcoming_tournaments": [
     {
@@ -34,7 +34,7 @@
       "location": "Taylor, TX",
       "division": "10U / 12U / 14U",
       "registered_teams": 32,
-      "url": "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom"
+      "url": "https://www.playncs.com/Fastpitch/Teams/Details/87660/texas-venom-12u"
     }
   ],
   "games": [
@@ -138,7 +138,7 @@
       "away": {
         "name": "Texas Venom",
         "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom"
+        "url": "https://www.playncs.com/Fastpitch/Teams/Details/87660/texas-venom-12u"
       },
       "source_text": "5 | Game 5 | Sat 9:10 AM | Sat 9:10 AM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | CTX Bombers Meza | Texas Venom",
       "game_number": 5
@@ -217,7 +217,7 @@
       "home": {
         "name": "Texas Venom",
         "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom"
+        "url": "https://www.playncs.com/Fastpitch/Teams/Details/87660/texas-venom-12u"
       },
       "away": {
         "name": "Texas Bombers CTX Tamez",
@@ -322,7 +322,7 @@
       "home": {
         "name": "Texas Venom",
         "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom"
+        "url": "https://www.playncs.com/Fastpitch/Teams/Details/87660/texas-venom-12u"
       },
       "away": {
         "name": "TX BOMBERS CTX 2K14 VALENZUELA",
@@ -390,7 +390,7 @@
       "away": {
         "name": "Texas Venom",
         "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom"
+        "url": "https://www.playncs.com/Fastpitch/Teams/Details/87660/texas-venom-12u"
       },
       "source_text": "17 | Game 17 | Sat 3:00 PM | Sat 3:00 PM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | CPYL Queen Bees | Texas Venom",
       "game_number": 17
@@ -518,7 +518,7 @@
       "away": {
         "name": "Texas Venom",
         "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom"
+        "url": "https://www.playncs.com/Fastpitch/Teams/Details/87660/texas-venom-12u"
       },
       "source_text": "5 | Game 5 | Sat 9:10 AM | Sat 9:10 AM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | CTX Bombers Meza | Texas Venom",
       "game_number": 5
@@ -534,7 +534,7 @@
       "home": {
         "name": "Texas Venom",
         "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom"
+        "url": "https://www.playncs.com/Fastpitch/Teams/Details/87660/texas-venom-12u"
       },
       "away": {
         "name": "Texas Bombers CTX Tamez",
@@ -555,7 +555,7 @@
       "home": {
         "name": "Texas Venom",
         "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom"
+        "url": "https://www.playncs.com/Fastpitch/Teams/Details/87660/texas-venom-12u"
       },
       "away": {
         "name": "TX BOMBERS CTX 2K14 VALENZUELA",
@@ -581,7 +581,7 @@
       "away": {
         "name": "Texas Venom",
         "score": null,
-        "url": "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom"
+        "url": "https://www.playncs.com/Fastpitch/Teams/Details/87660/texas-venom-12u"
       },
       "source_text": "17 | Game 17 | Sat 3:00 PM | Sat 3:00 PM | Taylor Athletic Complex 6 | Taylor Athletic Complex 6 | CPYL Queen Bees | Texas Venom",
       "game_number": 17
@@ -593,7 +593,7 @@
   },
   "source": {
     "schedule_url": "https://www.playncs.com/fastpitch/Events/Schedule/12287/3p-sports-dingers-for-dads-6gg?division=12U%20OPEN",
-    "team_url": "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom",
+    "team_url": "https://www.playncs.com/Fastpitch/Teams/Details/87660/texas-venom-12u",
     "last_http_status": {
       "schedule": 200,
       "team": 200

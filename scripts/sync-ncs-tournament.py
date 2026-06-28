@@ -15,7 +15,7 @@ from bs4 import BeautifulSoup, Tag
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "assets" / "data" / "ncs-tournament.json"
-TEAM_URL = "https://www.playncs.com/fastpitch/Teams/Details/73839/texas-venom"
+TEAM_URL = "https://www.playncs.com/Fastpitch/Teams/Details/87660/texas-venom-12u"
 SCHEDULE_URL = "https://www.playncs.com/fastpitch/Events/Schedule/12287/3p-sports-dingers-for-dads-6gg?division=12U%20OPEN"
 TEAM_NAME = "Texas Venom"
 USER_AGENT = "Mozilla/5.0 (compatible; TexasVenomTournamentDashboard/1.0; +https://jeremiah9980.github.io/venom/)"
@@ -317,7 +317,7 @@ def main() -> int:
             "source_url": SCHEDULE_URL,
         },
     )
-    payload.setdefault("team", {"id": "26-73839", "name": TEAM_NAME, "source_url": TEAM_URL})
+    payload.setdefault("team", {"id": "26-87660", "name": TEAM_NAME, "source_url": TEAM_URL})
     payload["source"] = {
         "schedule_url": SCHEDULE_URL,
         "team_url": TEAM_URL,
