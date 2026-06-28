@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T23:51:13.883673+00:00",
+  "generated_at": "2026-06-28T23:51:30.839248+00:00",
   "sync_status": "stale",
   "sync_message": "Loaded 22 division game(s), including 4 Texas Venom game(s), from NCS.",
   "event": {
@@ -34,7 +34,7 @@
       "location": "Taylor, TX",
       "division": "10U / 12U / 14U",
       "registered_teams": 32,
-      "url": "https://www.playncs.com/Fastpitch/Teams/Details/87660/texas-venom-12u"
+      "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
     }
   ],
   "games": [
