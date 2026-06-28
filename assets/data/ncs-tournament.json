@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T18:14:52.159120+00:00",
+  "generated_at": "2026-06-28T18:23:42.705630+00:00",
   "sync_status": "stale",
   "sync_message": "Loaded 22 division game(s), including 4 Texas Venom game(s), from NCS.",
   "event": {
@@ -20,7 +20,7 @@
   "upcoming_tournaments": [
     {
       "id": 12287,
-      "name": "3P Sports Dingers for Dads *6GG*",
+      "name": "3P Sports Dingers for Dads 6GG",
       "dates": "Jun 20–21",
       "location": "Taylor / Lorena, TX",
       "division": "12U OPEN",
