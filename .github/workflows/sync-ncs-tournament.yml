@@ -5,6 +5,8 @@ on:
     - cron: "*/10 * * * *"
   workflow_dispatch:
   push:
+    branches:
+      - main
     paths:
       - "scripts/sync-ncs-tournament.py"
       - "scripts/refine-ncs-tournament.py"
@@ -43,8 +45,8 @@ jobs:
           if [ -n "$(git status --porcelain assets/data/ncs-tournament.json)" ]; then
             git add assets/data/ncs-tournament.json
             git commit -m "chore(tournament): sync NCS scores [$(date -u +%FT%TZ)]"
-            git pull --rebase origin main || true
-            git push
+            git pull --rebase origin main
+            git push origin HEAD:main
           else
             echo "No NCS tournament changes"
           fi
