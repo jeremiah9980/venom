@@ -3,7 +3,7 @@ name: Update NCS Tournaments
 on:
   workflow_dispatch:
   schedule:
-    - cron: "15 11 * * *"
+    - cron: "15 * * * *"
 
 permissions:
   contents: write
