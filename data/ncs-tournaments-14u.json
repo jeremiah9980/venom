@@ -1,6 +1,6 @@
 {
   "team_key": "14u",
-  "generated_at": "2026-06-29T13:47:10.067566+00:00",
+  "generated_at": "2026-06-29T15:24:39.448733+00:00",
   "source": "NCS Fastpitch team page",
   "team": {
     "key": "14u",
@@ -40,7 +40,7 @@
       "event_id": "13214",
       "title": "3P Sports - Dawg Days of Summer",
       "event_type": "Tournament",
-      "format": "2",
+      "format": "1",
       "start_date": "2026-08-29",
       "end_date": "2026-08-30",
       "date_label": "Aug 29-30",
@@ -97,7 +97,7 @@
       "event_id": "13209",
       "title": "3P Sports - September Sapphire CROSSROADS Showdown",
       "event_type": "Tournament",
-      "format": "2",
+      "format": "1",
       "start_date": "2026-09-26",
       "end_date": "2026-09-27",
       "date_label": "Sep 26-27",

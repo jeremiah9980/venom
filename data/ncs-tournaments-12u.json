@@ -1,6 +1,6 @@
 {
   "team_key": "12u",
-  "generated_at": "2026-06-29T13:47:09.631449+00:00",
+  "generated_at": "2026-06-29T15:24:39.080974+00:00",
   "source": "NCS Fastpitch team page",
   "team": {
     "key": "12u",
@@ -35,34 +35,6 @@
       ],
       "verify_division": false,
       "source_url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
-    },
-    {
-      "event_id": "13214",
-      "title": "3P Sports - Dawg Days of Summer",
-      "event_type": "Tournament",
-      "format": "2",
-      "start_date": "2026-08-29",
-      "end_date": "2026-08-30",
-      "date_label": "Aug 29-30",
-      "location": "",
-      "director": "Jennifer Anderson",
-      "registered_teams": null,
-      "divisions": [
-        "8U",
-        "10U",
-        "12U",
-        "14U",
-        "18U"
-      ],
-      "tags": [
-        "8U \u00b7 10U \u00b7 12U \u00b7 14U \u00b7 18U",
-        "3PSPORTS",
-        "C-CLASS ONLY",
-        "LOW ENTRY FEE",
-        "HOMERUN AWARDS"
-      ],
-      "verify_division": false,
-      "source_url": "https://www.playncs.com/fastpitch/Events/Details/13214/3p-sports-dawg-days-of-summer"
     },
     {
       "event_id": "13648",
@@ -192,7 +164,7 @@
     }
   ],
   "counts": {
-    "events": 7,
+    "events": 6,
     "verify_division": 1,
     "registered_team_total_shown_by_ncs": 0
   }
