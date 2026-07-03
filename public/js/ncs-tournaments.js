@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-07-03T01:53:17.399228+00:00",
+  "generated_at": "2026-07-03T03:21:07.418419+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-07-03T01:53:17.827733+00:00",
+      "generated_at": "2026-07-03T03:21:08.162565+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -176,7 +176,7 @@ window.TEXAS_VENOM_NCS = {
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-07-03T01:53:18.193524+00:00",
+      "generated_at": "2026-07-03T03:21:08.723251+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -301,7 +301,7 @@ window.TEXAS_VENOM_NCS = {
           "event_id": "13598",
           "title": "********* OCTOBERFEST ********",
           "event_type": "Tournament",
-          "format": "2",
+          "format": "3",
           "start_date": "2026-10-03",
           "end_date": "2026-10-04",
           "date_label": "Oct 3-4",
