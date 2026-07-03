@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T06:01:20.391595+00:00",
+  "generated_at": "2026-07-03T07:19:01.124380+00:00",
   "sync_status": "stale",
   "sync_message": "Loaded 22 division game(s), including 4 Texas Venom game(s), from NCS.",
   "event": {
@@ -596,8 +596,8 @@
     "team_url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u",
     "last_http_status": {
       "schedule": 200,
-      "team": null
+      "team": 200
     },
-    "last_error": "Team page fetch: HTTPSConnectionPool(host='www.playncs.com', port=443): Read timed out. (read timeout=35)"
+    "last_error": null
   }
 }
