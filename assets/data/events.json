@@ -1,10 +1,10 @@
 {
-  "synced_at": "2026-07-05T19:59:15.156067+00:00",
+  "synced_at": "2026-07-05T20:30:31.261129+00:00",
   "teams_synced": [
     "12U"
   ],
   "errors": [],
-  "count": 21,
+  "count": 22,
   "events": [
     {
       "id": "4e8f4533-f89a-4dd6-81f1-27f434490597",
@@ -30,6 +30,19 @@
       "description": "Black bottoms grey tops",
       "type": "game",
       "opponent": "Texas Venom 14U",
+      "url": ""
+    },
+    {
+      "id": "cf6bd4e1-a25d-4c97-89a6-68271094f555",
+      "team": "12U",
+      "title": "Texas Venom 12U Practice",
+      "start": "2026-07-07T22:30:00+00:00",
+      "end": "2026-07-08T00:30:00+00:00",
+      "location": "451 Perry Mayfield Blvd\nRound Rock TX",
+      "notes": "",
+      "description": "",
+      "type": "practice",
+      "opponent": null,
       "url": ""
     },
     {
