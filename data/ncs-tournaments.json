@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-07T17:52:53.982393+00:00",
+  "generated_at": "2026-07-07T18:53:21.169600+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-07-07T17:52:54.358157+00:00",
+      "generated_at": "2026-07-07T18:53:21.821482+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -96,7 +96,7 @@
           "event_id": "13218",
           "title": "3P Sports - Gloves Up for a Cure",
           "event_type": "Tournament",
-          "format": "1",
+          "format": "2",
           "start_date": "2026-10-10",
           "end_date": "2026-10-11",
           "date_label": "Oct 10-11",
@@ -176,7 +176,7 @@
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-07-07T17:52:54.677354+00:00",
+      "generated_at": "2026-07-07T18:53:22.181350+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -273,7 +273,7 @@
           "event_id": "13209",
           "title": "3P Sports - September Sapphire CROSSROADS Showdown",
           "event_type": "Tournament",
-          "format": "1",
+          "format": "2",
           "start_date": "2026-09-26",
           "end_date": "2026-09-27",
           "date_label": "Sep 26-27",
@@ -326,7 +326,7 @@
           "event_id": "13481",
           "title": "PINK OUT 70 MIN POOLS 4GG",
           "event_type": "Tournament",
-          "format": "3",
+          "format": "4",
           "start_date": "2026-10-17",
           "end_date": "2026-10-18",
           "date_label": "Oct 17-18",

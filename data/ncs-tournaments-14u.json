@@ -1,6 +1,6 @@
 {
   "team_key": "14u",
-  "generated_at": "2026-07-07T17:52:54.677354+00:00",
+  "generated_at": "2026-07-07T18:53:22.181350+00:00",
   "source": "NCS Fastpitch team page",
   "team": {
     "key": "14u",
@@ -97,7 +97,7 @@
       "event_id": "13209",
       "title": "3P Sports - September Sapphire CROSSROADS Showdown",
       "event_type": "Tournament",
-      "format": "1",
+      "format": "2",
       "start_date": "2026-09-26",
       "end_date": "2026-09-27",
       "date_label": "Sep 26-27",
@@ -150,7 +150,7 @@
       "event_id": "13481",
       "title": "PINK OUT 70 MIN POOLS 4GG",
       "event_type": "Tournament",
-      "format": "3",
+      "format": "4",
       "start_date": "2026-10-17",
       "end_date": "2026-10-18",
       "date_label": "Oct 17-18",
