@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-13T00:07:33.342145+00:00",
+  "generated_at": "2026-07-13T03:54:13.274588+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-07-13T00:07:33.709561+00:00",
+      "generated_at": "2026-07-13T03:54:13.760966+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -96,7 +96,7 @@
           "event_id": "13218",
           "title": "3P Sports - Gloves Up for a Cure",
           "event_type": "Tournament",
-          "format": "4",
+          "format": "5",
           "start_date": "2026-10-10",
           "end_date": "2026-10-11",
           "date_label": "Oct 10-11",
@@ -125,7 +125,7 @@
           "event_id": "13484",
           "title": "NCS CENTRAL TEXAS FALL STATE 65 MIN POOL 6GG 8U,10U,12U, 18u OPEN & C, 14U C ONLY",
           "event_type": "Double Points Qualifier",
-          "format": "10",
+          "format": "11",
           "start_date": "2026-11-07",
           "end_date": "2026-11-08",
           "date_label": "Nov 7-8",
@@ -176,7 +176,7 @@
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-07-13T00:07:34.056452+00:00",
+      "generated_at": "2026-07-13T03:54:14.151857+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -273,7 +273,7 @@
           "event_id": "13209",
           "title": "3P Sports - September Sapphire CROSSROADS Showdown",
           "event_type": "Tournament",
-          "format": "5",
+          "format": "6",
           "start_date": "2026-09-26",
           "end_date": "2026-09-27",
           "date_label": "Sep 26-27",
@@ -350,7 +350,7 @@
           "event_id": "13484",
           "title": "NCS CENTRAL TEXAS FALL STATE 65 MIN POOL 6GG 8U,10U,12U, 18u OPEN & C, 14U C ONLY",
           "event_type": "Double Points Qualifier",
-          "format": "10",
+          "format": "11",
           "start_date": "2026-11-07",
           "end_date": "2026-11-08",
           "date_label": "Nov 7-8",

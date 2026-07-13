@@ -1,6 +1,6 @@
 {
   "team_key": "14u",
-  "generated_at": "2026-07-13T00:07:34.056452+00:00",
+  "generated_at": "2026-07-13T03:54:14.151857+00:00",
   "source": "NCS Fastpitch team page",
   "team": {
     "key": "14u",
@@ -97,7 +97,7 @@
       "event_id": "13209",
       "title": "3P Sports - September Sapphire CROSSROADS Showdown",
       "event_type": "Tournament",
-      "format": "5",
+      "format": "6",
       "start_date": "2026-09-26",
       "end_date": "2026-09-27",
       "date_label": "Sep 26-27",
@@ -174,7 +174,7 @@
       "event_id": "13484",
       "title": "NCS CENTRAL TEXAS FALL STATE 65 MIN POOL 6GG 8U,10U,12U, 18u OPEN & C, 14U C ONLY",
       "event_type": "Double Points Qualifier",
-      "format": "10",
+      "format": "11",
       "start_date": "2026-11-07",
       "end_date": "2026-11-08",
       "date_label": "Nov 7-8",
