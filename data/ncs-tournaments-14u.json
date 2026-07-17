@@ -1,6 +1,6 @@
 {
   "team_key": "14u",
-  "generated_at": "2026-07-17T19:38:03.075855+00:00",
+  "generated_at": "2026-07-17T20:30:42.173184+00:00",
   "source": "NCS Fastpitch team page",
   "team": {
     "key": "14u",
@@ -174,7 +174,7 @@
       "event_id": "13484",
       "title": "NCS CENTRAL TEXAS FALL STATE 65 MIN POOL 6GG 8U,10U,12U, 18u OPEN & C, 14U C ONLY",
       "event_type": "Double Points Qualifier",
-      "format": "14",
+      "format": "15",
       "start_date": "2026-11-07",
       "end_date": "2026-11-08",
       "date_label": "Nov 7-8",
