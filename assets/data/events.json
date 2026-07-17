@@ -1,10 +1,10 @@
 {
-  "synced_at": "2026-07-17T17:05:44.381326+00:00",
+  "synced_at": "2026-07-17T18:32:41.984941+00:00",
   "teams_synced": [
     "12U"
   ],
   "errors": [],
-  "count": 22,
+  "count": 24,
   "events": [
     {
       "id": "4e8f4533-f89a-4dd6-81f1-27f434490597",
@@ -55,6 +55,32 @@
       "notes": "",
       "description": "",
       "type": "meeting",
+      "opponent": null,
+      "url": ""
+    },
+    {
+      "id": "6c9db075-158a-467d-ad45-69b6caf4b756",
+      "team": "12U",
+      "title": "Texas Venom 12U Practice",
+      "start": "2026-07-22T23:00:00+00:00",
+      "end": "2026-07-23T01:00:00+00:00",
+      "location": "16500 W State Highway 29\n, TX 78642",
+      "notes": "Shorts and Gray or purple shirts.",
+      "description": "Shorts and Gray or purple shirts.",
+      "type": "practice",
+      "opponent": null,
+      "url": ""
+    },
+    {
+      "id": "789ef5b6-84f2-4138-9163-96a88fe4c416",
+      "team": "12U",
+      "title": "Texas Venom 12U Practice",
+      "start": "2026-07-29T23:00:00+00:00",
+      "end": "2026-07-30T01:00:00+00:00",
+      "location": "",
+      "notes": "",
+      "description": "",
+      "type": "practice",
       "opponent": null,
       "url": ""
     },
