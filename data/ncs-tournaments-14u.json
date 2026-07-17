@@ -1,6 +1,6 @@
 {
   "team_key": "14u",
-  "generated_at": "2026-07-17T00:10:02.773712+00:00",
+  "generated_at": "2026-07-17T15:35:58.493041+00:00",
   "source": "NCS Fastpitch team page",
   "team": {
     "key": "14u",
@@ -198,7 +198,7 @@
       "event_id": "13534",
       "title": "NCS CENTRAL TEXAS FALL REGIONAL - 10u & 14u CLASS \" C \" TEAMS 70 MIN POOLS 4GG",
       "event_type": "Tournament",
-      "format": "6",
+      "format": "7",
       "start_date": "2026-11-14",
       "end_date": "2026-11-15",
       "date_label": "Nov 14-15",
