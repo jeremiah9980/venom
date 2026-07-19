@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-19T01:52:57.600380+00:00",
+  "generated_at": "2026-07-19T03:20:42.488498+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-07-19T01:52:58.016911+00:00",
+      "generated_at": "2026-07-19T03:20:42.774939+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -176,7 +176,7 @@
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-07-19T01:52:58.357656+00:00",
+      "generated_at": "2026-07-19T03:20:43.055335+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -216,7 +216,7 @@
           "event_id": "13214",
           "title": "3P Sports - Dawg Days of Summer",
           "event_type": "Tournament",
-          "format": "1",
+          "format": "2",
           "start_date": "2026-08-29",
           "end_date": "2026-08-30",
           "date_label": "Aug 29-30",
