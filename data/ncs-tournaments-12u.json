@@ -1,6 +1,6 @@
 {
   "team_key": "12u",
-  "generated_at": "2026-07-20T21:38:03.845431+00:00",
+  "generated_at": "2026-07-20T22:32:44.020208+00:00",
   "source": "NCS Fastpitch team page",
   "team": {
     "key": "12u",
@@ -91,7 +91,7 @@
       "event_id": "13218",
       "title": "3P Sports - Gloves Up for a Cure",
       "event_type": "Tournament",
-      "format": "8",
+      "format": "9",
       "start_date": "2026-10-10",
       "end_date": "2026-10-11",
       "date_label": "Oct 10-11",
