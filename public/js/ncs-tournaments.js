@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-07-22T18:38:05.553706+00:00",
+  "generated_at": "2026-07-22T19:43:28.733506+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-07-22T18:38:05.908844+00:00",
+      "generated_at": "2026-07-22T19:43:29.135739+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -176,7 +176,7 @@ window.TEXAS_VENOM_NCS = {
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-07-22T18:38:06.161066+00:00",
+      "generated_at": "2026-07-22T19:43:32.690910+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -326,7 +326,7 @@ window.TEXAS_VENOM_NCS = {
           "event_id": "13481",
           "title": "PINK OUT 70 MIN POOLS 4GG",
           "event_type": "Tournament",
-          "format": "11",
+          "format": "12",
           "start_date": "2026-10-17",
           "end_date": "2026-10-18",
           "date_label": "Oct 17-18",
