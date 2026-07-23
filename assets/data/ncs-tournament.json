@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T07:03:52.467037+00:00",
+  "generated_at": "2026-07-23T07:59:01.433766+00:00",
   "sync_status": "stale",
   "sync_message": "Loaded 22 division game(s), including 4 Texas Venom game(s), from NCS.",
   "event": {
@@ -595,9 +595,9 @@
     "schedule_url": "https://www.playncs.com/fastpitch/Events/Schedule/12287/3p-sports-dingers-for-dads-6gg?division=12U%20OPEN",
     "team_url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u",
     "last_http_status": {
-      "schedule": null,
+      "schedule": 200,
       "team": 200
     },
-    "last_error": "Schedule fetch: HTTPSConnectionPool(host='www.playncs.com', port=443): Read timed out. (read timeout=35)"
+    "last_error": null
   }
 }
