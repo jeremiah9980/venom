@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-26T21:32:12.814672+00:00",
+  "generated_at": "2026-07-26T22:33:39.778744+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-07-26T21:32:13.206960+00:00",
+      "generated_at": "2026-07-26T22:33:40.153965+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -148,7 +148,7 @@
           "event_id": "13534",
           "title": "NCS CENTRAL TEXAS FALL REGIONAL - 10u & 14u CLASS \" C \" TEAMS 70 MIN POOLS 4GG",
           "event_type": "Tournament",
-          "format": "10",
+          "format": "11",
           "start_date": "2026-11-14",
           "end_date": "2026-11-15",
           "date_label": "Nov 14-15",
@@ -175,7 +175,7 @@
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-07-26T21:32:13.519712+00:00",
+      "generated_at": "2026-07-26T22:33:40.402742+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -317,7 +317,7 @@
           "event_id": "13481",
           "title": "PINK OUT 70 MIN POOLS 4GG",
           "event_type": "Tournament",
-          "format": "14",
+          "format": "15",
           "start_date": "2026-10-17",
           "end_date": "2026-10-18",
           "date_label": "Oct 17-18",
@@ -341,7 +341,7 @@
           "event_id": "13484",
           "title": "NCS CENTRAL TEXAS FALL STATE 65 MIN POOL 6GG 8U,10U,12U, 18u OPEN & C, 14U C ONLY",
           "event_type": "Double Points Qualifier",
-          "format": "28",
+          "format": "29",
           "start_date": "2026-11-07",
           "end_date": "2026-11-08",
           "date_label": "Nov 7-8",
