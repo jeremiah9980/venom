@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-07-26T14:43:57.495798+00:00",
+  "generated_at": "2026-07-26T15:36:55.700523+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-07-26T14:43:57.849506+00:00",
+      "generated_at": "2026-07-26T15:36:56.078634+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -145,34 +145,10 @@ window.TEXAS_VENOM_NCS = {
           "source_url": "https://www.playncs.com/fastpitch/Events/Details/13482/octoberfest-65-min-pool-c-teams-only-6gg"
         },
         {
-          "event_id": "13484",
-          "title": "NCS CENTRAL TEXAS FALL STATE 65 MIN POOL 6GG 8U,10U,12U, 18u OPEN & C, 14U C ONLY",
-          "event_type": "Double Points Qualifier",
-          "format": "28",
-          "start_date": "2026-11-07",
-          "end_date": "2026-11-08",
-          "date_label": "Nov 7-8",
-          "location": "",
-          "director": "Maggie Stoecklein",
-          "registered_teams": null,
-          "divisions": [
-            "8U",
-            "10U",
-            "12U",
-            "14U",
-            "18U"
-          ],
-          "tags": [
-            "8U \u00b7 10U \u00b7 12U \u00b7 14U \u00b7 18U"
-          ],
-          "verify_division": false,
-          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13484/ncs-central-texas-fall-state-65-min-pool-6gg-8u-10u-12u-18u-open-c-14u-c-only"
-        },
-        {
           "event_id": "13534",
           "title": "NCS CENTRAL TEXAS FALL REGIONAL - 10u & 14u CLASS \" C \" TEAMS 70 MIN POOLS 4GG",
           "event_type": "Tournament",
-          "format": "11",
+          "format": "10",
           "start_date": "2026-11-14",
           "end_date": "2026-11-15",
           "date_label": "Nov 14-15",
@@ -192,14 +168,14 @@ window.TEXAS_VENOM_NCS = {
         }
       ],
       "counts": {
-        "events": 7,
+        "events": 6,
         "verify_division": 1,
         "registered_team_total_shown_by_ncs": 0
       }
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-07-26T14:43:58.218669+00:00",
+      "generated_at": "2026-07-26T15:36:56.334156+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -264,33 +240,25 @@ window.TEXAS_VENOM_NCS = {
           "source_url": "https://www.playncs.com/fastpitch/Events/Details/13214/3p-sports-dawg-days-of-summer"
         },
         {
-          "event_id": "13648",
-          "title": "5GG NCS LABOR DAY BOMBS AWAY CLASS C AND OPEN MVP EVENT DOUBLE POINTS",
-          "event_type": "Double Points Qualifier",
-          "format": "5GG",
-          "start_date": "2026-09-05",
-          "end_date": "2026-09-06",
-          "date_label": "Sep 5-6",
+          "event_id": "13597",
+          "title": "******* 1 DAY SUNDAY SEPTEMBER SHOWDOWN ********",
+          "event_type": "Tournament",
+          "format": "2",
+          "start_date": "2026-09-20",
+          "end_date": "2026-09-20",
+          "date_label": "Sep 20",
           "location": "",
-          "director": "Ricky Hightower",
+          "director": "Rene Contreras",
           "registered_teams": null,
           "divisions": [
-            "8U",
-            "10U",
-            "12U",
             "14U",
             "18U"
           ],
           "tags": [
-            "5GG",
-            "8U \u00b7 10U \u00b7 12U \u00b7 14U \u00b7 18U",
-            "MVP",
-            "SUPER SERIES",
-            "HIGHTOWER",
-            "5GG"
+            "14U \u00b7 18U"
           ],
           "verify_division": false,
-          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13648/5gg-ncs-labor-day-bombs-away-class-c-and-open-mvp-event-double-points"
+          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13597/1-day-sunday-september-showdown"
         },
         {
           "event_id": "13209",
@@ -373,7 +341,7 @@ window.TEXAS_VENOM_NCS = {
           "event_id": "13484",
           "title": "NCS CENTRAL TEXAS FALL STATE 65 MIN POOL 6GG 8U,10U,12U, 18u OPEN & C, 14U C ONLY",
           "event_type": "Double Points Qualifier",
-          "format": "28",
+          "format": "27",
           "start_date": "2026-11-07",
           "end_date": "2026-11-08",
           "date_label": "Nov 7-8",
@@ -392,31 +360,10 @@ window.TEXAS_VENOM_NCS = {
           ],
           "verify_division": false,
           "source_url": "https://www.playncs.com/fastpitch/Events/Details/13484/ncs-central-texas-fall-state-65-min-pool-6gg-8u-10u-12u-18u-open-c-14u-c-only"
-        },
-        {
-          "event_id": "13534",
-          "title": "NCS CENTRAL TEXAS FALL REGIONAL - 10u & 14u CLASS \" C \" TEAMS 70 MIN POOLS 4GG",
-          "event_type": "Tournament",
-          "format": "11",
-          "start_date": "2026-11-14",
-          "end_date": "2026-11-15",
-          "date_label": "Nov 14-15",
-          "location": "",
-          "director": "Maggie Stoecklein",
-          "registered_teams": null,
-          "divisions": [
-            "10U",
-            "14U"
-          ],
-          "tags": [
-            "10U \u00b7 14U"
-          ],
-          "verify_division": false,
-          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13534/ncs-central-texas-fall-regional-10u-14u-class-c-teams-70-min-pools-4gg"
         }
       ],
       "counts": {
-        "events": 8,
+        "events": 7,
         "verify_division": 0,
         "registered_team_total_shown_by_ncs": 0
       }
