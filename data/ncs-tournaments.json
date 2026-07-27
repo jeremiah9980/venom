@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-27T21:37:01.811348+00:00",
+  "generated_at": "2026-07-27T22:34:30.732935+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-07-27T21:37:02.241682+00:00",
+      "generated_at": "2026-07-27T22:34:31.130481+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -175,7 +175,7 @@
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-07-27T21:37:02.577871+00:00",
+      "generated_at": "2026-07-27T22:34:31.431873+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -317,7 +317,7 @@
           "event_id": "13481",
           "title": "PINK OUT 70 MIN POOLS 4GG",
           "event_type": "Tournament",
-          "format": "18",
+          "format": "19",
           "start_date": "2026-10-17",
           "end_date": "2026-10-18",
           "date_label": "Oct 17-18",
