@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-27T13:17:52.981471+00:00",
+  "generated_at": "2026-07-27T15:13:41.196693+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-07-27T13:17:53.374773+00:00",
+      "generated_at": "2026-07-27T15:13:41.590105+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -125,7 +125,7 @@
           "event_id": "13482",
           "title": "OCTOBERFEST 65 MIN POOL \" C \" TEAMS ONLY 6GG",
           "event_type": "Tournament",
-          "format": "25",
+          "format": "26",
           "start_date": "2026-10-24",
           "end_date": "2026-10-25",
           "date_label": "Oct 24-25",
@@ -175,7 +175,7 @@
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-07-27T13:17:53.739634+00:00",
+      "generated_at": "2026-07-27T15:13:41.864394+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -264,7 +264,7 @@
           "event_id": "13209",
           "title": "3P Sports - September Sapphire CROSSROADS Showdown",
           "event_type": "Tournament",
-          "format": "20",
+          "format": "21",
           "start_date": "2026-09-26",
           "end_date": "2026-09-27",
           "date_label": "Sep 26-27",
@@ -317,7 +317,7 @@
           "event_id": "13481",
           "title": "PINK OUT 70 MIN POOLS 4GG",
           "event_type": "Tournament",
-          "format": "16",
+          "format": "17",
           "start_date": "2026-10-17",
           "end_date": "2026-10-18",
           "date_label": "Oct 17-18",
