@@ -1,6 +1,6 @@
 {
   "team_key": "12u",
-  "generated_at": "2026-07-28T11:52:09.569595+00:00",
+  "generated_at": "2026-07-28T12:51:44.302555+00:00",
   "source": "NCS Fastpitch team page",
   "team": {
     "key": "12u",
@@ -120,7 +120,7 @@
       "event_id": "13482",
       "title": "OCTOBERFEST 65 MIN POOL \" C \" TEAMS ONLY 6GG",
       "event_type": "Tournament",
-      "format": "27",
+      "format": "28",
       "start_date": "2026-10-24",
       "end_date": "2026-10-25",
       "date_label": "Oct 24-25",
