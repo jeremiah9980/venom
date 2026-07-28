@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-07-28T03:19:54.357798+00:00",
+  "generated_at": "2026-07-28T05:20:07.088993+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-07-28T03:19:54.775106+00:00",
+      "generated_at": "2026-07-28T05:20:07.549793+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -175,7 +175,7 @@ window.TEXAS_VENOM_NCS = {
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-07-28T03:19:55.055571+00:00",
+      "generated_at": "2026-07-28T05:20:07.929462+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -264,7 +264,7 @@ window.TEXAS_VENOM_NCS = {
           "event_id": "13209",
           "title": "3P Sports - September Sapphire CROSSROADS Showdown",
           "event_type": "Tournament",
-          "format": "24",
+          "format": "25",
           "start_date": "2026-09-26",
           "end_date": "2026-09-27",
           "date_label": "Sep 26-27",
@@ -341,7 +341,7 @@ window.TEXAS_VENOM_NCS = {
           "event_id": "13484",
           "title": "NCS CENTRAL TEXAS FALL STATE 65 MIN POOL 6GG 8U,10U,12U, 18u OPEN & C, 14U C ONLY",
           "event_type": "Double Points Qualifier",
-          "format": "32",
+          "format": "33",
           "start_date": "2026-11-07",
           "end_date": "2026-11-08",
           "date_label": "Nov 7-8",
