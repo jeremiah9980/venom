@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-28T19:47:47.908062+00:00",
+  "generated_at": "2026-07-28T20:38:11.606498+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-07-28T19:47:48.320835+00:00",
+      "generated_at": "2026-07-28T20:38:12.071702+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -96,7 +96,7 @@
           "event_id": "13218",
           "title": "3P Sports - Gloves Up for a Cure",
           "event_type": "Tournament",
-          "format": "10",
+          "format": "11",
           "start_date": "2026-10-10",
           "end_date": "2026-10-11",
           "date_label": "Oct 10-11",
@@ -146,9 +146,9 @@
         },
         {
           "event_id": "13534",
-          "title": "NCS CENTRAL TEXAS FALL REGIONAL - 10u & 14u CLASS \" C \" TEAMS 70 MIN POOLS 4GG",
+          "title": "NCS CENTRAL TEXAS FALL REGIONAL CLASS \" C \" TEAMS 70 MIN POOLS 4GG",
           "event_type": "Tournament",
-          "format": "12",
+          "format": "13",
           "start_date": "2026-11-14",
           "end_date": "2026-11-15",
           "date_label": "Nov 14-15",
@@ -156,26 +156,27 @@
           "director": "Maggie Stoecklein",
           "registered_teams": null,
           "divisions": [
+            "8U",
             "10U",
+            "12U",
             "14U"
           ],
           "tags": [
-            "10U \u00b7 14U"
+            "8U \u00b7 10U \u00b7 12U \u00b7 14U"
           ],
-          "verify_division": true,
-          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13534/ncs-central-texas-fall-regional-10u-14u-class-c-teams-70-min-pools-4gg",
-          "verify_note": "Listed on the 12U team page, but visible event divisions are 10U, 14U. Confirm with NCS/event director."
+          "verify_division": false,
+          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13534/ncs-central-texas-fall-regional-class-c-teams-70-min-pools-4gg"
         }
       ],
       "counts": {
         "events": 6,
-        "verify_division": 1,
+        "verify_division": 0,
         "registered_team_total_shown_by_ncs": 0
       }
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-07-28T19:47:48.703294+00:00",
+      "generated_at": "2026-07-28T20:38:12.456373+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -264,7 +265,7 @@
           "event_id": "13209",
           "title": "3P Sports - September Sapphire CROSSROADS Showdown",
           "event_type": "Tournament",
-          "format": "28",
+          "format": "29",
           "start_date": "2026-09-26",
           "end_date": "2026-09-27",
           "date_label": "Sep 26-27",
