@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-07-30T18:44:07.911614+00:00",
+  "generated_at": "2026-07-30T19:46:40.479659+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-07-30T18:44:08.330898+00:00",
+      "generated_at": "2026-07-30T19:46:40.900030+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -125,7 +125,7 @@ window.TEXAS_VENOM_NCS = {
           "event_id": "13482",
           "title": "OCTOBERFEST 65 MIN POOL \" C \" TEAMS ONLY 6GG",
           "event_type": "Tournament",
-          "format": "33",
+          "format": "34",
           "start_date": "2026-10-24",
           "end_date": "2026-10-25",
           "date_label": "Oct 24-25",
@@ -176,7 +176,7 @@ window.TEXAS_VENOM_NCS = {
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-07-30T18:44:08.800671+00:00",
+      "generated_at": "2026-07-30T19:46:41.206335+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
