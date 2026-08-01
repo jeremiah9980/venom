@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-01T16:32:27.440513+00:00",
+  "generated_at": "2026-08-01T17:34:08.870741+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-08-01T16:32:27.890251+00:00",
+      "generated_at": "2026-08-01T17:34:09.322657+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -125,7 +125,7 @@
           "event_id": "13482",
           "title": "OCTOBERFEST 65 MIN POOL \" C \" TEAMS ONLY 6GG",
           "event_type": "Tournament",
-          "format": "36",
+          "format": "37",
           "start_date": "2026-10-24",
           "end_date": "2026-10-25",
           "date_label": "Oct 24-25",
@@ -176,7 +176,7 @@
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-08-01T16:32:28.254498+00:00",
+      "generated_at": "2026-08-01T17:34:09.658661+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
