@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-02T15:36:35.804515+00:00",
+  "generated_at": "2026-08-02T16:31:51.737539+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-08-02T15:36:36.226983+00:00",
+      "generated_at": "2026-08-02T16:31:52.096110+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -96,7 +96,7 @@
           "event_id": "13218",
           "title": "3P Sports - Gloves Up for a Cure",
           "event_type": "Tournament",
-          "format": "14",
+          "format": "15",
           "start_date": "2026-10-10",
           "end_date": "2026-10-11",
           "date_label": "Oct 10-11",
@@ -125,7 +125,7 @@
           "event_id": "13482",
           "title": "OCTOBERFEST 65 MIN POOL \" C \" TEAMS ONLY 6GG",
           "event_type": "Tournament",
-          "format": "38",
+          "format": "39",
           "start_date": "2026-10-24",
           "end_date": "2026-10-25",
           "date_label": "Oct 24-25",
@@ -176,7 +176,7 @@
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-08-02T15:36:36.560682+00:00",
+      "generated_at": "2026-08-02T16:31:52.306095+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -265,7 +265,7 @@
           "event_id": "13209",
           "title": "3P Sports - September Sapphire CROSSROADS Showdown",
           "event_type": "Tournament",
-          "format": "38",
+          "format": "39",
           "start_date": "2026-09-26",
           "end_date": "2026-09-27",
           "date_label": "Sep 26-27",
