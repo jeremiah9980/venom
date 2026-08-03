@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-08-03T21:37:14.341924+00:00",
+  "generated_at": "2026-08-03T22:34:17.576962+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-08-03T21:37:14.728704+00:00",
+      "generated_at": "2026-08-03T22:34:17.920179+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -96,7 +96,7 @@ window.TEXAS_VENOM_NCS = {
           "event_id": "13218",
           "title": "3P Sports - Gloves Up for a Cure",
           "event_type": "Tournament",
-          "format": "16",
+          "format": "17",
           "start_date": "2026-10-10",
           "end_date": "2026-10-11",
           "date_label": "Oct 10-11",
@@ -176,7 +176,7 @@ window.TEXAS_VENOM_NCS = {
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-08-03T21:37:14.967822+00:00",
+      "generated_at": "2026-08-03T22:34:18.189960+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -244,7 +244,7 @@ window.TEXAS_VENOM_NCS = {
           "event_id": "13597",
           "title": "******* 1 DAY SUNDAY SEPTEMBER SHOWDOWN ********",
           "event_type": "Tournament",
-          "format": "2",
+          "format": "3",
           "start_date": "2026-09-20",
           "end_date": "2026-09-20",
           "date_label": "Sep 20",
@@ -265,7 +265,7 @@ window.TEXAS_VENOM_NCS = {
           "event_id": "13209",
           "title": "3P Sports - September Sapphire CROSSROADS Showdown",
           "event_type": "Tournament",
-          "format": "45",
+          "format": "46",
           "start_date": "2026-09-26",
           "end_date": "2026-09-27",
           "date_label": "Sep 26-27",
@@ -342,7 +342,7 @@ window.TEXAS_VENOM_NCS = {
           "event_id": "13484",
           "title": "NCS CENTRAL TEXAS FALL STATE 65 MIN POOL 6GG 8U,10U,12U, 18u OPEN & C, 14U C ONLY",
           "event_type": "Double Points Qualifier",
-          "format": "50",
+          "format": "51",
           "start_date": "2026-11-07",
           "end_date": "2026-11-08",
           "date_label": "Nov 7-8",
