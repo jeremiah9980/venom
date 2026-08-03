@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-08-03T16:06:55.648135+00:00",
+  "generated_at": "2026-08-03T16:59:16.169099+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-08-03T16:06:56.067314+00:00",
+      "generated_at": "2026-08-03T16:59:16.608725+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -176,7 +176,7 @@ window.TEXAS_VENOM_NCS = {
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-08-03T16:06:56.448898+00:00",
+      "generated_at": "2026-08-03T16:59:16.990595+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -216,7 +216,7 @@ window.TEXAS_VENOM_NCS = {
           "event_id": "13214",
           "title": "3P Sports - Dawg Days of Summer",
           "event_type": "Tournament",
-          "format": "3",
+          "format": "2",
           "start_date": "2026-08-29",
           "end_date": "2026-08-30",
           "date_label": "Aug 29-30",
