@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-08-05T19:48:28.816834+00:00",
+  "generated_at": "2026-08-05T20:40:41.030873+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-08-05T19:48:29.331372+00:00",
+      "generated_at": "2026-08-05T20:40:41.530393+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -176,7 +176,7 @@ window.TEXAS_VENOM_NCS = {
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-08-05T19:48:29.737660+00:00",
+      "generated_at": "2026-08-05T20:40:41.979544+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -265,7 +265,7 @@ window.TEXAS_VENOM_NCS = {
           "event_id": "13209",
           "title": "3P Sports - September Sapphire CROSSROADS Showdown",
           "event_type": "Tournament",
-          "format": "53",
+          "format": "54",
           "start_date": "2026-09-26",
           "end_date": "2026-09-27",
           "date_label": "Sep 26-27",
