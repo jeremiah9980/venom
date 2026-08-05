@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-08-05T21:38:36.769194+00:00",
+  "generated_at": "2026-08-05T22:35:18.230523+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-08-05T21:38:46.499390+00:00",
+      "generated_at": "2026-08-05T22:35:18.649467+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -65,7 +65,8 @@ window.TEXAS_VENOM_NCS = {
             "MVP",
             "SUPER SERIES",
             "HIGHTOWER",
-            "5GG"
+            "5GG",
+            "TURF"
           ],
           "verify_division": false,
           "source_url": "https://www.playncs.com/fastpitch/Events/Details/13648/5gg-ncs-labor-day-bombs-away-class-c-and-open-mvp-event-double-points"
@@ -176,7 +177,7 @@ window.TEXAS_VENOM_NCS = {
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-08-05T21:38:46.852160+00:00",
+      "generated_at": "2026-08-05T22:35:18.996583+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
