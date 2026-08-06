@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-08-05T23:32:25.499558+00:00",
+  "generated_at": "2026-08-06T00:46:06.820516+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-08-05T23:32:25.979556+00:00",
+      "generated_at": "2026-08-06T00:46:07.286240+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -177,7 +177,7 @@ window.TEXAS_VENOM_NCS = {
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-08-05T23:32:26.319575+00:00",
+      "generated_at": "2026-08-06T00:46:07.550845+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -266,7 +266,7 @@ window.TEXAS_VENOM_NCS = {
           "event_id": "13209",
           "title": "3P Sports - September Sapphire CROSSROADS Showdown",
           "event_type": "Tournament",
-          "format": "54",
+          "format": "55",
           "start_date": "2026-09-26",
           "end_date": "2026-09-27",
           "date_label": "Sep 26-27",
@@ -319,7 +319,7 @@ window.TEXAS_VENOM_NCS = {
           "event_id": "13481",
           "title": "PINK OUT 70 MIN POOLS 4GG",
           "event_type": "Tournament",
-          "format": "33",
+          "format": "35",
           "start_date": "2026-10-17",
           "end_date": "2026-10-18",
           "date_label": "Oct 17-18",
