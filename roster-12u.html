@@ -9,7 +9,7 @@
     (function(){
       try {
         var saved = localStorage.getItem('venom-theme') || localStorage.getItem('texas-venom-theme');
-        var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        var theme = saved || 'light';
         document.documentElement.classList.add('theme-' + theme);
         document.documentElement.dataset.theme = theme;
       } catch (e) {

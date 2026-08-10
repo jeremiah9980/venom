@@ -17,8 +17,8 @@
   --text: #fbf8ff;
   --muted: #c2b7d1;
   --soft: #9f95ad;
-  --venom: #C9F425;
-  --purple: #8B5CF6;
+  --venom: #FFD60A;
+  --purple: #8B5CF6; --outline:#4C1D95;
   --gold: #ffd166;
   --danger: #ff7192;
   --shadow: 0 22px 80px rgba(0,0,0,.48);
@@ -34,7 +34,7 @@ body {
   font-family: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
   background:
     radial-gradient(circle at 12% -8%, rgba(139,92,246,.34), transparent 30rem),
-    radial-gradient(circle at 88% 0%, rgba(201,244,37,.14), transparent 28rem),
+    radial-gradient(circle at 88% 0%, rgba(255,214,10,.14), transparent 28rem),
     linear-gradient(145deg, #050308 0%, #120a20 45%, #08050f 100%);
 }
 body::before {
@@ -64,10 +64,10 @@ button, input, select { font: inherit; }
 .brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
 .logoMark {
   width: 48px; height: 48px; border-radius: 16px; display: grid; place-items: center;
-  background: linear-gradient(135deg, rgba(201,244,37,.22), rgba(139,92,246,.42));
-  border: 1px solid rgba(201,244,37,.35);
+  background: linear-gradient(135deg, rgba(255,214,10,.22), rgba(139,92,246,.42));
+  border: 1px solid rgba(255,214,10,.35);
   color: var(--venom); font-weight: 950; letter-spacing: -.05em;
-  box-shadow: 0 0 0 5px rgba(201,244,37,.06);
+  box-shadow: 0 0 0 5px rgba(255,214,10,.06);
 }
 .brand strong { display: block; line-height: 1.05; white-space: nowrap; }
 .brand span { color: var(--muted); font-size: .8rem; white-space: nowrap; }
@@ -84,9 +84,9 @@ button, input, select { font: inherit; }
 }
 .btn:hover, .navlinks a:hover {
   transform: translateY(-1px);
-  border-color: rgba(201,244,37,.38);
+  border-color: rgba(255,214,10,.38);
   color: var(--text);
-  background: rgba(201,244,37,.08);
+  background: rgba(255,214,10,.08);
 }
 .btn.primary {
   border-color: transparent;
@@ -105,17 +105,17 @@ button, input, select { font: inherit; }
 .heroCard { padding: clamp(24px, 4vw, 42px); position: relative; overflow: hidden; }
 .heroCard::after {
   content: ""; position: absolute; width: 320px; height: 320px; right: -120px; top: -130px;
-  background: radial-gradient(circle, rgba(201,244,37,.19), transparent 65%);
+  background: radial-gradient(circle, rgba(255,214,10,.19), transparent 65%);
 }
 .kicker {
   display: inline-flex; align-items: center; gap: 8px;
   color: var(--venom); font-weight: 900; letter-spacing: .13em; text-transform: uppercase; font-size: .74rem;
 }
-.pulse { width: 9px; height: 9px; border-radius: 50%; background: var(--venom); box-shadow: 0 0 0 0 rgba(201,244,37,.62); animation: pulse 2s infinite; }
+.pulse { width: 9px; height: 9px; border-radius: 50%; background: var(--venom); box-shadow: 0 0 0 0 rgba(255,214,10,.62); animation: pulse 2s infinite; }
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(201,244,37,.55); }
-  70% { box-shadow: 0 0 0 10px rgba(201,244,37,0); }
-  100% { box-shadow: 0 0 0 0 rgba(201,244,37,0); }
+  0% { box-shadow: 0 0 0 0 rgba(255,214,10,.55); }
+  70% { box-shadow: 0 0 0 10px rgba(255,214,10,0); }
+  100% { box-shadow: 0 0 0 0 rgba(255,214,10,0); }
 }
 h1 { margin: 13px 0 12px; font-size: clamp(2.2rem, 6vw, 5.1rem); line-height: .92; letter-spacing: -.06em; }
 .heroCard p, .sectionHead p { color: var(--muted); line-height: 1.65; font-size: 1.02rem; max-width: 780px; }
@@ -158,18 +158,18 @@ h1 { margin: 13px 0 12px; font-size: clamp(2.2rem, 6vw, 5.1rem); line-height: .9
   width: 100%; border-radius: 14px; border: 1px solid rgba(255,255,255,.13);
   background: rgba(255,255,255,.075); color: var(--text); padding: 11px 12px; outline: none;
 }
-.field input:focus, .field select:focus { border-color: rgba(201,244,37,.5); box-shadow: 0 0 0 4px rgba(201,244,37,.06); }
+.field input:focus, .field select:focus { border-color: rgba(255,214,10,.5); box-shadow: 0 0 0 4px rgba(255,214,10,.06); }
 option { color: #120a1d; }
 .grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 15px; }
 .eventCard {
   padding: 17px; border-radius: 22px; overflow: hidden; position: relative; display: grid; gap: 15px;
   transition: transform .18s ease, border-color .18s ease, background .18s ease;
 }
-.eventCard:hover { transform: translateY(-2px); border-color: rgba(201,244,37,.34); background: linear-gradient(180deg, rgba(201,244,37,.075), rgba(255,255,255,.035)), var(--panel); }
+.eventCard:hover { transform: translateY(-2px); border-color: rgba(255,214,10,.34); background: linear-gradient(180deg, rgba(255,214,10,.075), rgba(255,255,255,.035)), var(--panel); }
 .eventTop { display: grid; grid-template-columns: 94px minmax(0,1fr); gap: 14px; }
 .dateBadge {
   border: 1px solid var(--line2); border-radius: 18px;
-  background: linear-gradient(180deg, rgba(201,244,37,.16), rgba(139,92,246,.08));
+  background: linear-gradient(180deg, rgba(255,214,10,.16), rgba(139,92,246,.08));
   padding: 12px 10px; text-align: center; align-self: start;
 }
 .dateBadge .month { display: block; color: var(--venom); font-weight: 950; letter-spacing: .14em; font-size: .75rem; }
@@ -177,7 +177,7 @@ option { color: #120a1d; }
 .dateBadge .days { display: block; color: var(--muted); font-size: .72rem; margin-top: 5px; }
 .status {
   display: inline-flex; align-items: center; gap: 7px; width: fit-content;
-  border: 1px solid rgba(201,244,37,.3); background: rgba(201,244,37,.08);
+  border: 1px solid rgba(255,214,10,.3); background: rgba(255,214,10,.08);
   color: var(--venom); padding: 6px 10px; border-radius: 999px;
   font-size: .77rem; font-weight: 900;
 }
@@ -199,7 +199,7 @@ summary { padding: 12px 13px; cursor: pointer; color: var(--muted); font-weight:
   padding: 9px 11px; border-radius: 12px; border: 1px solid rgba(255,255,255,.12);
   background: rgba(255,255,255,.06); color: var(--text); cursor: pointer;
 }
-.cardActions a.primary { background: linear-gradient(135deg, rgba(201,244,37,.95), rgba(232,255,115,.95)); color: #120a1d; font-weight: 950; border-color: transparent; }
+.cardActions a.primary { background: linear-gradient(135deg, rgba(255,214,10,.95), rgba(232,255,115,.95)); color: #120a1d; font-weight: 950; border-color: transparent; }
 .tableWrap { overflow-x: auto; border-radius: 16px; border: 1px solid rgba(255,255,255,.1); }
 table { border-collapse: collapse; width: 100%; min-width: 900px; }
 th,td { text-align: left; padding: 13px; border-bottom: 1px solid rgba(255,255,255,.08); vertical-align: top; color: var(--muted); line-height: 1.4; }

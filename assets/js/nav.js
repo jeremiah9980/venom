@@ -17,7 +17,7 @@ function loadGoogleAnalytics(){
 function currentTheme(){
   const saved=localStorage.getItem('venom-theme');
   if(saved==='mid')return 'dark';
-  return ['light','dark'].includes(saved)?saved:'dark';
+  return ['light','dark'].includes(saved)?saved:'light';
 }
 
 function setTheme(theme,persist=true){
