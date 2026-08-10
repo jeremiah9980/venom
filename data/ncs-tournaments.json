@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-10T06:20:09.864168+00:00",
+  "generated_at": "2026-08-10T08:48:48.174479+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-08-10T06:20:10.270959+00:00",
+      "generated_at": "2026-08-10T08:48:48.511381+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -177,7 +177,7 @@
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-08-10T06:20:10.629730+00:00",
+      "generated_at": "2026-08-10T08:48:48.853220+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -266,7 +266,7 @@
           "event_id": "13209",
           "title": "3P Sports - September Sapphire CROSSROADS Showdown",
           "event_type": "Tournament",
-          "format": "62",
+          "format": "63",
           "start_date": "2026-09-26",
           "end_date": "2026-09-27",
           "date_label": "Sep 26-27",
