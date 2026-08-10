@@ -1,6 +1,6 @@
 {
   "team_key": "14u",
-  "generated_at": "2026-08-10T17:59:48.148180+00:00",
+  "generated_at": "2026-08-10T19:12:16.035436+00:00",
   "source": "NCS Fastpitch team page",
   "team": {
     "key": "14u",
@@ -89,7 +89,7 @@
       "event_id": "13209",
       "title": "3P Sports - September Sapphire CROSSROADS Showdown",
       "event_type": "Tournament",
-      "format": "63",
+      "format": "64",
       "start_date": "2026-09-26",
       "end_date": "2026-09-27",
       "date_label": "Sep 26-27",
@@ -117,7 +117,7 @@
       "event_id": "13598",
       "title": "********* OCTOBERFEST ********",
       "event_type": "Tournament",
-      "format": "10",
+      "format": "11",
       "start_date": "2026-10-03",
       "end_date": "2026-10-04",
       "date_label": "Oct 3-4",
