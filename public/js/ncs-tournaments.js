@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-08-10T15:13:08.464782+00:00",
+  "generated_at": "2026-08-10T16:08:09.247904+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-08-10T15:13:08.948007+00:00",
+      "generated_at": "2026-08-10T16:08:09.725657+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -149,7 +149,7 @@ window.TEXAS_VENOM_NCS = {
           "event_id": "13534",
           "title": "NCS CENTRAL TEXAS FALL REGIONAL CLASS \" C \" TEAMS 70 MIN POOLS 4GG",
           "event_type": "Tournament",
-          "format": "21",
+          "format": "22",
           "start_date": "2026-11-14",
           "end_date": "2026-11-15",
           "date_label": "Nov 14-15",
@@ -177,7 +177,7 @@ window.TEXAS_VENOM_NCS = {
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-08-10T15:13:09.352052+00:00",
+      "generated_at": "2026-08-10T16:08:10.898143+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -343,7 +343,7 @@ window.TEXAS_VENOM_NCS = {
           "event_id": "13484",
           "title": "NCS CENTRAL TEXAS FALL STATE 65 MIN POOL 6GG 8U,10U,12U, 18u OPEN & C, 14U C ONLY",
           "event_type": "Double Points Qualifier",
-          "format": "66",
+          "format": "67",
           "start_date": "2026-11-07",
           "end_date": "2026-11-08",
           "date_label": "Nov 7-8",
