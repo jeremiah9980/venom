@@ -25,7 +25,6 @@ jobs:
 
       - name: Sync calendars
         env:
-          GC_ICAL_10U: ${{ secrets.GC_ICAL_10U }}
           GC_ICAL_12U: ${{ secrets.GC_ICAL_12U }}
           GC_ICAL_14U: ${{ secrets.GC_ICAL_14U }}
         run: python3 scripts/sync-gc-calendar.py

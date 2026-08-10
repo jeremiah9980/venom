@@ -1,4 +1,4 @@
-const NAV_HTML=`<nav><div class="nav-inner"><a class="nav-brand" href="index.html"><img src="assets/venom-logo.jpg" alt="Texas Venom logo">Texas Venom <span>SELECT SOFTBALL</span></a><div class="nav-links"><a href="index.html">Home</a><a href="teams.html">Teams</a><a href="portal.html">Portal</a><a href="tournament-dashboard.html">Tournament</a><a href="standards.html">Standards</a><a href="team-info.html">Team Info</a><a href="rallyiq.html">RallyIQ</a><a href="https://jeremiah9980.github.io/ncs-monitor/roster-changes.html" target="_blank" rel="noopener noreferrer">NCS Dashboard</a><a href="fundraising.html">Support Us</a></div><div class="theme-switcher" role="group" aria-label="Color theme"><button type="button" class="theme-option" data-theme-value="light">Light</button><button type="button" class="theme-option" data-theme-value="mid">Mid</button><button type="button" class="theme-option" data-theme-value="dark">Dark</button></div></div></nav>`;
+const NAV_HTML=`<nav><div class="nav-inner"><a class="nav-brand" href="index.html"><img src="assets/venom-logo.jpg" alt="Texas Venom logo">Texas Venom <span>SELECT SOFTBALL</span></a><div class="nav-links"><a href="index.html">Home</a><a href="teams.html">Teams</a><a href="portal.html">Scheduler</a><a href="tournament-dashboard.html">Tournament</a><a href="standards.html">Standards</a><a href="team-info.html">Team Info</a><a href="rallyiq.html">RallyIQ</a><a href="https://jeremiah9980.github.io/ncs-monitor/roster-changes.html" target="_blank" rel="noopener noreferrer">NCS Dashboard</a><a href="fundraising.html">Support Us</a></div><div class="theme-switcher" role="group" aria-label="Color theme"><button type="button" class="theme-option" data-theme-value="light">Light</button><button type="button" class="theme-option" data-theme-value="dark">Dark</button></div></div></nav>`;
 
 function loadGoogleAnalytics(){
   if(document.querySelector('script[data-venom-ga="G-3K836ZGQPE"]'))return;
@@ -16,11 +16,12 @@ function loadGoogleAnalytics(){
 
 function currentTheme(){
   const saved=localStorage.getItem('venom-theme');
-  return ['light','mid','dark'].includes(saved)?saved:'mid';
+  if(saved==='mid')return 'dark';
+  return ['light','dark'].includes(saved)?saved:'dark';
 }
 
 function setTheme(theme,persist=true){
-  const next=['light','mid','dark'].includes(theme)?theme:'mid';
+  const next=theme==='light'?'light':'dark';
   const h=document.documentElement;
   h.classList.remove('theme-light','theme-mid','theme-dark');
   h.classList.add(`theme-${next}`);
@@ -183,8 +184,8 @@ function updateFooterStaff(){
 }
 
 loadGoogleAnalytics();
-loadStylesheet('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap');
-loadStylesheet('assets/css/ncs-mid-theme.css?v=20260619-2');
+loadStylesheet('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+loadStylesheet('assets/css/venom-ui.css?v=20260810-1');
 setTheme(currentTheme(),false);
 
 document.addEventListener('DOMContentLoaded',()=>{
