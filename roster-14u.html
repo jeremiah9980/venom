@@ -9,7 +9,7 @@
     (function(){
       try {
         var saved = localStorage.getItem('venom-theme');
-        var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        var theme = saved || 'light';
         document.documentElement.classList.add('theme-' + theme);
       } catch (e) {
         document.documentElement.classList.add('theme-light');
@@ -44,7 +44,7 @@
     <div class="section-label">Roster Status</div>
     <h2>14U — Fall 2026</h2>
     <div class="section-rule"></div>
-    <p>The 14U team is actively recruiting and finalizing the Fall 2026 roster. Once the roster is set, this page will display players in GameChanger format (first name + last initial + jersey number), with profile pages activated per-player on signed parent media-release — same consent posture as the 10U team.</p>
+    <p>The 14U team is actively recruiting and finalizing the Fall 2026 roster. Once the roster is set, this page will display players in GameChanger format (first name + last initial + jersey number), with profile pages activated per-player on signed parent media-release — same consent posture as the 12U team.</p>
   </div>
 
   <div class="section">
@@ -72,7 +72,7 @@
     <a href="index.html">Home</a><a href="teams.html">Teams</a><a href="standards.html">Standards</a>
     <a href="coaching.html">Coaching</a><a href="team-info.html">Team Info</a><a href="contact.html">Contact</a>
   </div>
-  <p>Leander, Texas &bull; 10U / 12U / 14U Select Softball &bull; 2026</p>
+  <p>Leander, Texas &bull; 12U / 14U Select Softball &bull; 2026</p>
   <p style="margin-top:4px;">Head Coach: Chris Balcom &bull; Co-Directors: Cargill &middot; Balcom &middot; Welch</p>
 </footer>
 </body>

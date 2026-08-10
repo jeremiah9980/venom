@@ -9,7 +9,7 @@
     (function(){
       try {
         var saved = localStorage.getItem('venom-theme');
-        var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        var theme = saved || 'light';
         document.documentElement.classList.add('theme-' + theme);
       } catch (e) {
         document.documentElement.classList.add('theme-light');
@@ -366,7 +366,7 @@ tr:last-child td{border-bottom:none;font-weight:500;color:#1a1a2e}
 <div class="feat-card"><div class="feat-top" style="background:#D85A30"></div><i class="ti ti-message-circle" style="font-size:18px;color:#D85A30;margin-top:4px;display:block"></i><div class="feat-name">Parent comms</div><div class="feat-desc">BAND posts, reminders, announcements. AI drafts, coach approves.</div><span class="feat-tag" style="background:#FAECE7;color:#712B13;border-color:#F0997B">In build</span></div>
 <div class="feat-card"><div class="feat-top" style="background:#BA7517"></div><i class="ti ti-heart" style="font-size:18px;color:#BA7517;margin-top:4px;display:block"></i><div class="feat-name">Fundraising tools</div><div class="feat-desc">Campaign management, donor tracking, booster emails, impact reports.</div><span class="feat-tag" style="background:#FAEEDA;color:#633806;border-color:#EF9F27">Planned</span></div>
 <div class="feat-card"><div class="feat-top" style="background:#7F77DD"></div><i class="ti ti-layout-dashboard" style="font-size:18px;color:#7F77DD;margin-top:4px;display:block"></i><div class="feat-name">Multi-org dashboard</div><div class="feat-desc">Director view: all teams, coaches, financials in one place.</div><span class="feat-tag" style="background:#EEEDFE;color:#3C3489;border-color:#AFA9EC">Year 2</span></div>
-<div class="feat-card"><div class="feat-top" style="background:#378ADD"></div><i class="ti ti-radar" style="font-size:18px;color:#378ADD;margin-top:4px;display:block"></i><div class="feat-name">NCS roster monitor</div><div class="feat-desc">Python + GitHub Actions. Tracks competitor 10U Central TX rosters.</div><span class="feat-tag" style="background:#E6F1FB;color:#0C447C;border-color:#85B7EB">Live</span></div>
+<div class="feat-card"><div class="feat-top" style="background:#378ADD"></div><i class="ti ti-radar" style="font-size:18px;color:#378ADD;margin-top:4px;display:block"></i><div class="feat-name">NCS roster monitor</div><div class="feat-desc">Python + GitHub Actions. Tracks competitor Central TX rosters.</div><span class="feat-tag" style="background:#E6F1FB;color:#0C447C;border-color:#85B7EB">Live</span></div>
 <div class="feat-card"><div class="feat-top" style="background:#1D9E75"></div><i class="ti ti-user-circle" style="font-size:18px;color:#1D9E75;margin-top:4px;display:block"></i><div class="feat-name">Athlete profiles</div><div class="feat-desc">GitHub Pages per player — stats, video wall, recruiting info.</div><span class="feat-tag" style="background:#E1F5EE;color:#085041;border-color:#5DCAA5">Live</span></div>
 </div>
 <div class="div"></div>
@@ -520,7 +520,7 @@ tr:last-child td{border-bottom:none;font-weight:500;color:#1a1a2e}
 <div class="topbar">
 <div class="top-logo"><i class="ti ti-baseball" style="font-size:14px;color:#7F77DD"></i>RallyIQ</div>
 <span style="font-size:10px;color:#e8e4d8">|</span>
-<span style="font-size:11px;color:#6b6b6b">Texas Venom · 10U</span>
+<span style="font-size:11px;color:#6b6b6b">Texas Venom · 12U</span>
 <div class="top-org">Leander TX · Mid-season</div>
 <div class="top-av">BC</div>
 </div>
@@ -568,7 +568,7 @@ tr:last-child td{border-bottom:none;font-weight:500;color:#1a1a2e}
 <div class="card-grid">
 <div><div class="trow"><div class="tdate">Jun 14</div><div class="tname">Leander Summer Classic</div><span class="ttag" style="background:#E1F5EE;color:#085041;border-color:#5DCAA5">Local</span></div>
 <div class="trow"><div class="tdate">Jul 5</div><div class="tname">Central TX USSSA Regional</div><span class="ttag" style="background:#E6F1FB;color:#0C447C;border-color:#85B7EB">Regional</span></div></div>
-<div><div class="trow"><div class="tdate">Jul 19</div><div class="tname">NCS 10U State Championship</div><span class="ttag" style="background:#EEEDFE;color:#3C3489;border-color:#AFA9EC">State</span></div>
+<div><div class="trow"><div class="tdate">Jul 19</div><div class="tname">NCS 12U State Championship</div><span class="ttag" style="background:#EEEDFE;color:#3C3489;border-color:#AFA9EC">State</span></div>
 <div class="trow"><div class="tdate">Aug 9</div><div class="tname">USSSA World Series</div><span class="ttag" style="background:#FAECE7;color:#712B13;border-color:#F0997B">National</span></div></div>
 </div>
 </div>
@@ -807,12 +807,12 @@ tr:last-child td{border-bottom:none;font-weight:500;color:#1a1a2e}
     <div class="section-label">Intelligence tool</div>
     <h2>NCS Roster Monitor</h2>
     <div class="section-rule"></div>
-    <p>A separate automated tool that scrapes playNCS.com for 10U Central Texas roster changes and alerts when competitor team rosters shift — new signees, departures, transfers. Built on Python + GitHub Actions.</p>
+    <p>A separate automated tool that scrapes playNCS.com for Central Texas roster changes and alerts when competitor team rosters shift — new signees, departures, transfers. Built on Python + GitHub Actions.</p>
 
     <div class="card-grid card-grid-3 mt-16">
       <div class="card">
         <h3>What it tracks</h3>
-        <p style="font-size:13px;">10U Central Texas team roster changes across all NCS-registered programs in the region.</p>
+        <p style="font-size:13px;">Central Texas team roster changes across all NCS-registered programs in the region.</p>
       </div>
       <div class="card">
         <h3>How it alerts</h3>
@@ -844,7 +844,7 @@ tr:last-child td{border-bottom:none;font-weight:500;color:#1a1a2e}
     <a href="fundraising.html">Support Us</a>
     <a href="contact.html">Contact</a>
   </div>
-  <p>Leander, Texas &bull; 10U Select Softball &bull; 2025</p>
+  <p>Leander, Texas &bull; Select Softball &bull; 2025</p>
   <p style="margin-top:4px;">RallyIQ built by Jeremiah Cargill &bull; Platform questions: jeremiahcargill@gmail.com</p>
 </footer>
 </body>

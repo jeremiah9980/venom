@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""Normalize PlayNCS tournament feed details for the Venom dashboard."""
+"""Normalize PlayNCS live-schedule data for the Scheduler Portal.
+
+Runs after scripts/sync-ncs-tournament.py and cleans up parsed game rows in
+assets/data/ncs-tournament.json: extracts game numbers, fills missing
+day-of-week and venue fields from the raw source text, and recomputes the
+Texas Venom game lists. Works on every team feed plus the legacy top-level
+mirror — no event-specific values are hard-coded here.
+"""
 
 from __future__ import annotations
 
@@ -9,11 +16,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_FILE = ROOT / "assets" / "data" / "ncs-tournament.json"
-TEAM_URL = "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
-SCHEDULE_URL = "https://www.playncs.com/fastpitch/Events/Schedule/12287/3p-sports-dingers-for-dads-6gg?division=12U%20OPEN"
 
 GAME_RE = re.compile(r"\bGame\s+(\d+)\b", re.I)
-DAY_RE = re.compile(r"\b(Sat|Sun)\b", re.I)
+DAY_RE = re.compile(r"\b(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\b", re.I)
 VENUE_RE = re.compile(r"\b([A-Za-z][A-Za-z ]*(?:Athletic Complex|Sports Complex|Sports Park|Ball Park|Ballpark|Complex|Fields?)\s*#?\s*\d+)\b", re.I)
 
 
@@ -41,50 +46,32 @@ def normalize_game(game: dict) -> dict:
     return game
 
 
-def main() -> int:
-    data = json.loads(DATA_FILE.read_text(encoding="utf-8"))
-    games = [normalize_game(game) for game in data.get("games", [])]
+def normalize_games(games: list[dict]) -> list[dict]:
+    games = [normalize_game(game) for game in games]
     games.sort(key=lambda game: (game.get("stage") == "bracket", game.get("game_number", 9999)))
-    data["games"] = games
-    data["team_games"] = [game for game in games if is_venom(game)]
+    return games
 
-    live_upcoming = data.get("upcoming_tournaments", [])
-    current = next((item for item in live_upcoming if item.get("id") == 12287), None)
-    double_play = next((item for item in live_upcoming if "double play derby" in norm(item.get("name"))), None)
 
-    current = current or {
-        "id": 12287,
-        "name": "3P Sports Dingers for Dads 6GG",
-        "dates": "Jun 20–21",
-        "location": "Taylor / Lorena, TX",
-        "division": "12U OPEN",
-        "registered_teams": 58,
-        "url": SCHEDULE_URL,
-    }
-    current.update({
-        "dates": "Jun 20–21",
-        "location": current.get("location") or "Taylor / Lorena, TX",
-        "division": "12U OPEN",
-        "registered_teams": current.get("registered_teams") or 58,
-        "url": SCHEDULE_URL,
-    })
+def main() -> int:
+    try:
+        data = json.loads(DATA_FILE.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        print("No live tournament data to refine.")
+        return 0
 
-    double_play = double_play or {
-        "id": None,
-        "name": "3P Sports 2nd Annual Double Play Derby — OPEN & C-CLASS",
-        "dates": "Jun 27–28",
-        "location": "Taylor, TX",
-        "division": "10U / 12U / 14U",
-        "registered_teams": 32,
-        "url": TEAM_URL,
-    }
-    data["upcoming_tournaments"] = [current, double_play]
+    total = 0
+    for feed in data.get("feeds") or []:
+        feed["games"] = normalize_games(feed.get("games") or [])
+        feed["team_games"] = [game for game in feed["games"] if is_venom(game)]
+        total += len(feed["games"])
 
-    if games:
-        data["sync_message"] = f"Loaded {len(games)} division game(s), including {len(data['team_games'])} Texas Venom game(s), from NCS."
+    if isinstance(data.get("games"), list):
+        data["games"] = normalize_games(data["games"])
+        data["team_games"] = [game for game in data["games"] if is_venom(game)]
+        total += len(data["games"])
 
     DATA_FILE.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
-    print(f"Normalized {len(games)} games and {len(data['team_games'])} Texas Venom games")
+    print(f"Normalized {total} game row(s) across feeds.")
     return 0
 
 
