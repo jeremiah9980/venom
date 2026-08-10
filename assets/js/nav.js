@@ -15,7 +15,7 @@ function loadGoogleAnalytics(){
 }
 
 function currentTheme(){
-  const saved=localStorage.getItem('venom-theme');
+  const saved=localStorage.getItem('venom-theme')||localStorage.getItem('texas-venom-theme');
   if(saved==='mid')return 'dark';
   return ['light','dark'].includes(saved)?saved:'light';
 }

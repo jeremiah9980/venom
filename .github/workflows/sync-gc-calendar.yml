@@ -36,7 +36,8 @@ jobs:
           if [ -n "$(git status --porcelain assets/data/events.json)" ]; then
             git add assets/data/events.json
             git commit -m "chore(portal): sync GameChanger events [$(date -u +%FT%TZ)]"
-            git push
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
           else
             echo "No changes to events.json"
           fi

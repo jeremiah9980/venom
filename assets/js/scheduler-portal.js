@@ -20,6 +20,8 @@ const state = { all: [], team: "ALL", weekends: 0 };
 const $ = (s) => document.querySelector(s);
 const esc = (v) => String(v == null ? "" : v)
   .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+// Only http(s) URLs may be rendered into href attributes.
+const safeUrl = (u) => (/^https?:\/\//i.test(String(u || "").trim()) ? String(u).trim() : "");
 
 async function fetchJSON(url) {
   const res = await fetch(url, { cache: "no-store" });
@@ -64,19 +66,35 @@ function normalizeName(s) {
   return String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 }
 
-/* Match the live NCS event feed to a tracker event: prefer the
-   event id, fall back to a loose name match on the same dates. */
-function liveMatchesEvent(live, ev) {
-  if (!live || !live.event) return false;
-  const liveId = String(live.event.id ?? "");
-  if (liveId && String(ev.event_id ?? "") === liveId) return true;
-  const a = normalizeName(live.event.name), b = normalizeName(ev.title);
-  if (a && b && (a.includes(b) || b.includes(a))) return true;
-  return !!(live.event.start_date && live.event.start_date === ev.start_date);
+/* The live file may carry one feed per team (feeds[]) or the older
+   single-event shape. Normalize to a list of feeds with a team age. */
+function liveFeeds(live) {
+  if (!live) return [];
+  const raw = Array.isArray(live.feeds) && live.feeds.length
+    ? live.feeds
+    : (live.event ? [{ event: live.event, games: live.games, message: live.sync_message, age: "" }] : []);
+  return raw.filter(f => f && f.event).map(f => {
+    const ageMatch = /(\d{1,2}U)/i.exec(String(f.age || f.event.division || ""));
+    return { ...f, age: ageMatch ? ageMatch[1].toUpperCase() : "" };
+  });
 }
 
-function venomGames(live) {
-  const games = (live && Array.isArray(live.games)) ? live.games : [];
+/* Match a live feed to a tracker event. When both sides carry an event
+   id, the ids decide — two same-weekend tournaments must never share a
+   feed. Without a reliable id, require BOTH a name match and the same
+   start date. */
+function feedMatchesEvent(feed, entry) {
+  const feedId = String(feed.event.id ?? "").trim();
+  const entryId = String(entry.event_id ?? "").trim();
+  if (feedId && entryId) return feedId === entryId;
+  const a = normalizeName(feed.event.name), b = normalizeName(entry.title);
+  const nameMatch = !!(a && b && (a.includes(b) || b.includes(a)));
+  const dateMatch = !!(feed.event.start_date && feed.event.start_date === entry.start_date);
+  return nameMatch && dateMatch;
+}
+
+function venomGames(feed) {
+  const games = Array.isArray(feed.games) ? feed.games : [];
   return games.filter(g =>
     VENOM_RE.test(g?.home?.name || "") || VENOM_RE.test(g?.away?.name || ""));
 }
@@ -89,10 +107,11 @@ function gameChip(g) {
   const played = us?.score != null && them?.score != null;
   const score = played ? ` <span class="g-score">${esc(us.score)}–${esc(them.score)}</span>` : "";
   const round = g.round && !/pool/i.test(g.round) ? esc(g.round) : "Pool";
+  const agePrefix = g._age ? `${esc(g._age)} · ` : "";
   return `
     <div class="wk-game${played ? " final" : ""}">
       <div class="g-time"><b>${esc(g.time || "TBD")}</b><span>${esc(g.date || "")}</span></div>
-      <div class="g-opp">${played ? "F" : round} · vs ${esc(opp)}${score}</div>
+      <div class="g-opp">${agePrefix}${played ? "F" : round} · vs ${esc(opp)}${score}</div>
       <div class="g-field">${esc(g.field || "Field TBD")}</div>
     </div>`;
 }
@@ -131,7 +150,7 @@ function weekendBlock(wk) {
           ${en.format ? `<span><i class="ti ti-tournament"></i>${esc(en.format)}</span>` : ""}
           ${en.location ? `<span><i class="ti ti-map-pin"></i>${esc(en.location)}</span>` : ""}
           ${en.director ? `<span><i class="ti ti-user"></i>${esc(en.director)}</span>` : ""}
-          ${en.source_url ? `<span><i class="ti ti-external-link"></i><a href="${esc(en.source_url)}" target="_blank" rel="noopener">NCS event page</a></span>` : ""}
+          ${safeUrl(en.source_url) ? `<span><i class="ti ti-external-link"></i><a href="${esc(safeUrl(en.source_url))}" target="_blank" rel="noopener">NCS event page</a></span>` : ""}
         </div>
         ${gamesBlock}
       </div>`;
@@ -167,8 +186,9 @@ function buildWeekends(tracker, live) {
         if (!existing.teams.includes(age)) existing.teams.push(age);
         continue;
       }
-      const entry = {
+      wk.entries.push({
         event_id: ev.event_id,
+        start_date: ev.start_date,
         title: ev.title || "NCS Tournament",
         event_type: ev.event_type || "",
         format: ev.format || "",
@@ -178,13 +198,28 @@ function buildWeekends(tracker, live) {
         teams: [age],
         games: [],
         liveNote: "",
-      };
-      if (liveMatchesEvent(live, ev)) {
-        entry.games = venomGames(live);
-        if (entry.games.length && live.sync_message) entry.liveNote = live.sync_message;
-        if (!entry.location && live.event?.location) entry.location = live.event.location;
+      });
+    }
+  }
+
+  // Attach live pool-play games. Each feed covers one team's division, so
+  // it may only land on an entry that tracks that team — and games are
+  // tagged with the feed's age so mixed 12U/14U blocks stay readable.
+  const feeds = liveFeeds(live);
+  for (const wk of byWeekend.values()) {
+    for (const entry of wk.entries) {
+      for (const feed of feeds) {
+        if (!feedMatchesEvent(feed, entry)) continue;
+        if (feed.age && !entry.teams.includes(feed.age)) continue;
+        const games = venomGames(feed).map(g => ({ ...g, _age: entry.teams.length > 1 ? feed.age : "" }));
+        if (!games.length) continue;
+        entry.games.push(...games);
+        const note = feed.message || live?.sync_message || "";
+        if (note && !entry.liveNote.includes(note)) {
+          entry.liveNote = entry.liveNote ? `${entry.liveNote} ${note}` : note;
+        }
+        if (!entry.location && feed.event.location) entry.location = feed.event.location;
       }
-      wk.entries.push(entry);
     }
   }
 
@@ -316,10 +351,10 @@ function setTeam(team) {
    TEAM CHAT TILES (optional gc-links.json)
    ============================================================ */
 function renderChatTiles(links) {
-  const teams = (links && Array.isArray(links.teams)) ? links.teams.filter(t => t.chat_url) : [];
+  const teams = (links && Array.isArray(links.teams)) ? links.teams.filter(t => safeUrl(t.chat_url)) : [];
   if (!teams.length) return; // keep the default single tile
   $("#chat-grid").innerHTML = teams.map(t => `
-    <a class="chat-tile" href="${esc(t.chat_url)}" target="_blank" rel="noopener">
+    <a class="chat-tile" href="${esc(safeUrl(t.chat_url))}" target="_blank" rel="noopener">
       <div class="chat-tile-icon"><i class="ti ti-message-circle-2"></i></div>
       <div>
         <h3>${esc(t.team)} Team Chat</h3>
