@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -30,8 +30,8 @@
       justify-content: center;
       padding: 0.6rem 1rem;
       position: sticky;
-      top: 0;
-      z-index: 50;
+      top: 60px; /* fallback; JS sets this to the nav's actual height */
+      z-index: 110; /* above site nav (z-index: 100) */
     }
     .team-switcher {
       display: inline-flex;
@@ -145,325 +145,16 @@
     </div>
     <div id="division-scoreboard">
       <div class="dashboard-empty"><i class="ti ti-scoreboard"></i><h3>Loading division scoreboard</h3><p>All published division games and scores will appear here.</p></div>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Texas Venom Tournament Tracker Hub</title>
-  <meta name="description" content="Texas Venom 12U and 14U tournament tracker hub." />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-  <style>
-:root {
-  --bg: #07050d;
-  --panel: rgba(23, 14, 38, .88);
-  --panel2: rgba(42, 27, 66, .78);
-  --line: rgba(255,255,255,.13);
-  --line2: rgba(190,255,0,.33);
-  --text: #fbf8ff;
-  --muted: #c2b7d1;
-  --soft: #9f95ad;
-  --venom: #FFD60A;
-  --purple: #8B5CF6; --outline:#4C1D95;
-  --gold: #ffd166;
-  --danger: #ff7192;
-  --shadow: 0 22px 80px rgba(0,0,0,.48);
-  --radius: 24px;
-  --max: 1180px;
-}
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; background: var(--bg); }
-body {
-  margin: 0;
-  min-height: 100vh;
-  color: var(--text);
-  font-family: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
-  background:
-    radial-gradient(circle at 12% -8%, rgba(139,92,246,.34), transparent 30rem),
-    radial-gradient(circle at 88% 0%, rgba(255,214,10,.14), transparent 28rem),
-    linear-gradient(145deg, #050308 0%, #120a20 45%, #08050f 100%);
-}
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background-image:
-    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
-  background-size: 42px 42px;
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,.68), transparent 72%);
-}
-a { color: inherit; text-decoration: none; }
-button, input, select { font: inherit; }
-.page { position: relative; z-index: 1; }
-.container { width: min(var(--max), calc(100% - 34px)); margin: 0 auto; }
-.topbar {
-  position: sticky; top: 0; z-index: 50;
-  backdrop-filter: blur(22px);
-  background: rgba(7,5,13,.78);
-  border-bottom: 1px solid rgba(255,255,255,.09);
-}
-.nav {
-  display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 13px 0;
-}
-.brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
-.logoMark {
-  width: 48px; height: 48px; border-radius: 16px; display: grid; place-items: center;
-  background: linear-gradient(135deg, rgba(255,214,10,.22), rgba(139,92,246,.42));
-  border: 1px solid rgba(255,214,10,.35);
-  color: var(--venom); font-weight: 950; letter-spacing: -.05em;
-  box-shadow: 0 0 0 5px rgba(255,214,10,.06);
-}
-.brand strong { display: block; line-height: 1.05; white-space: nowrap; }
-.brand span { color: var(--muted); font-size: .8rem; white-space: nowrap; }
-.navlinks { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
-.btn, .navlinks a {
-  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-  border: 1px solid rgba(255,255,255,.14);
-  border-radius: 999px;
-  background: rgba(255,255,255,.055);
-  color: var(--muted);
-  padding: 9px 13px;
-  cursor: pointer;
-  transition: transform .18s ease, border-color .18s ease, background .18s ease, color .18s ease;
-}
-.btn:hover, .navlinks a:hover {
-  transform: translateY(-1px);
-  border-color: rgba(255,214,10,.38);
-  color: var(--text);
-  background: rgba(255,214,10,.08);
-}
-.btn.primary {
-  border-color: transparent;
-  color: #120a1d;
-  background: linear-gradient(135deg, var(--venom), #e9ff79);
-  font-weight: 900;
-}
-.hero { padding: 52px 0 24px; }
-.heroGrid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(320px, .65fr); gap: 18px; }
-.panel {
-  border: 1px solid var(--line);
-  background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.035)), var(--panel);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-}
-.heroCard { padding: clamp(24px, 4vw, 42px); position: relative; overflow: hidden; }
-.heroCard::after {
-  content: ""; position: absolute; width: 320px; height: 320px; right: -120px; top: -130px;
-  background: radial-gradient(circle, rgba(255,214,10,.19), transparent 65%);
-}
-.kicker {
-  display: inline-flex; align-items: center; gap: 8px;
-  color: var(--venom); font-weight: 900; letter-spacing: .13em; text-transform: uppercase; font-size: .74rem;
-}
-.pulse { width: 9px; height: 9px; border-radius: 50%; background: var(--venom); box-shadow: 0 0 0 0 rgba(255,214,10,.62); animation: pulse 2s infinite; }
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(255,214,10,.55); }
-  70% { box-shadow: 0 0 0 10px rgba(255,214,10,0); }
-  100% { box-shadow: 0 0 0 0 rgba(255,214,10,0); }
-}
-h1 { margin: 13px 0 12px; font-size: clamp(2.2rem, 6vw, 5.1rem); line-height: .92; letter-spacing: -.06em; }
-.heroCard p, .sectionHead p { color: var(--muted); line-height: 1.65; font-size: 1.02rem; max-width: 780px; }
-.actions, .chips, .cardActions, .tags { display: flex; flex-wrap: wrap; gap: 9px; }
-.actions { margin-top: 23px; }
-.chips { margin-top: 25px; }
-.chip {
-  border: 1px solid rgba(255,255,255,.13);
-  background: rgba(255,255,255,.055);
-  color: var(--muted);
-  padding: 8px 11px;
-  border-radius: 999px;
-  font-size: .86rem;
-}
-.chip strong { color: var(--text); }
-.sideCard { padding: 23px; display: grid; gap: 14px; }
-.nextLabel { color: var(--soft); font-weight: 900; letter-spacing: .13em; text-transform: uppercase; font-size: .75rem; }
-.nextTitle { margin: 3px 0 0; font-size: 1.48rem; letter-spacing: -.03em; line-height: 1.15; }
-.miniRows { display: grid; gap: 10px; margin-top: 8px; }
-.miniRow {
-  display: flex; justify-content: space-between; align-items: flex-start; gap: 12px;
-  padding: 12px; border-radius: 16px; border: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.04);
-}
-.miniRow span { color: var(--muted); font-size: .84rem; }
-.miniRow strong { text-align: right; }
-.stats { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; margin-top: 18px; }
-.stat { padding: 18px; border-radius: 20px; min-height: 105px; border: 1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.055); }
-.stat .num { display: block; font-weight: 950; font-size: clamp(1.8rem, 4vw, 2.55rem); letter-spacing: -.05em; }
-.stat .label { display: block; color: var(--muted); font-size: .86rem; margin-top: 4px; }
-.section { padding: 22px 0; }
-.sectionHead { display: flex; align-items: end; justify-content: space-between; gap: 18px; margin-bottom: 15px; }
-.sectionHead h2 { margin: 0; font-size: clamp(1.6rem, 3vw, 2.35rem); letter-spacing: -.04em; }
-.control {
-  padding: 15px; border-radius: 20px;
-  display: grid; grid-template-columns: minmax(260px, 1fr) 155px 185px 110px auto; gap: 10px; align-items: end;
-}
-.field { display: grid; gap: 6px; }
-.field label { color: var(--soft); font-weight: 850; letter-spacing: .1em; text-transform: uppercase; font-size: .71rem; }
-.field input, .field select {
-  width: 100%; border-radius: 14px; border: 1px solid rgba(255,255,255,.13);
-  background: rgba(255,255,255,.075); color: var(--text); padding: 11px 12px; outline: none;
-}
-.field input:focus, .field select:focus { border-color: rgba(255,214,10,.5); box-shadow: 0 0 0 4px rgba(255,214,10,.06); }
-option { color: #120a1d; }
-.grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 15px; }
-.eventCard {
-  padding: 17px; border-radius: 22px; overflow: hidden; position: relative; display: grid; gap: 15px;
-  transition: transform .18s ease, border-color .18s ease, background .18s ease;
-}
-.eventCard:hover { transform: translateY(-2px); border-color: rgba(255,214,10,.34); background: linear-gradient(180deg, rgba(255,214,10,.075), rgba(255,255,255,.035)), var(--panel); }
-.eventTop { display: grid; grid-template-columns: 94px minmax(0,1fr); gap: 14px; }
-.dateBadge {
-  border: 1px solid var(--line2); border-radius: 18px;
-  background: linear-gradient(180deg, rgba(255,214,10,.16), rgba(139,92,246,.08));
-  padding: 12px 10px; text-align: center; align-self: start;
-}
-.dateBadge .month { display: block; color: var(--venom); font-weight: 950; letter-spacing: .14em; font-size: .75rem; }
-.dateBadge .day { display: block; font-size: 1.45rem; font-weight: 950; margin-top: 2px; }
-.dateBadge .days { display: block; color: var(--muted); font-size: .72rem; margin-top: 5px; }
-.status {
-  display: inline-flex; align-items: center; gap: 7px; width: fit-content;
-  border: 1px solid rgba(255,214,10,.3); background: rgba(255,214,10,.08);
-  color: var(--venom); padding: 6px 10px; border-radius: 999px;
-  font-size: .77rem; font-weight: 900;
-}
-.status.closed { border-color: rgba(255,113,146,.28); background: rgba(255,113,146,.08); color: #ffa0b6; }
-.status.soon { border-color: rgba(255,209,102,.32); background: rgba(255,209,102,.08); color: var(--gold); }
-.status.verify { border-color: rgba(255,209,102,.35); background: rgba(255,209,102,.1); color: var(--gold); }
-.eventTitle { margin: 8px 0 7px; font-size: 1.2rem; line-height: 1.15; letter-spacing: -.02em; }
-.sub { display: flex; flex-wrap: wrap; gap: 8px; color: var(--muted); font-size: .88rem; line-height: 1.35; }
-.metrics { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 8px; }
-.metric { border: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.045); border-radius: 14px; padding: 10px; min-height: 72px; }
-.metric span { display: block; color: var(--soft); font-size: .68rem; text-transform: uppercase; letter-spacing: .1em; font-weight: 850; }
-.metric strong { display: block; margin-top: 5px; line-height: 1.2; font-size: .98rem; }
-.tag { color: #f0eaff; background: rgba(139,92,246,.17); border: 1px solid rgba(139,92,246,.35); border-radius: 999px; padding: 6px 9px; font-size: .75rem; font-weight: 800; }
-.tag.verify { color: var(--gold); background: rgba(255,209,102,.1); border-color: rgba(255,209,102,.34); }
-details { border: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.035); border-radius: 16px; overflow: hidden; }
-summary { padding: 12px 13px; cursor: pointer; color: var(--muted); font-weight: 850; }
-.notes { margin: 0; padding: 0 14px 14px 30px; color: var(--muted); line-height: 1.55; }
-.cardActions a, .cardActions button {
-  padding: 9px 11px; border-radius: 12px; border: 1px solid rgba(255,255,255,.12);
-  background: rgba(255,255,255,.06); color: var(--text); cursor: pointer;
-}
-.cardActions a.primary { background: linear-gradient(135deg, rgba(255,214,10,.95), rgba(232,255,115,.95)); color: #120a1d; font-weight: 950; border-color: transparent; }
-.tableWrap { overflow-x: auto; border-radius: 16px; border: 1px solid rgba(255,255,255,.1); }
-table { border-collapse: collapse; width: 100%; min-width: 900px; }
-th,td { text-align: left; padding: 13px; border-bottom: 1px solid rgba(255,255,255,.08); vertical-align: top; color: var(--muted); line-height: 1.4; }
-th { color: var(--soft); background: rgba(255,255,255,.045); font-size: .71rem; text-transform: uppercase; letter-spacing: .1em; }
-td strong { color: var(--text); }
-tr:last-child td { border-bottom: 0; }
-.empty { border: 1px dashed rgba(255,255,255,.25); background: rgba(255,255,255,.035); border-radius: 18px; padding: 28px; text-align: center; color: var(--muted); grid-column: 1/-1; }
-.notice { padding: 14px 16px; border-radius: 18px; border: 1px solid rgba(255,209,102,.28); background: rgba(255,209,102,.08); color: #ffe2a1; line-height: 1.55; margin-bottom: 16px; }
-.footer { padding: 34px 0 46px; color: var(--muted); text-align: center; }
-.compareGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-.teamCard { padding: 24px; border-radius: var(--radius); display: grid; gap: 16px; }
-.teamCard h2 { margin: 0; font-size: 2rem; letter-spacing: -.05em; }
-.teamCard p { color: var(--muted); line-height: 1.6; margin: 0; }
-.teamMetrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
-.teamMetrics div { border: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.045); border-radius: 14px; padding: 12px; }
-.teamMetrics strong { display: block; font-size: 1.45rem; }
-.teamMetrics span { color: var(--muted); font-size: .78rem; }
-@media (max-width: 960px) {
-  .heroGrid, .grid, .compareGrid { grid-template-columns: 1fr; }
-  .stats { grid-template-columns: repeat(2, minmax(0,1fr)); }
-  .control { grid-template-columns: 1fr 1fr; }
-  .control .wide { grid-column: 1/-1; }
-}
-@media (max-width: 640px) {
-  .container { width: min(100% - 24px, var(--max)); }
-  .nav { align-items: flex-start; flex-direction: column; }
-  .navlinks { justify-content: flex-start; }
-  .stats, .metrics, .control, .teamMetrics { grid-template-columns: 1fr; }
-  .eventTop { grid-template-columns: 1fr; }
-  .dateBadge { width: 118px; }
-  .sectionHead { align-items: flex-start; flex-direction: column; }
-}
-@media print {
-  body { background: #fff; color: #111; }
-  body::before, .topbar, .control, .actions, .cardActions, .footer { display: none !important; }
-  .panel, .eventCard, .stat { box-shadow: none; background: #fff; color: #111; border-color: #ddd; }
-  .grid { grid-template-columns: 1fr; }
-  .sub, .notes, td, .chip, .stat .label { color: #333 !important; }
-}
-h1,h2,h3,.brand strong,.nextTitle,.eventTitle,.teamCard h2{font-family:'Archivo',sans-serif;font-stretch:118%;text-transform:uppercase}.kicker,.nextLabel,.field label,th,.status,.chip,.dateBadge .month{font-family:'IBM Plex Mono',monospace}
-</style>
-</head>
-<body>
-  <div class="page">
-    <header class="topbar">
-      <div class="container nav">
-        <a class="brand" href="tournament-dashboard.html">
-          <span class="logoMark">TV</span>
-          <span><strong>Texas Venom</strong><span>Tournament Tracker Hub</span></span>
-        </a>
-        <nav class="navlinks">
-          <a href="index.html">Venom Home</a>
-          <a href="portal.html">Scheduler Portal</a>
-          <a href="tournament-tracker-12u.html">12U Tracker</a>
-          <a href="tournament-tracker-14u.html">14U Tracker</a>
-          <a href="https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u" target="_blank" rel="noopener">12U NCS</a>
-          <a href="https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u" target="_blank" rel="noopener">14U NCS</a>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="container heroCard panel">
-          <span class="kicker"><span class="pulse"></span> Team-separated trackers</span>
-          <h1>Texas Venom<br>Tournament Hub</h1>
-          <p>
-            Use this as the main tournament dashboard page. It routes families and coaches into the correct dedicated tracker:
-            one for <strong>12U</strong> and one for <strong>14U</strong>. Each tracker has its own NCS source page, event list, filters, exports, and print sheet.
-          </p>
-          <div class="actions">
-            <a class="btn primary" href="tournament-tracker-12u.html">Open 12U Tracker</a>
-            <a class="btn primary" href="tournament-tracker-14u.html">Open 14U Tracker</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container compareGrid" id="teamCards"></div>
-      </section>
-
-      <section class="section">
-        <div class="container panel" style="padding:20px;border-radius:24px;">
-          <div class="sectionHead">
-            <div>
-              <h2>Deployment setup</h2>
-              <p>Upload all three HTML files together so relative links work correctly.</p>
-            </div>
-          </div>
-          <div class="chips">
-            <span class="chip"><strong>Main:</strong> tournament-dashboard.html</span>
-            <span class="chip"><strong>12U:</strong> tournament-tracker-12u.html</span>
-            <span class="chip"><strong>14U:</strong> tournament-tracker-14u.html</span>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer"><div class="container">Texas Venom Tournament Operations • Last manual pull: June 28, 2026</div></footer>
-  </div>
-  <script>
-const TEAMS = [{"short": "12U", "display": "Texas Venom 12U", "file": "tournament-tracker-12u.html", "source": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u", "teamId": "27-87660", "events": 7, "feeTotal": 1125, "verify": 1, "next": "Warm up into Fall Part 1 5GG 70 minutes games", "date": "Aug 22\u201323"}, {"short": "14U", "display": "Texas Venom 14U", "file": "tournament-tracker-14u.html", "source": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u", "teamId": "27-87549", "events": 8, "feeTotal": 1375, "verify": 0, "next": "Warm up into Fall Part 1 5GG 70 minutes games", "date": "Aug 22\u201323"}];
-const money = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
-document.getElementById("teamCards").innerHTML = TEAMS.map(team => `
-  <article class="teamCard panel">
-    <span class="kicker"><span class="pulse"></span>${team.short} Tracker</span>
-    <h2>${team.display}</h2>
-    <p>Dedicated tournament tracker for ${team.short}. Keep this page separate from the other Venom age group so parents and coaches do not mix events.</p>
-    <div class="teamMetrics">
-      <div><strong>${team.events}</strong><span>NCS events</span></div>
-      <div><strong>${money.format(team.feeTotal)}</strong><span>known entry total</span></div>
-      <div><strong>${team.verify}</strong><span>verify flags</span></div>
     </div>
-    <div class="chips">
-      <span class="chip"><strong>NCS ID:</strong> ${team.teamId}</span>
-      <span class="chip"><strong>Next:</strong> ${team.date}</span>
-    </div>
-    <div class="cardActions">
-      <a class="primary" href="${team.file}">Open ${team.short} Tracker</a>
-      <a href="${team.source}" target="_blank" rel="noopener">NCS Team</a>
+  </section>
+
+  <section class="section" id="bracket">
+    <div class="section-label">Elimination Play</div>
+    <h2>Bracket Board</h2>
+    <div class="section-rule"></div>
+    <p>The bracket remains locked until NCS publishes seedings. Once available, every round and score will update automatically across the full board.</p>
+    <div class="bracket-shell" id="bracket-board">
+      <div class="bracket-locked"><div><i class="ti ti-lock"></i><h3>Checking bracket status</h3><p>The dashboard is connecting to the official NCS bracket.</p></div></div>
     </div>
   </section>
 
@@ -491,9 +182,6 @@ document.getElementById("teamCards").innerHTML = TEAMS.map(team => `
   <p>NCS Tournament Operations &bull; Texas Venom &bull; Taylor / Lorena, Texas</p>
 </footer>
 
-<script src="assets/js/tournament-dashboard.js?v=20260811-2team"></script>
-  </article>
-`).join("");
-</script>
+<script src="assets/js/tournament-dashboard.js?v=20260811-3fixes"></script>
 </body>
 </html>

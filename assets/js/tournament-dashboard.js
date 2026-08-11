@@ -239,13 +239,24 @@
     startCountdown(data);
   }
 
+  // Position the team-switcher bar below the sticky nav
+  function adjustSwitcherTop() {
+    const nav = document.querySelector('nav');
+    const bar = document.querySelector('.team-switcher-bar');
+    if (nav && bar) bar.style.top = nav.offsetHeight + 'px';
+  }
+
   async function load() {
-    const config = TEAM_CONFIGS[state.team];
+    // Capture team at call time; discard response if a newer switch has happened
+    const team = state.team;
+    const config = TEAM_CONFIGS[team];
     try {
       const response = await fetch(`${config.dataUrl}?t=${Date.now()}`, { cache: 'no-store' });
       if (!response.ok) throw new Error(`Tournament feed returned ${response.status}`);
+      if (team !== state.team) return; // stale — a different team was selected while fetching
       render(await response.json());
     } catch (error) {
+      if (team !== state.team) return;
       console.error(error);
       $('sync-status').innerHTML = `<div class="status-line"><span class="live-dot stale"></span><div class="status-title">Dashboard feed unavailable</div></div><p class="status-copy">${esc(error.message)}</p>`;
     }
@@ -278,6 +289,11 @@
   });
 
   $('manual-refresh')?.addEventListener('click', load);
+
+  // Adjust switcher position once nav is rendered, then on resize
+  adjustSwitcherTop();
+  window.addEventListener('resize', adjustSwitcherTop);
+
   load();
   state.refreshTimer = setInterval(load, 60000);
 })();
