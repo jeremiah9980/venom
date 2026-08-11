@@ -1,11 +1,78 @@
 {
   "games": [],
   "team_games": [],
-  "bracket": { "published": false, "rounds": [] },
-  "upcoming_tournaments": [],
+  "bracket": {
+    "published": false,
+    "rounds": []
+  },
+  "upcoming_tournaments": [
+    {
+      "id": 13257,
+      "name": "Warm up into Fall Part 1 5GG 70 minutes games",
+      "dates": "Aug 22-23",
+      "location": "Bertram, TX",
+      "division": "10U · 12U · 14U · 18U",
+      "registered_teams": null,
+      "url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
+    },
+    {
+      "id": 13214,
+      "name": "3P Sports - Dawg Days of Summer",
+      "dates": "Aug 29-30",
+      "location": "Axtell/Lorena, TX",
+      "division": "8U · 10U · 12U · 14U · 18U",
+      "registered_teams": null,
+      "url": "https://www.playncs.com/fastpitch/Events/Details/13214/3p-sports-dawg-days-of-summer"
+    },
+    {
+      "id": 13597,
+      "name": "******* 1 DAY SUNDAY SEPTEMBER SHOWDOWN ********",
+      "dates": "Sep 20",
+      "location": "Seguin, TX",
+      "division": "14U · 18U",
+      "registered_teams": null,
+      "url": "https://www.playncs.com/fastpitch/Events/Details/13597/1-day-sunday-september-showdown"
+    },
+    {
+      "id": 13209,
+      "name": "3P Sports - September Sapphire CROSSROADS Showdown",
+      "dates": "Sep 26-27",
+      "location": "Temple, TX",
+      "division": "8U · 10U · 12U · 14U · 18U",
+      "registered_teams": null,
+      "url": "https://www.playncs.com/fastpitch/Events/Details/13209/3p-sports-september-sapphire-crossroads-showdown"
+    },
+    {
+      "id": 13598,
+      "name": "********* OCTOBERFEST ********",
+      "dates": "Oct 3-4",
+      "location": "Seguin, TX",
+      "division": "8U · 10U · 12U · 14U · 18U",
+      "registered_teams": null,
+      "url": "https://www.playncs.com/fastpitch/Events/Details/13598/octoberfest"
+    },
+    {
+      "id": 13481,
+      "name": "PINK OUT 70 MIN POOLS 4GG",
+      "dates": "Oct 17-18",
+      "location": "TEMPLE / RIVERBEND, TX",
+      "division": "8U · 10U · 12U · 14U",
+      "registered_teams": null,
+      "url": "https://www.playncs.com/fastpitch/Events/Details/13481/pink-out-70-min-pools-4gg"
+    },
+    {
+      "id": 13484,
+      "name": "NCS CENTRAL TEXAS FALL STATE 65 MIN POOL 6GG 8U,10U,12U, 18u OPEN & C, 14U C ONLY",
+      "dates": "Nov 7-8",
+      "location": "TAYLOR / TEMPLE / GEORGETOWN, TX",
+      "division": "8U,10U,12U, 18u",
+      "registered_teams": null,
+      "url": "https://www.playncs.com/fastpitch/Events/Details/13484/ncs-central-texas-fall-state-65-min-pool-6gg-8u-10u-12u-18u-open-c-14u-c-only"
+    }
+  ],
   "sync_status": "waiting_for_schedule",
   "sync_message": "No 14U OPEN schedule has been published on NCS yet. The dashboard will update automatically once a tournament is posted.",
-  "generated_at": null,
+  "generated_at": "2026-08-11T13:38:32.008190+00:00",
   "event": {
     "name": "",
     "division": "14U",
@@ -20,7 +87,10 @@
   "source": {
     "schedule_url": null,
     "team_url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u",
-    "last_http_status": { "schedule": null, "team": null },
+    "last_http_status": {
+      "schedule": null,
+      "team": 200
+    },
     "last_error": null
   }
 }
