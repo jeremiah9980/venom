@@ -1,0 +1,30 @@
+{
+  "site": {"name":"Texas Venom","tagline":"Built for the fight. Ready for the moment.","location":"Leander, Texas","season":"Fall 2026","logo":"../assets/venom-logo.jpg","instagram":"https://www.instagram.com/texas_venom_softball/","facebook":"https://www.facebook.com/profile.php?id=61578371575821"},
+  "hero": {"eyebrow":"10U · 12U · 14U Select Softball","title":"Develop athletes. Build confidence. Compete together.","copy":"A modern home for Texas Venom athletes, families, coaches, sponsors, and supporters.","primaryLabel":"Meet the 12U Team","primaryRoute":"roster","secondaryLabel":"Tournament Hub","secondaryRoute":"tournament"},
+  "teams":[
+    {"age":"10U","label":"Development","title":"Build the foundation","description":"Fundamentals, confidence, softball IQ, and positive team culture."},
+    {"age":"12U","label":"Active roster","title":"Compete with confidence","description":"Tournament preparation, accountability, player growth, and family connection."},
+    {"age":"14U","label":"Next level","title":"Prepare for what is next","description":"Advanced competition, positional development, visibility, and recruiting preparation."}
+  ],
+  "players":[
+    {"number":"1","name":"Penny Bridgewaters","photo":"../assets/players/penny-b.jpg","position":"Utility"},
+    {"number":"2","name":"Aubrey Balcom","photo":"../assets/players/aubrey-b.jpg","position":"Utility"},
+    {"number":"4","name":"Kynsington Elliott","photo":"../kynsi-e.jpg?v=20260618-5","position":"Utility"},
+    {"number":"6","name":"Gracelyn Welch","photo":"../assets/players/gracie-w.jpg","position":"Utility"},
+    {"number":"10","name":"Hadley Wiegers","photo":"../hadley-w.jpg?v=20260618-5","position":"Utility"},
+    {"number":"11","name":"Kassidy Cargill","photo":"../assets/players/kassidy-c.jpg","position":"3B / C"},
+    {"number":"12","name":"Addison Popkoff","photo":"../assets/players/addison-p.jpg","position":"Utility"},
+    {"number":"21","name":"Saraya Palmer","photo":"../saraya-p.jpg?v=20260618-5","position":"Utility"},
+    {"number":"22","name":"Payton Riser","photo":"../assets/players/payton-r.jpg","position":"Utility"},
+    {"number":"74","name":"Johnny Rogers","photo":"../assets/players/johnny-r.jpg","position":"Utility"},
+    {"number":"99","name":"Emily Lambdin","photo":"../assets/players/emily-l.jpg","position":"Utility"}
+  ],
+  "events":[
+    {"date":"Saturday, July 18","time":"8:00 AM","title":"Pool Game 1","field":"Field 3","arrival":"7:00 AM","uniform":"White"},
+    {"date":"Saturday, July 18","time":"10:30 AM","title":"Pool Game 2","field":"Field 1","arrival":"9:45 AM","uniform":"White"},
+    {"date":"Saturday, July 18","time":"2:00 PM","title":"Bracket Play","field":"TBD","arrival":"TBD","uniform":"TBD"}
+  ],
+  "coach":{"name":"Chris Balcom","role":"Head Coach","quote":"Every practice, lineup, tournament, and conversation should help an athlete become more confident and more prepared."},
+  "sponsors":[{"name":"Sponsor One"},{"name":"Sponsor Two"},{"name":"Sponsor Three"},{"name":"Sponsor Four"}],
+  "contact":{"email":"","phone":"","message":"Reach out about teams, tryouts, sponsorships, and organization support."}
+}

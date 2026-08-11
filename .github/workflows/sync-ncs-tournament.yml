@@ -5,6 +5,8 @@ on:
     - cron: "*/10 * * * *"
   workflow_dispatch:
   push:
+    branches:
+      - main
     paths:
       - "scripts/sync-ncs-tournament.py"
       - "scripts/refine-ncs-tournament.py"
@@ -54,6 +56,8 @@ jobs:
             git commit -m "chore(tournament): sync NCS scores [$(date -u +%FT%TZ)]"
             git pull --rebase origin "${GITHUB_REF_NAME}" || true
             git push origin "HEAD:${GITHUB_REF_NAME}"
+            git pull --rebase origin main
+            git push origin HEAD:main
           else
             echo "No NCS tournament changes"
           fi

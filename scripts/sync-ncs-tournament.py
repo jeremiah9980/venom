@@ -1,30 +1,41 @@
 #!/usr/bin/env python3
-"""Sync the Texas Venom NCS tournament dashboard from PlayNCS."""
+"""Sync live NCS tournament schedules for every tracked Texas Venom team.
+
+Reads the tracked-team config (ncs-teams.json) and each team's tracker data
+(data/ncs-tournaments-<key>.json, produced hourly by the Update NCS
+Tournaments workflow), picks the current/next tournament per team, and
+scrapes that event's schedule page on PlayNCS. When NCS publishes the
+pool-play schedule, the games land in assets/data/ncs-tournament.json and
+the Scheduler Portal renders them inside the matching weekend block.
+
+Output shape: {"feeds": [<one per team>], ...legacy top-level fields kept
+for older consumers, mirroring the primary feed}.
+"""
 
 from __future__ import annotations
 
 import hashlib
 import json
 import re
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import unquote, urljoin
 
 import requests
 from bs4 import BeautifulSoup, Tag
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "assets" / "data" / "ncs-tournament.json"
-TEAM_URL = "https://www.playncs.com/Fastpitch/Teams/Details/87660/texas-venom-12u"
-SCHEDULE_URL = "https://www.playncs.com/fastpitch/Events/Schedule/12287/3p-sports-dingers-for-dads-6gg?division=12U%20OPEN"
+CONFIG = ROOT / "ncs-teams.json"
+DATA_DIR = ROOT / "data"
 TEAM_NAME = "Texas Venom"
 USER_AGENT = "Mozilla/5.0 (compatible; TexasVenomTournamentDashboard/1.0; +https://jeremiah9980.github.io/venom/)"
 
 DATE_RE = re.compile(r"\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)?\s*,?\s*(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2}(?:,\s*\d{4})?\b", re.I)
 TIME_RE = re.compile(r"\b\d{1,2}:\d{2}\s*(?:AM|PM)\b", re.I)
 FIELD_RE = re.compile(r"\b(?:Field|Fld|Diamond)\s*#?\s*[A-Za-z0-9-]+\b", re.I)
-EVENT_ID_RE = re.compile(r"/Events/(?:Details|Schedule)/(\d+)/", re.I)
 TEAM_LINK_RE = re.compile(r"/Teams/Details/", re.I)
+DIVISION_URL_RE = re.compile(r'(?:href|data-href)="([^"]*\?division=([^"&]+)[^"]*)"', re.I)
 BRACKET_WORDS = ("bracket", "championship", "semifinal", "semi-final", "quarterfinal", "quarter-final", "elimination", "round of")
 
 
@@ -36,14 +47,14 @@ def normalized(value: object) -> str:
     return re.sub(r"[^a-z0-9]+", " ", clean(value).lower()).strip()
 
 
-def load_existing() -> dict:
+def load_json(path: Path) -> dict:
     try:
-        return json.loads(OUT.read_text(encoding="utf-8"))
+        return json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
         return {}
 
 
-def fetch(url: str) -> tuple[str, int]:
+def fetch(url: str) -> str:
     response = requests.get(
         url,
         timeout=35,
@@ -54,7 +65,7 @@ def fetch(url: str) -> tuple[str, int]:
         },
     )
     response.raise_for_status()
-    return response.text, response.status_code
+    return response.text
 
 
 def nearest_heading(element: Tag) -> str:
@@ -201,50 +212,6 @@ def parse_schedule(html: str) -> list[dict]:
     return games
 
 
-def parse_upcoming(html: str) -> list[dict]:
-    soup = BeautifulSoup(html, "html.parser")
-    events: list[dict] = []
-    seen: set[int] = set()
-
-    for anchor in soup.find_all("a", href=EVENT_ID_RE):
-        href = anchor.get("href", "")
-        id_match = EVENT_ID_RE.search(href)
-        name = clean(anchor.get_text(" ", strip=True))
-        if not id_match or not name:
-            continue
-        event_id = int(id_match.group(1))
-        if event_id in seen:
-            continue
-
-        container = anchor
-        for parent in anchor.parents:
-            if not isinstance(parent, Tag):
-                continue
-            parent_text = clean(parent.get_text(" | ", strip=True))
-            if len(parent_text) > len(name) + 10 and (DATE_RE.search(parent_text) or re.search(r"\bJun\s+\d", parent_text, re.I)):
-                container = parent
-                break
-        text = clean(container.get_text(" | ", strip=True))
-        date_match = re.search(r"\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2}(?:\s*[-–]\s*\d{1,2})?\b", text, re.I)
-        location_match = re.search(r"\b([A-Za-z][A-Za-z /.-]+,\s*TX)\b", text)
-        teams_match = re.search(r"Registered Teams:\s*(\d+)", text, re.I)
-        divisions_match = re.search(r"((?:\d{1,2}U(?:\s*[·,/&]\s*)?)+)", text, re.I)
-
-        seen.add(event_id)
-        events.append(
-            {
-                "id": event_id,
-                "name": name,
-                "dates": clean(date_match.group(0)) if date_match else "",
-                "location": clean(location_match.group(1)) if location_match else "",
-                "division": clean(divisions_match.group(1)) if divisions_match else "",
-                "registered_teams": int(teams_match.group(1)) if teams_match else None,
-                "url": urljoin("https://www.playncs.com", href),
-            }
-        )
-    return events[-8:]
-
-
 def make_bracket(games: list[dict]) -> dict:
     bracket_games = [game for game in games if game.get("stage") == "bracket"]
     rounds: list[dict] = []
@@ -262,77 +229,165 @@ def is_team_game(game: dict) -> bool:
     return any(target == name or target in name or name in target for name in names if name)
 
 
-def main() -> int:
-    existing = load_existing()
-    payload = existing or {}
-    now = datetime.now(timezone.utc).isoformat()
-    errors: list[str] = []
-    statuses: dict[str, int | None] = {"schedule": None, "team": None}
+def parse_iso_date(value: object) -> date | None:
+    try:
+        return date.fromisoformat(clean(value))
+    except (TypeError, ValueError):
+        return None
 
+
+def select_current_event(events: list[dict], today: date) -> dict | None:
+    """The tournament in progress or the next one coming up."""
+    best: dict | None = None
+    for ev in events:
+        end = parse_iso_date(ev.get("end_date") or ev.get("start_date"))
+        start = parse_iso_date(ev.get("start_date"))
+        if not end or not start or end < today:
+            continue
+        if best is None or start < parse_iso_date(best.get("start_date")):
+            best = ev
+    return best
+
+
+def schedule_base_url(ev: dict) -> str:
+    src = clean(ev.get("source_url"))
+    if not src:
+        return ""
+    src = src.split("?")[0]
+    if "/Events/Schedule/" in src:
+        return src
+    return src.replace("/Events/Details/", "/Events/Schedule/")
+
+
+def find_division_url(html: str, base_url: str, age: str, division_label: str) -> str:
+    """Pick the schedule division link matching this team's age (and class)."""
+    pairs = [(url, unquote(div).replace("+", " ")) for url, div in DIVISION_URL_RE.findall(html)]
+    if not pairs:
+        return ""
+    age_norm = age.lower()
+    candidates = [(url, div) for url, div in pairs if age_norm in div.lower()]
+    if not candidates:
+        return ""
+    class_match = re.search(r"division\s+([A-Z])\b", division_label, re.I)
+    if class_match:
+        letter = class_match.group(1).upper()
+        for url, div in candidates:
+            if re.search(rf"\b{letter}\b", div.upper()):
+                return urljoin(base_url, url)
+    return urljoin(base_url, candidates[0][0])
+
+
+def build_feed(team: dict, today: date) -> dict:
+    key = clean(team.get("key")).lower()
+    age = clean(team.get("age")) or key.upper()
+    feed: dict = {
+        "team_key": key,
+        "age": age,
+        "team": {
+            "id": team.get("ncs_team_id"),
+            "name": clean(team.get("label")) or f"{TEAM_NAME} {age}",
+            "source_url": team.get("ncs_url"),
+        },
+        "event": None,
+        "schedule_url": "",
+        "games": [],
+        "team_games": [],
+        "status": "no_event",
+        "message": "No current or upcoming NCS tournament in the tracker data.",
+    }
+
+    tracker = load_json(DATA_DIR / f"ncs-tournaments-{key}.json")
+    ev = select_current_event(tracker.get("events") or [], today)
+    if not ev:
+        return feed
+
+    feed["event"] = {
+        "id": ev.get("event_id"),
+        "name": clean(ev.get("title")),
+        "start_date": ev.get("start_date"),
+        "end_date": ev.get("end_date") or ev.get("start_date"),
+        "location": clean(ev.get("location")),
+        "division": age,
+        "source_url": ev.get("source_url"),
+    }
+
+    base_url = schedule_base_url(ev)
+    if not base_url:
+        feed["status"] = "waiting_for_schedule"
+        feed["message"] = "Tracker event has no NCS schedule link yet."
+        return feed
+
+    try:
+        base_html = fetch(base_url)
+    except Exception as exc:  # noqa: BLE001
+        feed["status"] = "error"
+        feed["message"] = f"Schedule fetch failed: {exc}"
+        return feed
+
+    division_url = find_division_url(base_html, base_url, age, clean(team.get("division")))
     games: list[dict] = []
-    upcoming: list[dict] = []
-
-    try:
-        schedule_html, statuses["schedule"] = fetch(SCHEDULE_URL)
-        games = parse_schedule(schedule_html)
-    except Exception as exc:  # noqa: BLE001
-        errors.append(f"Schedule fetch: {exc}")
-
-    try:
-        team_html, statuses["team"] = fetch(TEAM_URL)
-        upcoming = parse_upcoming(team_html)
-    except Exception as exc:  # noqa: BLE001
-        errors.append(f"Team page fetch: {exc}")
+    if division_url:
+        feed["schedule_url"] = division_url
+        try:
+            games = parse_schedule(fetch(division_url))
+        except Exception as exc:  # noqa: BLE001
+            feed["status"] = "error"
+            feed["message"] = f"Division schedule fetch failed: {exc}"
+            return feed
+    else:
+        # Some events publish games directly on the base schedule page.
+        feed["schedule_url"] = base_url
+        games = parse_schedule(base_html)
 
     if games:
-        payload["games"] = games
-        payload["team_games"] = [game for game in games if is_team_game(game)]
-        payload["bracket"] = make_bracket(games)
-        payload["sync_status"] = "live"
-        payload["sync_message"] = f"Loaded {len(games)} division game(s) from NCS."
-    elif payload.get("games"):
-        payload["sync_status"] = "stale"
-        payload["sync_message"] = "NCS returned no parseable games; preserving the last successful scoreboard."
+        feed["games"] = games
+        feed["team_games"] = [game for game in games if is_team_game(game)]
+        feed["status"] = "live"
+        feed["message"] = (
+            f"Loaded {len(games)} division game(s), including "
+            f"{len(feed['team_games'])} {TEAM_NAME} game(s), from NCS."
+        )
+    else:
+        feed["status"] = "waiting_for_schedule"
+        feed["message"] = f"NCS has not published a parseable {age} schedule for this event yet."
+    return feed
+
+
+def main() -> int:
+    config = load_json(CONFIG)
+    teams = config.get("teams") or []
+    today = datetime.now(timezone.utc).date()
+
+    feeds = [build_feed(team, today) for team in teams]
+
+    payload: dict = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "source": "PlayNCS event schedule pages (per tracked team)",
+        "feeds": feeds,
+    }
+
+    # Legacy top-level mirror of the primary feed (first with games, else first
+    # with an event) so older consumers of this file keep working.
+    primary = next((f for f in feeds if f["games"]), None) or next((f for f in feeds if f["event"]), None)
+    if primary:
+        payload["event"] = primary["event"]
+        payload["team"] = primary["team"]
+        payload["games"] = primary["games"]
+        payload["team_games"] = primary["team_games"]
+        payload["bracket"] = make_bracket(primary["games"])
+        payload["sync_status"] = primary["status"]
+        payload["sync_message"] = primary["message"]
     else:
         payload["games"] = []
         payload["team_games"] = []
         payload["bracket"] = {"published": False, "rounds": []}
-        payload["sync_status"] = "waiting_for_schedule"
-        payload["sync_message"] = "NCS has not published a parseable 12U OPEN schedule yet."
-
-    if upcoming:
-        payload["upcoming_tournaments"] = upcoming
-
-    payload["generated_at"] = now
-    payload.setdefault(
-        "event",
-        {
-            "id": 12287,
-            "name": "3P Sports Dingers for Dads 6GG",
-            "start_date": "2026-06-20",
-            "end_date": "2026-06-21",
-            "location": "Taylor / Lorena, TX",
-            "division": "12U OPEN",
-            "registered_teams": 58,
-            "source_url": SCHEDULE_URL,
-        },
-    )
-    payload.setdefault("team", {"id": "26-87660", "name": TEAM_NAME, "source_url": TEAM_URL})
-    payload["source"] = {
-        "schedule_url": SCHEDULE_URL,
-        "team_url": TEAM_URL,
-        "last_http_status": statuses,
-        "last_error": "; ".join(errors) if errors else None,
-    }
+        payload["sync_status"] = "no_event"
+        payload["sync_message"] = "No current or upcoming NCS tournaments in the tracker data."
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
-    print(
-        f"Wrote {OUT.relative_to(ROOT)}: {len(payload.get('games', []))} games, "
-        f"{len(payload.get('team_games', []))} Texas Venom games, bracket={payload.get('bracket', {}).get('published')}"
-    )
-    if errors:
-        print(" | ".join(errors))
+    for feed in feeds:
+        print(f"{feed['age']}: {feed['status']} — {feed['message']}")
     return 0
 
 

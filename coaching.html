@@ -9,7 +9,7 @@
     (function(){
       try {
         var saved = localStorage.getItem('venom-theme');
-        var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        var theme = saved || 'light';
         document.documentElement.classList.add('theme-' + theme);
       } catch (e) {
         document.documentElement.classList.add('theme-light');
@@ -137,7 +137,7 @@
   <div class="footer-links">
     <a href="index.html">Home</a><a href="teams.html">Teams</a><a href="standards.html">Standards</a><a href="about.html">About</a><a href="docs.html">Documents</a><a href="fundraising.html">Support Us</a><a href="rallyiq.html">RallyIQ</a><a href="contact.html">Contact</a>
   </div>
-  <p>Leander, Texas &bull; 10U Select Softball &bull; 2025</p>
+  <p>Leander, Texas &bull; Select Softball &bull; 2025</p>
   <p style="margin-top:4px;">Head Coach: Chris Balcom &bull; Co-Directors: Cargill &middot; Balcom &middot; Welch</p>
 </footer>
 </body>

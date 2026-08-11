@@ -1,0 +1,15 @@
+{
+  "_comment": "Optional GameChanger deep links rendered as chat tiles on the Scheduler Portal. In the GC app: open the team, copy the web link to its Chat tab, and paste it as chat_url (must be an https:// URL). Tiles only render for entries with a chat_url set — while these are empty, the portal shows a single generic GameChanger tile instead.",
+  "teams": [
+    {
+      "team": "12U",
+      "chat_url": "",
+      "note": "Opens the Texas Venom 12U chat in GameChanger."
+    },
+    {
+      "team": "14U",
+      "chat_url": "",
+      "note": "Opens the Texas Venom 14U chat in GameChanger."
+    }
+  ]
+}

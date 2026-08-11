@@ -1,6 +1,6 @@
 # GameChanger Calendar Integration — Setup
 
-How the Family Portal syncs schedule data from GameChanger without exposing your account token. **Read this once before deploying.**
+How the Scheduler Portal syncs schedule data from GameChanger without exposing your account token. **Read this once before deploying.**
 
 ## What this is
 
@@ -17,7 +17,7 @@ The portal page (`portal.html`) reads the committed JSON. **The token never appe
 
 ### 1. Get your iCal URLs from GameChanger
 
-In the GameChanger app, for **each team** (10U, 12U, 14U):
+In the GameChanger app, for **each team** (12U, 14U):
 - Open the team → **Schedule** tab → top-right share icon → **Copy Calendar Link** (or "Subscribe to calendar").
 - You'll get a URL that starts with `webcal://api.team-manager.gc.com/ics-calendar-documents/user/<uuid>.ics?teamId=<uuid>&token=<long-string>`.
 - That `token=` part is a bearer credential. Treat it like a password.
@@ -30,7 +30,6 @@ Add one or more of these (whichever teams you have):
 
 | Secret name | Value |
 |---|---|
-| `GC_ICAL_10U` | The full iCal URL for the 10U team |
 | `GC_ICAL_12U` | The full iCal URL for the 12U team |
 | `GC_ICAL_14U` | The full iCal URL for the 14U team |
 
@@ -141,8 +140,8 @@ If you want a chat surface that *lives on your domain* and that you control (sep
 .github/workflows/sync-gc-calendar.yml    GH Action — scheduled sync
 scripts/sync-gc-calendar.py               Sync script — runs in the Action
 assets/data/events.json                   Public sanitized event data (committed)
-assets/js/portal.js                       Browser rendering — reads events.json
-portal.html                               The portal page itself
+assets/js/scheduler-portal.js             Browser rendering — reads events.json + NCS tracker data
+portal.html                               The Scheduler Portal page itself
 ```
 
 That's it. No services to host, no databases to manage, no servers to keep alive. The GitHub Action is the entire backend.

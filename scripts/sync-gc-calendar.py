@@ -6,7 +6,6 @@ the public repo: feed URLs come from environment variables that are stored
 as GitHub Actions secrets.
 
 ENV vars (set in repo Settings → Secrets and variables → Actions):
-  GC_ICAL_10U   — full iCal URL for the 10U team (optional)
   GC_ICAL_12U   — full iCal URL for the 12U team (optional)
   GC_ICAL_14U   — full iCal URL for the 14U team (optional)
 
@@ -14,7 +13,7 @@ At least one must be set. The script writes a single events.json containing
 all events from all configured teams, tagged with `team`.
 
 Run locally for testing:
-  GC_ICAL_10U='webcal://...' python3 scripts/sync-gc-calendar.py
+  GC_ICAL_12U='webcal://...' python3 scripts/sync-gc-calendar.py
 """
 import os, re, json, sys, urllib.request, datetime as dt
 from pathlib import Path
@@ -23,7 +22,6 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT  = ROOT / "assets" / "data" / "events.json"
 
 TEAMS = {
-    "10U": os.environ.get("GC_ICAL_10U", "").strip(),
     "12U": os.environ.get("GC_ICAL_12U", "").strip(),
     "14U": os.environ.get("GC_ICAL_14U", "").strip(),
 }
