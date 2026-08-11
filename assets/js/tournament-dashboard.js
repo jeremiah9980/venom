@@ -1,9 +1,23 @@
 (() => {
   'use strict';
 
-  const DATA_URL = 'assets/data/ncs-tournament.json';
+  const TEAM_CONFIGS = {
+    '12u': {
+      dataUrl: 'assets/data/ncs-tournament.json',
+      label: '12U OPEN',
+      teamPageUrl: 'https://www.playncs.com/Fastpitch/Teams/Details/87660/texas-venom-12u',
+      defaultDivision: '12U OPEN',
+    },
+    '14u': {
+      dataUrl: 'assets/data/ncs-tournament-14u.json',
+      label: '14U',
+      teamPageUrl: 'https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u',
+      defaultDivision: '14U',
+    },
+  };
+
   const CENTRAL_TZ = 'America/Chicago';
-  const state = { data: null, filter: 'all', refreshTimer: null, countdownTimer: null };
+  const state = { data: null, filter: 'all', team: '12u', refreshTimer: null, countdownTimer: null };
   const $ = id => document.getElementById(id);
   const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 
@@ -18,7 +32,7 @@
 
   function formatSync(timestamp) {
     const date = new Date(timestamp);
-    if (Number.isNaN(date.getTime())) return 'Awaiting first sync';
+    if (!timestamp || Number.isNaN(date.getTime())) return 'Awaiting first sync';
     return new Intl.DateTimeFormat('en-US', {
       timeZone: CENTRAL_TZ,
       month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit'
@@ -62,14 +76,16 @@
 
   function renderStatus(data) {
     const status = data.sync_status || 'waiting_for_schedule';
+    const config = TEAM_CONFIGS[state.team];
     const dotClass = status === 'live' ? '' : status === 'stale' ? 'stale' : 'waiting';
     const title = status === 'live' ? 'NCS Schedule Connected' : status === 'stale' ? 'Showing Last Successful Sync' : 'Waiting for NCS Schedule';
+    const sourceUrl = data.event?.source_url || config.teamPageUrl;
     $('sync-status').innerHTML = `
       <div class="status-line"><span class="live-dot ${dotClass}"></span><div class="status-title">${title}</div></div>
       <p class="status-copy">${esc(data.sync_message || '')}</p>
       <div class="sync-meta">
         <span><i class="ti ti-refresh"></i> Last sync: ${esc(formatSync(data.generated_at))}</span>
-        <a href="${esc(data.event?.source_url)}" target="_blank" rel="noopener noreferrer"><i class="ti ti-external-link"></i> Open official NCS schedule</a>
+        <a href="${esc(sourceUrl)}" target="_blank" rel="noopener noreferrer"><i class="ti ti-external-link"></i> Open NCS ${esc(config.label)} page</a>
       </div>`;
   }
 
@@ -104,10 +120,15 @@
   }
 
   function renderScoreboard(data) {
+    const config = TEAM_CONFIGS[state.team];
+    const divisionLabel = data.event?.division || config.defaultDivision;
+    const scoreBoardLabel = $('scoreboard-label');
+    if (scoreBoardLabel) scoreBoardLabel.textContent = `${divisionLabel} Division`;
+
     const games = filteredGames(data);
     const out = $('division-scoreboard');
     if (!games.length) {
-      out.innerHTML = `<div class="dashboard-empty"><i class="ti ti-scoreboard"></i><h3>No games available</h3><p>The 12U OPEN scoreboard will appear here as soon as the official NCS schedule is available.</p></div>`;
+      out.innerHTML = `<div class="dashboard-empty"><i class="ti ti-scoreboard"></i><h3>No games available</h3><p>The ${esc(divisionLabel)} scoreboard will appear here as soon as the official NCS schedule is available.</p></div>`;
       return;
     }
     out.innerHTML = `<div class="scoreboard-wrap"><table class="scoreboard">
@@ -129,10 +150,12 @@
   }
 
   function renderBracket(data) {
+    const config = TEAM_CONFIGS[state.team];
+    const sourceUrl = data.event?.source_url || config.teamPageUrl;
     const bracket = data.bracket || { published: false, rounds: [] };
     const out = $('bracket-board');
     if (!bracket.published || !Array.isArray(bracket.rounds) || !bracket.rounds.length) {
-      out.innerHTML = `<div class="bracket-locked"><div><i class="ti ti-lock"></i><h3>Bracket board locked</h3><p>NCS has not published the 12U OPEN elimination bracket yet. The board will unlock automatically and begin updating every score once bracket games are posted.</p><a class="btn-primary" href="${esc(data.event?.source_url)}" target="_blank" rel="noopener noreferrer">Check NCS <i class="ti ti-external-link"></i></a></div></div>`;
+      out.innerHTML = `<div class="bracket-locked"><div><i class="ti ti-lock"></i><h3>Bracket board locked</h3><p>NCS has not published the ${esc(config.label)} elimination bracket yet. The board will unlock automatically once bracket games are posted.</p><a class="btn-primary" href="${esc(sourceUrl)}" target="_blank" rel="noopener noreferrer">Check NCS <i class="ti ti-external-link"></i></a></div></div>`;
       return;
     }
     out.innerHTML = `<div class="bracket-board">${bracket.rounds.map(round => `
@@ -160,8 +183,16 @@
 
   function startCountdown(data) {
     clearInterval(state.countdownTimer);
-    const start = new Date(`${data.event?.start_date || '2026-06-20'}T00:00:00-05:00`);
-    const end = new Date(`${data.event?.end_date || '2026-06-21'}T23:59:59-05:00`);
+    const startStr = data.event?.start_date;
+    const endStr = data.event?.end_date;
+    if (!startStr || !endStr) {
+      $('countdown-value').textContent = '—';
+      $('countdown-sub').textContent = 'No tournament scheduled yet';
+      return;
+    }
+    const start = new Date(`${startStr}T00:00:00-05:00`);
+    const end = new Date(`${endStr}T23:59:59-05:00`);
+    const eventName = data.event?.name || 'Tournament';
     const tick = () => {
       const now = new Date();
       let value = '';
@@ -175,7 +206,7 @@
         sub = 'until tournament weekend';
       } else if (now <= end) {
         value = 'GAME ON';
-        sub = 'Dingers for Dads is underway';
+        sub = `${eventName} is underway`;
       } else {
         value = 'COMPLETE';
         sub = 'final results remain available below';
@@ -189,10 +220,16 @@
 
   function render(data) {
     state.data = data;
-    $('event-name').textContent = data.event?.name || 'NCS Tournament';
-    $('event-location').textContent = data.event?.location || 'Taylor / Lorena, TX';
-    $('event-division').textContent = data.event?.division || '12U OPEN';
-    $('event-dates').textContent = 'June 20–21, 2026';
+    const config = TEAM_CONFIGS[state.team];
+    const eventName = data.event?.name || `Texas Venom ${config.label} Tournament`;
+    $('event-name').textContent = eventName;
+    $('event-location').textContent = data.event?.location || '—';
+    $('event-division').textContent = data.event?.division || config.defaultDivision;
+    $('event-dates').textContent = data.event?.start_date
+      ? (data.event.start_date === data.event.end_date
+          ? new Date(`${data.event.start_date}T12:00:00`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
+          : `${new Date(`${data.event.start_date}T12:00:00`).toLocaleDateString('en-US', { month: 'long', day: 'numeric' })}–${new Date(`${data.event.end_date}T12:00:00`).toLocaleDateString('en-US', { day: 'numeric', year: 'numeric' })}`)
+      : '—';
     renderStatus(data);
     renderStats(data);
     renderTeamGames(data);
@@ -203,8 +240,9 @@
   }
 
   async function load() {
+    const config = TEAM_CONFIGS[state.team];
     try {
-      const response = await fetch(`${DATA_URL}?t=${Date.now()}`, { cache: 'no-store' });
+      const response = await fetch(`${config.dataUrl}?t=${Date.now()}`, { cache: 'no-store' });
       if (!response.ok) throw new Error(`Tournament feed returned ${response.status}`);
       render(await response.json());
     } catch (error) {
@@ -213,6 +251,24 @@
     }
   }
 
+  // Team switcher
+  document.querySelectorAll('.team-tab').forEach(button => {
+    button.addEventListener('click', () => {
+      const team = button.dataset.team;
+      if (team === state.team) return;
+      state.team = team;
+      state.filter = 'all';
+      document.querySelectorAll('.team-tab').forEach(tab => {
+        tab.classList.toggle('active', tab === button);
+        tab.setAttribute('aria-pressed', String(tab === button));
+      });
+      // Reset scoreboard filter tabs
+      document.querySelectorAll('.dashboard-tab').forEach(tab => tab.classList.toggle('active', tab.dataset.filter === 'all'));
+      load();
+    });
+  });
+
+  // Scoreboard filter tabs
   document.querySelectorAll('.dashboard-tab').forEach(button => {
     button.addEventListener('click', () => {
       document.querySelectorAll('.dashboard-tab').forEach(item => item.classList.toggle('active', item === button));

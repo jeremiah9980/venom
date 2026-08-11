@@ -10,6 +10,8 @@ on:
     paths:
       - "scripts/sync-ncs-tournament.py"
       - "scripts/refine-ncs-tournament.py"
+      - "scripts/sync-ncs-tournament-14u.py"
+      - "scripts/refine-ncs-tournament-14u.py"
       - ".github/workflows/sync-ncs-tournament.yml"
 
 permissions:
@@ -24,6 +26,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -33,18 +37,25 @@ jobs:
       - name: Install scraper dependencies
         run: pip install requests beautifulsoup4
 
-      - name: Sync NCS schedule, scores, and bracket
+      - name: Sync 12U schedule, scores, and bracket
         run: |
           python3 scripts/sync-ncs-tournament.py
           python3 scripts/refine-ncs-tournament.py
+
+      - name: Sync 14U team page and schedule
+        run: |
+          python3 scripts/sync-ncs-tournament-14u.py
+          python3 scripts/refine-ncs-tournament-14u.py
 
       - name: Commit dashboard data when changed
         run: |
           git config user.name "venom-tournament-bot"
           git config user.email "venom-tournament-bot@users.noreply.github.com"
-          if [ -n "$(git status --porcelain assets/data/ncs-tournament.json)" ]; then
-            git add assets/data/ncs-tournament.json
+          git add assets/data/ncs-tournament.json assets/data/ncs-tournament-14u.json
+          if [ -n "$(git status --porcelain assets/data/ncs-tournament.json assets/data/ncs-tournament-14u.json)" ]; then
             git commit -m "chore(tournament): sync NCS scores [$(date -u +%FT%TZ)]"
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            git push origin "HEAD:${GITHUB_REF_NAME}"
             git pull --rebase origin main
             git push origin HEAD:main
           else
