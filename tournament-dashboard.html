@@ -22,6 +22,45 @@
   <link rel="stylesheet" href="assets/css/team-venom.css?v=varsity-luxe">
   <link rel="stylesheet" href="assets/css/tournament-dashboard.css?v=20260618-1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+  <style>
+    .team-switcher-bar {
+      background: var(--surface, #f8f4fb);
+      border-bottom: 1.5px solid var(--border, #e5dff0);
+      display: flex;
+      justify-content: center;
+      padding: 0.6rem 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .team-switcher {
+      display: inline-flex;
+      background: var(--surface-alt, #ede7f0);
+      border-radius: 999px;
+      padding: 3px;
+      gap: 2px;
+    }
+    .team-tab {
+      background: transparent;
+      border: none;
+      border-radius: 999px;
+      color: var(--text-secondary, #6b5f78);
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 0.35rem 1.1rem;
+      transition: background 0.15s, color 0.15s;
+    }
+    .team-tab.active {
+      background: var(--brand, #7c3aed);
+      color: #fff;
+    }
+    .team-tab:not(.active):hover {
+      background: var(--surface-hover, #ddd4ea);
+      color: var(--text, #2d1e3e);
+    }
+  </style>
 </head>
 <body class="venom-page">
 <script src="assets/js/nav.js?v=20260618-tournament"></script>
@@ -30,17 +69,25 @@
   <div class="hero-inner">
     <img src="assets/venom-logo.jpg" alt="Texas Venom" class="hero-logo">
     <div class="hero-kicker">Texas Venom &bull; Live Tournament Operations</div>
-    <h1 id="event-name">3P Sports Dingers for Dads 6GG</h1>
+    <h1 id="event-name">NCS Tournament Dashboard</h1>
     <div class="hero-sub">NCS Tournament Dashboard</div>
     <div class="hero-rule"></div>
-    <p class="hero-tagline">One live view for Texas Venom pool games, game times, scores, the complete 12U OPEN scoreboard, and the elimination bracket.</p>
+    <p class="hero-tagline">One live view for Texas Venom pool games, game times, scores, the complete division scoreboard, and the elimination bracket.</p>
     <div class="event-identity">
-      <span class="event-chip"><i class="ti ti-calendar-event"></i><span id="event-dates">June 20–21, 2026</span></span>
-      <span class="event-chip"><i class="ti ti-map-pin"></i><span id="event-location">Taylor / Lorena, TX</span></span>
-      <span class="event-chip live"><i class="ti ti-ball-baseball"></i><span id="event-division">12U OPEN</span></span>
+      <span class="event-chip"><i class="ti ti-calendar-event"></i><span id="event-dates">—</span></span>
+      <span class="event-chip"><i class="ti ti-map-pin"></i><span id="event-location">—</span></span>
+      <span class="event-chip live"><i class="ti ti-ball-baseball"></i><span id="event-division">—</span></span>
     </div>
   </div>
 </section>
+
+<!-- Age group switcher -->
+<div class="team-switcher-bar">
+  <div class="team-switcher" role="group" aria-label="Age group">
+    <button type="button" class="team-tab active" data-team="12u" aria-pressed="true">12U</button>
+    <button type="button" class="team-tab" data-team="14u" aria-pressed="false">14U</button>
+  </div>
+</div>
 
 <div class="gold-strip tournament-strip">
   <div class="stats-inner">
@@ -61,13 +108,13 @@
     </div>
     <div class="dashboard-status">
       <div class="status-panel" id="sync-status">
-        <div class="status-line"><span class="live-dot waiting"></span><div class="status-title">Connecting to NCS…</div></div>
+        <div class="status-line"><span class="live-dot waiting"></span><div class="status-title">Connecting to NCS&hellip;</div></div>
         <p class="status-copy">Loading the latest tournament schedule and scores.</p>
       </div>
       <div class="countdown-panel">
         <div class="countdown-label">Tournament status</div>
         <div class="countdown-value" id="countdown-value">Loading</div>
-        <div class="countdown-sub" id="countdown-sub">June 20–21, 2026</div>
+        <div class="countdown-sub" id="countdown-sub">—</div>
       </div>
     </div>
   </section>
@@ -76,7 +123,7 @@
     <div class="section-label">Texas Venom</div>
     <h2>Pool Games</h2>
     <div class="section-rule"></div>
-    <p>Texas Venom’s scheduled pool games appear here with opponents, start times, fields, and scores. Completed games remain visible throughout the weekend.</p>
+    <p>Texas Venom's scheduled pool games appear here with opponents, start times, fields, and scores. Completed games remain visible throughout the weekend.</p>
     <div class="games-grid" id="venom-pool-games">
       <div class="dashboard-empty"><i class="ti ti-loader-2"></i><h3>Loading pool schedule</h3><p>Checking NCS for the latest Texas Venom matchups.</p></div>
     </div>
@@ -85,7 +132,7 @@
   <section class="section" id="scoreboard">
     <div class="section-toolbar">
       <div>
-        <div class="section-label">12U OPEN Division</div>
+        <div class="section-label" id="scoreboard-label">Division</div>
         <h2>Live Scoreboard</h2>
         <div class="section-rule"></div>
       </div>
@@ -97,7 +144,7 @@
       </div>
     </div>
     <div id="division-scoreboard">
-      <div class="dashboard-empty"><i class="ti ti-scoreboard"></i><h3>Loading division scoreboard</h3><p>All published 12U OPEN games and scores will appear here.</p></div>
+      <div class="dashboard-empty"><i class="ti ti-scoreboard"></i><h3>Loading division scoreboard</h3><p>All published division games and scores will appear here.</p></div>
     </div>
   </section>
 
@@ -112,7 +159,7 @@
   </section>
 
   <section class="section" id="upcoming">
-    <div class="section-label">Texas Venom NCS Schedule</div>
+    <div class="section-label" id="upcoming-label">Texas Venom NCS Schedule</div>
     <h2>Upcoming Tournaments</h2>
     <div class="section-rule"></div>
     <p>Upcoming tournament cards are synchronized from the Texas Venom NCS team page.</p>
@@ -128,12 +175,13 @@
     <a href="teams.html">Teams</a>
     <a href="portal.html">Portal</a>
     <a href="roster-12u.html">12U Roster</a>
+    <a href="roster-14u.html">14U Roster</a>
     <a href="tournament-dashboard.html">Tournament Dashboard</a>
     <a href="contact.html">Contact</a>
   </div>
-  <p>NCS Tournament Operations &bull; Texas Venom 12U &bull; Taylor / Lorena, Texas &bull; June 20–21, 2026</p>
+  <p>NCS Tournament Operations &bull; Texas Venom &bull; Taylor / Lorena, Texas</p>
 </footer>
 
-<script src="assets/js/tournament-dashboard.js?v=20260618-1"></script>
+<script src="assets/js/tournament-dashboard.js?v=20260811-2team"></script>
 </body>
 </html>

@@ -1,0 +1,26 @@
+{
+  "games": [],
+  "team_games": [],
+  "bracket": { "published": false, "rounds": [] },
+  "upcoming_tournaments": [],
+  "sync_status": "waiting_for_schedule",
+  "sync_message": "No 14U OPEN schedule has been published on NCS yet. The dashboard will update automatically once a tournament is posted.",
+  "generated_at": null,
+  "event": {
+    "name": "",
+    "division": "14U",
+    "source_url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
+  },
+  "team": {
+    "id": "87549",
+    "name": "Texas Venom",
+    "age_group": "14U",
+    "source_url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
+  },
+  "source": {
+    "schedule_url": null,
+    "team_url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u",
+    "last_http_status": { "schedule": null, "team": null },
+    "last_error": null
+  }
+}
