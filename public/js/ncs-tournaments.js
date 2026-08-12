@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-08-12T02:42:00.218865+00:00",
+  "generated_at": "2026-08-12T04:57:22.662125+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-08-12T02:42:07.312427+00:00",
+      "generated_at": "2026-08-12T04:57:23.880783+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -149,7 +149,7 @@ window.TEXAS_VENOM_NCS = {
           "event_id": "13534",
           "title": "NCS CENTRAL TEXAS FALL REGIONAL CLASS \" C \" TEAMS 70 MIN POOLS 4GG",
           "event_type": "Tournament",
-          "format": "23",
+          "format": "24",
           "start_date": "2026-11-14",
           "end_date": "2026-11-15",
           "date_label": "Nov 14-15",
@@ -177,7 +177,7 @@ window.TEXAS_VENOM_NCS = {
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-08-12T02:42:14.880118+00:00",
+      "generated_at": "2026-08-12T04:57:25.103381+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -221,7 +221,7 @@ window.TEXAS_VENOM_NCS = {
           "start_date": "2026-08-29",
           "end_date": "2026-08-30",
           "date_label": "Aug 29-30",
-          "location": "",
+          "location": "Lorena, TX",
           "director": "Jennifer Anderson",
           "registered_teams": null,
           "divisions": [
