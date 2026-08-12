@@ -146,9 +146,11 @@ function weekendBlock(wk) {
       <div class="wk-entry">
         <div class="wk-head">${teamPills}${isLive ? '<span class="wk-flag live">This weekend</span>' : ""}${typeFlag}</div>
         <h3 class="wk-title">${esc(en.title)}</h3>
+        <div class="wk-city">${en.location
+          ? `<i class="ti ti-map-pin"></i><a href="https://maps.google.com/?q=${encodeURIComponent(en.location)}" target="_blank" rel="noopener">${esc(en.location)}</a>`
+          : `<i class="ti ti-map-pin-off"></i><span class="wk-city-tba">City TBA — waiting on NCS</span>`}</div>
         <div class="wk-sub">
           ${en.format ? `<span><i class="ti ti-tournament"></i>${esc(en.format)}</span>` : ""}
-          ${en.location ? `<span><i class="ti ti-map-pin"></i>${esc(en.location)}</span>` : ""}
           ${en.director ? `<span><i class="ti ti-user"></i>${esc(en.director)}</span>` : ""}
           ${safeUrl(en.source_url) ? `<span><i class="ti ti-external-link"></i><a href="${esc(safeUrl(en.source_url))}" target="_blank" rel="noopener">NCS event page</a></span>` : ""}
         </div>

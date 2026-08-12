@@ -219,6 +219,52 @@ def parse_events(lines: list[str], links: list[dict[str, str]], team: TeamConfig
     return events
 
 
+CITY_RE = re.compile(r"^[A-Za-z][A-Za-z .'-]*,\s*[A-Z]{2}$")
+
+
+def fetch_event_city(url: str) -> str:
+    """City shown in the event header on its NCS Details page (e.g. 'Bertram, TX')."""
+    soup = fetch_soup(url)
+    for line in get_lines(soup):
+        if CITY_RE.match(line):
+            return line
+    return ""
+
+
+def load_location_cache(out_dir: Path) -> dict[str, str]:
+    """Reuse cities already resolved by a previous run so hourly pulls stay light."""
+    cache: dict[str, str] = {}
+    try:
+        previous = json.loads((out_dir / "ncs-tournaments.json").read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return cache
+    for team_payload in (previous.get("teams") or {}).values():
+        for event in team_payload.get("events") or []:
+            if event.get("event_id") and event.get("location"):
+                cache[str(event["event_id"])] = event["location"]
+    return cache
+
+
+def fill_event_locations(events: list[dict[str, Any]], cache: dict[str, str]) -> None:
+    for event in events:
+        event_id = str(event.get("event_id") or "")
+        if event.get("location") or not event_id:
+            continue
+        if event_id in cache:
+            event["location"] = cache[event_id]
+            continue
+        url = event.get("source_url") or ""
+        if not url:
+            continue
+        try:
+            city = fetch_event_city(url)
+        except Exception as exc:  # noqa: BLE001
+            print(f"Could not resolve city for event {event_id}: {exc}", file=sys.stderr)
+            continue
+        cache[event_id] = city
+        event["location"] = city
+
+
 def load_config(path: Path) -> list[TeamConfig]:
     raw = json.loads(path.read_text(encoding="utf-8"))
     teams = []
@@ -244,10 +290,11 @@ def load_config(path: Path) -> list[TeamConfig]:
     return sorted(teams, key=lambda item: item.key)
 
 
-def pull_team(team: TeamConfig) -> dict[str, Any]:
+def pull_team(team: TeamConfig, location_cache: dict[str, str]) -> dict[str, Any]:
     soup = fetch_soup(team.ncs_url)
     lines = get_lines(soup)
     events = parse_events(lines, event_links(soup), team)
+    fill_event_locations(events, location_cache)
     return {
         "team_key": team.key,
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -285,9 +332,10 @@ def main() -> int:
         "tracked_teams_only": True,
         "teams": {},
     }
+    location_cache = load_location_cache(Path(args.out))
     for team in load_config(Path(args.config)):
         print(f"Pulling {team.label}: {team.ncs_url}", file=sys.stderr)
-        payload["teams"][team.key] = pull_team(team)
+        payload["teams"][team.key] = pull_team(team, location_cache)
     write_outputs(payload, Path(args.out), Path(args.js) if args.js else None)
     return 0
 
