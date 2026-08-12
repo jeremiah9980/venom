@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-08-12T13:40:37.827769+00:00",
+  "generated_at": "2026-08-12T15:11:14.964994+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-08-12T13:40:39.164968+00:00",
+      "generated_at": "2026-08-12T15:11:16.205970+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -42,34 +42,26 @@ window.TEXAS_VENOM_NCS = {
           "source_url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
         },
         {
-          "event_id": "13648",
-          "title": "5GG NCS LABOR DAY BOMBS AWAY CLASS C AND OPEN MVP EVENT DOUBLE POINTS",
-          "event_type": "Double Points Qualifier",
-          "format": "5GG",
+          "event_id": "13594",
+          "title": "******* 1 DAY SATURDAY SEPTEMBER TO REMEMBER FALL CLASSIC *******",
+          "event_type": "Tournament",
+          "format": "8",
           "start_date": "2026-09-05",
-          "end_date": "2026-09-06",
-          "date_label": "Sep 5-6",
-          "location": "",
-          "director": "Ricky Hightower",
+          "end_date": "2026-09-05",
+          "date_label": "Sep 5",
+          "location": "Seguin, TX",
+          "director": "Rene Contreras",
           "registered_teams": null,
           "divisions": [
             "8U",
             "10U",
-            "12U",
-            "14U",
-            "18U"
+            "12U"
           ],
           "tags": [
-            "5GG",
-            "8U \u00b7 10U \u00b7 12U \u00b7 14U \u00b7 18U",
-            "MVP",
-            "SUPER SERIES",
-            "HIGHTOWER",
-            "5GG",
-            "TURF"
+            "8U \u00b7 10U \u00b7 12U"
           ],
           "verify_division": false,
-          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13648/5gg-ncs-labor-day-bombs-away-class-c-and-open-mvp-event-double-points"
+          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13594/1-day-saturday-september-to-remember-fall-classic"
         },
         {
           "event_id": "13488",
@@ -177,7 +169,7 @@ window.TEXAS_VENOM_NCS = {
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-08-12T13:40:40.017484+00:00",
+      "generated_at": "2026-08-12T15:11:17.087747+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
