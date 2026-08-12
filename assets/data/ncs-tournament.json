@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T02:36:10.452793+00:00",
+  "generated_at": "2026-08-12T04:26:19.636563+00:00",
   "source": "PlayNCS event schedule pages (per tracked team)",
   "feeds": [
     {
@@ -15,7 +15,7 @@
         "name": "Warm up into Fall Part 1 5GG 70 minutes games",
         "start_date": "2026-08-22",
         "end_date": "2026-08-23",
-        "location": "",
+        "location": "Bertram, TX",
         "division": "12U",
         "source_url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
       },
@@ -38,7 +38,7 @@
         "name": "Warm up into Fall Part 1 5GG 70 minutes games",
         "start_date": "2026-08-22",
         "end_date": "2026-08-23",
-        "location": "",
+        "location": "Bertram, TX",
         "division": "14U",
         "source_url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
       },
@@ -54,7 +54,7 @@
     "name": "Warm up into Fall Part 1 5GG 70 minutes games",
     "start_date": "2026-08-22",
     "end_date": "2026-08-23",
-    "location": "",
+    "location": "Bertram, TX",
     "division": "12U",
     "source_url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
   },

@@ -19,7 +19,7 @@
       "id": 13214,
       "name": "3P Sports - Dawg Days of Summer",
       "dates": "Aug 29-30",
-      "location": "Axtell/Lorena, TX",
+      "location": "Lorena, TX",
       "division": "8U · 10U · 12U · 14U · 18U",
       "registered_teams": null,
       "url": "https://www.playncs.com/fastpitch/Events/Details/13214/3p-sports-dawg-days-of-summer"
@@ -37,7 +37,7 @@
       "id": 13209,
       "name": "3P Sports - September Sapphire CROSSROADS Showdown",
       "dates": "Sep 26-27",
-      "location": "Temple, TX",
+      "location": "Temple/Lorena, TX",
       "division": "8U · 10U · 12U · 14U · 18U",
       "registered_teams": null,
       "url": "https://www.playncs.com/fastpitch/Events/Details/13209/3p-sports-september-sapphire-crossroads-showdown"
@@ -72,7 +72,7 @@
   ],
   "sync_status": "waiting_for_schedule",
   "sync_message": "No 14U OPEN schedule has been published on NCS yet. The dashboard will update automatically once a tournament is posted.",
-  "generated_at": "2026-08-12T02:36:10.663211+00:00",
+  "generated_at": "2026-08-12T04:26:19.860840+00:00",
   "event": {
     "name": "",
     "division": "14U",
