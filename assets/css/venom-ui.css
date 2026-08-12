@@ -312,6 +312,23 @@ html.theme-dark .social-hero h1 span,html[data-theme="dark"] .social-hero h1 spa
 .count-card .v{font-family:var(--display);font-stretch:118%;font-size:30px;font-weight:900;color:var(--text-strong);line-height:1}
 .count-card .l{font-family:var(--mono);text-transform:uppercase;letter-spacing:1.4px;font-size:10px;color:var(--muted);margin-top:7px}
 
+/* ── SCHEDULER SPLIT (NCS weekends | GC calendar) ───────── */
+.sched-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px;align-items:start}
+.sched-col{min-width:0}
+.sched-col h2{font-size:clamp(26px,3vw,34px)!important}
+.sched-col .counts-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+.sched-col .wk{grid-template-columns:88px minmax(0,1fr)}
+.sched-col .wk-rail .wk-days{font-size:26px}
+.sched-col .wk-game-grid{grid-template-columns:1fr}
+.sched-col .ev{grid-template-columns:76px minmax(0,1fr);gap:14px}
+.sched-col .ev-day{font-size:32px!important}
+.sched-sub{margin-top:40px}
+.sched-sub-title{font-family:var(--display);font-stretch:118%;font-weight:900;font-size:22px;text-transform:uppercase;letter-spacing:-.2px;color:var(--text-strong);margin:2px 0 16px}
+@media(max-width:1020px){
+  .sched-split{grid-template-columns:1fr;gap:56px}
+  .sched-col .wk-game-grid{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+}
+
 /* ── SIGNATURE: WEEKEND BLOCKS (scoreboard rail) ────────── */
 .wk-list{display:flex;flex-direction:column;gap:16px}
 .wk{display:grid;grid-template-columns:104px minmax(0,1fr);background:linear-gradient(180deg,var(--surface),var(--surface-2));border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);transition:border-color .18s ease,transform .18s ease}

@@ -56,55 +56,59 @@
     <div id="sync-errors"></div>
   </div>
 
-  <!-- TOURNAMENT WEEKENDS (from NCS tracker) -->
-  <div class="section" style="padding-top:0;">
-    <div class="section-label">From the NCS tournament tracker</div>
-    <h2>Tournament Weekends</h2>
-    <div class="section-rule"></div>
-    <p style="margin-bottom:20px;">Every weekend the Venom are scheduled to play, straight from the NCS tracker. When NCS posts the pool-play schedule for a weekend, the game times appear inside that block automatically.</p>
-    <div class="wk-list" id="weekend-list">
-      <div class="ev-empty">
-        <i class="ti ti-loader"></i>
-        <h3>Loading weekends…</h3>
-        <p>Reading the NCS tournament tracker data.</p>
+  <!-- TOURNAMENT WEEKENDS + TEAM CALENDAR, side by side -->
+  <div class="section sched-split" style="padding-top:0;">
+
+    <!-- LEFT: NCS tournament weekends -->
+    <div class="sched-col">
+      <div class="section-label">From the NCS tournament tracker</div>
+      <h2>Tournament Weekends</h2>
+      <div class="section-rule"></div>
+      <p style="margin-bottom:20px;">Every weekend the Venom are scheduled to play. When NCS posts the pool-play schedule, game times appear inside that block automatically.</p>
+      <div class="wk-list" id="weekend-list">
+        <div class="ev-empty">
+          <i class="ti ti-loader"></i>
+          <h3>Loading weekends…</h3>
+          <p>Reading the NCS tournament tracker data.</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- TEAM CALENDAR (GameChanger) -->
-  <div class="section">
-    <div class="section-label">Synced from GameChanger</div>
-    <h2>Team Calendar</h2>
-    <div class="section-rule"></div>
+    <!-- RIGHT: GameChanger calendar -->
+    <div class="sched-col">
+      <div class="section-label">Synced from GameChanger</div>
+      <h2>Team Calendar</h2>
+      <div class="section-rule"></div>
 
-    <!-- team filter -->
-    <div class="tabs" id="team-tabs">
-      <button data-team="ALL" class="active">All<span>0</span></button>
-    </div>
+      <!-- team filter -->
+      <div class="tabs" id="team-tabs">
+        <button data-team="ALL" class="active">All<span>0</span></button>
+      </div>
 
-    <!-- counts strip -->
-    <div class="counts-row">
-      <div class="count-card"><div class="v" id="count-upcoming">0</div><div class="l">Upcoming Events</div></div>
-      <div class="count-card"><div class="v" id="count-weekends">0</div><div class="l">Tournament Weekends</div></div>
-      <div class="count-card"><div class="v" id="count-past">0</div><div class="l">Recent Events</div></div>
-      <div class="count-card"><div class="v"><i class="ti ti-refresh"></i></div><div class="l">Auto-syncs all day</div></div>
-    </div>
+      <!-- counts strip -->
+      <div class="counts-row">
+        <div class="count-card"><div class="v" id="count-upcoming">0</div><div class="l">Upcoming Events</div></div>
+        <div class="count-card"><div class="v" id="count-weekends">0</div><div class="l">Tournament Weekends</div></div>
+        <div class="count-card"><div class="v" id="count-past">0</div><div class="l">Recent Events</div></div>
+        <div class="count-card"><div class="v"><i class="ti ti-refresh"></i></div><div class="l">Auto-syncs all day</div></div>
+      </div>
 
-    <div class="ev-list" id="upcoming-list">
-      <div class="ev-empty">
-        <i class="ti ti-loader"></i>
-        <h3>Loading…</h3>
-        <p>Fetching the synced events file.</p>
+      <div class="ev-list" id="upcoming-list">
+        <div class="ev-empty">
+          <i class="ti ti-loader"></i>
+          <h3>Loading…</h3>
+          <p>Fetching the synced events file.</p>
+        </div>
+      </div>
+
+      <!-- recent -->
+      <div class="sched-sub">
+        <div class="section-label">Last week</div>
+        <h3 class="sched-sub-title">Recent Events</h3>
+        <div class="ev-list" id="past-list"></div>
       </div>
     </div>
-  </div>
 
-  <!-- RECENT -->
-  <div class="section" style="padding-top:44px;">
-    <div class="section-label">Last week</div>
-    <h2>Recent Events</h2>
-    <div class="section-rule"></div>
-    <div class="ev-list" id="past-list"></div>
   </div>
 
   <!-- TEAM CHAT -->
@@ -143,6 +147,6 @@
   <p>Leander, Texas &bull; 12U / 14U Select Softball &bull; 2026</p>
 </footer>
 
-<script src="assets/js/scheduler-portal.js?v=20260811-2"></script>
+<script src="assets/js/scheduler-portal.js?v=20260812-1"></script>
 </body>
 </html>
