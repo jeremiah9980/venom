@@ -54,6 +54,27 @@
 </div></div>
 
 <main class="social-main">
+  <!-- LIVE SCOREBOARD PREVIEW (official GameChanger widgets) -->
+  <section class="social-section" id="live-scoreboard">
+    <div class="social-section-head">
+      <div><div class="social-kicker">Live from GameChanger</div><h2 class="social-title">Scoreboard</h2></div>
+      <p class="social-copy">Live scores while the girls are playing, finals right after — plus the full schedule on the Scheduler Portal.</p>
+    </div>
+    <div class="gc-widget-grid gc-widget-compact">
+      <div class="gc-widget-card">
+        <div class="gc-widget-team">Texas Venom 12U</div>
+        <div id="gc-schedule-widget-jrwl"></div>
+      </div>
+      <div class="gc-widget-card">
+        <div class="gc-widget-team">Texas Venom 14U</div>
+        <div id="gc-schedule-widget-kbqk"></div>
+      </div>
+    </div>
+    <div style="margin-top:18px;">
+      <a class="social-btn social-btn-primary" href="portal.html"><i class="ti ti-calendar-bolt"></i> Open the Scheduler Portal</a>
+    </div>
+  </section>
+
   <section class="social-section" id="social-feed">
     <div class="social-section-head">
       <div><div class="social-kicker">Follow the journey</div><h2 class="social-title">Texas Venom Social</h2></div>
@@ -136,5 +157,27 @@
   <p style="margin-top:4px;">Head Coach: Chris Balcom &bull; Ast Coach: Jameson Riser &middot; Riser &middot; Welch</p>
 </footer>
 <script src="assets/js/home-social.js?v=20260619-1"></script>
+<script src="https://widgets.gc.com/static/js/sdk.v1.js"></script>
+<script>
+  /* Compact GameChanger scoreboard previews — full versions live on the
+     Scheduler Portal. Guarded so a blocked SDK can't break the page. */
+  (function () {
+    if (!window.GC || !window.GC.team || !window.GC.team.schedule) return;
+    try {
+      window.GC.team.schedule.init({
+        target: "#gc-schedule-widget-jrwl",
+        widgetId: "cc5c036d-3d6b-4480-845a-5faf19aeb890",
+        maxVerticalGamesVisible: 2,
+      });
+      window.GC.team.schedule.init({
+        target: "#gc-schedule-widget-kbqk",
+        widgetId: "308cd0a3-8d8e-4db9-bcb9-c4782816c9cb",
+        maxVerticalGamesVisible: 2,
+      });
+    } catch (e) {
+      console.warn("GameChanger widget init failed:", e);
+    }
+  })();
+</script>
 </body>
 </html>

@@ -431,6 +431,9 @@ html.theme-dark .social-hero h1 span,html[data-theme="dark"] .social-hero h1 spa
 .gc-widget-card iframe{max-width:100%;border-radius:10px}
 .gc-widget-fallback{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-family:var(--mono);font-size:11px;letter-spacing:.8px;text-transform:uppercase;color:var(--primary);text-decoration:none}
 .gc-widget-fallback:hover{text-decoration:underline}
+/* compact homepage preview variant */
+.gc-widget-compact .gc-widget-card{padding:12px}
+.gc-widget-compact .gc-widget-team{margin-bottom:8px;font-size:10px}
 
 /* chat tiles */
 .chat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
