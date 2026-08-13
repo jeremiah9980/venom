@@ -111,6 +111,26 @@
 
   </div>
 
+  <!-- LIVE SCOREBOARDS (official GameChanger widgets) -->
+  <div class="section">
+    <div class="section-label">Live from GameChanger</div>
+    <h2>Scoreboards</h2>
+    <div class="section-rule"></div>
+    <p style="margin-bottom:20px;">Official GameChanger schedule &amp; score widgets for both teams — live scores during games, final results after.</p>
+    <div class="gc-widget-grid">
+      <div class="gc-widget-card">
+        <div class="gc-widget-team">Texas Venom 12U</div>
+        <div id="gc-schedule-widget-jrwl"></div>
+        <a class="gc-widget-fallback" href="https://web.gc.com/teams" target="_blank" rel="noopener">Open the 12U team in GameChanger <i class="ti ti-external-link"></i></a>
+      </div>
+      <div class="gc-widget-card">
+        <div class="gc-widget-team">Texas Venom 14U</div>
+        <div id="gc-schedule-widget-kbqk"></div>
+        <a class="gc-widget-fallback" href="https://web.gc.com/teams" target="_blank" rel="noopener">Open the 14U team in GameChanger <i class="ti ti-external-link"></i></a>
+      </div>
+    </div>
+  </div>
+
   <!-- TEAM CHAT -->
   <div class="section">
     <div class="section-label">GameChanger</div>
@@ -147,6 +167,28 @@
   <p>Leander, Texas &bull; 12U / 14U Select Softball &bull; 2026</p>
 </footer>
 
-<script src="assets/js/scheduler-portal.js?v=20260812-1"></script>
+<script src="assets/js/scheduler-portal.js?v=20260813-1"></script>
+<script src="https://widgets.gc.com/static/js/sdk.v1.js"></script>
+<script>
+  /* Official GameChanger schedule widgets — one per team. If the SDK is
+     blocked or fails to load, the fallback links above remain usable. */
+  (function () {
+    if (!window.GC || !window.GC.team || !window.GC.team.schedule) return;
+    try {
+      window.GC.team.schedule.init({
+        target: "#gc-schedule-widget-jrwl",
+        widgetId: "cc5c036d-3d6b-4480-845a-5faf19aeb890",
+        maxVerticalGamesVisible: 4,
+      });
+      window.GC.team.schedule.init({
+        target: "#gc-schedule-widget-kbqk",
+        widgetId: "308cd0a3-8d8e-4db9-bcb9-c4782816c9cb",
+        maxVerticalGamesVisible: 4,
+      });
+    } catch (e) {
+      console.warn("GameChanger widget init failed:", e);
+    }
+  })();
+</script>
 </body>
 </html>
