@@ -57,10 +57,16 @@
   </div>
 
   <!-- TOURNAMENT WEEKENDS + TEAM CALENDAR, side by side -->
-  <div class="section sched-split" style="padding-top:0;">
+  <div class="section sched-split" id="sched-split" style="padding-top:0;">
+
+    <!-- mobile-only view switcher -->
+    <div class="sched-switch" role="tablist" aria-label="Schedule view">
+      <button type="button" class="active" data-view="wk" role="tab" aria-selected="true"><i class="ti ti-tournament"></i> Tournaments</button>
+      <button type="button" data-view="cal" role="tab" aria-selected="false"><i class="ti ti-calendar"></i> Team Calendar</button>
+    </div>
 
     <!-- LEFT: NCS tournament weekends -->
-    <div class="sched-col">
+    <div class="sched-col sched-col-wk">
       <div class="section-label">From the NCS tournament tracker</div>
       <h2>Tournament Weekends</h2>
       <div class="section-rule"></div>
@@ -75,7 +81,7 @@
     </div>
 
     <!-- RIGHT: GameChanger calendar -->
-    <div class="sched-col">
+    <div class="sched-col sched-col-cal">
       <div class="section-label">Synced from GameChanger</div>
       <h2>Team Calendar</h2>
       <div class="section-rule"></div>
@@ -167,7 +173,7 @@
   <p>Leander, Texas &bull; 12U / 14U Select Softball &bull; 2026</p>
 </footer>
 
-<script src="assets/js/scheduler-portal.js?v=20260813-1"></script>
+<script src="assets/js/scheduler-portal.js?v=20260813-2"></script>
 <script src="https://widgets.gc.com/static/js/sdk.v1.js"></script>
 <script>
   /* Official GameChanger schedule widgets — one per team. If the SDK is

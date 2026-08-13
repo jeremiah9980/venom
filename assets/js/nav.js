@@ -185,7 +185,7 @@ function updateFooterStaff(){
 
 loadGoogleAnalytics();
 loadStylesheet('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
-loadStylesheet('assets/css/venom-ui.css?v=20260813-1');
+loadStylesheet('assets/css/venom-ui.css?v=20260813-2');
 setTheme(currentTheme(),false);
 
 document.addEventListener('DOMContentLoaded',()=>{

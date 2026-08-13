@@ -16,7 +16,9 @@ const GC_LINKS_URL  = "assets/data/gc-links.json";
 const GC_TEAM_URL   = "https://web.gc.com/teams";
 const VENOM_RE      = /texas\s*venom/i;
 
-const state = { all: [], team: "ALL", weekends: 0 };
+const state = { all: [], team: "ALL", weekends: 0, weekendList: [], showAllWeekends: false, showAllUpcoming: false };
+const WEEKENDS_COLLAPSED = 6;
+const UPCOMING_COLLAPSED = 8;
 const $ = (s) => document.querySelector(s);
 const esc = (v) => String(v == null ? "" : v)
   .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -231,8 +233,13 @@ function buildWeekends(tracker, live) {
     .sort((a, b) => a.start_date.localeCompare(b.start_date));
 
   state.weekends = weekends.length;
+  state.weekendList = weekends;
   $("#count-weekends").textContent = weekends.length;
+  renderWeekends();
+}
 
+function renderWeekends() {
+  const weekends = state.weekendList;
   if (!weekends.length) {
     $("#weekend-list").innerHTML = `
       <div class="ev-empty">
@@ -242,7 +249,14 @@ function buildWeekends(tracker, live) {
       </div>`;
     return;
   }
-  $("#weekend-list").innerHTML = weekends.map(weekendBlock).join("");
+  const visible = state.showAllWeekends ? weekends : weekends.slice(0, WEEKENDS_COLLAPSED);
+  const hidden = weekends.length - visible.length;
+  $("#weekend-list").innerHTML = visible.map(weekendBlock).join("") + (hidden > 0 ? `
+    <button type="button" class="show-more" id="show-more-weekends">
+      <i class="ti ti-chevron-down"></i> Show ${hidden} more weekend${hidden === 1 ? "" : "s"}
+    </button>` : "");
+  const btn = $("#show-more-weekends");
+  if (btn) btn.addEventListener("click", () => { state.showAllWeekends = true; renderWeekends(); });
 }
 
 /* ============================================================
@@ -331,7 +345,14 @@ function render() {
         <p>When events sync from GameChanger, they'll appear here. If you expect events: check that the sync workflow has run and that the team filter above is set correctly.</p>
       </div>`;
   } else {
-    $("#upcoming-list").innerHTML = upcoming.map(e => eventCard(e)).join("");
+    const visible = state.showAllUpcoming ? upcoming : upcoming.slice(0, UPCOMING_COLLAPSED);
+    const hidden = upcoming.length - visible.length;
+    $("#upcoming-list").innerHTML = visible.map(e => eventCard(e)).join("") + (hidden > 0 ? `
+      <button type="button" class="show-more" id="show-more-upcoming">
+        <i class="ti ti-chevron-down"></i> Show ${hidden} more event${hidden === 1 ? "" : "s"}
+      </button>` : "");
+    const btn = $("#show-more-upcoming");
+    if (btn) btn.addEventListener("click", () => { state.showAllUpcoming = true; render(); });
   }
 
   if (past.length === 0) {
@@ -369,8 +390,31 @@ function renderChatTiles(links) {
 /* ============================================================
    INIT
    ============================================================ */
+/* Mobile view switcher — toggles which column shows under 1020px. */
+function initSchedSwitch() {
+  const split = document.getElementById("sched-split");
+  if (!split) return;
+  const setNavHeight = () => {
+    const nav = document.querySelector("nav");
+    if (nav) document.documentElement.style.setProperty("--nav-h", `${nav.offsetHeight}px`);
+  };
+  setNavHeight();
+  window.addEventListener("resize", setNavHeight);
+  document.querySelectorAll(".sched-switch button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      split.classList.toggle("view-cal", btn.dataset.view === "cal");
+      document.querySelectorAll(".sched-switch button").forEach(b => {
+        const active = b === btn;
+        b.classList.toggle("active", active);
+        b.setAttribute("aria-selected", String(active));
+      });
+    });
+  });
+}
+
 async function init() {
   const errors = [];
+  initSchedSwitch();
 
   // NCS tracker + live feed → weekend blocks
   let tracker = null, live = null;
