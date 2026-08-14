@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-08-14T16:02:43.176229+00:00",
+  "generated_at": "2026-08-14T17:07:17.523786+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-08-14T16:02:44.175932+00:00",
+      "generated_at": "2026-08-14T17:07:18.531985+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -169,7 +169,7 @@ window.TEXAS_VENOM_NCS = {
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-08-14T16:02:45.007252+00:00",
+      "generated_at": "2026-08-14T17:07:19.391233+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -237,7 +237,7 @@ window.TEXAS_VENOM_NCS = {
           "event_id": "13597",
           "title": "******* 1 DAY SUNDAY SEPTEMBER SHOWDOWN ********",
           "event_type": "Tournament",
-          "format": "3",
+          "format": "5",
           "start_date": "2026-09-20",
           "end_date": "2026-09-20",
           "date_label": "Sep 20",
