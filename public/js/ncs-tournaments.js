@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-08-14T11:53:37.752871+00:00",
+  "generated_at": "2026-08-14T13:36:01.378036+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-08-14T11:53:38.655515+00:00",
+      "generated_at": "2026-08-14T13:36:02.306094+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -45,7 +45,7 @@ window.TEXAS_VENOM_NCS = {
           "event_id": "13594",
           "title": "******* 1 DAY SATURDAY SEPTEMBER TO REMEMBER FALL CLASSIC *******",
           "event_type": "Tournament",
-          "format": "8",
+          "format": "9",
           "start_date": "2026-09-05",
           "end_date": "2026-09-05",
           "date_label": "Sep 5",
@@ -169,7 +169,7 @@ window.TEXAS_VENOM_NCS = {
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-08-14T11:53:39.471359+00:00",
+      "generated_at": "2026-08-14T13:36:03.156678+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
