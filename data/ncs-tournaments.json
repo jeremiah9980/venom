@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-16T03:09:47.009020+00:00",
+  "generated_at": "2026-08-16T03:55:57.794787+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-08-16T03:09:48.040483+00:00",
+      "generated_at": "2026-08-16T03:55:58.454947+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -169,7 +169,7 @@
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-08-16T03:09:48.918911+00:00",
+      "generated_at": "2026-08-16T03:55:59.287453+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -237,7 +237,7 @@
           "event_id": "13597",
           "title": "******* 1 DAY SUNDAY SEPTEMBER SHOWDOWN ********",
           "event_type": "Tournament",
-          "format": "5",
+          "format": "6",
           "start_date": "2026-09-20",
           "end_date": "2026-09-20",
           "date_label": "Sep 20",
