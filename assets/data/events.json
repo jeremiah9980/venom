@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-08-18T12:31:29.270305+00:00",
+  "synced_at": "2026-08-18T13:36:32.412737+00:00",
   "teams_synced": [
     "12U"
   ],
@@ -189,16 +189,16 @@
       "url": ""
     },
     {
-      "id": "eb3da3a9-3822-41eb-9bda-47ed6a8d74a2",
+      "id": "b1ac781c-c7ab-4a24-81e0-0d3a6765245f",
       "team": "12U",
-      "title": "Texas Venom 12U @ Next Level Bandits 12U",
+      "title": "Texas Venom 12U @ Next Level Bandits 11U",
       "start": "2026-08-23T14:25:00+00:00",
       "end": "2026-08-23T15:35:00+00:00",
-      "location": "700 Central Blvd\nBertram TX",
+      "location": "",
       "notes": "",
       "description": "",
       "type": "game",
-      "opponent": "Next Level Bandits 12U",
+      "opponent": "Next Level Bandits 11U",
       "url": ""
     },
     {
