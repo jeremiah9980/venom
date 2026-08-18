@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-08-18T04:47:53.484735+00:00",
+  "generated_at": "2026-08-18T05:41:52.007281+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-08-18T04:47:54.572537+00:00",
+      "generated_at": "2026-08-18T05:41:52.993143+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -169,7 +169,7 @@ window.TEXAS_VENOM_NCS = {
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-08-18T04:47:55.405350+00:00",
+      "generated_at": "2026-08-18T05:41:53.864712+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
