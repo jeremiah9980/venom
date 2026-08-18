@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-08-18T19:36:13.078702+00:00",
+  "generated_at": "2026-08-18T20:36:45.338647+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-08-18T19:36:14.574917+00:00",
+      "generated_at": "2026-08-18T20:36:46.228657+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -89,7 +89,7 @@ window.TEXAS_VENOM_NCS = {
           "event_id": "13218",
           "title": "3P Sports - Gloves Up for a Cure",
           "event_type": "Tournament",
-          "format": "26",
+          "format": "27",
           "start_date": "2026-10-10",
           "end_date": "2026-10-11",
           "date_label": "Oct 10-11",
@@ -169,7 +169,7 @@ window.TEXAS_VENOM_NCS = {
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-08-18T19:36:15.401093+00:00",
+      "generated_at": "2026-08-18T20:36:47.126302+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -237,7 +237,7 @@ window.TEXAS_VENOM_NCS = {
           "event_id": "13597",
           "title": "******* 1 DAY SUNDAY SEPTEMBER SHOWDOWN ********",
           "event_type": "Tournament",
-          "format": "6",
+          "format": "7",
           "start_date": "2026-09-20",
           "end_date": "2026-09-20",
           "date_label": "Sep 20",
@@ -335,7 +335,7 @@ window.TEXAS_VENOM_NCS = {
           "event_id": "13484",
           "title": "NCS CENTRAL TEXAS FALL STATE 65 MIN POOL 6GG 8U,10U,12U, 18u OPEN & C, 14U C ONLY",
           "event_type": "Double Points Qualifier",
-          "format": "87",
+          "format": "89",
           "start_date": "2026-11-07",
           "end_date": "2026-11-08",
           "date_label": "Nov 7-8",
