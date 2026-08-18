@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T08:41:09.359963+00:00",
+  "generated_at": "2026-08-18T09:16:33.804050+00:00",
   "source": "PlayNCS event schedule pages (per tracked team)",
   "feeds": [
     {
@@ -19,11 +19,643 @@
         "division": "12U",
         "source_url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
       },
-      "schedule_url": "https://www.playncs.com/fastpitch/Events/Schedule/13257/warm-up-into-fall-part-1-5gg-70-minutes-games",
-      "games": [],
-      "team_games": [],
-      "status": "waiting_for_schedule",
-      "message": "NCS has not published a parseable 12U schedule for this event yet."
+      "schedule_url": "https://www.playncs.com/fastpitch/Events/Schedule/13257/warm-up-into-fall-part-1-5gg-70-minutes-games?division=12U%20OPEN",
+      "games": [
+        {
+          "id": "74844fac9a6c",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "8:00 AM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "CLUTCH 2033",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89771/clutch-2033"
+          },
+          "away": {
+            "name": "Texas Venom 12U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
+          },
+          "source_text": "1 | Game 1 | Sat 8:00 AM | Sat 8:00 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | CLUTCH 2033 | Texas Venom 12U",
+          "game_number": 1
+        },
+        {
+          "id": "cde8b5f62ba4",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "8:00 AM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Next Level Bandits 2k15",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88826/next-level-bandits-2k15"
+          },
+          "away": {
+            "name": "HC Reign",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88632/hc-reign"
+          },
+          "source_text": "2 | Game 2 | Sat 8:00 AM | Sat 8:00 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | Next Level Bandits 2k15 | HC Reign",
+          "game_number": 2
+        },
+        {
+          "id": "3e61776c11ae",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "9:25 AM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Texas Venom 12U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
+          },
+          "away": {
+            "name": "Buzz ATX Elite 2032",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89155/buzz-atx-elite-2032"
+          },
+          "source_text": "3 | Game 3 | Sat 9:25 AM | Sat 9:25 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | Texas Venom 12U | Buzz ATX Elite 2032",
+          "game_number": 3
+        },
+        {
+          "id": "77e6be59df1b",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "9:25 AM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Next Level Bandits 2k15",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88826/next-level-bandits-2k15"
+          },
+          "away": {
+            "name": "CPYL Queen Bees",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87398/cpyl-queen-bees"
+          },
+          "source_text": "4 | Game 4 | Sat 9:25 AM | Sat 9:25 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | Next Level Bandits 2k15 | CPYL Queen Bees",
+          "game_number": 4
+        },
+        {
+          "id": "619bd92cf4f3",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "10:50 AM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "HC Reign",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88632/hc-reign"
+          },
+          "away": {
+            "name": "Buzz ATX Elite 2032",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89155/buzz-atx-elite-2032"
+          },
+          "source_text": "5 | Game 5 | Sat 10:50 AM | Sat 10:50 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | HC Reign | Buzz ATX Elite 2032",
+          "game_number": 5
+        },
+        {
+          "id": "251546013d11",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "10:50 AM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "CPYL Queen Bees",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87398/cpyl-queen-bees"
+          },
+          "away": {
+            "name": "CLUTCH 2033",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89771/clutch-2033"
+          },
+          "source_text": "6 | Game 6 | Sat 10:50 AM | Sat 10:50 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | CPYL Queen Bees | CLUTCH 2033",
+          "game_number": 6
+        },
+        {
+          "id": "dd43c0722eb3",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "12:15 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "POWERHOUSE 12U SZETELA",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88819/powerhouse-12u-szetela"
+          },
+          "away": {
+            "name": "CenTex Wolfpack",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88176/centex-wolfpack"
+          },
+          "source_text": "7 | Game 7 | Sat 12:15 PM | Sat 12:15 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | POWERHOUSE 12U SZETELA | CenTex Wolfpack",
+          "game_number": 7
+        },
+        {
+          "id": "f25fbac13dd2",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "12:15 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87661/lonestar-softball-club-central-12u-smith"
+          },
+          "away": {
+            "name": "Next Level Bandits 2k15",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88826/next-level-bandits-2k15"
+          },
+          "source_text": "8 | Game 8 | Sat 12:15 PM | Sat 12:15 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH | Next Level Bandits 2k15",
+          "game_number": 8
+        },
+        {
+          "id": "73830faee715",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "1:40 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "CenTex Wolfpack",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88176/centex-wolfpack"
+          },
+          "away": {
+            "name": "Texas Venom 12U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
+          },
+          "source_text": "9 | Game 9 | Sat 1:40 PM | Sat 1:40 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | CenTex Wolfpack | Texas Venom 12U",
+          "game_number": 9
+        },
+        {
+          "id": "cc451818b7fd",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "1:40 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "LONESTAR SOFTBALL CLUB CTX SILVER",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89002/lonestar-softball-club-ctx-silver"
+          },
+          "away": {
+            "name": "HC Reign",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88632/hc-reign"
+          },
+          "source_text": "10 | Game 10 | Sat 1:40 PM | Sat 1:40 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | LONESTAR SOFTBALL CLUB CTX SILVER | HC Reign",
+          "game_number": 10
+        },
+        {
+          "id": "613f6c86f660",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "3:05 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87661/lonestar-softball-club-central-12u-smith"
+          },
+          "away": {
+            "name": "CPYL Queen Bees",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87398/cpyl-queen-bees"
+          },
+          "source_text": "11 | Game 11 | Sat 3:05 PM | Sat 3:05 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH | CPYL Queen Bees",
+          "game_number": 11
+        },
+        {
+          "id": "4e4495fb5228",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "3:05 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "CLUTCH 2033",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89771/clutch-2033"
+          },
+          "away": {
+            "name": "LONESTAR SOFTBALL CLUB CTX SILVER",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89002/lonestar-softball-club-ctx-silver"
+          },
+          "source_text": "12 | Game 12 | Sat 3:05 PM | Sat 3:05 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | CLUTCH 2033 | LONESTAR SOFTBALL CLUB CTX SILVER",
+          "game_number": 12
+        },
+        {
+          "id": "30992b95d9fd",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "4:30 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "POWERHOUSE 12U SZETELA",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88819/powerhouse-12u-szetela"
+          },
+          "away": {
+            "name": "Buzz ATX Elite 2032",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89155/buzz-atx-elite-2032"
+          },
+          "source_text": "13 | Game 13 | Sat 4:30 PM | Sat 4:30 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | POWERHOUSE 12U SZETELA | Buzz ATX Elite 2032",
+          "game_number": 13
+        },
+        {
+          "id": "318f6ae74624",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "4:30 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87661/lonestar-softball-club-central-12u-smith"
+          },
+          "away": {
+            "name": "CenTex Wolfpack",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88176/centex-wolfpack"
+          },
+          "source_text": "14 | Game 14 | Sat 4:30 PM | Sat 4:30 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH | CenTex Wolfpack",
+          "game_number": 14
+        },
+        {
+          "id": "945dc4079fbc",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "5:55 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "POWERHOUSE 12U SZETELA",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88819/powerhouse-12u-szetela"
+          },
+          "away": {
+            "name": "LONESTAR SOFTBALL CLUB CTX SILVER",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89002/lonestar-softball-club-ctx-silver"
+          },
+          "source_text": "15 | Game 15 | Sat 5:55 PM | Sat 5:55 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | POWERHOUSE 12U SZETELA | LONESTAR SOFTBALL CLUB CTX SILVER",
+          "game_number": 15
+        },
+        {
+          "id": "96e9fdcf1baa",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "8:00 AM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "CPYL Queen Bees",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87398/cpyl-queen-bees"
+          },
+          "away": {
+            "name": "POWERHOUSE 12U SZETELA",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88819/powerhouse-12u-szetela"
+          },
+          "source_text": "16 | Game 16 | Sun 8:00 AM | Sun 8:00 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | CPYL Queen Bees | POWERHOUSE 12U SZETELA",
+          "game_number": 16
+        },
+        {
+          "id": "7624e51e68ea",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "8:00 AM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Buzz ATX Elite 2032",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89155/buzz-atx-elite-2032"
+          },
+          "away": {
+            "name": "CenTex Wolfpack",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88176/centex-wolfpack"
+          },
+          "source_text": "17 | Game 17 | Sun 8:00 AM | Sun 8:00 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | Buzz ATX Elite 2032 | CenTex Wolfpack",
+          "game_number": 17
+        },
+        {
+          "id": "e15d2f1e4ef7",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "9:25 AM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Texas Venom 12U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
+          },
+          "away": {
+            "name": "Next Level Bandits 2k15",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88826/next-level-bandits-2k15"
+          },
+          "source_text": "18 | Game 18 | Sun 9:25 AM | Sun 9:25 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | Texas Venom 12U | Next Level Bandits 2k15",
+          "game_number": 18
+        },
+        {
+          "id": "944d856480eb",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "9:25 AM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "CLUTCH 2033",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89771/clutch-2033"
+          },
+          "away": {
+            "name": "LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87661/lonestar-softball-club-central-12u-smith"
+          },
+          "source_text": "19 | Game 19 | Sun 9:25 AM | Sun 9:25 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | CLUTCH 2033 | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH",
+          "game_number": 19
+        },
+        {
+          "id": "2875fe1f136d",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "10:50 AM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Next Level Bandits 2k15",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88826/next-level-bandits-2k15"
+          },
+          "away": {
+            "name": "POWERHOUSE 12U SZETELA",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88819/powerhouse-12u-szetela"
+          },
+          "source_text": "20 | Game 20 | Sun 10:50 AM | Sun 10:50 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | Next Level Bandits 2k15 | POWERHOUSE 12U SZETELA",
+          "game_number": 20
+        },
+        {
+          "id": "65d4e2b5a664",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "10:50 AM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "CenTex Wolfpack",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88176/centex-wolfpack"
+          },
+          "away": {
+            "name": "LONESTAR SOFTBALL CLUB CTX SILVER",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89002/lonestar-softball-club-ctx-silver"
+          },
+          "source_text": "21 | Game 21 | Sun 10:50 AM | Sun 10:50 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | CenTex Wolfpack | LONESTAR SOFTBALL CLUB CTX SILVER",
+          "game_number": 21
+        },
+        {
+          "id": "7077ec447bc6",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "12:15 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87661/lonestar-softball-club-central-12u-smith"
+          },
+          "away": {
+            "name": "Buzz ATX Elite 2032",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89155/buzz-atx-elite-2032"
+          },
+          "source_text": "22 | Game 22 | Sun 12:15 PM | Sun 12:15 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH | Buzz ATX Elite 2032",
+          "game_number": 22
+        },
+        {
+          "id": "59e4d5edf9f3",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "12:15 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "HC Reign",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88632/hc-reign"
+          },
+          "away": {
+            "name": "CPYL Queen Bees",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87398/cpyl-queen-bees"
+          },
+          "source_text": "23 | Game 23 | Sun 12:15 PM | Sun 12:15 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | HC Reign | CPYL Queen Bees",
+          "game_number": 23
+        },
+        {
+          "id": "5a65b324efae",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "1:40 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Texas Venom 12U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
+          },
+          "away": {
+            "name": "LONESTAR SOFTBALL CLUB CTX SILVER",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89002/lonestar-softball-club-ctx-silver"
+          },
+          "source_text": "24 | Game 24 | Sun 1:40 PM | Sun 1:40 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | Texas Venom 12U | LONESTAR SOFTBALL CLUB CTX SILVER",
+          "game_number": 24
+        },
+        {
+          "id": "5b2aa2e85fb1",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "3:05 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "CLUTCH 2033",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89771/clutch-2033"
+          },
+          "away": {
+            "name": "HC Reign",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88632/hc-reign"
+          },
+          "source_text": "25 | Game 25 | Sun 3:05 PM | Sun 3:05 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | CLUTCH 2033 | HC Reign",
+          "game_number": 25
+        }
+      ],
+      "team_games": [
+        {
+          "id": "74844fac9a6c",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "8:00 AM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "CLUTCH 2033",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89771/clutch-2033"
+          },
+          "away": {
+            "name": "Texas Venom 12U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
+          },
+          "source_text": "1 | Game 1 | Sat 8:00 AM | Sat 8:00 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | CLUTCH 2033 | Texas Venom 12U",
+          "game_number": 1
+        },
+        {
+          "id": "3e61776c11ae",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "9:25 AM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Texas Venom 12U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
+          },
+          "away": {
+            "name": "Buzz ATX Elite 2032",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89155/buzz-atx-elite-2032"
+          },
+          "source_text": "3 | Game 3 | Sat 9:25 AM | Sat 9:25 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | Texas Venom 12U | Buzz ATX Elite 2032",
+          "game_number": 3
+        },
+        {
+          "id": "73830faee715",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "1:40 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "CenTex Wolfpack",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88176/centex-wolfpack"
+          },
+          "away": {
+            "name": "Texas Venom 12U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
+          },
+          "source_text": "9 | Game 9 | Sat 1:40 PM | Sat 1:40 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | CenTex Wolfpack | Texas Venom 12U",
+          "game_number": 9
+        },
+        {
+          "id": "e15d2f1e4ef7",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "9:25 AM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Texas Venom 12U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
+          },
+          "away": {
+            "name": "Next Level Bandits 2k15",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88826/next-level-bandits-2k15"
+          },
+          "source_text": "18 | Game 18 | Sun 9:25 AM | Sun 9:25 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | Texas Venom 12U | Next Level Bandits 2k15",
+          "game_number": 18
+        },
+        {
+          "id": "5a65b324efae",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "1:40 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Texas Venom 12U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
+          },
+          "away": {
+            "name": "LONESTAR SOFTBALL CLUB CTX SILVER",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89002/lonestar-softball-club-ctx-silver"
+          },
+          "source_text": "24 | Game 24 | Sun 1:40 PM | Sun 1:40 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | Texas Venom 12U | LONESTAR SOFTBALL CLUB CTX SILVER",
+          "game_number": 24
+        }
+      ],
+      "status": "live",
+      "message": "Loaded 25 division game(s), including 5 Texas Venom game(s), from NCS."
     },
     {
       "team_key": "14u",
@@ -42,11 +674,643 @@
         "division": "14U",
         "source_url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
       },
-      "schedule_url": "https://www.playncs.com/fastpitch/Events/Schedule/13257/warm-up-into-fall-part-1-5gg-70-minutes-games",
-      "games": [],
-      "team_games": [],
-      "status": "waiting_for_schedule",
-      "message": "NCS has not published a parseable 14U schedule for this event yet."
+      "schedule_url": "https://www.playncs.com/fastpitch/Events/Schedule/13257/warm-up-into-fall-part-1-5gg-70-minutes-games?division=14U%20OPEN",
+      "games": [
+        {
+          "id": "72a4a1ba385b",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "8:00 AM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Team Rollin 14u",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89041/team-rollin-14u"
+          },
+          "away": {
+            "name": "Austin Crush 14U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88401/austin-crush-14u"
+          },
+          "source_text": "1 | Game 1 | Sat 8:00 AM | Sat 8:00 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Team Rollin 14u | Austin Crush 14U",
+          "game_number": 1
+        },
+        {
+          "id": "52307c49d8ee",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "9:25 AM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Texas BombersCTX-Salado",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89161/texas-bombersctx-salado"
+          },
+          "away": {
+            "name": "Team Rollin 14u",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89041/team-rollin-14u"
+          },
+          "source_text": "2 | Game 2 | Sat 9:25 AM | Sat 9:25 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Texas BombersCTX-Salado | Team Rollin 14u",
+          "game_number": 2
+        },
+        {
+          "id": "b69fd168a779",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "10:50 AM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Vikings Fastpitch",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89357/vikings-fastpitch"
+          },
+          "away": {
+            "name": "Austin Crush 14U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88401/austin-crush-14u"
+          },
+          "source_text": "3 | Game 3 | Sat 10:50 AM | Sat 10:50 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Vikings Fastpitch | Austin Crush 14U",
+          "game_number": 3
+        },
+        {
+          "id": "7c4294a4ae31",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "12:15 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Texas Venom 14U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
+          },
+          "away": {
+            "name": "Buzz 14U Gold Futures",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/90174/buzz-14u-gold-futures"
+          },
+          "source_text": "4 | Game 4 | Sat 12:15 PM | Sat 12:15 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Texas Venom 14U | Buzz 14U Gold Futures",
+          "game_number": 4
+        },
+        {
+          "id": "71d63a9e7d2f",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "1:40 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Buzz 14U Gold Futures",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/90174/buzz-14u-gold-futures"
+          },
+          "away": {
+            "name": "Texas BombersCTX-Salado",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89161/texas-bombersctx-salado"
+          },
+          "source_text": "5 | Game 5 | Sat 1:40 PM | Sat 1:40 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Buzz 14U Gold Futures | Texas BombersCTX-Salado",
+          "game_number": 5
+        },
+        {
+          "id": "5dd48ca63ace",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "3:05 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Vikings Fastpitch",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89357/vikings-fastpitch"
+          },
+          "away": {
+            "name": "Team Rollin 14u",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89041/team-rollin-14u"
+          },
+          "source_text": "6 | Game 6 | Sat 3:05 PM | Sat 3:05 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Vikings Fastpitch | Team Rollin 14u",
+          "game_number": 6
+        },
+        {
+          "id": "52e92875b331",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "4:30 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Texas Venom 14U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
+          },
+          "away": {
+            "name": "Austin Crush 14U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88401/austin-crush-14u"
+          },
+          "source_text": "7 | Game 7 | Sat 4:30 PM | Sat 4:30 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Texas Venom 14U | Austin Crush 14U",
+          "game_number": 7
+        },
+        {
+          "id": "817c85d4c435",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "5:55 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Texas Venom 14U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
+          },
+          "away": {
+            "name": "Texas BombersCTX-Salado",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89161/texas-bombersctx-salado"
+          },
+          "source_text": "8 | Game 8 | Sat 5:55 PM | Sat 5:55 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Texas Venom 14U | Texas BombersCTX-Salado",
+          "game_number": 8
+        },
+        {
+          "id": "60e5cf040a23",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "5:55 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Vikings Fastpitch",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89357/vikings-fastpitch"
+          },
+          "away": {
+            "name": "Buzz 14U Gold Futures",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/90174/buzz-14u-gold-futures"
+          },
+          "source_text": "9 | Game 9 | Sat 5:55 PM | Sat 5:55 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | Vikings Fastpitch | Buzz 14U Gold Futures",
+          "game_number": 9
+        },
+        {
+          "id": "fbca25fd319a",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "12:15 PM",
+          "field": "Field 1",
+          "status": "scheduled",
+          "home": {
+            "name": "Next Level Bandits 14u",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/90211/next-level-bandits-14u"
+          },
+          "away": {
+            "name": "Drip Select Frey",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89172/drip-select-frey"
+          },
+          "source_text": "10 | Game 10 | Sat 12:15 PM | Sat 12:15 PM | YMCS of Highland Lakes (Burnet, TX) Field 1 | YMCS of Highland Lakes (Burnet, TX) Field 1 | Next Level Bandits 14u | Drip Select Frey",
+          "game_number": 10
+        },
+        {
+          "id": "d62a4711efeb",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "1:40 PM",
+          "field": "Field 1",
+          "status": "scheduled",
+          "home": {
+            "name": "LONESTAR SOFTBALL CLUB CTX RED",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89001/lonestar-softball-club-ctx-red"
+          },
+          "away": {
+            "name": "TXplosion Fastpitch- Smith",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89078/txplosion-fastpitch-smith"
+          },
+          "source_text": "11 | Game 11 | Sat 1:40 PM | Sat 1:40 PM | YMCS of Highland Lakes (Burnet, TX) Field 1 | YMCS of Highland Lakes (Burnet, TX) Field 1 | LONESTAR SOFTBALL CLUB CTX RED | TXplosion Fastpitch- Smith",
+          "game_number": 11
+        },
+        {
+          "id": "e8178b9877a1",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "3:05 PM",
+          "field": "Field 1",
+          "status": "scheduled",
+          "home": {
+            "name": "Next Level Bandits 14u",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/90211/next-level-bandits-14u"
+          },
+          "away": {
+            "name": "LONESTAR SOFTBALL CLUB CTX RED",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89001/lonestar-softball-club-ctx-red"
+          },
+          "source_text": "12 | Game 12 | Sat 3:05 PM | Sat 3:05 PM | YMCS of Highland Lakes (Burnet, TX) Field 1 | YMCS of Highland Lakes (Burnet, TX) Field 1 | Next Level Bandits 14u | LONESTAR SOFTBALL CLUB CTX RED",
+          "game_number": 12
+        },
+        {
+          "id": "4c2362b0db7b",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "4:30 PM",
+          "field": "Field 1",
+          "status": "scheduled",
+          "home": {
+            "name": "Drip Select Frey",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89172/drip-select-frey"
+          },
+          "away": {
+            "name": "TXplosion Fastpitch- Smith",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89078/txplosion-fastpitch-smith"
+          },
+          "source_text": "13 | Game 13 | Sat 4:30 PM | Sat 4:30 PM | YMCS of Highland Lakes (Burnet, TX) Field 1 | YMCS of Highland Lakes (Burnet, TX) Field 1 | Drip Select Frey | TXplosion Fastpitch- Smith",
+          "game_number": 13
+        },
+        {
+          "id": "6483eeb6fd87",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "5:55 PM",
+          "field": "Field 1",
+          "status": "scheduled",
+          "home": {
+            "name": "Next Level Bandits 14u",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/90211/next-level-bandits-14u"
+          },
+          "away": {
+            "name": "TXplosion Fastpitch- Smith",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89078/txplosion-fastpitch-smith"
+          },
+          "source_text": "14 | Game 14 | Sat 5:55 PM | Sat 5:55 PM | YMCS of Highland Lakes (Burnet, TX) Field 1 | YMCS of Highland Lakes (Burnet, TX) Field 1 | Next Level Bandits 14u | TXplosion Fastpitch- Smith",
+          "game_number": 14
+        },
+        {
+          "id": "bdf4822634f4",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "7:20 PM",
+          "field": "Field 1",
+          "status": "scheduled",
+          "home": {
+            "name": "Drip Select Frey",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89172/drip-select-frey"
+          },
+          "away": {
+            "name": "LONESTAR SOFTBALL CLUB CTX RED",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89001/lonestar-softball-club-ctx-red"
+          },
+          "source_text": "15 | Game 15 | Sat 7:20 PM | Sat 7:20 PM | YMCS of Highland Lakes (Burnet, TX) Field 1 | YMCS of Highland Lakes (Burnet, TX) Field 1 | Drip Select Frey | LONESTAR SOFTBALL CLUB CTX RED",
+          "game_number": 15
+        },
+        {
+          "id": "8675b6e27721",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "8:00 AM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Texas Venom 14U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
+          },
+          "away": {
+            "name": "Next Level Bandits 14u",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/90211/next-level-bandits-14u"
+          },
+          "source_text": "16 | Game 16 | Sun 8:00 AM | Sun 8:00 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Texas Venom 14U | Next Level Bandits 14u",
+          "game_number": 16
+        },
+        {
+          "id": "c8a6e5a87e35",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "9:25 AM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Vikings Fastpitch",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89357/vikings-fastpitch"
+          },
+          "away": {
+            "name": "TXplosion Fastpitch- Smith",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89078/txplosion-fastpitch-smith"
+          },
+          "source_text": "17 | Game 17 | Sun 9:25 AM | Sun 9:25 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Vikings Fastpitch | TXplosion Fastpitch- Smith",
+          "game_number": 17
+        },
+        {
+          "id": "6231f6fa286f",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "10:50 AM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Next Level Bandits 14u",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/90211/next-level-bandits-14u"
+          },
+          "away": {
+            "name": "Vikings Fastpitch",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89357/vikings-fastpitch"
+          },
+          "source_text": "18 | Game 18 | Sun 10:50 AM | Sun 10:50 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Next Level Bandits 14u | Vikings Fastpitch",
+          "game_number": 18
+        },
+        {
+          "id": "44686e61b0ce",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "12:15 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Texas Venom 14U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
+          },
+          "away": {
+            "name": "TXplosion Fastpitch- Smith",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89078/txplosion-fastpitch-smith"
+          },
+          "source_text": "19 | Game 19 | Sun 12:15 PM | Sun 12:15 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Texas Venom 14U | TXplosion Fastpitch- Smith",
+          "game_number": 19
+        },
+        {
+          "id": "4bf4586dc90a",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "1:40 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Drip Select Frey",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89172/drip-select-frey"
+          },
+          "away": {
+            "name": "Buzz 14U Gold Futures",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/90174/buzz-14u-gold-futures"
+          },
+          "source_text": "20 | Game 20 | Sun 1:40 PM | Sun 1:40 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Drip Select Frey | Buzz 14U Gold Futures",
+          "game_number": 20
+        },
+        {
+          "id": "0cbffeb60d18",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "1:40 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Texas BombersCTX-Salado",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89161/texas-bombersctx-salado"
+          },
+          "away": {
+            "name": "LONESTAR SOFTBALL CLUB CTX RED",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89001/lonestar-softball-club-ctx-red"
+          },
+          "source_text": "21 | Game 21 | Sun 1:40 PM | Sun 1:40 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | Texas BombersCTX-Salado | LONESTAR SOFTBALL CLUB CTX RED",
+          "game_number": 21
+        },
+        {
+          "id": "9e4aaf9432de",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "3:05 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Texas BombersCTX-Salado",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89161/texas-bombersctx-salado"
+          },
+          "away": {
+            "name": "Team Rollin 14u",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89041/team-rollin-14u"
+          },
+          "source_text": "22 | Game 22 | Sun 3:05 PM | Sun 3:05 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | Texas BombersCTX-Salado | Team Rollin 14u",
+          "game_number": 22
+        },
+        {
+          "id": "b3498bab5c71",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "3:05 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Buzz 14U Gold Futures",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/90174/buzz-14u-gold-futures"
+          },
+          "away": {
+            "name": "Austin Crush 14U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88401/austin-crush-14u"
+          },
+          "source_text": "23 | Game 23 | Sun 3:05 PM | Sun 3:05 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Buzz 14U Gold Futures | Austin Crush 14U",
+          "game_number": 23
+        },
+        {
+          "id": "3dd149ab0b44",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "4:30 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Team Rollin 14u",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89041/team-rollin-14u"
+          },
+          "away": {
+            "name": "Drip Select Frey",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89172/drip-select-frey"
+          },
+          "source_text": "24 | Game 24 | Sun 4:30 PM | Sun 4:30 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Team Rollin 14u | Drip Select Frey",
+          "game_number": 24
+        },
+        {
+          "id": "66bb69ece510",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "4:30 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Austin Crush 14U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88401/austin-crush-14u"
+          },
+          "away": {
+            "name": "LONESTAR SOFTBALL CLUB CTX RED",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89001/lonestar-softball-club-ctx-red"
+          },
+          "source_text": "25 | Game 25 | Sun 4:30 PM | Sun 4:30 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | Austin Crush 14U | LONESTAR SOFTBALL CLUB CTX RED",
+          "game_number": 25
+        }
+      ],
+      "team_games": [
+        {
+          "id": "7c4294a4ae31",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "12:15 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Texas Venom 14U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
+          },
+          "away": {
+            "name": "Buzz 14U Gold Futures",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/90174/buzz-14u-gold-futures"
+          },
+          "source_text": "4 | Game 4 | Sat 12:15 PM | Sat 12:15 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Texas Venom 14U | Buzz 14U Gold Futures",
+          "game_number": 4
+        },
+        {
+          "id": "52e92875b331",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "4:30 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Texas Venom 14U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
+          },
+          "away": {
+            "name": "Austin Crush 14U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88401/austin-crush-14u"
+          },
+          "source_text": "7 | Game 7 | Sat 4:30 PM | Sat 4:30 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Texas Venom 14U | Austin Crush 14U",
+          "game_number": 7
+        },
+        {
+          "id": "817c85d4c435",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "5:55 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Texas Venom 14U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
+          },
+          "away": {
+            "name": "Texas BombersCTX-Salado",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89161/texas-bombersctx-salado"
+          },
+          "source_text": "8 | Game 8 | Sat 5:55 PM | Sat 5:55 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Texas Venom 14U | Texas BombersCTX-Salado",
+          "game_number": 8
+        },
+        {
+          "id": "8675b6e27721",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "8:00 AM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Texas Venom 14U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
+          },
+          "away": {
+            "name": "Next Level Bandits 14u",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/90211/next-level-bandits-14u"
+          },
+          "source_text": "16 | Game 16 | Sun 8:00 AM | Sun 8:00 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Texas Venom 14U | Next Level Bandits 14u",
+          "game_number": 16
+        },
+        {
+          "id": "44686e61b0ce",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "12:15 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Texas Venom 14U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
+          },
+          "away": {
+            "name": "TXplosion Fastpitch- Smith",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89078/txplosion-fastpitch-smith"
+          },
+          "source_text": "19 | Game 19 | Sun 12:15 PM | Sun 12:15 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Texas Venom 14U | TXplosion Fastpitch- Smith",
+          "game_number": 19
+        }
+      ],
+      "status": "live",
+      "message": "Loaded 25 division game(s), including 5 Texas Venom game(s), from NCS."
     }
   ],
   "event": {
@@ -63,12 +1327,644 @@
     "name": "Texas Venom 12U",
     "source_url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
   },
-  "games": [],
-  "team_games": [],
+  "games": [
+    {
+      "id": "74844fac9a6c",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "8:00 AM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "CLUTCH 2033",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/89771/clutch-2033"
+      },
+      "away": {
+        "name": "Texas Venom 12U",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
+      },
+      "source_text": "1 | Game 1 | Sat 8:00 AM | Sat 8:00 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | CLUTCH 2033 | Texas Venom 12U",
+      "game_number": 1
+    },
+    {
+      "id": "cde8b5f62ba4",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "8:00 AM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "Next Level Bandits 2k15",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/88826/next-level-bandits-2k15"
+      },
+      "away": {
+        "name": "HC Reign",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/88632/hc-reign"
+      },
+      "source_text": "2 | Game 2 | Sat 8:00 AM | Sat 8:00 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | Next Level Bandits 2k15 | HC Reign",
+      "game_number": 2
+    },
+    {
+      "id": "3e61776c11ae",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "9:25 AM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "Texas Venom 12U",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
+      },
+      "away": {
+        "name": "Buzz ATX Elite 2032",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/89155/buzz-atx-elite-2032"
+      },
+      "source_text": "3 | Game 3 | Sat 9:25 AM | Sat 9:25 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | Texas Venom 12U | Buzz ATX Elite 2032",
+      "game_number": 3
+    },
+    {
+      "id": "77e6be59df1b",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "9:25 AM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "Next Level Bandits 2k15",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/88826/next-level-bandits-2k15"
+      },
+      "away": {
+        "name": "CPYL Queen Bees",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/87398/cpyl-queen-bees"
+      },
+      "source_text": "4 | Game 4 | Sat 9:25 AM | Sat 9:25 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | Next Level Bandits 2k15 | CPYL Queen Bees",
+      "game_number": 4
+    },
+    {
+      "id": "619bd92cf4f3",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "10:50 AM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "HC Reign",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/88632/hc-reign"
+      },
+      "away": {
+        "name": "Buzz ATX Elite 2032",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/89155/buzz-atx-elite-2032"
+      },
+      "source_text": "5 | Game 5 | Sat 10:50 AM | Sat 10:50 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | HC Reign | Buzz ATX Elite 2032",
+      "game_number": 5
+    },
+    {
+      "id": "251546013d11",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "10:50 AM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "CPYL Queen Bees",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/87398/cpyl-queen-bees"
+      },
+      "away": {
+        "name": "CLUTCH 2033",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/89771/clutch-2033"
+      },
+      "source_text": "6 | Game 6 | Sat 10:50 AM | Sat 10:50 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | CPYL Queen Bees | CLUTCH 2033",
+      "game_number": 6
+    },
+    {
+      "id": "dd43c0722eb3",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "12:15 PM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "POWERHOUSE 12U SZETELA",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/88819/powerhouse-12u-szetela"
+      },
+      "away": {
+        "name": "CenTex Wolfpack",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/88176/centex-wolfpack"
+      },
+      "source_text": "7 | Game 7 | Sat 12:15 PM | Sat 12:15 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | POWERHOUSE 12U SZETELA | CenTex Wolfpack",
+      "game_number": 7
+    },
+    {
+      "id": "f25fbac13dd2",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "12:15 PM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/87661/lonestar-softball-club-central-12u-smith"
+      },
+      "away": {
+        "name": "Next Level Bandits 2k15",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/88826/next-level-bandits-2k15"
+      },
+      "source_text": "8 | Game 8 | Sat 12:15 PM | Sat 12:15 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH | Next Level Bandits 2k15",
+      "game_number": 8
+    },
+    {
+      "id": "73830faee715",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "1:40 PM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "CenTex Wolfpack",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/88176/centex-wolfpack"
+      },
+      "away": {
+        "name": "Texas Venom 12U",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
+      },
+      "source_text": "9 | Game 9 | Sat 1:40 PM | Sat 1:40 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | CenTex Wolfpack | Texas Venom 12U",
+      "game_number": 9
+    },
+    {
+      "id": "cc451818b7fd",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "1:40 PM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "LONESTAR SOFTBALL CLUB CTX SILVER",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/89002/lonestar-softball-club-ctx-silver"
+      },
+      "away": {
+        "name": "HC Reign",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/88632/hc-reign"
+      },
+      "source_text": "10 | Game 10 | Sat 1:40 PM | Sat 1:40 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | LONESTAR SOFTBALL CLUB CTX SILVER | HC Reign",
+      "game_number": 10
+    },
+    {
+      "id": "613f6c86f660",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "3:05 PM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/87661/lonestar-softball-club-central-12u-smith"
+      },
+      "away": {
+        "name": "CPYL Queen Bees",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/87398/cpyl-queen-bees"
+      },
+      "source_text": "11 | Game 11 | Sat 3:05 PM | Sat 3:05 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH | CPYL Queen Bees",
+      "game_number": 11
+    },
+    {
+      "id": "4e4495fb5228",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "3:05 PM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "CLUTCH 2033",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/89771/clutch-2033"
+      },
+      "away": {
+        "name": "LONESTAR SOFTBALL CLUB CTX SILVER",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/89002/lonestar-softball-club-ctx-silver"
+      },
+      "source_text": "12 | Game 12 | Sat 3:05 PM | Sat 3:05 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | CLUTCH 2033 | LONESTAR SOFTBALL CLUB CTX SILVER",
+      "game_number": 12
+    },
+    {
+      "id": "30992b95d9fd",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "4:30 PM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "POWERHOUSE 12U SZETELA",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/88819/powerhouse-12u-szetela"
+      },
+      "away": {
+        "name": "Buzz ATX Elite 2032",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/89155/buzz-atx-elite-2032"
+      },
+      "source_text": "13 | Game 13 | Sat 4:30 PM | Sat 4:30 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | POWERHOUSE 12U SZETELA | Buzz ATX Elite 2032",
+      "game_number": 13
+    },
+    {
+      "id": "318f6ae74624",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "4:30 PM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/87661/lonestar-softball-club-central-12u-smith"
+      },
+      "away": {
+        "name": "CenTex Wolfpack",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/88176/centex-wolfpack"
+      },
+      "source_text": "14 | Game 14 | Sat 4:30 PM | Sat 4:30 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH | CenTex Wolfpack",
+      "game_number": 14
+    },
+    {
+      "id": "945dc4079fbc",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "5:55 PM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "POWERHOUSE 12U SZETELA",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/88819/powerhouse-12u-szetela"
+      },
+      "away": {
+        "name": "LONESTAR SOFTBALL CLUB CTX SILVER",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/89002/lonestar-softball-club-ctx-silver"
+      },
+      "source_text": "15 | Game 15 | Sat 5:55 PM | Sat 5:55 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | POWERHOUSE 12U SZETELA | LONESTAR SOFTBALL CLUB CTX SILVER",
+      "game_number": 15
+    },
+    {
+      "id": "96e9fdcf1baa",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sun",
+      "time": "8:00 AM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "CPYL Queen Bees",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/87398/cpyl-queen-bees"
+      },
+      "away": {
+        "name": "POWERHOUSE 12U SZETELA",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/88819/powerhouse-12u-szetela"
+      },
+      "source_text": "16 | Game 16 | Sun 8:00 AM | Sun 8:00 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | CPYL Queen Bees | POWERHOUSE 12U SZETELA",
+      "game_number": 16
+    },
+    {
+      "id": "7624e51e68ea",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sun",
+      "time": "8:00 AM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "Buzz ATX Elite 2032",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/89155/buzz-atx-elite-2032"
+      },
+      "away": {
+        "name": "CenTex Wolfpack",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/88176/centex-wolfpack"
+      },
+      "source_text": "17 | Game 17 | Sun 8:00 AM | Sun 8:00 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | Buzz ATX Elite 2032 | CenTex Wolfpack",
+      "game_number": 17
+    },
+    {
+      "id": "e15d2f1e4ef7",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sun",
+      "time": "9:25 AM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "Texas Venom 12U",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
+      },
+      "away": {
+        "name": "Next Level Bandits 2k15",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/88826/next-level-bandits-2k15"
+      },
+      "source_text": "18 | Game 18 | Sun 9:25 AM | Sun 9:25 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | Texas Venom 12U | Next Level Bandits 2k15",
+      "game_number": 18
+    },
+    {
+      "id": "944d856480eb",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sun",
+      "time": "9:25 AM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "CLUTCH 2033",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/89771/clutch-2033"
+      },
+      "away": {
+        "name": "LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/87661/lonestar-softball-club-central-12u-smith"
+      },
+      "source_text": "19 | Game 19 | Sun 9:25 AM | Sun 9:25 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | CLUTCH 2033 | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH",
+      "game_number": 19
+    },
+    {
+      "id": "2875fe1f136d",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sun",
+      "time": "10:50 AM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "Next Level Bandits 2k15",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/88826/next-level-bandits-2k15"
+      },
+      "away": {
+        "name": "POWERHOUSE 12U SZETELA",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/88819/powerhouse-12u-szetela"
+      },
+      "source_text": "20 | Game 20 | Sun 10:50 AM | Sun 10:50 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | Next Level Bandits 2k15 | POWERHOUSE 12U SZETELA",
+      "game_number": 20
+    },
+    {
+      "id": "65d4e2b5a664",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sun",
+      "time": "10:50 AM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "CenTex Wolfpack",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/88176/centex-wolfpack"
+      },
+      "away": {
+        "name": "LONESTAR SOFTBALL CLUB CTX SILVER",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/89002/lonestar-softball-club-ctx-silver"
+      },
+      "source_text": "21 | Game 21 | Sun 10:50 AM | Sun 10:50 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | CenTex Wolfpack | LONESTAR SOFTBALL CLUB CTX SILVER",
+      "game_number": 21
+    },
+    {
+      "id": "7077ec447bc6",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sun",
+      "time": "12:15 PM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/87661/lonestar-softball-club-central-12u-smith"
+      },
+      "away": {
+        "name": "Buzz ATX Elite 2032",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/89155/buzz-atx-elite-2032"
+      },
+      "source_text": "22 | Game 22 | Sun 12:15 PM | Sun 12:15 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH | Buzz ATX Elite 2032",
+      "game_number": 22
+    },
+    {
+      "id": "59e4d5edf9f3",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sun",
+      "time": "12:15 PM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "HC Reign",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/88632/hc-reign"
+      },
+      "away": {
+        "name": "CPYL Queen Bees",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/87398/cpyl-queen-bees"
+      },
+      "source_text": "23 | Game 23 | Sun 12:15 PM | Sun 12:15 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | HC Reign | CPYL Queen Bees",
+      "game_number": 23
+    },
+    {
+      "id": "5a65b324efae",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sun",
+      "time": "1:40 PM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "Texas Venom 12U",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
+      },
+      "away": {
+        "name": "LONESTAR SOFTBALL CLUB CTX SILVER",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/89002/lonestar-softball-club-ctx-silver"
+      },
+      "source_text": "24 | Game 24 | Sun 1:40 PM | Sun 1:40 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | Texas Venom 12U | LONESTAR SOFTBALL CLUB CTX SILVER",
+      "game_number": 24
+    },
+    {
+      "id": "5b2aa2e85fb1",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sun",
+      "time": "3:05 PM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "CLUTCH 2033",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/89771/clutch-2033"
+      },
+      "away": {
+        "name": "HC Reign",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/88632/hc-reign"
+      },
+      "source_text": "25 | Game 25 | Sun 3:05 PM | Sun 3:05 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | CLUTCH 2033 | HC Reign",
+      "game_number": 25
+    }
+  ],
+  "team_games": [
+    {
+      "id": "74844fac9a6c",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "8:00 AM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "CLUTCH 2033",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/89771/clutch-2033"
+      },
+      "away": {
+        "name": "Texas Venom 12U",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
+      },
+      "source_text": "1 | Game 1 | Sat 8:00 AM | Sat 8:00 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | CLUTCH 2033 | Texas Venom 12U",
+      "game_number": 1
+    },
+    {
+      "id": "3e61776c11ae",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "9:25 AM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "Texas Venom 12U",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
+      },
+      "away": {
+        "name": "Buzz ATX Elite 2032",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/89155/buzz-atx-elite-2032"
+      },
+      "source_text": "3 | Game 3 | Sat 9:25 AM | Sat 9:25 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | Texas Venom 12U | Buzz ATX Elite 2032",
+      "game_number": 3
+    },
+    {
+      "id": "73830faee715",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sat",
+      "time": "1:40 PM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "CenTex Wolfpack",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/88176/centex-wolfpack"
+      },
+      "away": {
+        "name": "Texas Venom 12U",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
+      },
+      "source_text": "9 | Game 9 | Sat 1:40 PM | Sat 1:40 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | CenTex Wolfpack | Texas Venom 12U",
+      "game_number": 9
+    },
+    {
+      "id": "e15d2f1e4ef7",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sun",
+      "time": "9:25 AM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "Texas Venom 12U",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
+      },
+      "away": {
+        "name": "Next Level Bandits 2k15",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/88826/next-level-bandits-2k15"
+      },
+      "source_text": "18 | Game 18 | Sun 9:25 AM | Sun 9:25 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | Texas Venom 12U | Next Level Bandits 2k15",
+      "game_number": 18
+    },
+    {
+      "id": "5a65b324efae",
+      "stage": "pool",
+      "round": "Pool Play",
+      "date": "Sun",
+      "time": "1:40 PM",
+      "field": "",
+      "status": "scheduled",
+      "home": {
+        "name": "Texas Venom 12U",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
+      },
+      "away": {
+        "name": "LONESTAR SOFTBALL CLUB CTX SILVER",
+        "score": null,
+        "url": "https://www.playncs.com/fastpitch/Teams/Details/89002/lonestar-softball-club-ctx-silver"
+      },
+      "source_text": "24 | Game 24 | Sun 1:40 PM | Sun 1:40 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | Texas Venom 12U | LONESTAR SOFTBALL CLUB CTX SILVER",
+      "game_number": 24
+    }
+  ],
   "bracket": {
     "published": false,
     "rounds": []
   },
-  "sync_status": "waiting_for_schedule",
-  "sync_message": "NCS has not published a parseable 12U schedule for this event yet."
+  "sync_status": "live",
+  "sync_message": "Loaded 25 division game(s), including 5 Texas Venom game(s), from NCS."
 }
