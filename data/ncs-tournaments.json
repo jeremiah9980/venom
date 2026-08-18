@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-18T10:42:56.057215+00:00",
+  "generated_at": "2026-08-18T11:36:03.066844+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-08-18T10:42:56.743556+00:00",
+      "generated_at": "2026-08-18T11:36:04.065926+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -89,7 +89,7 @@
           "event_id": "13218",
           "title": "3P Sports - Gloves Up for a Cure",
           "event_type": "Tournament",
-          "format": "25",
+          "format": "26",
           "start_date": "2026-10-10",
           "end_date": "2026-10-11",
           "date_label": "Oct 10-11",
@@ -169,7 +169,7 @@
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-08-18T10:42:57.301716+00:00",
+      "generated_at": "2026-08-18T11:36:04.908190+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
