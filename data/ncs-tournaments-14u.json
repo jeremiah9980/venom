@@ -1,6 +1,6 @@
 {
   "team_key": "14u",
-  "generated_at": "2026-08-18T23:33:29.077377+00:00",
+  "generated_at": "2026-08-19T01:50:18.399930+00:00",
   "source": "NCS Fastpitch team page",
   "team": {
     "key": "14u",
@@ -68,7 +68,7 @@
       "event_id": "13597",
       "title": "******* 1 DAY SUNDAY SEPTEMBER SHOWDOWN ********",
       "event_type": "Tournament",
-      "format": "7",
+      "format": "8",
       "start_date": "2026-09-20",
       "end_date": "2026-09-20",
       "date_label": "Sep 20",
