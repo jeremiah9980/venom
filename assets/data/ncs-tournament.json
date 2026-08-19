@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T00:24:39.978837+00:00",
+  "generated_at": "2026-08-19T02:03:00.492758+00:00",
   "source": "PlayNCS event schedule pages (per tracked team)",
   "feeds": [
     {
@@ -1118,7 +1118,7 @@
           "game_number": 21
         },
         {
-          "id": "9e4aaf9432de",
+          "id": "7c35b2896f07",
           "stage": "pool",
           "round": "Pool Play",
           "date": "Sun",
@@ -1131,15 +1131,15 @@
             "url": "https://www.playncs.com/fastpitch/Teams/Details/89161/texas-bombersctx-salado"
           },
           "away": {
-            "name": "Team Rollin 14u",
+            "name": "Austin Crush 14U",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/89041/team-rollin-14u"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88401/austin-crush-14u"
           },
-          "source_text": "22 | Game 22 | Sun 3:05 PM | Sun 3:05 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | Texas BombersCTX-Salado | Team Rollin 14u",
+          "source_text": "22 | Game 22 | Sun 3:05 PM | Sun 3:05 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | Texas BombersCTX-Salado | Austin Crush 14U",
           "game_number": 22
         },
         {
-          "id": "b3498bab5c71",
+          "id": "cb329b1a05e7",
           "stage": "pool",
           "round": "Pool Play",
           "date": "Sun",
@@ -1152,11 +1152,11 @@
             "url": "https://www.playncs.com/fastpitch/Teams/Details/90174/buzz-14u-gold-futures"
           },
           "away": {
-            "name": "Austin Crush 14U",
+            "name": "Team Rollin 14u",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/88401/austin-crush-14u"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89041/team-rollin-14u"
           },
-          "source_text": "23 | Game 23 | Sun 3:05 PM | Sun 3:05 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Buzz 14U Gold Futures | Austin Crush 14U",
+          "source_text": "23 | Game 23 | Sun 3:05 PM | Sun 3:05 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Buzz 14U Gold Futures | Team Rollin 14u",
           "game_number": 23
         },
         {
