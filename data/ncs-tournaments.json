@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-20T14:50:57.587208+00:00",
+  "generated_at": "2026-08-20T15:45:48.016527+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-08-20T14:50:58.432612+00:00",
+      "generated_at": "2026-08-20T15:45:48.918054+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -45,7 +45,7 @@
           "event_id": "13594",
           "title": "******* 1 DAY SATURDAY SEPTEMBER TO REMEMBER FALL CLASSIC *******",
           "event_type": "Tournament",
-          "format": "18",
+          "format": "19",
           "start_date": "2026-09-05",
           "end_date": "2026-09-05",
           "date_label": "Sep 5",
@@ -169,7 +169,7 @@
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-08-20T14:50:59.171339+00:00",
+      "generated_at": "2026-08-20T15:45:49.625178+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
