@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-20T19:41:04.101972+00:00",
+  "generated_at": "2026-08-20T20:42:10.540407+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-08-20T19:41:05.194760+00:00",
+      "generated_at": "2026-08-20T20:42:13.729899+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -141,7 +141,7 @@
           "event_id": "13534",
           "title": "NCS CENTRAL TEXAS FALL REGIONAL CLASS \" C \" TEAMS 70 MIN POOLS 4GG",
           "event_type": "Tournament",
-          "format": "24",
+          "format": "28",
           "start_date": "2026-11-14",
           "end_date": "2026-11-15",
           "date_label": "Nov 14-15",
@@ -152,10 +152,11 @@
             "8U",
             "10U",
             "12U",
-            "14U"
+            "14U",
+            "18U"
           ],
           "tags": [
-            "8U \u00b7 10U \u00b7 12U \u00b7 14U"
+            "8U \u00b7 10U \u00b7 12U \u00b7 14U \u00b7 18U"
           ],
           "verify_division": false,
           "source_url": "https://www.playncs.com/fastpitch/Events/Details/13534/ncs-central-texas-fall-regional-class-c-teams-70-min-pools-4gg"
@@ -169,7 +170,7 @@
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-08-20T19:41:06.128292+00:00",
+      "generated_at": "2026-08-20T20:42:15.058105+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
