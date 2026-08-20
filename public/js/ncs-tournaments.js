@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-08-20T03:07:35.167024+00:00",
+  "generated_at": "2026-08-20T03:55:16.036890+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-08-20T03:07:39.278413+00:00",
+      "generated_at": "2026-08-20T03:55:16.600603+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -89,7 +89,7 @@ window.TEXAS_VENOM_NCS = {
           "event_id": "13218",
           "title": "3P Sports - Gloves Up for a Cure",
           "event_type": "Tournament",
-          "format": "30",
+          "format": "31",
           "start_date": "2026-10-10",
           "end_date": "2026-10-11",
           "date_label": "Oct 10-11",
@@ -169,7 +169,7 @@ window.TEXAS_VENOM_NCS = {
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-08-20T03:07:41.762362+00:00",
+      "generated_at": "2026-08-20T03:55:17.090408+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
