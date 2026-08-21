@@ -1,6 +1,6 @@
 {
   "team_key": "14u",
-  "generated_at": "2026-08-21T01:54:38.210543+00:00",
+  "generated_at": "2026-08-21T03:13:13.121906+00:00",
   "source": "NCS Fastpitch team page",
   "team": {
     "key": "14u",
@@ -117,7 +117,7 @@
       "event_id": "13598",
       "title": "********* OCTOBERFEST ********",
       "event_type": "Tournament",
-      "format": "18",
+      "format": "19",
       "start_date": "2026-10-03",
       "end_date": "2026-10-04",
       "date_label": "Oct 3-4",
