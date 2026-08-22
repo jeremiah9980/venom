@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T21:25:15.600494+00:00",
+  "generated_at": "2026-08-22T21:47:58.245584+00:00",
   "source": "PlayNCS event schedule pages (per tracked team)",
   "feeds": [
     {
@@ -249,7 +249,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/87398/cpyl-queen-bees"
           },
-          "source_text": "11 | Game 11 | Sat 3:05 PM | Sat 3:05 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH | CPYL Queen Bees",
+          "source_text": "11 | Game 11 | Sat 3:05 PM | Sat 3:05 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 10 | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH | 10 - 2 | 2 | CPYL Queen Bees",
           "game_number": 11
         },
         {
@@ -1556,7 +1556,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/87398/cpyl-queen-bees"
       },
-      "source_text": "11 | Game 11 | Sat 3:05 PM | Sat 3:05 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH | CPYL Queen Bees",
+      "source_text": "11 | Game 11 | Sat 3:05 PM | Sat 3:05 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 10 | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH | 10 - 2 | 2 | CPYL Queen Bees",
       "game_number": 11
     },
     {
