@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T15:50:01.302685+00:00",
+  "generated_at": "2026-08-22T16:11:40.840693+00:00",
   "source": "PlayNCS event schedule pages (per tracked team)",
   "feeds": [
     {
@@ -39,7 +39,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
           },
-          "source_text": "1 | Game 1 | Sat 8:00 AM | Sat 8:00 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | CLUTCH 2033 | Texas Venom 12U",
+          "source_text": "1 | Game 1 | Sat 8:00 AM | Sat 8:00 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 11 | CLUTCH 2033 | 11 - 1 | 1 | Texas Venom 12U",
           "game_number": 1
         },
         {
@@ -60,7 +60,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/88632/hc-reign"
           },
-          "source_text": "2 | Game 2 | Sat 8:00 AM | Sat 8:00 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | Next Level Bandits 2k15 | HC Reign",
+          "source_text": "2 | Game 2 | Sat 8:00 AM | Sat 8:00 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 12 | Next Level Bandits 2k15 | 12 - 2 | 2 | HC Reign",
           "game_number": 2
         },
         {
@@ -81,7 +81,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/89155/buzz-atx-elite-2032"
           },
-          "source_text": "3 | Game 3 | Sat 9:25 AM | Sat 9:25 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | Texas Venom 12U | Buzz ATX Elite 2032",
+          "source_text": "3 | Game 3 | Sat 9:25 AM | Sat 9:25 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 1 | Texas Venom 12U | 1 - 11 | 11 | Buzz ATX Elite 2032",
           "game_number": 3
         },
         {
@@ -102,7 +102,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/87398/cpyl-queen-bees"
           },
-          "source_text": "4 | Game 4 | Sat 9:25 AM | Sat 9:25 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | Next Level Bandits 2k15 | CPYL Queen Bees",
+          "source_text": "4 | Game 4 | Sat 9:25 AM | Sat 9:25 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 5 | Next Level Bandits 2k15 | 5 - 4 | 4 | CPYL Queen Bees",
           "game_number": 4
         },
         {
@@ -566,7 +566,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
           },
-          "source_text": "1 | Game 1 | Sat 8:00 AM | Sat 8:00 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | CLUTCH 2033 | Texas Venom 12U",
+          "source_text": "1 | Game 1 | Sat 8:00 AM | Sat 8:00 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 11 | CLUTCH 2033 | 11 - 1 | 1 | Texas Venom 12U",
           "game_number": 1
         },
         {
@@ -587,7 +587,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/89155/buzz-atx-elite-2032"
           },
-          "source_text": "3 | Game 3 | Sat 9:25 AM | Sat 9:25 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | Texas Venom 12U | Buzz ATX Elite 2032",
+          "source_text": "3 | Game 3 | Sat 9:25 AM | Sat 9:25 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 1 | Texas Venom 12U | 1 - 11 | 11 | Buzz ATX Elite 2032",
           "game_number": 3
         },
         {
@@ -694,7 +694,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/88401/austin-crush-14u"
           },
-          "source_text": "1 | Game 1 | Sat 8:00 AM | Sat 8:00 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Team Rollin 14u | Austin Crush 14U",
+          "source_text": "1 | Game 1 | Sat 8:00 AM | Sat 8:00 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 1 | Team Rollin 14u | 1 - 5 | 5 | Austin Crush 14U",
           "game_number": 1
         },
         {
@@ -715,7 +715,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/89041/team-rollin-14u"
           },
-          "source_text": "2 | Game 2 | Sat 9:25 AM | Sat 9:25 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Texas BombersCTX-Salado | Team Rollin 14u",
+          "source_text": "2 | Game 2 | Sat 9:25 AM | Sat 9:25 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 5 | Texas BombersCTX-Salado | 5 - 3 | 3 | Team Rollin 14u",
           "game_number": 2
         },
         {
@@ -1346,7 +1346,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
       },
-      "source_text": "1 | Game 1 | Sat 8:00 AM | Sat 8:00 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | CLUTCH 2033 | Texas Venom 12U",
+      "source_text": "1 | Game 1 | Sat 8:00 AM | Sat 8:00 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 11 | CLUTCH 2033 | 11 - 1 | 1 | Texas Venom 12U",
       "game_number": 1
     },
     {
@@ -1367,7 +1367,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/88632/hc-reign"
       },
-      "source_text": "2 | Game 2 | Sat 8:00 AM | Sat 8:00 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | Next Level Bandits 2k15 | HC Reign",
+      "source_text": "2 | Game 2 | Sat 8:00 AM | Sat 8:00 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 12 | Next Level Bandits 2k15 | 12 - 2 | 2 | HC Reign",
       "game_number": 2
     },
     {
@@ -1388,7 +1388,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/89155/buzz-atx-elite-2032"
       },
-      "source_text": "3 | Game 3 | Sat 9:25 AM | Sat 9:25 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | Texas Venom 12U | Buzz ATX Elite 2032",
+      "source_text": "3 | Game 3 | Sat 9:25 AM | Sat 9:25 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 1 | Texas Venom 12U | 1 - 11 | 11 | Buzz ATX Elite 2032",
       "game_number": 3
     },
     {
@@ -1409,7 +1409,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/87398/cpyl-queen-bees"
       },
-      "source_text": "4 | Game 4 | Sat 9:25 AM | Sat 9:25 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | Next Level Bandits 2k15 | CPYL Queen Bees",
+      "source_text": "4 | Game 4 | Sat 9:25 AM | Sat 9:25 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 5 | Next Level Bandits 2k15 | 5 - 4 | 4 | CPYL Queen Bees",
       "game_number": 4
     },
     {
@@ -1873,7 +1873,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
       },
-      "source_text": "1 | Game 1 | Sat 8:00 AM | Sat 8:00 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | CLUTCH 2033 | Texas Venom 12U",
+      "source_text": "1 | Game 1 | Sat 8:00 AM | Sat 8:00 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 11 | CLUTCH 2033 | 11 - 1 | 1 | Texas Venom 12U",
       "game_number": 1
     },
     {
@@ -1894,7 +1894,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/89155/buzz-atx-elite-2032"
       },
-      "source_text": "3 | Game 3 | Sat 9:25 AM | Sat 9:25 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | Texas Venom 12U | Buzz ATX Elite 2032",
+      "source_text": "3 | Game 3 | Sat 9:25 AM | Sat 9:25 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 1 | Texas Venom 12U | 1 - 11 | 11 | Buzz ATX Elite 2032",
       "game_number": 3
     },
     {
