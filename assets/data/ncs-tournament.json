@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T17:56:04.578017+00:00",
+  "generated_at": "2026-08-22T18:38:49.762699+00:00",
   "source": "PlayNCS event schedule pages (per tracked team)",
   "feeds": [
     {
@@ -123,7 +123,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/89155/buzz-atx-elite-2032"
           },
-          "source_text": "5 | Game 5 | Sat 10:50 AM | Sat 10:50 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | HC Reign | Buzz ATX Elite 2032",
+          "source_text": "5 | Game 5 | Sat 10:50 AM | Sat 10:50 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 0 | HC Reign | 0 - 13 | 13 | Buzz ATX Elite 2032",
           "game_number": 5
         },
         {
@@ -144,7 +144,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/89771/clutch-2033"
           },
-          "source_text": "6 | Game 6 | Sat 10:50 AM | Sat 10:50 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | CPYL Queen Bees | CLUTCH 2033",
+          "source_text": "6 | Game 6 | Sat 10:50 AM | Sat 10:50 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 2 | CPYL Queen Bees | 2 - 8 | 8 | CLUTCH 2033",
           "game_number": 6
         },
         {
@@ -186,7 +186,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/88826/next-level-bandits-2k15"
           },
-          "source_text": "8 | Game 8 | Sat 12:15 PM | Sat 12:15 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH | Next Level Bandits 2k15",
+          "source_text": "8 | Game 8 | Sat 12:15 PM | Sat 12:15 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 6 | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH | 6 - 0 | 0 | Next Level Bandits 2k15",
           "game_number": 8
         },
         {
@@ -736,7 +736,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/88401/austin-crush-14u"
           },
-          "source_text": "3 | Game 3 | Sat 10:50 AM | Sat 10:50 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Vikings Fastpitch | Austin Crush 14U",
+          "source_text": "3 | Game 3 | Sat 10:50 AM | Sat 10:50 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 2 | Vikings Fastpitch | 2 - 15 | 15 | Austin Crush 14U",
           "game_number": 3
         },
         {
@@ -883,7 +883,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/89172/drip-select-frey"
           },
-          "source_text": "10 | Game 10 | Sat 12:15 PM | Sat 12:15 PM | YMCS of Highland Lakes (Burnet, TX) Field 1 | YMCS of Highland Lakes (Burnet, TX) Field 1 | Next Level Bandits 14u | Drip Select Frey",
+          "source_text": "10 | Game 10 | Sat 12:15 PM | Sat 12:15 PM | YMCS of Highland Lakes (Burnet, TX) Field 1 | YMCS of Highland Lakes (Burnet, TX) Field 1 | 2 | Next Level Bandits 14u | 2 - 8 | 8 | Drip Select Frey",
           "game_number": 10
         },
         {
@@ -1430,7 +1430,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/89155/buzz-atx-elite-2032"
       },
-      "source_text": "5 | Game 5 | Sat 10:50 AM | Sat 10:50 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | HC Reign | Buzz ATX Elite 2032",
+      "source_text": "5 | Game 5 | Sat 10:50 AM | Sat 10:50 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 0 | HC Reign | 0 - 13 | 13 | Buzz ATX Elite 2032",
       "game_number": 5
     },
     {
@@ -1451,7 +1451,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/89771/clutch-2033"
       },
-      "source_text": "6 | Game 6 | Sat 10:50 AM | Sat 10:50 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | CPYL Queen Bees | CLUTCH 2033",
+      "source_text": "6 | Game 6 | Sat 10:50 AM | Sat 10:50 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 2 | CPYL Queen Bees | 2 - 8 | 8 | CLUTCH 2033",
       "game_number": 6
     },
     {
@@ -1493,7 +1493,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/88826/next-level-bandits-2k15"
       },
-      "source_text": "8 | Game 8 | Sat 12:15 PM | Sat 12:15 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH | Next Level Bandits 2k15",
+      "source_text": "8 | Game 8 | Sat 12:15 PM | Sat 12:15 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 6 | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH | 6 - 0 | 0 | Next Level Bandits 2k15",
       "game_number": 8
     },
     {
