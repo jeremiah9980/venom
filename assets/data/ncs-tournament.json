@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T20:27:16.615154+00:00",
+  "generated_at": "2026-08-22T20:51:49.822645+00:00",
   "source": "PlayNCS event schedule pages (per tracked team)",
   "feeds": [
     {
@@ -228,7 +228,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/88632/hc-reign"
           },
-          "source_text": "10 | Game 10 | Sat 1:40 PM | Sat 1:40 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | LONESTAR SOFTBALL CLUB CTX SILVER | HC Reign",
+          "source_text": "10 | Game 10 | Sat 1:40 PM | Sat 1:40 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 8 | LONESTAR SOFTBALL CLUB CTX SILVER | 8 - 3 | 3 | HC Reign",
           "game_number": 10
         },
         {
@@ -1535,7 +1535,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/88632/hc-reign"
       },
-      "source_text": "10 | Game 10 | Sat 1:40 PM | Sat 1:40 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | LONESTAR SOFTBALL CLUB CTX SILVER | HC Reign",
+      "source_text": "10 | Game 10 | Sat 1:40 PM | Sat 1:40 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 8 | LONESTAR SOFTBALL CLUB CTX SILVER | 8 - 3 | 3 | HC Reign",
       "game_number": 10
     },
     {
