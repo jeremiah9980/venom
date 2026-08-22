@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T18:38:49.762699+00:00",
+  "generated_at": "2026-08-22T19:03:53.953023+00:00",
   "source": "PlayNCS event schedule pages (per tracked team)",
   "feeds": [
     {
@@ -165,7 +165,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/88176/centex-wolfpack"
           },
-          "source_text": "7 | Game 7 | Sat 12:15 PM | Sat 12:15 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | POWERHOUSE 12U SZETELA | CenTex Wolfpack",
+          "source_text": "7 | Game 7 | Sat 12:15 PM | Sat 12:15 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 0 | POWERHOUSE 12U SZETELA | 0 - 8 | 8 | CenTex Wolfpack",
           "game_number": 7
         },
         {
@@ -757,7 +757,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/90174/buzz-14u-gold-futures"
           },
-          "source_text": "4 | Game 4 | Sat 12:15 PM | Sat 12:15 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Texas Venom 14U | Buzz 14U Gold Futures",
+          "source_text": "4 | Game 4 | Sat 12:15 PM | Sat 12:15 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 0 | Texas Venom 14U | 0 - 9 | 9 | Buzz 14U Gold Futures",
           "game_number": 4
         },
         {
@@ -1221,7 +1221,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/90174/buzz-14u-gold-futures"
           },
-          "source_text": "4 | Game 4 | Sat 12:15 PM | Sat 12:15 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Texas Venom 14U | Buzz 14U Gold Futures",
+          "source_text": "4 | Game 4 | Sat 12:15 PM | Sat 12:15 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 0 | Texas Venom 14U | 0 - 9 | 9 | Buzz 14U Gold Futures",
           "game_number": 4
         },
         {
@@ -1472,7 +1472,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/88176/centex-wolfpack"
       },
-      "source_text": "7 | Game 7 | Sat 12:15 PM | Sat 12:15 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | POWERHOUSE 12U SZETELA | CenTex Wolfpack",
+      "source_text": "7 | Game 7 | Sat 12:15 PM | Sat 12:15 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 0 | POWERHOUSE 12U SZETELA | 0 - 8 | 8 | CenTex Wolfpack",
       "game_number": 7
     },
     {
