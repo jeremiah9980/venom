@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T22:36:07.532289+00:00",
+  "generated_at": "2026-08-22T22:56:58.873971+00:00",
   "source": "PlayNCS event schedule pages (per tracked team)",
   "feeds": [
     {
@@ -291,7 +291,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/89155/buzz-atx-elite-2032"
           },
-          "source_text": "13 | Game 13 | Sat 4:30 PM | Sat 4:30 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | POWERHOUSE 12U SZETELA | Buzz ATX Elite 2032",
+          "source_text": "13 | Game 13 | Sat 4:30 PM | Sat 4:30 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 0 | POWERHOUSE 12U SZETELA | 0 - 10 | 10 | Buzz ATX Elite 2032",
           "game_number": 13
         },
         {
@@ -312,7 +312,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/88176/centex-wolfpack"
           },
-          "source_text": "14 | Game 14 | Sat 4:30 PM | Sat 4:30 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH | CenTex Wolfpack",
+          "source_text": "14 | Game 14 | Sat 4:30 PM | Sat 4:30 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 1 | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH | 1 - 6 | 6 | CenTex Wolfpack",
           "game_number": 14
         },
         {
@@ -1598,7 +1598,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/89155/buzz-atx-elite-2032"
       },
-      "source_text": "13 | Game 13 | Sat 4:30 PM | Sat 4:30 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | POWERHOUSE 12U SZETELA | Buzz ATX Elite 2032",
+      "source_text": "13 | Game 13 | Sat 4:30 PM | Sat 4:30 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 0 | POWERHOUSE 12U SZETELA | 0 - 10 | 10 | Buzz ATX Elite 2032",
       "game_number": 13
     },
     {
@@ -1619,7 +1619,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/88176/centex-wolfpack"
       },
-      "source_text": "14 | Game 14 | Sat 4:30 PM | Sat 4:30 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH | CenTex Wolfpack",
+      "source_text": "14 | Game 14 | Sat 4:30 PM | Sat 4:30 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 1 | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH | 1 - 6 | 6 | CenTex Wolfpack",
       "game_number": 14
     },
     {
