@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T19:54:05.542133+00:00",
+  "generated_at": "2026-08-22T20:27:16.615154+00:00",
   "source": "PlayNCS event schedule pages (per tracked team)",
   "feeds": [
     {
@@ -207,7 +207,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
           },
-          "source_text": "9 | Game 9 | Sat 1:40 PM | Sat 1:40 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | CenTex Wolfpack | Texas Venom 12U",
+          "source_text": "9 | Game 9 | Sat 1:40 PM | Sat 1:40 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 15 | CenTex Wolfpack | 15 - 2 | 2 | Texas Venom 12U",
           "game_number": 9
         },
         {
@@ -608,7 +608,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
           },
-          "source_text": "9 | Game 9 | Sat 1:40 PM | Sat 1:40 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | CenTex Wolfpack | Texas Venom 12U",
+          "source_text": "9 | Game 9 | Sat 1:40 PM | Sat 1:40 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 15 | CenTex Wolfpack | 15 - 2 | 2 | Texas Venom 12U",
           "game_number": 9
         },
         {
@@ -883,7 +883,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/89172/drip-select-frey"
           },
-          "source_text": "10 | Game 10 | Sat 12:15 PM | Sat 12:15 PM | YMCS of Highland Lakes (Burnet, TX) Field 1 | YMCS of Highland Lakes (Burnet, TX) Field 1 | 2 | Next Level Bandits 14u | 2 - 8 | 8 | Drip Select Frey",
+          "source_text": "10 | Game 10 | Sat 12:15 PM | Sat 12:15 PM | YMCS of Highland Lakes (Burnet, TX) Field 1 | YMCS of Highland Lakes (Burnet, TX) Field 1 | 4 | Next Level Bandits 14u | 4 - 8 | 8 | Drip Select Frey",
           "game_number": 10
         },
         {
@@ -904,7 +904,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/89078/txplosion-fastpitch-smith"
           },
-          "source_text": "11 | Game 11 | Sat 1:40 PM | Sat 1:40 PM | YMCS of Highland Lakes (Burnet, TX) Field 1 | YMCS of Highland Lakes (Burnet, TX) Field 1 | LONESTAR SOFTBALL CLUB CTX RED | TXplosion Fastpitch- Smith",
+          "source_text": "11 | Game 11 | Sat 1:40 PM | Sat 1:40 PM | YMCS of Highland Lakes (Burnet, TX) Field 1 | YMCS of Highland Lakes (Burnet, TX) Field 1 | 8 | LONESTAR SOFTBALL CLUB CTX RED | 8 - 9 | 9 | TXplosion Fastpitch- Smith",
           "game_number": 11
         },
         {
@@ -1514,7 +1514,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
       },
-      "source_text": "9 | Game 9 | Sat 1:40 PM | Sat 1:40 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | CenTex Wolfpack | Texas Venom 12U",
+      "source_text": "9 | Game 9 | Sat 1:40 PM | Sat 1:40 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 15 | CenTex Wolfpack | 15 - 2 | 2 | Texas Venom 12U",
       "game_number": 9
     },
     {
@@ -1915,7 +1915,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
       },
-      "source_text": "9 | Game 9 | Sat 1:40 PM | Sat 1:40 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | CenTex Wolfpack | Texas Venom 12U",
+      "source_text": "9 | Game 9 | Sat 1:40 PM | Sat 1:40 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 15 | CenTex Wolfpack | 15 - 2 | 2 | Texas Venom 12U",
       "game_number": 9
     },
     {
