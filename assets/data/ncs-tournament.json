@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T20:51:49.822645+00:00",
+  "generated_at": "2026-08-22T21:25:15.600494+00:00",
   "source": "PlayNCS event schedule pages (per tracked team)",
   "feeds": [
     {
@@ -270,7 +270,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/89002/lonestar-softball-club-ctx-silver"
           },
-          "source_text": "12 | Game 12 | Sat 3:05 PM | Sat 3:05 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | CLUTCH 2033 | LONESTAR SOFTBALL CLUB CTX SILVER",
+          "source_text": "12 | Game 12 | Sat 3:05 PM | Sat 3:05 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 5 | CLUTCH 2033 | 5 - 4 | 4 | LONESTAR SOFTBALL CLUB CTX SILVER",
           "game_number": 12
         },
         {
@@ -799,7 +799,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/89041/team-rollin-14u"
           },
-          "source_text": "6 | Game 6 | Sat 3:05 PM | Sat 3:05 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Vikings Fastpitch | Team Rollin 14u",
+          "source_text": "6 | Game 6 | Sat 3:05 PM | Sat 3:05 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 0 | Vikings Fastpitch | 0 - 10 | 10 | Team Rollin 14u",
           "game_number": 6
         },
         {
@@ -1577,7 +1577,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/89002/lonestar-softball-club-ctx-silver"
       },
-      "source_text": "12 | Game 12 | Sat 3:05 PM | Sat 3:05 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | CLUTCH 2033 | LONESTAR SOFTBALL CLUB CTX SILVER",
+      "source_text": "12 | Game 12 | Sat 3:05 PM | Sat 3:05 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 5 | CLUTCH 2033 | 5 - 4 | 4 | LONESTAR SOFTBALL CLUB CTX SILVER",
       "game_number": 12
     },
     {
