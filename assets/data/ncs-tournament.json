@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T22:05:56.766123+00:00",
+  "generated_at": "2026-08-22T22:36:07.532289+00:00",
   "source": "PlayNCS event schedule pages (per tracked team)",
   "feeds": [
     {
@@ -820,7 +820,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/88401/austin-crush-14u"
           },
-          "source_text": "7 | Game 7 | Sat 4:30 PM | Sat 4:30 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Texas Venom 14U | Austin Crush 14U",
+          "source_text": "7 | Game 7 | Sat 4:30 PM | Sat 4:30 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 0 | Texas Venom 14U | 0 - 9 | 9 | Austin Crush 14U",
           "game_number": 7
         },
         {
@@ -1242,7 +1242,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/88401/austin-crush-14u"
           },
-          "source_text": "7 | Game 7 | Sat 4:30 PM | Sat 4:30 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Texas Venom 14U | Austin Crush 14U",
+          "source_text": "7 | Game 7 | Sat 4:30 PM | Sat 4:30 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 0 | Texas Venom 14U | 0 - 9 | 9 | Austin Crush 14U",
           "game_number": 7
         },
         {
