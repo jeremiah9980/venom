@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T00:35:41.907317+00:00",
+  "generated_at": "2026-08-23T02:12:45.196207+00:00",
   "source": "PlayNCS event schedule pages (per tracked team)",
   "feeds": [
     {
@@ -333,7 +333,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/89002/lonestar-softball-club-ctx-silver"
           },
-          "source_text": "15 | Game 15 | Sat 5:55 PM | Sat 5:55 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | POWERHOUSE 12U SZETELA | LONESTAR SOFTBALL CLUB CTX SILVER",
+          "source_text": "15 | Game 15 | Sat 5:55 PM | Sat 5:55 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 8 | POWERHOUSE 12U SZETELA | 8 - 2 | 2 | LONESTAR SOFTBALL CLUB CTX SILVER",
           "game_number": 15
         },
         {
@@ -841,7 +841,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/89161/texas-bombersctx-salado"
           },
-          "source_text": "8 | Game 8 | Sat 5:55 PM | Sat 5:55 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Texas Venom 14U | Texas BombersCTX-Salado",
+          "source_text": "8 | Game 8 | Sat 5:55 PM | Sat 5:55 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 1 | Texas Venom 14U | 1 - 9 | 9 | Texas BombersCTX-Salado",
           "game_number": 8
         },
         {
@@ -862,7 +862,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/90174/buzz-14u-gold-futures"
           },
-          "source_text": "9 | Game 9 | Sat 5:55 PM | Sat 5:55 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | Vikings Fastpitch | Buzz 14U Gold Futures",
+          "source_text": "9 | Game 9 | Sat 5:55 PM | Sat 5:55 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 0 | Vikings Fastpitch | 0 - 18 | 18 | Buzz 14U Gold Futures",
           "game_number": 9
         },
         {
@@ -967,7 +967,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/89078/txplosion-fastpitch-smith"
           },
-          "source_text": "14 | Game 14 | Sat 5:55 PM | Sat 5:55 PM | YMCS of Highland Lakes (Burnet, TX) Field 1 | YMCS of Highland Lakes (Burnet, TX) Field 1 | Next Level Bandits 14u | TXplosion Fastpitch- Smith",
+          "source_text": "14 | Game 14 | Sat 5:55 PM | Sat 5:55 PM | YMCS of Highland Lakes (Burnet, TX) Field 1 | YMCS of Highland Lakes (Burnet, TX) Field 1 | 2 | Next Level Bandits 14u | 2 - 1 | 1 | TXplosion Fastpitch- Smith",
           "game_number": 14
         },
         {
@@ -988,7 +988,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/89001/lonestar-softball-club-ctx-red"
           },
-          "source_text": "15 | Game 15 | Sat 7:20 PM | Sat 7:20 PM | YMCS of Highland Lakes (Burnet, TX) Field 1 | YMCS of Highland Lakes (Burnet, TX) Field 1 | Drip Select Frey | LONESTAR SOFTBALL CLUB CTX RED",
+          "source_text": "15 | Game 15 | Sat 7:20 PM | Sat 7:20 PM | YMCS of Highland Lakes (Burnet, TX) Field 1 | YMCS of Highland Lakes (Burnet, TX) Field 1 | 4 | Drip Select Frey | 4 - 5 | 5 | LONESTAR SOFTBALL CLUB CTX RED",
           "game_number": 15
         },
         {
@@ -1263,7 +1263,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/89161/texas-bombersctx-salado"
           },
-          "source_text": "8 | Game 8 | Sat 5:55 PM | Sat 5:55 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Texas Venom 14U | Texas BombersCTX-Salado",
+          "source_text": "8 | Game 8 | Sat 5:55 PM | Sat 5:55 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 1 | Texas Venom 14U | 1 - 9 | 9 | Texas BombersCTX-Salado",
           "game_number": 8
         },
         {
@@ -1640,7 +1640,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/89002/lonestar-softball-club-ctx-silver"
       },
-      "source_text": "15 | Game 15 | Sat 5:55 PM | Sat 5:55 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | POWERHOUSE 12U SZETELA | LONESTAR SOFTBALL CLUB CTX SILVER",
+      "source_text": "15 | Game 15 | Sat 5:55 PM | Sat 5:55 PM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 8 | POWERHOUSE 12U SZETELA | 8 - 2 | 2 | LONESTAR SOFTBALL CLUB CTX SILVER",
       "game_number": 15
     },
     {
