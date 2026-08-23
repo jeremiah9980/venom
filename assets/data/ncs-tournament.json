@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T17:54:22.425698+00:00",
+  "generated_at": "2026-08-23T18:34:23.061997+00:00",
   "source": "PlayNCS event schedule pages (per tracked team)",
   "feeds": [
     {
@@ -1072,7 +1072,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/89078/txplosion-fastpitch-smith"
           },
-          "source_text": "19 | Game 19 | Sun 12:15 PM | Sun 12:15 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Texas Venom 14U | TXplosion Fastpitch- Smith",
+          "source_text": "19 | Game 19 | Sun 12:15 PM | Sun 12:15 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 1 | Texas Venom 14U | 1 - 9 | 9 | TXplosion Fastpitch- Smith",
           "game_number": 19
         },
         {
@@ -1305,7 +1305,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/89078/txplosion-fastpitch-smith"
           },
-          "source_text": "19 | Game 19 | Sun 12:15 PM | Sun 12:15 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Texas Venom 14U | TXplosion Fastpitch- Smith",
+          "source_text": "19 | Game 19 | Sun 12:15 PM | Sun 12:15 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 1 | Texas Venom 14U | 1 - 9 | 9 | TXplosion Fastpitch- Smith",
           "game_number": 19
         }
       ],
