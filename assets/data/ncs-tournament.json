@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T14:26:58.069657+00:00",
+  "generated_at": "2026-08-23T14:52:38.708809+00:00",
   "source": "PlayNCS event schedule pages (per tracked team)",
   "feeds": [
     {
@@ -354,7 +354,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/88819/powerhouse-12u-szetela"
           },
-          "source_text": "16 | Game 16 | Sun 8:00 AM | Sun 8:00 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | CPYL Queen Bees | POWERHOUSE 12U SZETELA",
+          "source_text": "16 | Game 16 | Sun 8:00 AM | Sun 8:00 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 7 | CPYL Queen Bees | 7 - 6 | 6 | POWERHOUSE 12U SZETELA",
           "game_number": 16
         },
         {
@@ -375,7 +375,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/88176/centex-wolfpack"
           },
-          "source_text": "17 | Game 17 | Sun 8:00 AM | Sun 8:00 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | Buzz ATX Elite 2032 | CenTex Wolfpack",
+          "source_text": "17 | Game 17 | Sun 8:00 AM | Sun 8:00 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 7 | Buzz ATX Elite 2032 | 7 - 2 | 2 | CenTex Wolfpack",
           "game_number": 17
         },
         {
@@ -1009,7 +1009,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/90211/next-level-bandits-14u"
           },
-          "source_text": "16 | Game 16 | Sun 8:00 AM | Sun 8:00 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Texas Venom 14U | Next Level Bandits 14u",
+          "source_text": "16 | Game 16 | Sun 8:00 AM | Sun 8:00 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 6 | Texas Venom 14U | 6 - 0 | 0 | Next Level Bandits 14u",
           "game_number": 16
         },
         {
@@ -1284,7 +1284,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/90211/next-level-bandits-14u"
           },
-          "source_text": "16 | Game 16 | Sun 8:00 AM | Sun 8:00 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Texas Venom 14U | Next Level Bandits 14u",
+          "source_text": "16 | Game 16 | Sun 8:00 AM | Sun 8:00 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 6 | Texas Venom 14U | 6 - 0 | 0 | Next Level Bandits 14u",
           "game_number": 16
         },
         {
@@ -1661,7 +1661,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/88819/powerhouse-12u-szetela"
       },
-      "source_text": "16 | Game 16 | Sun 8:00 AM | Sun 8:00 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | CPYL Queen Bees | POWERHOUSE 12U SZETELA",
+      "source_text": "16 | Game 16 | Sun 8:00 AM | Sun 8:00 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 7 | CPYL Queen Bees | 7 - 6 | 6 | POWERHOUSE 12U SZETELA",
       "game_number": 16
     },
     {
@@ -1682,7 +1682,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/88176/centex-wolfpack"
       },
-      "source_text": "17 | Game 17 | Sun 8:00 AM | Sun 8:00 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | Buzz ATX Elite 2032 | CenTex Wolfpack",
+      "source_text": "17 | Game 17 | Sun 8:00 AM | Sun 8:00 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 7 | Buzz ATX Elite 2032 | 7 - 2 | 2 | CenTex Wolfpack",
       "game_number": 17
     },
     {
