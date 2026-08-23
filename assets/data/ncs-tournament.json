@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T16:46:15.844287+00:00",
+  "generated_at": "2026-08-23T17:09:11.046890+00:00",
   "source": "PlayNCS event schedule pages (per tracked team)",
   "feeds": [
     {
@@ -396,7 +396,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/88826/next-level-bandits-2k15"
           },
-          "source_text": "18 | Game 18 | Sun 9:25 AM | Sun 9:25 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | Texas Venom 12U | Next Level Bandits 2k15",
+          "source_text": "18 | Game 18 | Sun 9:25 AM | Sun 9:25 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 9 | Texas Venom 12U | 9 - 2 | 2 | Next Level Bandits 2k15",
           "game_number": 18
         },
         {
@@ -417,7 +417,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/87661/lonestar-softball-club-central-12u-smith"
           },
-          "source_text": "19 | Game 19 | Sun 9:25 AM | Sun 9:25 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | CLUTCH 2033 | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH",
+          "source_text": "19 | Game 19 | Sun 9:25 AM | Sun 9:25 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 2 | CLUTCH 2033 | 2 - 8 | 8 | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH",
           "game_number": 19
         },
         {
@@ -438,7 +438,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/88819/powerhouse-12u-szetela"
           },
-          "source_text": "20 | Game 20 | Sun 10:50 AM | Sun 10:50 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | Next Level Bandits 2k15 | POWERHOUSE 12U SZETELA",
+          "source_text": "20 | Game 20 | Sun 10:50 AM | Sun 10:50 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 10 | Next Level Bandits 2k15 | 10 - 10 | 10 | POWERHOUSE 12U SZETELA",
           "game_number": 20
         },
         {
@@ -459,7 +459,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/89002/lonestar-softball-club-ctx-silver"
           },
-          "source_text": "21 | Game 21 | Sun 10:50 AM | Sun 10:50 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | CenTex Wolfpack | LONESTAR SOFTBALL CLUB CTX SILVER",
+          "source_text": "21 | Game 21 | Sun 10:50 AM | Sun 10:50 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 16 | CenTex Wolfpack | 16 - 0 | 0 | LONESTAR SOFTBALL CLUB CTX SILVER",
           "game_number": 21
         },
         {
@@ -629,7 +629,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/88826/next-level-bandits-2k15"
           },
-          "source_text": "18 | Game 18 | Sun 9:25 AM | Sun 9:25 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | Texas Venom 12U | Next Level Bandits 2k15",
+          "source_text": "18 | Game 18 | Sun 9:25 AM | Sun 9:25 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 9 | Texas Venom 12U | 9 - 2 | 2 | Next Level Bandits 2k15",
           "game_number": 18
         },
         {
@@ -1030,7 +1030,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/89078/txplosion-fastpitch-smith"
           },
-          "source_text": "17 | Game 17 | Sun 9:25 AM | Sun 9:25 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Vikings Fastpitch | TXplosion Fastpitch- Smith",
+          "source_text": "17 | Game 17 | Sun 9:25 AM | Sun 9:25 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 3 | Vikings Fastpitch | 3 - 13 | 13 | TXplosion Fastpitch- Smith",
           "game_number": 17
         },
         {
@@ -1051,7 +1051,7 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/89357/vikings-fastpitch"
           },
-          "source_text": "18 | Game 18 | Sun 10:50 AM | Sun 10:50 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | Next Level Bandits 14u | Vikings Fastpitch",
+          "source_text": "18 | Game 18 | Sun 10:50 AM | Sun 10:50 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 9 | Next Level Bandits 14u | 9 - 4 | 4 | Vikings Fastpitch",
           "game_number": 18
         },
         {
@@ -1703,7 +1703,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/88826/next-level-bandits-2k15"
       },
-      "source_text": "18 | Game 18 | Sun 9:25 AM | Sun 9:25 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | Texas Venom 12U | Next Level Bandits 2k15",
+      "source_text": "18 | Game 18 | Sun 9:25 AM | Sun 9:25 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 9 | Texas Venom 12U | 9 - 2 | 2 | Next Level Bandits 2k15",
       "game_number": 18
     },
     {
@@ -1724,7 +1724,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/87661/lonestar-softball-club-central-12u-smith"
       },
-      "source_text": "19 | Game 19 | Sun 9:25 AM | Sun 9:25 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | CLUTCH 2033 | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH",
+      "source_text": "19 | Game 19 | Sun 9:25 AM | Sun 9:25 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 2 | CLUTCH 2033 | 2 - 8 | 8 | LONESTAR SOFTBALL CLUB CENTRAL-12U SMITH",
       "game_number": 19
     },
     {
@@ -1745,7 +1745,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/88819/powerhouse-12u-szetela"
       },
-      "source_text": "20 | Game 20 | Sun 10:50 AM | Sun 10:50 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | Next Level Bandits 2k15 | POWERHOUSE 12U SZETELA",
+      "source_text": "20 | Game 20 | Sun 10:50 AM | Sun 10:50 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 10 | Next Level Bandits 2k15 | 10 - 10 | 10 | POWERHOUSE 12U SZETELA",
       "game_number": 20
     },
     {
@@ -1766,7 +1766,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/89002/lonestar-softball-club-ctx-silver"
       },
-      "source_text": "21 | Game 21 | Sun 10:50 AM | Sun 10:50 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | CenTex Wolfpack | LONESTAR SOFTBALL CLUB CTX SILVER",
+      "source_text": "21 | Game 21 | Sun 10:50 AM | Sun 10:50 AM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 16 | CenTex Wolfpack | 16 - 0 | 0 | LONESTAR SOFTBALL CLUB CTX SILVER",
       "game_number": 21
     },
     {
@@ -1936,7 +1936,7 @@
         "score": null,
         "url": "https://www.playncs.com/fastpitch/Teams/Details/88826/next-level-bandits-2k15"
       },
-      "source_text": "18 | Game 18 | Sun 9:25 AM | Sun 9:25 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | Texas Venom 12U | Next Level Bandits 2k15",
+      "source_text": "18 | Game 18 | Sun 9:25 AM | Sun 9:25 AM | JO Wilson Sports Complex (Bertram) Back Field | JO Wilson Sports Complex (Bertram) Back Field | 9 | Texas Venom 12U | 9 - 2 | 2 | Next Level Bandits 2k15",
       "game_number": 18
     },
     {
