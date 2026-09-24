@@ -16,31 +16,22 @@
       "url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
     },
     {
-      "id": 13214,
-      "name": "3P Sports - Dawg Days of Summer",
-      "dates": "Aug 29-30",
-      "location": "Lorena, TX",
-      "division": "8U · 10U · 12U · 14U · 18U",
+      "id": 13874,
+      "name": "HOMERUN DERBY 6GG 70 MIN POOL 14u",
+      "dates": "Aug 22",
+      "location": "",
+      "division": "14U",
       "registered_teams": null,
-      "url": "https://www.playncs.com/fastpitch/Events/Details/13214/3p-sports-dawg-days-of-summer"
-    },
-    {
-      "id": 13597,
-      "name": "******* 1 DAY SUNDAY SEPTEMBER SHOWDOWN ********",
-      "dates": "Sep 20",
-      "location": "Seguin, TX",
-      "division": "14U · 18U",
-      "registered_teams": null,
-      "url": "https://www.playncs.com/fastpitch/Events/Details/13597/1-day-sunday-september-showdown"
+      "url": "https://www.playncs.com/fastpitch/Events/Details/13874/homerun-derby-6gg-70-min-pool-14u"
     },
     {
       "id": 13209,
-      "name": "3P Sports - September Sapphire CROSSROADS Showdown",
+      "name": "3P Sports - September Sapphire CROSSROADS Showdown **DOUBLE POINTS**",
       "dates": "Sep 26-27",
-      "location": "Temple/Harker Heights, TX",
+      "location": "Temple/Lorena, TX",
       "division": "8U · 10U · 12U · 14U · 18U",
       "registered_teams": null,
-      "url": "https://www.playncs.com/fastpitch/Events/Details/13209/3p-sports-september-sapphire-crossroads-showdown"
+      "url": "https://www.playncs.com/fastpitch/Events/Details/13209/3p-sports-september-sapphire-crossroads-showdown-double-points"
     },
     {
       "id": 13598,
@@ -62,17 +53,17 @@
     },
     {
       "id": 13484,
-      "name": "NCS CENTRAL TEXAS FALL STATE 65 MIN POOL 6GG 8U,10U,12U, 18u OPEN & C, 14U C ONLY",
+      "name": "NCS CENTRAL TEXAS FALL STATE 65 MIN POOL 6GG 8U,10U,12U, 14u C AND 12u & 18u OPEN",
       "dates": "Nov 7-8",
       "location": "TAYLOR / TEMPLE / GEORGETOWN, TX",
-      "division": "8U,10U,12U, 18u",
+      "division": "8U,10U,12U, 14u",
       "registered_teams": null,
-      "url": "https://www.playncs.com/fastpitch/Events/Details/13484/ncs-central-texas-fall-state-65-min-pool-6gg-8u-10u-12u-18u-open-c-14u-c-only"
+      "url": "https://www.playncs.com/fastpitch/Events/Details/13484/ncs-central-texas-fall-state-65-min-pool-6gg-8u-10u-12u-14u-c-and-12u-18u-open"
     }
   ],
   "sync_status": "waiting_for_schedule",
   "sync_message": "No 14U OPEN schedule has been published on NCS yet. The dashboard will update automatically once a tournament is posted.",
-  "generated_at": "2026-08-23T18:34:23.278243+00:00",
+  "generated_at": "2026-09-24T19:26:00.059147+00:00",
   "event": {
     "name": "",
     "division": "14U",
