@@ -1,6 +1,6 @@
 {
   "team_key": "12u",
-  "generated_at": "2026-08-23T18:45:31.004754+00:00",
+  "generated_at": "2026-09-24T19:05:29.995885+00:00",
   "source": "NCS Fastpitch team page",
   "team": {
     "key": "12u",
@@ -15,132 +15,41 @@
   "events": [
     {
       "event_id": "13257",
-      "title": "Warm up into Fall Part 1 5GG 70 minutes games",
+      "title": "CES Spooky Bash",
       "event_type": "Tournament",
-      "format": "5GG 70 Minutes game",
-      "start_date": "2026-08-22",
-      "end_date": "2026-08-23",
-      "date_label": "Aug 22-23",
+      "format": "4GG",
+      "start_date": "2026-10-24",
+      "end_date": "2026-10-25",
+      "date_label": "Oct 24-25",
       "location": "Bertram, TX",
-      "director": "Chad Smith",
+      "director": "Colby Hamilton",
       "registered_teams": null,
       "divisions": [
+        "6U",
+        "8U",
         "10U",
         "12U",
-        "14U",
-        "18U"
+        "14U"
       ],
       "tags": [
-        "10U \u00b7 12U \u00b7 14U \u00b7 18U"
+        "4GG",
+        "6U \u00b7 8U \u00b7 10U \u00b7 12U \u00b7 14U",
+        "CES",
+        "CENTEX ELITE",
+        "CTX"
       ],
       "verify_division": false,
       "source_url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
     },
     {
       "event_id": "13594",
-      "title": "******* 1 DAY SATURDAY SEPTEMBER TO REMEMBER FALL CLASSIC *******",
+      "title": "NCS CENTRAL TEXAS FALL REGIONAL CLASS \" C \" TEAMS 70 MIN POOLS 4GG 10U CLASS C AND OPEN HS OPEN",
       "event_type": "Tournament",
-      "format": "19",
-      "start_date": "2026-09-05",
-      "end_date": "2026-09-05",
-      "date_label": "Sep 5",
-      "location": "Seguin, TX",
-      "director": "Rene Contreras",
-      "registered_teams": null,
-      "divisions": [
-        "8U",
-        "10U",
-        "12U"
-      ],
-      "tags": [
-        "8U \u00b7 10U \u00b7 12U"
-      ],
-      "verify_division": false,
-      "source_url": "https://www.playncs.com/fastpitch/Events/Details/13594/1-day-saturday-september-to-remember-fall-classic"
-    },
-    {
-      "event_id": "13488",
-      "title": "4th Annual Oatmeal Festival Youth Softball Tourney 4GG 70 minutes",
-      "event_type": "Tournament",
-      "format": "4GG 70 Minutes game",
-      "start_date": "2026-09-12",
-      "end_date": "2026-09-13",
-      "date_label": "Sep 12-13",
-      "location": "Bertram, TX",
-      "director": "Chad Smith",
-      "registered_teams": null,
-      "divisions": [
-        "10U",
-        "12U",
-        "14U"
-      ],
-      "tags": [
-        "10U \u00b7 12U \u00b7 14U"
-      ],
-      "verify_division": false,
-      "source_url": "https://www.playncs.com/fastpitch/Events/Details/13488/4th-annual-oatmeal-festival-youth-softball-tourney-4gg-70-minutes"
-    },
-    {
-      "event_id": "13218",
-      "title": "3P Sports - Gloves Up for a Cure",
-      "event_type": "Tournament",
-      "format": "34",
-      "start_date": "2026-10-10",
-      "end_date": "2026-10-11",
-      "date_label": "Oct 10-11",
-      "location": "Taylor, TX",
-      "director": "Jennifer Anderson",
-      "registered_teams": null,
-      "divisions": [
-        "8U",
-        "10U",
-        "12U",
-        "14U",
-        "18U"
-      ],
-      "tags": [
-        "8U \u00b7 10U \u00b7 12U \u00b7 14U \u00b7 18U",
-        "3P SPORTS",
-        "4GG",
-        "HOMERUN AWARDS",
-        "OPEN &",
-        "C-CLASS"
-      ],
-      "verify_division": false,
-      "source_url": "https://www.playncs.com/fastpitch/Events/Details/13218/3p-sports-gloves-up-for-a-cure"
-    },
-    {
-      "event_id": "13482",
-      "title": "OCTOBERFEST 65 MIN POOL \" C \" TEAMS ONLY 6GG",
-      "event_type": "Tournament",
-      "format": "38",
-      "start_date": "2026-10-24",
-      "end_date": "2026-10-25",
-      "date_label": "Oct 24-25",
-      "location": "",
-      "director": "Maggie Stoecklein",
-      "registered_teams": null,
-      "divisions": [
-        "8U",
-        "10U",
-        "12U",
-        "14U"
-      ],
-      "tags": [
-        "8U \u00b7 10U \u00b7 12U \u00b7 14U"
-      ],
-      "verify_division": false,
-      "source_url": "https://www.playncs.com/fastpitch/Events/Details/13482/octoberfest-65-min-pool-c-teams-only-6gg"
-    },
-    {
-      "event_id": "13534",
-      "title": "NCS CENTRAL TEXAS FALL REGIONAL CLASS \" C \" TEAMS 70 MIN POOLS 4GG",
-      "event_type": "Tournament",
-      "format": "31",
+      "format": "32",
       "start_date": "2026-11-14",
       "end_date": "2026-11-15",
       "date_label": "Nov 14-15",
-      "location": "",
+      "location": "Seguin, TX",
       "director": "Maggie Stoecklein",
       "registered_teams": null,
       "divisions": [
@@ -154,11 +63,11 @@
         "8U \u00b7 10U \u00b7 12U \u00b7 14U \u00b7 18U"
       ],
       "verify_division": false,
-      "source_url": "https://www.playncs.com/fastpitch/Events/Details/13534/ncs-central-texas-fall-regional-class-c-teams-70-min-pools-4gg"
+      "source_url": "https://www.playncs.com/fastpitch/Events/Details/13594/1-day-saturday-september-to-remember-fall-classic"
     }
   ],
   "counts": {
-    "events": 6,
+    "events": 2,
     "verify_division": 0,
     "registered_team_total_shown_by_ncs": 0
   }
