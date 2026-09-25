@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-25T14:26:10.231334+00:00",
+  "generated_at": "2026-09-25T15:24:42.552390+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-09-25T14:26:10.658179+00:00",
+      "generated_at": "2026-09-25T15:24:43.017233+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -79,7 +79,7 @@
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-09-25T14:26:11.742859+00:00",
+      "generated_at": "2026-09-25T15:24:43.268785+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -124,7 +124,7 @@
           "event_id": "13874",
           "title": "********* OCTOBERFEST ********",
           "event_type": "Tournament",
-          "format": "27",
+          "format": "28",
           "start_date": "2026-10-03",
           "end_date": "2026-10-04",
           "date_label": "Oct 3-4",
