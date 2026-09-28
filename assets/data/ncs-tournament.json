@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T07:15:52.981084+00:00",
+  "generated_at": "2026-09-28T07:50:39.424400+00:00",
   "source": "PlayNCS event schedule pages (per tracked team)",
   "feeds": [
     {
@@ -666,506 +666,359 @@
         "source_url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
       },
       "event": {
-        "id": "13874",
+        "id": "13257",
         "name": "********* OCTOBERFEST ********",
         "start_date": "2026-10-03",
         "end_date": "2026-10-04",
-        "location": "GEORGETOWN, TX",
+        "location": "Bertram, TX",
         "division": "14U",
-        "source_url": "https://www.playncs.com/fastpitch/Events/Details/13874/homerun-derby-6gg-70-min-pool-14u"
+        "source_url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
       },
-      "schedule_url": "https://www.playncs.com/fastpitch/Events/Schedule/13874/homerun-derby-6gg-70-min-pool-14u?division=14U%20OPEN",
+      "schedule_url": "https://www.playncs.com/fastpitch/Events/Schedule/13257/warm-up-into-fall-part-1-5gg-70-minutes-games?division=14U%20OPEN",
       "games": [
         {
-          "id": "9370b901b17c",
+          "id": "72a4a1ba385b",
           "stage": "pool",
           "round": "Pool Play",
           "date": "Sat",
-          "time": "8:30 AM",
-          "field": "McMaster Athletic Complex 1",
+          "time": "8:00 AM",
+          "field": "",
           "status": "scheduled",
           "home": {
-            "name": "ROYALS ELITE",
+            "name": "Team Rollin 14u",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/88028/royals-elite"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89041/team-rollin-14u"
           },
           "away": {
-            "name": "Austin Outlawz",
+            "name": "Austin Crush 14U",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/90313/austin-outlawz"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88401/austin-crush-14u"
           },
-          "source_text": "1 | Game 1 | Sat 8:30 AM | Sat 8:30 AM | McMaster Athletic Complex 1 | McMaster Athletic Complex 1 | 11 | ROYALS ELITE | 11 - 12 | 12 | Austin Outlawz",
+          "source_text": "1 | Game 1 | Sat 8:00 AM | Sat 8:00 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 1 | Team Rollin 14u | 1 - 5 | 5 | Austin Crush 14U",
           "game_number": 1
         },
         {
-          "id": "ef2fd3e9a569",
+          "id": "52307c49d8ee",
           "stage": "pool",
           "round": "Pool Play",
           "date": "Sat",
-          "time": "8:30 AM",
-          "field": "McMaster Athletic Complex 2",
+          "time": "9:25 AM",
+          "field": "",
           "status": "scheduled",
           "home": {
-            "name": "Texas Twelve Capital City Maroon 13u",
+            "name": "Texas BombersCTX-Salado",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/91221/texas-twelve-capital-city-maroon-13u"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89161/texas-bombersctx-salado"
           },
           "away": {
-            "name": "CROSSFIRE",
+            "name": "Team Rollin 14u",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/89799/crossfire"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89041/team-rollin-14u"
           },
-          "source_text": "2 | Game 2 | Sat 8:30 AM | Sat 8:30 AM | McMaster Athletic Complex 2 | McMaster Athletic Complex 2 | 12 | Texas Twelve Capital City Maroon 13u | 12 - 3 | 3 | CROSSFIRE",
+          "source_text": "2 | Game 2 | Sat 9:25 AM | Sat 9:25 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 5 | Texas BombersCTX-Salado | 5 - 3 | 3 | Team Rollin 14u",
           "game_number": 2
         },
         {
-          "id": "61e2d31652d5",
+          "id": "b69fd168a779",
           "stage": "pool",
           "round": "Pool Play",
           "date": "Sat",
-          "time": "8:30 AM",
-          "field": "McMaster Athletic Complex 3",
+          "time": "10:50 AM",
+          "field": "",
           "status": "scheduled",
           "home": {
-            "name": "Woods Powerhouse 14U",
+            "name": "Vikings Fastpitch",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/91312/woods-powerhouse-14u"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89357/vikings-fastpitch"
           },
           "away": {
-            "name": "Texas Premier 14u",
+            "name": "Austin Crush 14U",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/91533/texas-premier-14u"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88401/austin-crush-14u"
           },
-          "source_text": "3 | Game 3 | Sat 8:30 AM | Sat 8:30 AM | McMaster Athletic Complex 3 | McMaster Athletic Complex 3 | 7 | Woods Powerhouse 14U | 7 - 5 | 5 | Texas Premier 14u",
+          "source_text": "3 | Game 3 | Sat 10:50 AM | Sat 10:50 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 2 | Vikings Fastpitch | 2 - 15 | 15 | Austin Crush 14U",
           "game_number": 3
         },
         {
-          "id": "26e5b38a669b",
+          "id": "7c4294a4ae31",
           "stage": "pool",
           "round": "Pool Play",
           "date": "Sat",
-          "time": "8:30 AM",
-          "field": "McMaster Athletic Complex 4",
+          "time": "12:15 PM",
+          "field": "",
           "status": "scheduled",
           "home": {
-            "name": "Vikings Fastpitch",
+            "name": "Texas Venom 14U",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/89357/vikings-fastpitch"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
           },
           "away": {
-            "name": "RiptideATX 14U-Evans",
+            "name": "Buzz 14U Gold Futures",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/88383/riptideatx-14u-evans"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/90174/buzz-14u-gold-futures"
           },
-          "source_text": "4 | Game 4 | Sat 8:30 AM | Sat 8:30 AM | McMaster Athletic Complex 4 | McMaster Athletic Complex 4 | 1 | Vikings Fastpitch | 1 - 15 | 15 | RiptideATX 14U-Evans",
+          "source_text": "4 | Game 4 | Sat 12:15 PM | Sat 12:15 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 0 | Texas Venom 14U | 0 - 9 | 9 | Buzz 14U Gold Futures",
           "game_number": 4
         },
         {
-          "id": "88fc209a0ace",
+          "id": "71d63a9e7d2f",
           "stage": "pool",
           "round": "Pool Play",
           "date": "Sat",
-          "time": "9:50 AM",
-          "field": "McMaster Athletic Complex 1",
+          "time": "1:40 PM",
+          "field": "",
           "status": "scheduled",
           "home": {
-            "name": "ROYALS ELITE",
+            "name": "Buzz 14U Gold Futures",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/88028/royals-elite"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/90174/buzz-14u-gold-futures"
           },
           "away": {
-            "name": "CROSSFIRE",
+            "name": "Texas BombersCTX-Salado",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/89799/crossfire"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89161/texas-bombersctx-salado"
           },
-          "source_text": "5 | Game 5 | Sat 9:50 AM | Sat 9:50 AM | McMaster Athletic Complex 1 | McMaster Athletic Complex 1 | 8 | ROYALS ELITE | 8 - 9 | 9 | CROSSFIRE",
+          "source_text": "5 | Game 5 | Sat 1:40 PM | Sat 1:40 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 10 | Buzz 14U Gold Futures | 10 - 0 | 0 | Texas BombersCTX-Salado",
           "game_number": 5
         },
         {
-          "id": "a18b5f028e32",
+          "id": "5dd48ca63ace",
           "stage": "pool",
           "round": "Pool Play",
           "date": "Sat",
-          "time": "9:50 AM",
-          "field": "McMaster Athletic Complex 2",
+          "time": "3:05 PM",
+          "field": "",
           "status": "scheduled",
           "home": {
-            "name": "Austin Outlawz",
+            "name": "Vikings Fastpitch",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/90313/austin-outlawz"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89357/vikings-fastpitch"
           },
           "away": {
-            "name": "Texas Twelve Capital City Maroon 13u",
+            "name": "Team Rollin 14u",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/91221/texas-twelve-capital-city-maroon-13u"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89041/team-rollin-14u"
           },
-          "source_text": "6 | Game 6 | Sat 9:50 AM | Sat 9:50 AM | McMaster Athletic Complex 2 | McMaster Athletic Complex 2 | 1 | Austin Outlawz | 1 - 13 | 13 | Texas Twelve Capital City Maroon 13u",
+          "source_text": "6 | Game 6 | Sat 3:05 PM | Sat 3:05 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 0 | Vikings Fastpitch | 0 - 10 | 10 | Team Rollin 14u",
           "game_number": 6
         },
         {
-          "id": "ae7bdec9dce8",
+          "id": "52e92875b331",
           "stage": "pool",
           "round": "Pool Play",
           "date": "Sat",
-          "time": "9:50 AM",
-          "field": "McMaster Athletic Complex 3",
+          "time": "4:30 PM",
+          "field": "",
           "status": "scheduled",
           "home": {
-            "name": "Woods Powerhouse 14U",
+            "name": "Texas Venom 14U",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/91312/woods-powerhouse-14u"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
           },
           "away": {
-            "name": "RiptideATX 14U-Evans",
+            "name": "Austin Crush 14U",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/88383/riptideatx-14u-evans"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88401/austin-crush-14u"
           },
-          "source_text": "7 | Game 7 | Sat 9:50 AM | Sat 9:50 AM | McMaster Athletic Complex 3 | McMaster Athletic Complex 3 | 5 | Woods Powerhouse 14U | 5 - 11 | 11 | RiptideATX 14U-Evans",
+          "source_text": "7 | Game 7 | Sat 4:30 PM | Sat 4:30 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 0 | Texas Venom 14U | 0 - 9 | 9 | Austin Crush 14U",
           "game_number": 7
         },
         {
-          "id": "4403bc685864",
+          "id": "817c85d4c435",
           "stage": "pool",
           "round": "Pool Play",
           "date": "Sat",
-          "time": "9:50 AM",
-          "field": "McMaster Athletic Complex 4",
+          "time": "5:55 PM",
+          "field": "",
           "status": "scheduled",
           "home": {
-            "name": "Texas Premier 14u",
+            "name": "Texas Venom 14U",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/91533/texas-premier-14u"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
           },
           "away": {
-            "name": "Vikings Fastpitch",
+            "name": "Texas BombersCTX-Salado",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/89357/vikings-fastpitch"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89161/texas-bombersctx-salado"
           },
-          "source_text": "8 | Game 8 | Sat 9:50 AM | Sat 9:50 AM | McMaster Athletic Complex 4 | McMaster Athletic Complex 4 | 16 | Texas Premier 14u | 16 - 0 | 0 | Vikings Fastpitch",
+          "source_text": "8 | Game 8 | Sat 5:55 PM | Sat 5:55 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 1 | Texas Venom 14U | 1 - 9 | 9 | Texas BombersCTX-Salado",
           "game_number": 8
         },
         {
-          "id": "345e88da4479",
+          "id": "60e5cf040a23",
           "stage": "pool",
           "round": "Pool Play",
           "date": "Sat",
-          "time": "11:10 AM",
-          "field": "McMaster Athletic Complex 1",
+          "time": "5:55 PM",
+          "field": "",
           "status": "scheduled",
           "home": {
-            "name": "LONESTAR SOFTBALL CLUB CTX RED",
+            "name": "Vikings Fastpitch",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/89001/lonestar-softball-club-ctx-red"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89357/vikings-fastpitch"
           },
           "away": {
-            "name": "Texas 96 Blue",
+            "name": "Buzz 14U Gold Futures",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/90755/texas-96-blue"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/90174/buzz-14u-gold-futures"
           },
-          "source_text": "9 | Game 9 | Sat 11:10 AM | Sat 11:10 AM | McMaster Athletic Complex 1 | McMaster Athletic Complex 1 | 12 | LONESTAR SOFTBALL CLUB CTX RED | 12 - 6 | 6 | Texas 96 Blue",
+          "source_text": "9 | Game 9 | Sat 5:55 PM | Sat 5:55 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 0 | Vikings Fastpitch | 0 - 18 | 18 | Buzz 14U Gold Futures",
           "game_number": 9
         },
         {
-          "id": "8b75d8b0de63",
+          "id": "fbca25fd319a",
           "stage": "pool",
           "round": "Pool Play",
           "date": "Sat",
-          "time": "11:10 AM",
-          "field": "McMaster Athletic Complex 2",
+          "time": "12:15 PM",
+          "field": "Field 1",
           "status": "scheduled",
           "home": {
-            "name": "Austin Outlawz",
+            "name": "Next Level Bandits 14u",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/90313/austin-outlawz"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/90211/next-level-bandits-14u"
           },
           "away": {
-            "name": "Texas Bombers CTX*",
+            "name": "Drip Select Frey",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/89281/texas-bombers-ctx"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89172/drip-select-frey"
           },
-          "source_text": "10 | Game 10 | Sat 11:10 AM | Sat 11:10 AM | McMaster Athletic Complex 2 | McMaster Athletic Complex 2 | 9 | Austin Outlawz | 9 - 6 | 6 | Texas Bombers CTX*",
+          "source_text": "10 | Game 10 | Sat 12:15 PM | Sat 12:15 PM | YMCS of Highland Lakes (Burnet, TX) Field 1 | YMCS of Highland Lakes (Burnet, TX) Field 1 | 4 | Next Level Bandits 14u | 4 - 8 | 8 | Drip Select Frey",
           "game_number": 10
         },
         {
-          "id": "ab8586f23ba4",
+          "id": "d62a4711efeb",
           "stage": "pool",
           "round": "Pool Play",
           "date": "Sat",
-          "time": "11:10 AM",
-          "field": "McMaster Athletic Complex 3",
+          "time": "1:40 PM",
+          "field": "Field 1",
           "status": "scheduled",
           "home": {
-            "name": "Texas Venom 14U",
+            "name": "LONESTAR SOFTBALL CLUB CTX RED",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89001/lonestar-softball-club-ctx-red"
           },
           "away": {
-            "name": "Austin Crush 14U",
+            "name": "TXplosion Fastpitch- Smith",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/88401/austin-crush-14u"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89078/txplosion-fastpitch-smith"
           },
-          "source_text": "11 | Game 11 | Sat 11:10 AM | Sat 11:10 AM | McMaster Athletic Complex 3 | McMaster Athletic Complex 3 | 0 | Texas Venom 14U | 0 - 12 | 12 | Austin Crush 14U",
+          "source_text": "11 | Game 11 | Sat 1:40 PM | Sat 1:40 PM | YMCS of Highland Lakes (Burnet, TX) Field 1 | YMCS of Highland Lakes (Burnet, TX) Field 1 | 8 | LONESTAR SOFTBALL CLUB CTX RED | 8 - 9 | 9 | TXplosion Fastpitch- Smith",
           "game_number": 11
         },
         {
-          "id": "86b222905973",
+          "id": "e8178b9877a1",
           "stage": "pool",
           "round": "Pool Play",
           "date": "Sat",
-          "time": "11:10 AM",
-          "field": "McMaster Athletic Complex 4",
+          "time": "3:05 PM",
+          "field": "Field 1",
           "status": "scheduled",
           "home": {
-            "name": "Texas Spark-Velasquez",
+            "name": "Next Level Bandits 14u",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/92683/texas-spark-velasquez"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/90211/next-level-bandits-14u"
           },
           "away": {
-            "name": "NexGen Elite",
+            "name": "LONESTAR SOFTBALL CLUB CTX RED",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/88829/nexgen-elite"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89001/lonestar-softball-club-ctx-red"
           },
-          "source_text": "12 | Game 12 | Sat 11:10 AM | Sat 11:10 AM | McMaster Athletic Complex 4 | McMaster Athletic Complex 4 | 6 | Texas Spark-Velasquez | 6 - 7 | 7 | NexGen Elite",
+          "source_text": "12 | Game 12 | Sat 3:05 PM | Sat 3:05 PM | YMCS of Highland Lakes (Burnet, TX) Field 1 | YMCS of Highland Lakes (Burnet, TX) Field 1 | 6 | Next Level Bandits 14u | 6 - 7 | 7 | LONESTAR SOFTBALL CLUB CTX RED",
           "game_number": 12
         },
         {
-          "id": "c247655c59a4",
+          "id": "4c2362b0db7b",
           "stage": "pool",
           "round": "Pool Play",
           "date": "Sat",
-          "time": "12:30 PM",
-          "field": "McMaster Athletic Complex 1",
+          "time": "4:30 PM",
+          "field": "Field 1",
           "status": "scheduled",
           "home": {
-            "name": "Texas Twelve Capital City Maroon 13u",
+            "name": "Drip Select Frey",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/91221/texas-twelve-capital-city-maroon-13u"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89172/drip-select-frey"
           },
           "away": {
-            "name": "LONESTAR SOFTBALL CLUB CTX RED",
+            "name": "TXplosion Fastpitch- Smith",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/89001/lonestar-softball-club-ctx-red"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89078/txplosion-fastpitch-smith"
           },
-          "source_text": "13 | Game 13 | Sat 12:30 PM | Sat 12:30 PM | McMaster Athletic Complex 1 | McMaster Athletic Complex 1 | 5 | Texas Twelve Capital City Maroon 13u | 5 - 7 | 7 | LONESTAR SOFTBALL CLUB CTX RED",
+          "source_text": "13 | Game 13 | Sat 4:30 PM | Sat 4:30 PM | YMCS of Highland Lakes (Burnet, TX) Field 1 | YMCS of Highland Lakes (Burnet, TX) Field 1 | 7 | Drip Select Frey | 7 - 4 | 4 | TXplosion Fastpitch- Smith",
           "game_number": 13
         },
         {
-          "id": "3412c2393963",
+          "id": "6483eeb6fd87",
           "stage": "pool",
           "round": "Pool Play",
           "date": "Sat",
-          "time": "12:30 PM",
-          "field": "McMaster Athletic Complex 2",
+          "time": "5:55 PM",
+          "field": "Field 1",
           "status": "scheduled",
           "home": {
-            "name": "ROYALS ELITE",
+            "name": "Next Level Bandits 14u",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/88028/royals-elite"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/90211/next-level-bandits-14u"
           },
           "away": {
-            "name": "Softball Mechanix 14U DePew",
+            "name": "TXplosion Fastpitch- Smith",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/88142/softball-mechanix-14u-depew"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89078/txplosion-fastpitch-smith"
           },
-          "source_text": "14 | Game 14 | Sat 12:30 PM | Sat 12:30 PM | McMaster Athletic Complex 2 | McMaster Athletic Complex 2 | 7 | ROYALS ELITE | 7 - 11 | 11 | Softball Mechanix 14U DePew",
+          "source_text": "14 | Game 14 | Sat 5:55 PM | Sat 5:55 PM | YMCS of Highland Lakes (Burnet, TX) Field 1 | YMCS of Highland Lakes (Burnet, TX) Field 1 | 2 | Next Level Bandits 14u | 2 - 1 | 1 | TXplosion Fastpitch- Smith",
           "game_number": 14
         },
         {
-          "id": "2ab890ce6e85",
+          "id": "bdf4822634f4",
           "stage": "pool",
           "round": "Pool Play",
           "date": "Sat",
-          "time": "12:30 PM",
-          "field": "McMaster Athletic Complex 3",
+          "time": "7:20 PM",
+          "field": "Field 1",
           "status": "scheduled",
           "home": {
-            "name": "Vikings Fastpitch",
+            "name": "Drip Select Frey",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/89357/vikings-fastpitch"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89172/drip-select-frey"
           },
           "away": {
-            "name": "Texas Venom 14U",
+            "name": "LONESTAR SOFTBALL CLUB CTX RED",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89001/lonestar-softball-club-ctx-red"
           },
-          "source_text": "15 | Game 15 | Sat 12:30 PM | Sat 12:30 PM | McMaster Athletic Complex 3 | McMaster Athletic Complex 3 | 3 | Vikings Fastpitch | 3 - 13 | 13 | Texas Venom 14U",
+          "source_text": "15 | Game 15 | Sat 7:20 PM | Sat 7:20 PM | YMCS of Highland Lakes (Burnet, TX) Field 1 | YMCS of Highland Lakes (Burnet, TX) Field 1 | 4 | Drip Select Frey | 4 - 5 | 5 | LONESTAR SOFTBALL CLUB CTX RED",
           "game_number": 15
         },
         {
-          "id": "f55ad3f53078",
+          "id": "8675b6e27721",
           "stage": "pool",
           "round": "Pool Play",
-          "date": "Sat",
-          "time": "12:30 PM",
-          "field": "McMaster Athletic Complex 4",
+          "date": "Sun",
+          "time": "8:00 AM",
+          "field": "",
           "status": "scheduled",
           "home": {
-            "name": "Woods Powerhouse 14U",
+            "name": "Texas Venom 14U",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/91312/woods-powerhouse-14u"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
           },
           "away": {
-            "name": "NexGen Elite",
+            "name": "Next Level Bandits 14u",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/88829/nexgen-elite"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/90211/next-level-bandits-14u"
           },
-          "source_text": "16 | Game 16 | Sat 12:30 PM | Sat 12:30 PM | McMaster Athletic Complex 4 | McMaster Athletic Complex 4 | 12 | Woods Powerhouse 14U | 12 - 2 | 2 | NexGen Elite",
+          "source_text": "16 | Game 16 | Sun 8:00 AM | Sun 8:00 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 6 | Texas Venom 14U | 6 - 0 | 0 | Next Level Bandits 14u",
           "game_number": 16
         },
         {
-          "id": "89ca6c9b5556",
+          "id": "c8a6e5a87e35",
           "stage": "pool",
           "round": "Pool Play",
-          "date": "Sat",
-          "time": "1:50 PM",
-          "field": "McMaster Athletic Complex 1",
-          "status": "scheduled",
-          "home": {
-            "name": "Austin Outlawz",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/90313/austin-outlawz"
-          },
-          "away": {
-            "name": "RiptideATX 14U-Evans",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/88383/riptideatx-14u-evans"
-          },
-          "source_text": "17 | Game 17 | Sat 1:50 PM | Sat 1:50 PM | McMaster Athletic Complex 1 | McMaster Athletic Complex 1 | 6 | Austin Outlawz | 6 - 10 | 10 | RiptideATX 14U-Evans",
-          "game_number": 17
-        },
-        {
-          "id": "656deee42e2e",
-          "stage": "pool",
-          "round": "Pool Play",
-          "date": "Sat",
-          "time": "1:50 PM",
-          "field": "McMaster Athletic Complex 2",
-          "status": "scheduled",
-          "home": {
-            "name": "CROSSFIRE",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/89799/crossfire"
-          },
-          "away": {
-            "name": "Texas 96 Blue",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/90755/texas-96-blue"
-          },
-          "source_text": "18 | Game 18 | Sat 1:50 PM | Sat 1:50 PM | McMaster Athletic Complex 2 | McMaster Athletic Complex 2 | 0 | CROSSFIRE | 0 - 12 | 12 | Texas 96 Blue",
-          "game_number": 18
-        },
-        {
-          "id": "fced1f495ddb",
-          "stage": "pool",
-          "round": "Pool Play",
-          "date": "Sat",
-          "time": "1:50 PM",
-          "field": "McMaster Athletic Complex 3",
-          "status": "scheduled",
-          "home": {
-            "name": "Texas Premier 14u",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/91533/texas-premier-14u"
-          },
-          "away": {
-            "name": "Texas Bombers CTX*",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/89281/texas-bombers-ctx"
-          },
-          "source_text": "19 | Game 19 | Sat 1:50 PM | Sat 1:50 PM | McMaster Athletic Complex 3 | McMaster Athletic Complex 3 | 3 | Texas Premier 14u | 3 - 9 | 9 | Texas Bombers CTX*",
-          "game_number": 19
-        },
-        {
-          "id": "17ff70916572",
-          "stage": "pool",
-          "round": "Pool Play",
-          "date": "Sat",
-          "time": "1:50 PM",
-          "field": "McMaster Athletic Complex 4",
-          "status": "scheduled",
-          "home": {
-            "name": "Austin Crush 14U",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/88401/austin-crush-14u"
-          },
-          "away": {
-            "name": "Texas Spark-Velasquez",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/92683/texas-spark-velasquez"
-          },
-          "source_text": "20 | Game 20 | Sat 1:50 PM | Sat 1:50 PM | McMaster Athletic Complex 4 | McMaster Athletic Complex 4 | 16 | Austin Crush 14U | 16 - 0 | 0 | Texas Spark-Velasquez",
-          "game_number": 20
-        },
-        {
-          "id": "2b4388b1551b",
-          "stage": "pool",
-          "round": "Pool Play",
-          "date": "Sat",
-          "time": "3:10 PM",
-          "field": "McMaster Athletic Complex 1",
-          "status": "scheduled",
-          "home": {
-            "name": "ROYALS ELITE",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/88028/royals-elite"
-          },
-          "away": {
-            "name": "Austin Crush 14U",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/88401/austin-crush-14u"
-          },
-          "source_text": "21 | Game 21 | Sat 3:10 PM | Sat 3:10 PM | McMaster Athletic Complex 1 | McMaster Athletic Complex 1 | 2 | ROYALS ELITE | 2 - 11 | 11 | Austin Crush 14U",
-          "game_number": 21
-        },
-        {
-          "id": "5cacfa0e5e8e",
-          "stage": "pool",
-          "round": "Pool Play",
-          "date": "Sat",
-          "time": "3:10 PM",
-          "field": "McMaster Athletic Complex 2",
-          "status": "scheduled",
-          "home": {
-            "name": "Softball Mechanix 14U DePew",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/88142/softball-mechanix-14u-depew"
-          },
-          "away": {
-            "name": "Texas 96 Blue",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/90755/texas-96-blue"
-          },
-          "source_text": "22 | Game 22 | Sat 3:10 PM | Sat 3:10 PM | McMaster Athletic Complex 2 | McMaster Athletic Complex 2 | 1 | Softball Mechanix 14U DePew | 1 - 8 | 8 | Texas 96 Blue",
-          "game_number": 22
-        },
-        {
-          "id": "86bd344aacab",
-          "stage": "pool",
-          "round": "Pool Play",
-          "date": "Sat",
-          "time": "3:10 PM",
-          "field": "McMaster Athletic Complex 3",
-          "status": "scheduled",
-          "home": {
-            "name": "Woods Powerhouse 14U",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/91312/woods-powerhouse-14u"
-          },
-          "away": {
-            "name": "Texas Twelve Capital City Maroon 13u",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/91221/texas-twelve-capital-city-maroon-13u"
-          },
-          "source_text": "23 | Game 23 | Sat 3:10 PM | Sat 3:10 PM | McMaster Athletic Complex 3 | McMaster Athletic Complex 3 | 9 | Woods Powerhouse 14U | 9 - 6 | 6 | Texas Twelve Capital City Maroon 13u",
-          "game_number": 23
-        },
-        {
-          "id": "e1cdc11af037",
-          "stage": "pool",
-          "round": "Pool Play",
-          "date": "Sat",
-          "time": "3:10 PM",
-          "field": "McMaster Athletic Complex 4",
+          "date": "Sun",
+          "time": "9:25 AM",
+          "field": "",
           "status": "scheduled",
           "home": {
             "name": "Vikings Fastpitch",
@@ -1173,146 +1026,167 @@
             "url": "https://www.playncs.com/fastpitch/Teams/Details/89357/vikings-fastpitch"
           },
           "away": {
-            "name": "Texas Spark-Velasquez",
+            "name": "TXplosion Fastpitch- Smith",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/92683/texas-spark-velasquez"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89078/txplosion-fastpitch-smith"
           },
-          "source_text": "24 | Game 24 | Sat 3:10 PM | Sat 3:10 PM | McMaster Athletic Complex 4 | McMaster Athletic Complex 4 | 3 | Vikings Fastpitch | 3 - 4 | 4 | Texas Spark-Velasquez",
-          "game_number": 24
+          "source_text": "17 | Game 17 | Sun 9:25 AM | Sun 9:25 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 3 | Vikings Fastpitch | 3 - 13 | 13 | TXplosion Fastpitch- Smith",
+          "game_number": 17
         },
         {
-          "id": "a3624c14fa0f",
+          "id": "6231f6fa286f",
           "stage": "pool",
           "round": "Pool Play",
-          "date": "Sat",
-          "time": "4:30 PM",
-          "field": "McMaster Athletic Complex 1",
+          "date": "Sun",
+          "time": "10:50 AM",
+          "field": "",
           "status": "scheduled",
           "home": {
-            "name": "CROSSFIRE",
+            "name": "Next Level Bandits 14u",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/89799/crossfire"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/90211/next-level-bandits-14u"
           },
           "away": {
-            "name": "Softball Mechanix 14U DePew",
+            "name": "Vikings Fastpitch",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/88142/softball-mechanix-14u-depew"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89357/vikings-fastpitch"
           },
-          "source_text": "25 | Game 25 | Sat 4:30 PM | Sat 4:30 PM | McMaster Athletic Complex 1 | McMaster Athletic Complex 1 | 4 | CROSSFIRE | 4 - 6 | 6 | Softball Mechanix 14U DePew",
-          "game_number": 25
+          "source_text": "18 | Game 18 | Sun 10:50 AM | Sun 10:50 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 9 | Next Level Bandits 14u | 9 - 4 | 4 | Vikings Fastpitch",
+          "game_number": 18
         },
         {
-          "id": "7333c632ff1d",
+          "id": "44686e61b0ce",
           "stage": "pool",
           "round": "Pool Play",
-          "date": "Sat",
-          "time": "4:30 PM",
-          "field": "McMaster Athletic Complex 2",
+          "date": "Sun",
+          "time": "12:15 PM",
+          "field": "",
           "status": "scheduled",
           "home": {
-            "name": "LONESTAR SOFTBALL CLUB CTX RED",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/89001/lonestar-softball-club-ctx-red"
-          },
-          "away": {
-            "name": "Texas Bombers CTX*",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/89281/texas-bombers-ctx"
-          },
-          "source_text": "26 | Game 26 | Sat 4:30 PM | Sat 4:30 PM | McMaster Athletic Complex 2 | McMaster Athletic Complex 2 | 10 | LONESTAR SOFTBALL CLUB CTX RED | 10 - 2 | 2 | Texas Bombers CTX*",
-          "game_number": 26
-        },
-        {
-          "id": "63cda2d234c7",
-          "stage": "pool",
-          "round": "Pool Play",
-          "date": "Sat",
-          "time": "4:30 PM",
-          "field": "McMaster Athletic Complex 3",
-          "status": "scheduled",
-          "home": {
-            "name": "RiptideATX 14U-Evans",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/88383/riptideatx-14u-evans"
-          },
-          "away": {
-            "name": "NexGen Elite",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/88829/nexgen-elite"
-          },
-          "source_text": "27 | Game 27 | Sat 4:30 PM | Sat 4:30 PM | McMaster Athletic Complex 3 | McMaster Athletic Complex 3 | 3 | RiptideATX 14U-Evans | 3 - 0 | 0 | NexGen Elite",
-          "game_number": 27
-        },
-        {
-          "id": "84293d936c32",
-          "stage": "pool",
-          "round": "Pool Play",
-          "date": "Sat",
-          "time": "4:30 PM",
-          "field": "McMaster Athletic Complex 4",
-          "status": "scheduled",
-          "home": {
-            "name": "Texas Premier 14u",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/91533/texas-premier-14u"
-          },
-          "away": {
             "name": "Texas Venom 14U",
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
           },
-          "source_text": "28 | Game 28 | Sat 4:30 PM | Sat 4:30 PM | McMaster Athletic Complex 4 | McMaster Athletic Complex 4 | 5 | Texas Premier 14u | 5 - 6 | 6 | Texas Venom 14U",
-          "game_number": 28
+          "away": {
+            "name": "TXplosion Fastpitch- Smith",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89078/txplosion-fastpitch-smith"
+          },
+          "source_text": "19 | Game 19 | Sun 12:15 PM | Sun 12:15 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 1 | Texas Venom 14U | 1 - 9 | 9 | TXplosion Fastpitch- Smith",
+          "game_number": 19
         },
         {
-          "id": "72f08b07e053",
+          "id": "4bf4586dc90a",
           "stage": "pool",
           "round": "Pool Play",
-          "date": "Sat",
-          "time": "5:50 PM",
-          "field": "McMaster Athletic Complex 1",
+          "date": "Sun",
+          "time": "1:40 PM",
+          "field": "",
           "status": "scheduled",
           "home": {
+            "name": "Drip Select Frey",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89172/drip-select-frey"
+          },
+          "away": {
+            "name": "Buzz 14U Gold Futures",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/90174/buzz-14u-gold-futures"
+          },
+          "source_text": "20 | Game 20 | Sun 1:40 PM | Sun 1:40 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 3 | Drip Select Frey | 3 - 8 | 8 | Buzz 14U Gold Futures",
+          "game_number": 20
+        },
+        {
+          "id": "0cbffeb60d18",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "1:40 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Texas BombersCTX-Salado",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89161/texas-bombersctx-salado"
+          },
+          "away": {
             "name": "LONESTAR SOFTBALL CLUB CTX RED",
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/89001/lonestar-softball-club-ctx-red"
           },
-          "away": {
-            "name": "Softball Mechanix 14U DePew",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/88142/softball-mechanix-14u-depew"
-          },
-          "source_text": "29 | Game 29 | Sat 5:50 PM | Sat 5:50 PM | McMaster Athletic Complex 1 | McMaster Athletic Complex 1 | 3 | LONESTAR SOFTBALL CLUB CTX RED | 3 - 2 | 2 | Softball Mechanix 14U DePew",
-          "game_number": 29
+          "source_text": "21 | Game 21 | Sun 1:40 PM | Sun 1:40 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 7 | Texas BombersCTX-Salado | 7 - 6 | 6 | LONESTAR SOFTBALL CLUB CTX RED",
+          "game_number": 21
         },
         {
-          "id": "73246dc0f8f4",
+          "id": "7c35b2896f07",
           "stage": "pool",
           "round": "Pool Play",
-          "date": "Sat",
-          "time": "5:50 PM",
-          "field": "McMaster Athletic Complex 2",
+          "date": "Sun",
+          "time": "3:05 PM",
+          "field": "",
           "status": "scheduled",
           "home": {
-            "name": "Texas Bombers CTX*",
+            "name": "Texas BombersCTX-Salado",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/89281/texas-bombers-ctx"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89161/texas-bombersctx-salado"
           },
           "away": {
-            "name": "Texas 96 Blue",
+            "name": "Austin Crush 14U",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/90755/texas-96-blue"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/88401/austin-crush-14u"
           },
-          "source_text": "30 | Game 30 | Sat 5:50 PM | Sat 5:50 PM | McMaster Athletic Complex 2 | McMaster Athletic Complex 2 | 5 | Texas Bombers CTX* | 5 - 11 | 11 | Texas 96 Blue",
-          "game_number": 30
+          "source_text": "22 | Game 22 | Sun 3:05 PM | Sun 3:05 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 5 | Texas BombersCTX-Salado | 5 - 3 | 3 | Austin Crush 14U",
+          "game_number": 22
         },
         {
-          "id": "4b5f945b7254",
+          "id": "cb329b1a05e7",
           "stage": "pool",
           "round": "Pool Play",
-          "date": "Sat",
-          "time": "5:50 PM",
-          "field": "McMaster Athletic Complex 3",
+          "date": "Sun",
+          "time": "3:05 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Buzz 14U Gold Futures",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/90174/buzz-14u-gold-futures"
+          },
+          "away": {
+            "name": "Team Rollin 14u",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89041/team-rollin-14u"
+          },
+          "source_text": "23 | Game 23 | Sun 3:05 PM | Sun 3:05 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 2 | Buzz 14U Gold Futures | 2 - 2 | 2 | Team Rollin 14u",
+          "game_number": 23
+        },
+        {
+          "id": "3dd149ab0b44",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "4:30 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Team Rollin 14u",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89041/team-rollin-14u"
+          },
+          "away": {
+            "name": "Drip Select Frey",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89172/drip-select-frey"
+          },
+          "source_text": "24 | Game 24 | Sun 4:30 PM | Sun 4:30 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 8 | Team Rollin 14u | 8 - 3 | 3 | Drip Select Frey",
+          "game_number": 24
+        },
+        {
+          "id": "66bb69ece510",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "4:30 PM",
+          "field": "",
           "status": "scheduled",
           "home": {
             "name": "Austin Crush 14U",
@@ -1320,43 +1194,43 @@
             "url": "https://www.playncs.com/fastpitch/Teams/Details/88401/austin-crush-14u"
           },
           "away": {
-            "name": "NexGen Elite",
+            "name": "LONESTAR SOFTBALL CLUB CTX RED",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/88829/nexgen-elite"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89001/lonestar-softball-club-ctx-red"
           },
-          "source_text": "31 | Game 31 | Sat 5:50 PM | Sat 5:50 PM | McMaster Athletic Complex 3 | McMaster Athletic Complex 3 | 12 | Austin Crush 14U | 12 - 1 | 1 | NexGen Elite",
-          "game_number": 31
-        },
-        {
-          "id": "b5f4133818f2",
-          "stage": "pool",
-          "round": "Pool Play",
-          "date": "Sat",
-          "time": "5:50 PM",
-          "field": "McMaster Athletic Complex 4",
-          "status": "scheduled",
-          "home": {
-            "name": "Texas Venom 14U",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
-          },
-          "away": {
-            "name": "Texas Spark-Velasquez",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/92683/texas-spark-velasquez"
-          },
-          "source_text": "32 | Game 32 | Sat 5:50 PM | Sat 5:50 PM | McMaster Athletic Complex 4 | McMaster Athletic Complex 4 | 6 | Texas Venom 14U | 6 - 3 | 3 | Texas Spark-Velasquez",
-          "game_number": 32
+          "source_text": "25 | Game 25 | Sun 4:30 PM | Sun 4:30 PM | JO Wilson Sports Complex (Bertram) Baseball Field | JO Wilson Sports Complex (Bertram) Baseball Field | 1 | Austin Crush 14U | 1 - 5 | 5 | LONESTAR SOFTBALL CLUB CTX RED",
+          "game_number": 25
         }
       ],
       "team_games": [
         {
-          "id": "ab8586f23ba4",
+          "id": "7c4294a4ae31",
           "stage": "pool",
           "round": "Pool Play",
           "date": "Sat",
-          "time": "11:10 AM",
-          "field": "McMaster Athletic Complex 3",
+          "time": "12:15 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Texas Venom 14U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
+          },
+          "away": {
+            "name": "Buzz 14U Gold Futures",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/90174/buzz-14u-gold-futures"
+          },
+          "source_text": "4 | Game 4 | Sat 12:15 PM | Sat 12:15 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 0 | Texas Venom 14U | 0 - 9 | 9 | Buzz 14U Gold Futures",
+          "game_number": 4
+        },
+        {
+          "id": "52e92875b331",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sat",
+          "time": "4:30 PM",
+          "field": "",
           "status": "scheduled",
           "home": {
             "name": "Texas Venom 14U",
@@ -1368,58 +1242,16 @@
             "score": null,
             "url": "https://www.playncs.com/fastpitch/Teams/Details/88401/austin-crush-14u"
           },
-          "source_text": "11 | Game 11 | Sat 11:10 AM | Sat 11:10 AM | McMaster Athletic Complex 3 | McMaster Athletic Complex 3 | 0 | Texas Venom 14U | 0 - 12 | 12 | Austin Crush 14U",
-          "game_number": 11
+          "source_text": "7 | Game 7 | Sat 4:30 PM | Sat 4:30 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 0 | Texas Venom 14U | 0 - 9 | 9 | Austin Crush 14U",
+          "game_number": 7
         },
         {
-          "id": "2ab890ce6e85",
+          "id": "817c85d4c435",
           "stage": "pool",
           "round": "Pool Play",
           "date": "Sat",
-          "time": "12:30 PM",
-          "field": "McMaster Athletic Complex 3",
-          "status": "scheduled",
-          "home": {
-            "name": "Vikings Fastpitch",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/89357/vikings-fastpitch"
-          },
-          "away": {
-            "name": "Texas Venom 14U",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
-          },
-          "source_text": "15 | Game 15 | Sat 12:30 PM | Sat 12:30 PM | McMaster Athletic Complex 3 | McMaster Athletic Complex 3 | 3 | Vikings Fastpitch | 3 - 13 | 13 | Texas Venom 14U",
-          "game_number": 15
-        },
-        {
-          "id": "84293d936c32",
-          "stage": "pool",
-          "round": "Pool Play",
-          "date": "Sat",
-          "time": "4:30 PM",
-          "field": "McMaster Athletic Complex 4",
-          "status": "scheduled",
-          "home": {
-            "name": "Texas Premier 14u",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/91533/texas-premier-14u"
-          },
-          "away": {
-            "name": "Texas Venom 14U",
-            "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
-          },
-          "source_text": "28 | Game 28 | Sat 4:30 PM | Sat 4:30 PM | McMaster Athletic Complex 4 | McMaster Athletic Complex 4 | 5 | Texas Premier 14u | 5 - 6 | 6 | Texas Venom 14U",
-          "game_number": 28
-        },
-        {
-          "id": "b5f4133818f2",
-          "stage": "pool",
-          "round": "Pool Play",
-          "date": "Sat",
-          "time": "5:50 PM",
-          "field": "McMaster Athletic Complex 4",
+          "time": "5:55 PM",
+          "field": "",
           "status": "scheduled",
           "home": {
             "name": "Texas Venom 14U",
@@ -1427,16 +1259,58 @@
             "url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
           },
           "away": {
-            "name": "Texas Spark-Velasquez",
+            "name": "Texas BombersCTX-Salado",
             "score": null,
-            "url": "https://www.playncs.com/fastpitch/Teams/Details/92683/texas-spark-velasquez"
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89161/texas-bombersctx-salado"
           },
-          "source_text": "32 | Game 32 | Sat 5:50 PM | Sat 5:50 PM | McMaster Athletic Complex 4 | McMaster Athletic Complex 4 | 6 | Texas Venom 14U | 6 - 3 | 3 | Texas Spark-Velasquez",
-          "game_number": 32
+          "source_text": "8 | Game 8 | Sat 5:55 PM | Sat 5:55 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 1 | Texas Venom 14U | 1 - 9 | 9 | Texas BombersCTX-Salado",
+          "game_number": 8
+        },
+        {
+          "id": "8675b6e27721",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "8:00 AM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Texas Venom 14U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
+          },
+          "away": {
+            "name": "Next Level Bandits 14u",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/90211/next-level-bandits-14u"
+          },
+          "source_text": "16 | Game 16 | Sun 8:00 AM | Sun 8:00 AM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 6 | Texas Venom 14U | 6 - 0 | 0 | Next Level Bandits 14u",
+          "game_number": 16
+        },
+        {
+          "id": "44686e61b0ce",
+          "stage": "pool",
+          "round": "Pool Play",
+          "date": "Sun",
+          "time": "12:15 PM",
+          "field": "",
+          "status": "scheduled",
+          "home": {
+            "name": "Texas Venom 14U",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
+          },
+          "away": {
+            "name": "TXplosion Fastpitch- Smith",
+            "score": null,
+            "url": "https://www.playncs.com/fastpitch/Teams/Details/89078/txplosion-fastpitch-smith"
+          },
+          "source_text": "19 | Game 19 | Sun 12:15 PM | Sun 12:15 PM | JO Wilson Sports Complex (Bertram) Softball Field | JO Wilson Sports Complex (Bertram) Softball Field | 1 | Texas Venom 14U | 1 - 9 | 9 | TXplosion Fastpitch- Smith",
+          "game_number": 19
         }
       ],
       "status": "live",
-      "message": "Loaded 32 division game(s), including 4 Texas Venom game(s), from NCS."
+      "message": "Loaded 25 division game(s), including 5 Texas Venom game(s), from NCS."
     }
   ],
   "event": {
