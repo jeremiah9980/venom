@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-28T06:52:38.777248+00:00",
+  "generated_at": "2026-09-28T07:41:48.886299+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-09-28T06:52:39.342184+00:00",
+      "generated_at": "2026-09-28T07:41:49.425915+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -79,7 +79,7 @@
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-09-28T06:52:39.805514+00:00",
+      "generated_at": "2026-09-28T07:41:49.800667+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -94,41 +94,13 @@
       "events": [
         {
           "event_id": "13257",
-          "title": "3P Sports - September Sapphire CROSSROADS Showdown **DOUBLE POINTS**",
-          "event_type": "Double Points Qualifier",
-          "format": "79",
-          "start_date": "2026-09-26",
-          "end_date": "2026-09-27",
-          "date_label": "Sep 26-27",
-          "location": "Bertram, TX",
-          "director": "Jennifer Anderson",
-          "registered_teams": null,
-          "divisions": [
-            "8U",
-            "10U",
-            "12U",
-            "14U",
-            "18U"
-          ],
-          "tags": [
-            "8U \u00b7 10U \u00b7 12U \u00b7 14U \u00b7 18U",
-            "3P SPORTS",
-            "4GG",
-            "HOMERUN AWARDS",
-            "DOUBLE POINTS"
-          ],
-          "verify_division": false,
-          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
-        },
-        {
-          "event_id": "13874",
           "title": "********* OCTOBERFEST ********",
           "event_type": "Tournament",
           "format": "27",
           "start_date": "2026-10-03",
           "end_date": "2026-10-04",
           "date_label": "Oct 3-4",
-          "location": "GEORGETOWN, TX",
+          "location": "Bertram, TX",
           "director": "Rene Contreras",
           "registered_teams": null,
           "divisions": [
@@ -143,17 +115,17 @@
             "8U \u00b7 10U \u00b7 12U \u00b7 14U \u00b7 18U"
           ],
           "verify_division": false,
-          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13874/homerun-derby-6gg-70-min-pool-14u"
+          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
         },
         {
-          "event_id": "13209",
+          "event_id": "13874",
           "title": "PINK OUT 70 MIN POOLS 4GG",
           "event_type": "Tournament",
           "format": "46",
           "start_date": "2026-10-17",
           "end_date": "2026-10-18",
           "date_label": "Oct 17-18",
-          "location": "Temple, TX",
+          "location": "GEORGETOWN, TX",
           "director": "Maggie Stoecklein",
           "registered_teams": null,
           "divisions": [
@@ -167,17 +139,17 @@
             "8U \u00b7 10U \u00b7 12U \u00b7 14U"
           ],
           "verify_division": false,
-          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13209/3p-sports-september-sapphire-crossroads-showdown-double-points"
+          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13874/homerun-derby-6gg-70-min-pool-14u"
         },
         {
-          "event_id": "13598",
+          "event_id": "13209",
           "title": "NCS CENTRAL TEXAS FALL STATE 65 MIN POOL 6GG 8U,10U,12U, 14u C AND 12u & 18u OPEN",
           "event_type": "Double Points Qualifier",
           "format": "109",
           "start_date": "2026-11-07",
           "end_date": "2026-11-08",
           "date_label": "Nov 7-8",
-          "location": "Seguin, TX",
+          "location": "Temple, TX",
           "director": "Maggie Stoecklein",
           "registered_teams": null,
           "divisions": [
@@ -191,11 +163,11 @@
             "8U \u00b7 10U \u00b7 12U \u00b7 14U \u00b7 18U"
           ],
           "verify_division": false,
-          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13598/octoberfest"
+          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13209/3p-sports-september-sapphire-crossroads-showdown-double-points"
         }
       ],
       "counts": {
-        "events": 4,
+        "events": 3,
         "verify_division": 0,
         "registered_team_total_shown_by_ncs": 0
       }
