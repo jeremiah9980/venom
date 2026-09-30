@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-09-30T22:25:07.133542+00:00",
+  "generated_at": "2026-09-30T23:22:43.099986+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-09-30T22:25:07.601196+00:00",
+      "generated_at": "2026-09-30T23:22:44.624873+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -79,7 +79,7 @@ window.TEXAS_VENOM_NCS = {
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-09-30T22:25:08.014437+00:00",
+      "generated_at": "2026-09-30T23:22:46.427648+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -136,38 +136,16 @@ window.TEXAS_VENOM_NCS = {
           ],
           "tags": [
             "PINK OUT 70 MIN POOLS 4GG",
-            "8U \u00b7 10U \u00b7 12U \u00b7 14U"
-          ],
-          "verify_division": false,
-          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13874/homerun-derby-6gg-70-min-pool-14u"
-        },
-        {
-          "event_id": "13209",
-          "title": "NCS CENTRAL TEXAS FALL STATE 65 MIN POOL 6GG 8U,10U,12U, 14u C AND 12u & 18u OPEN",
-          "event_type": "Double Points Qualifier",
-          "format": "108",
-          "start_date": "2026-11-07",
-          "end_date": "2026-11-08",
-          "date_label": "Nov 7-8",
-          "location": "Temple, TX",
-          "director": "Maggie Stoecklein",
-          "registered_teams": null,
-          "divisions": [
-            "8U",
-            "10U",
-            "12U",
-            "14U",
-            "18U"
-          ],
-          "tags": [
+            "8U \u00b7 10U \u00b7 12U \u00b7 14U",
+            "TAYLOR / TEMPLE / GEORGETOWN, TX",
             "8U \u00b7 10U \u00b7 12U \u00b7 14U \u00b7 18U"
           ],
           "verify_division": false,
-          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13209/3p-sports-september-sapphire-crossroads-showdown-double-points"
+          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13874/homerun-derby-6gg-70-min-pool-14u"
         }
       ],
       "counts": {
-        "events": 3,
+        "events": 2,
         "verify_division": 0,
         "registered_team_total_shown_by_ncs": 0
       }
