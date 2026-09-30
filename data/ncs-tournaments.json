@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-30T15:27:27.633278+00:00",
+  "generated_at": "2026-09-30T16:29:07.673931+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-09-30T15:27:28.044119+00:00",
+      "generated_at": "2026-09-30T16:29:08.082155+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -79,7 +79,7 @@
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-09-30T15:27:28.430874+00:00",
+      "generated_at": "2026-09-30T16:29:08.335192+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -145,7 +145,7 @@
           "event_id": "13209",
           "title": "NCS CENTRAL TEXAS FALL STATE 65 MIN POOL 6GG 8U,10U,12U, 14u C AND 12u & 18u OPEN",
           "event_type": "Double Points Qualifier",
-          "format": "108",
+          "format": "107",
           "start_date": "2026-11-07",
           "end_date": "2026-11-08",
           "date_label": "Nov 7-8",
