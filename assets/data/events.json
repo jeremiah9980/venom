@@ -1,10 +1,10 @@
 {
-  "synced_at": "2026-10-01T22:06:33.053079+00:00",
+  "synced_at": "2026-10-01T22:35:55.898602+00:00",
   "teams_synced": [
     "12U"
   ],
   "errors": [],
-  "count": 51,
+  "count": 50,
   "events": [
     {
       "id": "cf6bd4e1-a25d-4c97-89a6-68271094f555",
@@ -483,19 +483,6 @@
       "location": "451 Perry Mayfield Blvd\nRound Rock TX",
       "notes": "Softball Field South\n\nAll Black bottoms\nGrey Tops",
       "description": "Softball Field South\n\nAll Black bottoms\nGrey Tops",
-      "type": "practice",
-      "opponent": null,
-      "url": ""
-    },
-    {
-      "id": "338e18bd-6f6c-4d62-8480-f3c421c467cd",
-      "team": "12U",
-      "title": "Texas Venom 12U Practice",
-      "start": "2026-10-01T23:00:00+00:00",
-      "end": "2026-10-02T02:00:00+00:00",
-      "location": "16500 W State Highway 29\n, TX 78642",
-      "notes": "Shorts and purple tops",
-      "description": "Shorts and purple tops",
       "type": "practice",
       "opponent": null,
       "url": ""
