@@ -36,9 +36,9 @@
     {
       "id": 13598,
       "name": "********* OCTOBERFEST ********",
-      "dates": "Oct 3-4",
-      "location": "Seguin, TX",
-      "division": "8U · 10U · 12U · 14U · 18U",
+      "dates": "Aug 22",
+      "location": "",
+      "division": "14U",
       "registered_teams": null,
       "url": "https://www.playncs.com/fastpitch/Events/Details/13598/octoberfest"
     },
@@ -63,7 +63,7 @@
   ],
   "sync_status": "waiting_for_schedule",
   "sync_message": "No 14U OPEN schedule has been published on NCS yet. The dashboard will update automatically once a tournament is posted.",
-  "generated_at": "2026-10-03T06:33:57.179569+00:00",
+  "generated_at": "2026-10-03T07:05:25.563837+00:00",
   "event": {
     "name": "",
     "division": "14U",
