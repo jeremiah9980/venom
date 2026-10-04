@@ -1,6 +1,6 @@
 {
   "team_key": "14u",
-  "generated_at": "2026-10-04T11:36:44.926998+00:00",
+  "generated_at": "2026-10-04T14:10:08.860518+00:00",
   "source": "NCS Fastpitch team page",
   "team": {
     "key": "14u",
@@ -33,40 +33,16 @@
       ],
       "tags": [
         "********* OCTOBERFEST ********",
-        "8U \u00b7 10U \u00b7 12U \u00b7 14U \u00b7 18U"
-      ],
-      "verify_division": false,
-      "source_url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
-    },
-    {
-      "event_id": "13874",
-      "title": "PINK OUT 70 MIN POOLS 4GG",
-      "event_type": "Tournament",
-      "format": "47",
-      "start_date": "2026-10-17",
-      "end_date": "2026-10-18",
-      "date_label": "Oct 17-18",
-      "location": "GEORGETOWN, TX",
-      "director": "Maggie Stoecklein",
-      "registered_teams": null,
-      "divisions": [
-        "8U",
-        "10U",
-        "12U",
-        "14U"
-      ],
-      "tags": [
-        "PINK OUT 70 MIN POOLS 4GG",
-        "8U \u00b7 10U \u00b7 12U \u00b7 14U",
+        "8U \u00b7 10U \u00b7 12U \u00b7 14U \u00b7 18U",
         "TAYLOR / TEMPLE / GEORGETOWN, TX",
         "8U \u00b7 10U \u00b7 12U \u00b7 14U \u00b7 18U"
       ],
       "verify_division": false,
-      "source_url": "https://www.playncs.com/fastpitch/Events/Details/13874/homerun-derby-6gg-70-min-pool-14u"
+      "source_url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
     }
   ],
   "counts": {
-    "events": 2,
+    "events": 1,
     "verify_division": 0,
     "registered_team_total_shown_by_ncs": 0
   }
