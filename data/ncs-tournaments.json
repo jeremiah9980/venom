@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-05T06:57:45.425402+00:00",
+  "generated_at": "2026-10-05T07:48:03.934130+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-10-05T06:57:45.852017+00:00",
+      "generated_at": "2026-10-05T07:48:04.416209+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -79,7 +79,7 @@
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-10-05T06:57:46.118987+00:00",
+      "generated_at": "2026-10-05T07:48:04.662590+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -94,38 +94,13 @@
       "events": [
         {
           "event_id": "13257",
-          "title": "********* OCTOBERFEST ********",
-          "event_type": "Tournament",
-          "format": "22",
-          "start_date": "2026-10-03",
-          "end_date": "2026-10-04",
-          "date_label": "Oct 3-4",
-          "location": "Bertram, TX",
-          "director": "Rene Contreras",
-          "registered_teams": null,
-          "divisions": [
-            "8U",
-            "10U",
-            "12U",
-            "14U",
-            "18U"
-          ],
-          "tags": [
-            "********* OCTOBERFEST ********",
-            "8U \u00b7 10U \u00b7 12U \u00b7 14U \u00b7 18U"
-          ],
-          "verify_division": false,
-          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
-        },
-        {
-          "event_id": "13874",
           "title": "PINK OUT 70 MIN POOLS 4GG",
           "event_type": "Tournament",
           "format": "37",
           "start_date": "2026-10-17",
           "end_date": "2026-10-18",
           "date_label": "Oct 17-18",
-          "location": "GEORGETOWN, TX",
+          "location": "Bertram, TX",
           "director": "Maggie Stoecklein",
           "registered_teams": null,
           "divisions": [
@@ -141,11 +116,11 @@
             "8U \u00b7 10U \u00b7 12U \u00b7 14U \u00b7 18U"
           ],
           "verify_division": false,
-          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13874/homerun-derby-6gg-70-min-pool-14u"
+          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
         }
       ],
       "counts": {
-        "events": 2,
+        "events": 1,
         "verify_division": 0,
         "registered_team_total_shown_by_ncs": 0
       }
