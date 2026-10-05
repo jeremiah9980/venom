@@ -46,7 +46,7 @@
       "id": 13481,
       "name": "PINK OUT 70 MIN POOLS 4GG",
       "dates": "Oct 17-18",
-      "location": "TEMPLE / RIVERBEND, TX",
+      "location": "TEMPLE, TX",
       "division": "8U · 10U · 12U · 14U",
       "registered_teams": null,
       "url": "https://www.playncs.com/fastpitch/Events/Details/13481/pink-out-70-min-pools-4gg"
@@ -63,7 +63,7 @@
   ],
   "sync_status": "waiting_for_schedule",
   "sync_message": "No 14U OPEN schedule has been published on NCS yet. The dashboard will update automatically once a tournament is posted.",
-  "generated_at": "2026-10-05T20:58:35.905664+00:00",
+  "generated_at": "2026-10-05T21:30:01.665623+00:00",
   "event": {
     "name": "",
     "division": "14U",
