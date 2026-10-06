@@ -9,7 +9,7 @@
     {
       "id": 13257,
       "name": "Warm up into Fall Part 1 5GG 70 minutes games",
-      "dates": "Aug 22",
+      "dates": "Sep 27",
       "location": "",
       "division": "14U",
       "registered_teams": null,
@@ -18,7 +18,7 @@
     {
       "id": 13874,
       "name": "HOMERUN DERBY 6GG 70 MIN POOL 14u",
-      "dates": "Aug 22",
+      "dates": "Sep 27",
       "location": "",
       "division": "14U",
       "registered_teams": null,
@@ -27,7 +27,7 @@
     {
       "id": 13209,
       "name": "3P Sports - September Sapphire CROSSROADS Showdown **DOUBLE POINTS**",
-      "dates": "Aug 22",
+      "dates": "Sep 27",
       "location": "",
       "division": "14U",
       "registered_teams": null,
@@ -36,7 +36,7 @@
     {
       "id": 13598,
       "name": "********* OCTOBERFEST ********",
-      "dates": "Aug 22",
+      "dates": "Sep 27",
       "location": "",
       "division": "14U",
       "registered_teams": null,
@@ -63,7 +63,7 @@
   ],
   "sync_status": "waiting_for_schedule",
   "sync_message": "No 14U OPEN schedule has been published on NCS yet. The dashboard will update automatically once a tournament is posted.",
-  "generated_at": "2026-10-06T02:55:58.155078+00:00",
+  "generated_at": "2026-10-06T03:24:28.493525+00:00",
   "event": {
     "name": "",
     "division": "14U",
