@@ -1,10 +1,10 @@
 {
-  "synced_at": "2026-10-08T16:08:47.433560+00:00",
+  "synced_at": "2026-10-08T16:41:31.959983+00:00",
   "teams_synced": [
     "12U"
   ],
   "errors": [],
-  "count": 49,
+  "count": 50,
   "events": [
     {
       "id": "ee5457bc-db0c-4a2b-ae73-cc4c4cbf8b62",
@@ -503,14 +503,27 @@
     {
       "id": "6d120f5b-576f-40da-a4dc-42bec8375e24",
       "team": "12U",
-      "title": "Texas Venom 12U @ TBD",
-      "start": "2026-10-10T13:00:00+00:00",
-      "end": "2026-10-10T14:00:00+00:00",
-      "location": "1358 FM-2114\nClifton TX",
-      "notes": "Will be looking to fill another tournament from here to Halloween.",
-      "description": "Will be looking to fill another tournament from here to Halloween.",
+      "title": "Texas Venom 12U @ Tritons 12U Gentry",
+      "start": "2026-10-10T16:45:00+00:00",
+      "end": "2026-10-10T17:50:00+00:00",
+      "location": "210 Carlos G Parker Blvd NW\nTaylor TX",
+      "notes": "All Blacks",
+      "description": "All Blacks",
       "type": "game",
-      "opponent": "TBD",
+      "opponent": "Tritons 12U Gentry",
+      "url": ""
+    },
+    {
+      "id": "820e2299-d869-4a44-ae63-7c870ec1f898",
+      "team": "12U",
+      "title": "Texas Venom 12U @ CenTex Bandits 12U - Flores",
+      "start": "2026-10-10T18:00:00+00:00",
+      "end": "2026-10-10T19:00:00+00:00",
+      "location": "210 Carlos G Parker Blvd NW\nTaylor TX",
+      "notes": "",
+      "description": "",
+      "type": "game",
+      "opponent": "CenTex Bandits 12U - Flores",
       "url": ""
     },
     {
