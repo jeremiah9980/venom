@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T16:24:29.697370+00:00",
+  "generated_at": "2026-10-08T16:45:29.586336+00:00",
   "source": "PlayNCS event schedule pages (per tracked team)",
   "feeds": [
     {
@@ -12,9 +12,9 @@
       },
       "event": {
         "id": "13257",
-        "name": "CES Spooky Bash",
-        "start_date": "2026-10-24",
-        "end_date": "2026-10-25",
+        "name": "3P Sports - Gloves Up for a Cure",
+        "start_date": "2026-10-10",
+        "end_date": "2026-10-11",
         "location": "Bertram, TX",
         "division": "12U",
         "source_url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
@@ -1315,9 +1315,9 @@
   ],
   "event": {
     "id": "13257",
-    "name": "CES Spooky Bash",
-    "start_date": "2026-10-24",
-    "end_date": "2026-10-25",
+    "name": "3P Sports - Gloves Up for a Cure",
+    "start_date": "2026-10-10",
+    "end_date": "2026-10-11",
     "location": "Bertram, TX",
     "division": "12U",
     "source_url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
