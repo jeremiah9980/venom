@@ -1,24 +1,11 @@
 {
-  "synced_at": "2026-10-08T23:06:34.439036+00:00",
+  "synced_at": "2026-10-08T23:37:25.311305+00:00",
   "teams_synced": [
     "12U"
   ],
   "errors": [],
-  "count": 50,
+  "count": 49,
   "events": [
-    {
-      "id": "ee5457bc-db0c-4a2b-ae73-cc4c4cbf8b62",
-      "team": "12U",
-      "title": "Parent Player Meeting",
-      "start": "2026-07-08T23:00:00+00:00",
-      "end": "2026-07-09T01:00:00+00:00",
-      "location": "101 Church St\nLiberty Hill TX",
-      "notes": "",
-      "description": "",
-      "type": "meeting",
-      "opponent": null,
-      "url": ""
-    },
     {
       "id": "6c9db075-158a-467d-ad45-69b6caf4b756",
       "team": "12U",
