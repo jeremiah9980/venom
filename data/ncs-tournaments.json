@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-10T17:20:42.515816+00:00",
+  "generated_at": "2026-10-10T18:28:47.165598+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-10-10T17:20:43.112042+00:00",
+      "generated_at": "2026-10-10T18:28:47.809545+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -106,7 +106,7 @@
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-10-10T17:20:43.474847+00:00",
+      "generated_at": "2026-10-10T18:28:48.090400+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -123,7 +123,7 @@
           "event_id": "13257",
           "title": "3P Sports - HEROES CLASSIC: Honoring First Responders",
           "event_type": "Tournament",
-          "format": "34",
+          "format": "36",
           "start_date": "2026-10-17",
           "end_date": "2026-10-18",
           "date_label": "Oct 17-18",
