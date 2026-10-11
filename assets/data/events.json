@@ -1,10 +1,10 @@
 {
-  "synced_at": "2026-10-11T03:13:32.487792+00:00",
+  "synced_at": "2026-10-11T03:47:00.067289+00:00",
   "teams_synced": [
     "12U"
   ],
   "errors": [],
-  "count": 50,
+  "count": 51,
   "events": [
     {
       "id": "6c9db075-158a-467d-ad45-69b6caf4b756",
@@ -485,6 +485,19 @@
       "description": "Shorts and purple tops",
       "type": "practice",
       "opponent": null,
+      "url": ""
+    },
+    {
+      "id": "0b3fd8a8-0c29-405a-88d9-37aac3eae7ce",
+      "team": "12U",
+      "title": "Texas Venom 12U @ CTX Bombers 2k15 12U",
+      "start": "2026-10-10T13:00:00+00:00",
+      "end": "2026-10-10T14:15:00+00:00",
+      "location": "",
+      "notes": "",
+      "description": "",
+      "type": "game",
+      "opponent": "CTX Bombers 2k15 12U",
       "url": ""
     },
     {
