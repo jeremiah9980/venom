@@ -1,6 +1,6 @@
 {
   "team_key": "14u",
-  "generated_at": "2026-10-11T12:34:42.210121+00:00",
+  "generated_at": "2026-10-11T13:24:26.758428+00:00",
   "source": "NCS Fastpitch team page",
   "team": {
     "key": "14u",
@@ -17,7 +17,7 @@
       "event_id": "13257",
       "title": "3P Sports - HEROES CLASSIC: Honoring First Responders",
       "event_type": "Tournament",
-      "format": "33",
+      "format": "30",
       "start_date": "2026-10-17",
       "end_date": "2026-10-18",
       "date_label": "Oct 17-18",
@@ -25,13 +25,11 @@
       "director": "Jennifer Anderson",
       "registered_teams": null,
       "divisions": [
-        "8U",
-        "10U",
         "12U",
         "14U"
       ],
       "tags": [
-        "8U \u00b7 10U \u00b7 12U \u00b7 14U",
+        "12U \u00b7 14U",
         "3P SPORTS",
         "4GG",
         "HOMERUN AWARDS",
