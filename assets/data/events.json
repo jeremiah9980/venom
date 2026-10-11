@@ -1,10 +1,10 @@
 {
-  "synced_at": "2026-10-11T17:05:27.393552+00:00",
+  "synced_at": "2026-10-11T17:35:48.622662+00:00",
   "teams_synced": [
     "12U"
   ],
   "errors": [],
-  "count": 52,
+  "count": 53,
   "events": [
     {
       "id": "6c9db075-158a-467d-ad45-69b6caf4b756",
@@ -550,6 +550,19 @@
       "description": "",
       "type": "game",
       "opponent": "12u Warhawks Fastpitch",
+      "url": ""
+    },
+    {
+      "id": "e269d232-1e17-418e-b76c-6cbec188f0b6",
+      "team": "12U",
+      "title": "Texas Venom 12U @ Texas Blaze - Alcozer 12U",
+      "start": "2026-10-11T17:30:00+00:00",
+      "end": "2026-10-11T18:30:00+00:00",
+      "location": "",
+      "notes": "",
+      "description": "",
+      "type": "game",
+      "opponent": "Texas Blaze - Alcozer 12U",
       "url": ""
     },
     {
