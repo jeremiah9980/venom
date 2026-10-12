@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-10-12T06:59:07.720821+00:00",
+  "generated_at": "2026-10-12T07:52:54.359929+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-10-12T06:59:08.551699+00:00",
+      "generated_at": "2026-10-12T07:52:54.758546+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -20,40 +20,13 @@ window.TEXAS_VENOM_NCS = {
       "events": [
         {
           "event_id": "13257",
-          "title": "3P Sports - Gloves Up for a Cure",
-          "event_type": "Tournament",
-          "format": "42",
-          "start_date": "2026-10-10",
-          "end_date": "2026-10-11",
-          "date_label": "Oct 10-11",
-          "location": "Bertram, TX",
-          "director": "Jennifer Anderson",
-          "registered_teams": null,
-          "divisions": [
-            "10U",
-            "12U",
-            "14U"
-          ],
-          "tags": [
-            "10U \u00b7 12U \u00b7 14U",
-            "3P SPORTS",
-            "4GG",
-            "HOMERUN AWARDS",
-            "OPEN &",
-            "C-CLASS"
-          ],
-          "verify_division": false,
-          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
-        },
-        {
-          "event_id": "13594",
           "title": "CES Spooky Bash",
           "event_type": "Tournament",
           "format": "4GG",
           "start_date": "2026-10-24",
           "end_date": "2026-10-25",
           "date_label": "Oct 24-25",
-          "location": "Seguin, TX",
+          "location": "Bertram, TX",
           "director": "Colby Hamilton",
           "registered_teams": null,
           "divisions": [
@@ -71,17 +44,17 @@ window.TEXAS_VENOM_NCS = {
             "CTX"
           ],
           "verify_division": false,
-          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13594/1-day-saturday-september-to-remember-fall-classic"
+          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
         },
         {
-          "event_id": "13457",
+          "event_id": "13594",
           "title": "NCS CENTRAL TEXAS FALL REGIONAL CLASS \" C \" TEAMS 70 MIN POOLS 4GG 10U CLASS C AND OPEN HS OPEN",
           "event_type": "Tournament",
           "format": "31",
           "start_date": "2026-11-14",
           "end_date": "2026-11-15",
           "date_label": "Nov 14-15",
-          "location": "",
+          "location": "Seguin, TX",
           "director": "Maggie Stoecklein",
           "registered_teams": null,
           "divisions": [
@@ -95,18 +68,18 @@ window.TEXAS_VENOM_NCS = {
             "8U \u00b7 10U \u00b7 12U \u00b7 14U \u00b7 18U"
           ],
           "verify_division": false,
-          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13457/girls-rule-65-min-pool-6gg-c-and-open"
+          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13594/1-day-saturday-september-to-remember-fall-classic"
         }
       ],
       "counts": {
-        "events": 3,
+        "events": 2,
         "verify_division": 0,
         "registered_team_total_shown_by_ncs": 0
       }
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-10-12T06:59:09.460152+00:00",
+      "generated_at": "2026-10-12T07:52:55.110519+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
