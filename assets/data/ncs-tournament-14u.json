@@ -45,9 +45,9 @@
     {
       "id": 14064,
       "name": "3P Sports - HEROES CLASSIC: Honoring First Responders",
-      "dates": "Oct 17-18",
-      "location": "Taylor, TX",
-      "division": "12U · 14U",
+      "dates": "Aug 22",
+      "location": "",
+      "division": "14U",
       "registered_teams": null,
       "url": "https://www.playncs.com/fastpitch/Events/Details/14064/3p-sports-heroes-classic-honoring-first-responders"
     },
@@ -63,7 +63,7 @@
   ],
   "sync_status": "waiting_for_schedule",
   "sync_message": "No 14U OPEN schedule has been published on NCS yet. The dashboard will update automatically once a tournament is posted.",
-  "generated_at": "2026-10-17T06:59:47.821869+00:00",
+  "generated_at": "2026-10-17T07:19:46.395714+00:00",
   "event": {
     "name": "",
     "division": "14U",
