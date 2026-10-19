@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-10-19T06:49:19.288918+00:00",
+  "generated_at": "2026-10-19T07:38:47.762968+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-10-19T06:49:19.802667+00:00",
+      "generated_at": "2026-10-19T07:38:48.968538+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -79,7 +79,7 @@ window.TEXAS_VENOM_NCS = {
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-10-19T06:49:20.198452+00:00",
+      "generated_at": "2026-10-19T07:38:49.241491+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -91,37 +91,9 @@ window.TEXAS_VENOM_NCS = {
         "coach": "Chris Balcom",
         "ncs_url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
       },
-      "events": [
-        {
-          "event_id": "13257",
-          "title": "3P Sports - HEROES CLASSIC: Honoring First Responders",
-          "event_type": "Tournament",
-          "format": "31",
-          "start_date": "2026-10-17",
-          "end_date": "2026-10-18",
-          "date_label": "Oct 17-18",
-          "location": "Bertram, TX",
-          "director": "Jennifer Anderson",
-          "registered_teams": null,
-          "divisions": [
-            "12U",
-            "14U"
-          ],
-          "tags": [
-            "12U \u00b7 14U",
-            "3P SPORTS",
-            "4GG",
-            "HOMERUN AWARDS",
-            "FIRST RESPONDERS",
-            "TAYLOR / TEMPLE / GEORGETOWN, TX",
-            "8U \u00b7 10U \u00b7 12U \u00b7 14U \u00b7 18U"
-          ],
-          "verify_division": false,
-          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
-        }
-      ],
+      "events": [],
       "counts": {
-        "events": 1,
+        "events": 0,
         "verify_division": 0,
         "registered_team_total_shown_by_ncs": 0
       }
