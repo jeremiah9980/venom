@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-10-20T18:28:38.899383+00:00",
+  "generated_at": "2026-10-20T19:21:06.240882+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-10-20T18:28:39.400479+00:00",
+      "generated_at": "2026-10-20T19:21:06.730723+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -30,7 +30,6 @@ window.TEXAS_VENOM_NCS = {
           "director": "Colby Hamilton",
           "registered_teams": null,
           "divisions": [
-            "6U",
             "8U",
             "10U",
             "12U",
@@ -38,7 +37,7 @@ window.TEXAS_VENOM_NCS = {
           ],
           "tags": [
             "4GG",
-            "6U \u00b7 8U \u00b7 10U \u00b7 12U \u00b7 14U",
+            "8U \u00b7 10U \u00b7 12U \u00b7 14U",
             "CES",
             "CENTEX ELITE",
             "CTX"
@@ -79,7 +78,7 @@ window.TEXAS_VENOM_NCS = {
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-10-20T18:28:39.896162+00:00",
+      "generated_at": "2026-10-20T19:21:07.423265+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
