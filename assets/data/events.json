@@ -1,10 +1,10 @@
 {
-  "synced_at": "2026-10-22T02:10:49.618935+00:00",
+  "synced_at": "2026-10-22T02:43:27.327619+00:00",
   "teams_synced": [
     "12U"
   ],
   "errors": [],
-  "count": 54,
+  "count": 56,
   "events": [
     {
       "id": "6c9db075-158a-467d-ad45-69b6caf4b756",
@@ -633,14 +633,40 @@
     {
       "id": "2a31682c-9522-4466-8ec9-0862c705dffc",
       "team": "12U",
-      "title": "Texas Venom 12U @ TBD",
-      "start": "2026-10-24T14:00:00+00:00",
-      "end": "2026-10-24T15:00:00+00:00",
-      "location": "1587 W Klein Rd\nNew Braunfels TX",
+      "title": "Texas Venom 12U @ Sneaky Cleats (STX) 12U",
+      "start": "2026-10-24T18:35:00+00:00",
+      "end": "2026-10-24T19:35:00+00:00",
+      "location": "1901 Kuehler Ave\nNew Braunfels TX",
       "notes": "",
       "description": "",
       "type": "game",
-      "opponent": "TBD",
+      "opponent": "Sneaky Cleats (STX) 12U",
+      "url": ""
+    },
+    {
+      "id": "58d03e12-2477-4acb-a3e5-0c59dad1d10b",
+      "team": "12U",
+      "title": "Texas Venom 12U @ Lonestar 12 U Navy",
+      "start": "2026-10-24T19:45:00+00:00",
+      "end": "2026-10-24T20:45:00+00:00",
+      "location": "",
+      "notes": "",
+      "description": "",
+      "type": "game",
+      "opponent": "Lonestar 12 U Navy",
+      "url": ""
+    },
+    {
+      "id": "6b096360-17c0-44e4-8934-751174523da9",
+      "team": "12U",
+      "title": "Texas Venom 12U @ Hotshots Villegas 2032 Flores 12U",
+      "start": "2026-10-24T22:05:00+00:00",
+      "end": "2026-10-24T23:05:00+00:00",
+      "location": "",
+      "notes": "",
+      "description": "",
+      "type": "game",
+      "opponent": "Hotshots Villegas 2032 Flores 12U",
       "url": ""
     },
     {
