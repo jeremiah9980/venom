@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-26T21:22:55.536515+00:00",
+  "generated_at": "2026-10-26T22:24:44.784744+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-10-26T21:22:56.212292+00:00",
+      "generated_at": "2026-10-26T22:24:45.362656+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -22,7 +22,7 @@
           "event_id": "13257",
           "title": "NCS CENTRAL TEXAS REGIONAL CLASS C TEAMS 70 MIN POOLS 6GG 14U, CLASS C AND OPEN",
           "event_type": "Tournament",
-          "format": "32",
+          "format": "31",
           "start_date": "2026-11-14",
           "end_date": "2026-11-15",
           "date_label": "Nov 14-15",
@@ -51,7 +51,7 @@
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-10-26T21:22:56.423091+00:00",
+      "generated_at": "2026-10-26T22:24:45.756866+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
