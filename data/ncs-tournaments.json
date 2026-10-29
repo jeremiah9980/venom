@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-28T23:16:21.480265+00:00",
+  "generated_at": "2026-10-29T00:42:27.809681+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-10-28T23:16:22.126940+00:00",
+      "generated_at": "2026-10-29T00:42:28.597592+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -22,7 +22,7 @@
           "event_id": "13257",
           "title": "NCS CENTRAL TEXAS REGIONAL CLASS C TEAMS 70 MIN POOLS 6GG 14U, CLASS C AND OPEN",
           "event_type": "Tournament",
-          "format": "32",
+          "format": "33",
           "start_date": "2026-11-14",
           "end_date": "2026-11-15",
           "date_label": "Nov 14-15",
@@ -33,11 +33,10 @@
             "8U",
             "10U",
             "12U",
-            "14U",
-            "18U"
+            "14U"
           ],
           "tags": [
-            "8U \u00b7 10U \u00b7 12U \u00b7 14U \u00b7 18U"
+            "8U \u00b7 10U \u00b7 12U \u00b7 14U"
           ],
           "verify_division": false,
           "source_url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
@@ -51,7 +50,7 @@
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-10-28T23:16:22.551718+00:00",
+      "generated_at": "2026-10-29T00:42:29.026177+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
