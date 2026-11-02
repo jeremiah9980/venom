@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-11-02T13:17:30.772976+00:00",
+  "generated_at": "2026-11-02T14:18:22.661955+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-11-02T13:17:31.180302+00:00",
+      "generated_at": "2026-11-02T14:18:23.191182+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -22,7 +22,7 @@ window.TEXAS_VENOM_NCS = {
           "event_id": "13257",
           "title": "NCS CENTRAL TEXAS REGIONAL CLASS C TEAMS 70 MIN POOLS 6GG 14U, CLASS C AND OPEN",
           "event_type": "Tournament",
-          "format": "34",
+          "format": "33",
           "start_date": "2026-11-14",
           "end_date": "2026-11-15",
           "date_label": "Nov 14-15",
@@ -50,7 +50,7 @@ window.TEXAS_VENOM_NCS = {
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-11-02T13:17:31.406488+00:00",
+      "generated_at": "2026-11-02T14:18:23.484346+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
