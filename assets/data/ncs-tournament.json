@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T11:10:26.477640+00:00",
+  "generated_at": "2026-11-04T11:24:11.248954+00:00",
   "source": "PlayNCS event schedule pages (per tracked team)",
   "feeds": [
     {
@@ -667,7 +667,7 @@
       },
       "event": {
         "id": "13257",
-        "name": "NCS CENTRAL TEXAS FALL STATE 65 MIN POOL 6GG 8U,10U,12U, 14u C AND 12u & 18u OPEN",
+        "name": "NCS CENTRAL TEXAS FALL STATE 65 MIN POOL 6GG 8U,10U,12U, 14u C 18u OPEN",
         "start_date": "2026-11-07",
         "end_date": "2026-11-08",
         "location": "Bertram, TX",
