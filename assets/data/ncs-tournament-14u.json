@@ -53,17 +53,17 @@
     },
     {
       "id": 13484,
-      "name": "NCS CENTRAL TEXAS FALL STATE 65 MIN POOL 6GG 8U,10U,12U, 14u C 18u OPEN",
+      "name": "NCS CENTRAL TEXAS FALL STATE RAINED OUT NOVEMBER 8TH 2026",
       "dates": "Aug 22",
       "location": "",
       "division": "14U",
       "registered_teams": null,
-      "url": "https://www.playncs.com/fastpitch/Events/Details/13484/ncs-central-texas-fall-state-65-min-pool-6gg-8u-10u-12u-14u-c-18u-open"
+      "url": "https://www.playncs.com/fastpitch/Events/Details/13484/ncs-central-texas-fall-state-rained-out-november-8th-2026"
     }
   ],
   "sync_status": "waiting_for_schedule",
   "sync_message": "No 14U OPEN schedule has been published on NCS yet. The dashboard will update automatically once a tournament is posted.",
-  "generated_at": "2026-11-08T12:53:51.821422+00:00",
+  "generated_at": "2026-11-08T13:08:28.545760+00:00",
   "event": {
     "name": "",
     "division": "14U",
