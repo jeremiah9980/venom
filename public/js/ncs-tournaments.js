@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-11-09T07:19:03.356737+00:00",
+  "generated_at": "2026-11-09T08:22:52.462621+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-11-09T07:19:03.958696+00:00",
+      "generated_at": "2026-11-09T08:22:53.111458+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -50,7 +50,7 @@ window.TEXAS_VENOM_NCS = {
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-11-09T07:19:04.350085+00:00",
+      "generated_at": "2026-11-09T08:22:53.408275+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
@@ -62,34 +62,9 @@ window.TEXAS_VENOM_NCS = {
         "coach": "Chris Balcom",
         "ncs_url": "https://www.playncs.com/fastpitch/Teams/Details/87549/texas-venom-14u"
       },
-      "events": [
-        {
-          "event_id": "13257",
-          "title": "NCS CENTRAL TEXAS FALL STATE RAINED OUT NOVEMBER 8TH 2026",
-          "event_type": "Double Points Qualifier",
-          "format": "87",
-          "start_date": "2026-11-07",
-          "end_date": "2026-11-08",
-          "date_label": "Nov 7-8",
-          "location": "Bertram, TX",
-          "director": "Maggie Stoecklein",
-          "registered_teams": null,
-          "divisions": [
-            "8U",
-            "10U",
-            "12U",
-            "14U",
-            "18U"
-          ],
-          "tags": [
-            "8U \u00b7 10U \u00b7 12U \u00b7 14U \u00b7 18U"
-          ],
-          "verify_division": false,
-          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
-        }
-      ],
+      "events": [],
       "counts": {
-        "events": 1,
+        "events": 0,
         "verify_division": 0,
         "registered_team_total_shown_by_ncs": 0
       }
