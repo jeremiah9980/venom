@@ -1,10 +1,10 @@
 {
-  "synced_at": "2026-11-11T15:29:45.559145+00:00",
+  "synced_at": "2026-11-11T22:10:14.351353+00:00",
   "teams_synced": [
     "12U"
   ],
   "errors": [],
-  "count": 55,
+  "count": 58,
   "events": [
     {
       "id": "8688b956-d2f9-45d4-9444-dc0ac6558149",
@@ -711,14 +711,53 @@
     {
       "id": "cf262d28-3ca5-4414-9a8d-6b31e048c2da",
       "team": "12U",
-      "title": "Texas Venom 12U @ TBD",
+      "title": "Texas Venom 12U @ PowerHouse Andrade 12U",
       "start": "2026-11-14T14:00:00+00:00",
       "end": "2026-11-14T15:00:00+00:00",
       "location": "3449 Aten Loop\nRound Rock TX",
-      "notes": "This will be a 14U tournament.",
-      "description": "This will be a 14U tournament.",
+      "notes": "",
+      "description": "",
       "type": "game",
-      "opponent": "TBD",
+      "opponent": "PowerHouse Andrade 12U",
+      "url": ""
+    },
+    {
+      "id": "3b6bd7e0-6bb3-47bd-a128-37d915161e1c",
+      "team": "12U",
+      "title": "Texas Venom 12U @ Lonestar Softball Club White 12U",
+      "start": "2026-11-14T16:40:00+00:00",
+      "end": "2026-11-14T17:40:00+00:00",
+      "location": "",
+      "notes": "",
+      "description": "",
+      "type": "game",
+      "opponent": "Lonestar Softball Club White 12U",
+      "url": ""
+    },
+    {
+      "id": "3f2852f9-a23d-4b4d-a0ae-f667853a8a6f",
+      "team": "12U",
+      "title": "Texas Venom 12U @ Texas Premier Fastpitch 12U",
+      "start": "2026-11-14T20:40:00+00:00",
+      "end": "2026-11-14T21:40:00+00:00",
+      "location": "",
+      "notes": "",
+      "description": "",
+      "type": "game",
+      "opponent": "Texas Premier Fastpitch 12U",
+      "url": ""
+    },
+    {
+      "id": "c4330f26-7a6b-49a7-bf1b-658598c986a2",
+      "team": "12U",
+      "title": "Texas Venom 12U @ Magic Fastpitch 12U",
+      "start": "2026-11-14T22:00:00+00:00",
+      "end": "2026-11-14T23:00:00+00:00",
+      "location": "",
+      "notes": "",
+      "description": "",
+      "type": "game",
+      "opponent": "Magic Fastpitch 12U",
       "url": ""
     }
   ]
