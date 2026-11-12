@@ -1,24 +1,11 @@
 {
-  "synced_at": "2026-11-11T22:10:14.351353+00:00",
+  "synced_at": "2026-11-12T03:11:42.737034+00:00",
   "teams_synced": [
     "12U"
   ],
   "errors": [],
-  "count": 58,
+  "count": 57,
   "events": [
-    {
-      "id": "8688b956-d2f9-45d4-9444-dc0ac6558149",
-      "team": "12U",
-      "title": "Texas Venom 12U Practice",
-      "start": "2026-08-11T23:00:00+00:00",
-      "end": "2026-08-12T01:00:00+00:00",
-      "location": "451 Perry Mayfield Blvd\nRound Rock TX",
-      "notes": "Softball Field South\n\nAll Black bottoms\nGrey Tops",
-      "description": "Softball Field South\n\nAll Black bottoms\nGrey Tops",
-      "type": "practice",
-      "opponent": null,
-      "url": ""
-    },
     {
       "id": "e5267c07-25c5-4333-a553-d8784bb9f3fa",
       "team": "12U",
