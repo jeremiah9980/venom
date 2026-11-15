@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T16:35:01.054096+00:00",
+  "generated_at": "2026-11-15T21:15:51.991698+00:00",
   "source": "PlayNCS event schedule pages (per tracked team)",
   "feeds": [
     {
@@ -12,7 +12,7 @@
       },
       "event": {
         "id": "13257",
-        "name": "NCS CENTRAL TEXAS REGIONAL CLASS C TEAMS 70 MIN POOLS 6GG 14U, CLASS C AND OPEN",
+        "name": "ALL GAMES ARE CANCELLED FOR SUNDAY 11/22",
         "start_date": "2026-11-14",
         "end_date": "2026-11-15",
         "location": "Bertram, TX",
@@ -675,7 +675,7 @@
   ],
   "event": {
     "id": "13257",
-    "name": "NCS CENTRAL TEXAS REGIONAL CLASS C TEAMS 70 MIN POOLS 6GG 14U, CLASS C AND OPEN",
+    "name": "ALL GAMES ARE CANCELLED FOR SUNDAY 11/22",
     "start_date": "2026-11-14",
     "end_date": "2026-11-15",
     "location": "Bertram, TX",
