@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-16T11:02:30.309435+00:00",
+  "generated_at": "2026-11-16T20:57:51.878970+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-11-16T11:02:30.960102+00:00",
+      "generated_at": "2026-11-16T20:57:52.495617+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -26,7 +26,7 @@
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-11-16T11:02:32.037080+00:00",
+      "generated_at": "2026-11-16T20:57:52.881757+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
