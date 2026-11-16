@@ -1,11 +1,11 @@
 window.TEXAS_VENOM_NCS = {
-  "generated_at": "2026-11-16T02:42:05.499543+00:00",
+  "generated_at": "2026-11-16T11:02:30.309435+00:00",
   "source": "NCS Fastpitch team pages",
   "tracked_teams_only": true,
   "teams": {
     "12u": {
       "team_key": "12u",
-      "generated_at": "2026-11-16T02:42:06.459470+00:00",
+      "generated_at": "2026-11-16T11:02:30.960102+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "12u",
@@ -17,40 +17,16 @@ window.TEXAS_VENOM_NCS = {
         "coach": "Chris Balcom",
         "ncs_url": "https://www.playncs.com/fastpitch/Teams/Details/87660/texas-venom-12u"
       },
-      "events": [
-        {
-          "event_id": "13257",
-          "title": "ALL GAMES ARE CANCELLED FOR SUNDAY 11/22",
-          "event_type": "Tournament",
-          "format": "32",
-          "start_date": "2026-11-14",
-          "end_date": "2026-11-15",
-          "date_label": "Nov 14-15",
-          "location": "Bertram, TX",
-          "director": "Maggie Stoecklein",
-          "registered_teams": null,
-          "divisions": [
-            "10U",
-            "12U",
-            "14U"
-          ],
-          "tags": [
-            "ALL GAMES ARE CANCELLED FOR SUNDAY 11/22",
-            "10U \u00b7 12U \u00b7 14U"
-          ],
-          "verify_division": false,
-          "source_url": "https://www.playncs.com/fastpitch/Events/Details/13257/warm-up-into-fall-part-1-5gg-70-minutes-games"
-        }
-      ],
+      "events": [],
       "counts": {
-        "events": 1,
+        "events": 0,
         "verify_division": 0,
         "registered_team_total_shown_by_ncs": 0
       }
     },
     "14u": {
       "team_key": "14u",
-      "generated_at": "2026-11-16T02:42:06.901132+00:00",
+      "generated_at": "2026-11-16T11:02:32.037080+00:00",
       "source": "NCS Fastpitch team page",
       "team": {
         "key": "14u",
