@@ -1,37 +1,11 @@
 {
-  "synced_at": "2026-11-23T08:49:54.470986+00:00",
+  "synced_at": "2026-11-23T20:46:51.319514+00:00",
   "teams_synced": [
     "12U"
   ],
   "errors": [],
-  "count": 51,
+  "count": 49,
   "events": [
-    {
-      "id": "b1ac781c-c7ab-4a24-81e0-0d3a6765245f",
-      "team": "12U",
-      "title": "Texas Venom 12U @ Next Level Bandits 11U",
-      "start": "2026-08-23T14:25:00+00:00",
-      "end": "2026-08-23T15:35:00+00:00",
-      "location": "",
-      "notes": "",
-      "description": "",
-      "type": "game",
-      "opponent": "Next Level Bandits 11U",
-      "url": ""
-    },
-    {
-      "id": "ec919202-cf41-415c-a8a1-d5fc066cfd98",
-      "team": "12U",
-      "title": "Texas Venom 12U @ Lonestar Softball Club CTX Silver 12U",
-      "start": "2026-08-23T18:40:00+00:00",
-      "end": "2026-08-23T19:50:00+00:00",
-      "location": "700 Central Blvd\nBertram TX",
-      "notes": "",
-      "description": "",
-      "type": "game",
-      "opponent": "Lonestar Softball Club CTX Silver 12U",
-      "url": ""
-    },
     {
       "id": "b528cea7-a6bb-458a-aeed-8749f2929ade",
       "team": "12U",
